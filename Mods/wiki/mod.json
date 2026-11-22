@@ -1,0 +1,21 @@
+{
+	"language": "english",
+	"name": "Norse Wiki Page",
+	"description": "Adds a page to the glossary of the in-game wiki explaining the Norse Einherjar Warband, Favor, god powers, Ages, Giant Hearts, the Gate of the Nine Worlds and the Battering Ram.",
+	"chinese": {
+		"name": "北欧百科",
+		"description": "在游戏百科的词汇表里加入一页，讲解北欧的英灵战帮、恩惠、神力法术、时代、巨人之心、九界之门和便携式冲车。",
+		"translations": [
+			"config/translations/chinese.json"
+		]
+	},
+	"translations": [
+		"config/translations/english.json"
+	],
+	"author": "yche2990",
+	"version": "1.0.0",
+	"modType": "Other",
+	"compatibility": {
+		"min": "1.8.0"
+	}
+}

@@ -1,0 +1,69 @@
+{
+	"basepath": "aom/nor/town/frames/",
+	"images": [
+		{
+			"frame": 0,
+			"file": "tavern_00.png"
+		},
+		{
+			"frame": 1,
+			"file": "tavern_01.png"
+		},
+		{
+			"frame": 2,
+			"file": "tavern_02.png"
+		},
+		{
+			"frame": 3,
+			"file": "tavern_03.png"
+		},
+		{
+			"frame": 4,
+			"file": "tavern_04.png"
+		},
+		{
+			"frame": 5,
+			"file": "tavern_05.png"
+		},
+		{
+			"frame": 6,
+			"file": "tavern_06.png"
+		},
+		{
+			"frame": 7,
+			"file": "tavern_07.png"
+		},
+		{
+			"frame": 8,
+			"file": "tavern_08.png"
+		},
+		{
+			"frame": 9,
+			"file": "tavern_09.png"
+		},
+		{
+			"frame": 10,
+			"file": "tavern_10.png"
+		},
+		{
+			"frame": 11,
+			"file": "tavern_11.png"
+		},
+		{
+			"frame": 12,
+			"file": "tavern_12.png"
+		},
+		{
+			"frame": 13,
+			"file": "tavern_13.png"
+		},
+		{
+			"frame": 14,
+			"file": "tavern_14.png"
+		},
+		{
+			"frame": 15,
+			"file": "tavern_15.png"
+		}
+	]
+}

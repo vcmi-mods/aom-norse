@@ -1,0 +1,69 @@
+{
+	"basepath": "aom/nor/town/frames/",
+	"images": [
+		{
+			"frame": 0,
+			"file": "townHall_00.png"
+		},
+		{
+			"frame": 1,
+			"file": "townHall_01.png"
+		},
+		{
+			"frame": 2,
+			"file": "townHall_02.png"
+		},
+		{
+			"frame": 3,
+			"file": "townHall_03.png"
+		},
+		{
+			"frame": 4,
+			"file": "townHall_04.png"
+		},
+		{
+			"frame": 5,
+			"file": "townHall_05.png"
+		},
+		{
+			"frame": 6,
+			"file": "townHall_06.png"
+		},
+		{
+			"frame": 7,
+			"file": "townHall_07.png"
+		},
+		{
+			"frame": 8,
+			"file": "townHall_08.png"
+		},
+		{
+			"frame": 9,
+			"file": "townHall_09.png"
+		},
+		{
+			"frame": 10,
+			"file": "townHall_10.png"
+		},
+		{
+			"frame": 11,
+			"file": "townHall_11.png"
+		},
+		{
+			"frame": 12,
+			"file": "townHall_12.png"
+		},
+		{
+			"frame": 13,
+			"file": "townHall_13.png"
+		},
+		{
+			"frame": 14,
+			"file": "townHall_14.png"
+		},
+		{
+			"frame": 15,
+			"file": "townHall_15.png"
+		}
+	]
+}

@@ -1,0 +1,369 @@
+{
+	"AOM_NOR_RAGE": {
+		"hidden": false,
+		"creatureNature": false,
+		"description": "{Rage}\nAttack +${val}%.",
+		"valueDescriptions": {
+			"1": "%s flies into a rage, Attack +%d%."
+		},
+		"graphics": {
+			"icon": "aom/nor/abicons/rage.png"
+		}
+	},
+	"AOM_MENDER": {
+		"hidden": true,
+		"creatureNature": false
+	},
+	"AOM_MEND_KIND": {
+		"hidden": true,
+		"creatureNature": false
+	},
+	"AOM_NOR_BURN": {
+		"hidden": true,
+		"creatureNature": false,
+		"valueDescriptions": {
+			"1": "%s's breath deals %d extra elemental damage."
+		}
+	},
+	"AOM_NOR_FREEZE_USED": {
+		"hidden": true,
+		"creatureNature": false
+	},
+	"AOM_NOR_FROZEN": {
+		"hidden": false,
+		"creatureNature": false,
+		"description": "{Frozen}\nFrozen solid and cannot act.",
+		"valueDescriptions": {
+			"1": "%s is frozen for %d rounds."
+		},
+		"graphics": {
+			"icon": "aom/nor/abicons/frozen.png"
+		}
+	},
+	"AOM_NOR_FAVOR": {
+		"hidden": false,
+		"creatureNature": false,
+		"description": "{Favor}\n${val} pts, +1/rnd +1 acting\nBoon at 2/4/7 points",
+		"valueDescriptions": {
+			"1": "%s gains Divinity: ignores 15% of target Defense for 2 rounds (%d Favor).",
+			"21": "Forseti grants %s the Healing Spring: fully healed (%d Favor).",
+			"22": "Tyr grants %s War God's Valor: Attack +6 for 2 rounds (%d Favor).",
+			"23": "Freyja sheds the Goddess's Tears: all living troops heal 20% (%d Favor).",
+			"24": "Hel grants %s Queen of the Dead: damage +25% for 2 rounds (%d Favor).",
+			"25": "Angrboda grants %s Mother's Shelter: damage taken -50% this round (%d Favor).",
+			"26": "Ullr grants %s Hunter's Eye: ranged damage +30% for 2 rounds (%d Favor).",
+			"27": "Vidar grants %s Silent Vengeance: Attack and Defense +4 for 2 rounds (%d Favor).",
+			"28": "Sigurd grants %s Dragon-Slayer's Valor: one more attack this round (%d Favor).",
+			"31": "Thor's Thunder Dread: all enemies Defense -4 for 2 rounds (%d Favor).",
+			"32": "Odin's Raven Omen: whole army Morale +1, Attack +2 for 2 rounds (%d Favor).",
+			"33": "Loki's Trickery: all enemies Attack -3 for 2 rounds (%d Favor).",
+			"34": "Freyr's Plenty: all living troops heal 30% (%d Favor).",
+			"9": "Favor %d; next boon at %d."
+		},
+		"graphics": {
+			"icon": "aom/nor/abicons/favor.png"
+		}
+	},
+	"AOM_NOR_DIVINITY": {
+		"hidden": false,
+		"creatureNature": false,
+		"description": "{Divinity}\nIgnores 15% target Defense",
+		"graphics": {
+			"icon": "aom/nor/abicons/divinity.png"
+		}
+	},
+	"AOM_NOR_FAVOR_SEEN": {
+		"hidden": true,
+		"creatureNature": false
+	},
+	"AOM_NOR_FAVOR_TICK": {
+		"hidden": true,
+		"creatureNature": false
+	},
+	"AOM_NOR_FAVOR_TIER": {
+		"hidden": true,
+		"creatureNature": false
+	},
+	"AOM_NOR_FAVOR_FOUGHT": {
+		"hidden": true,
+		"creatureNature": false
+	},
+	"AOM_NOR_FAVOR_PRAY": {
+		"hidden": true,
+		"creatureNature": false
+	},
+	"AOM_NOR_HAMMER": {
+		"hidden": true,
+		"creatureNature": false,
+		"valueDescriptions": {
+			"1": "Thor's Hammer strikes %s for %d damage.",
+			"2": "%s blocks Thor's Hammer (%d damage)."
+		}
+	},
+	"AOM_NOR_HAMMER_SEEN": {
+		"hidden": true,
+		"creatureNature": false
+	},
+	"AOM_NOR_HAMMER_TICK": {
+		"hidden": true,
+		"creatureNature": false
+	},
+	"AOM_NOR_HERO_LEVEL": {
+		"hidden": true,
+		"creatureNature": false
+	},
+	"AOM_NOR_ILLUSION_DONE": {
+		"hidden": true,
+		"creatureNature": false
+	},
+	"AOM_NOR_ILLUSION": {
+		"hidden": false,
+		"creatureNature": false,
+		"description": "{Illusion}\nLoki's illusion; vanishes\nwhen it takes any damage",
+		"valueDescriptions": {
+			"1": "Loki's trick: an illusion of %s (%d) joins the battle.",
+			"2": "The illusion of %s is damaged and vanishes."
+		},
+		"graphics": {
+			"icon": "aom/nor/abicons/illusion.png"
+		}
+	},
+	"AOM_NOR_BOAR_DONE": {
+		"hidden": true,
+		"creatureNature": false,
+		"valueDescriptions": {
+			"1": "Freyr summoned %s (%d)."
+		}
+	},
+	"AOM_NOR_WB_SEEN": {
+		"hidden": true,
+		"creatureNature": false
+	},
+	"AOM_NOR_WB_TICK": {
+		"hidden": true,
+		"creatureNature": false
+	},
+	"AOM_NOR_SOUL_CALLS": {
+		"hidden": true,
+		"creatureNature": false
+	},
+	"AOM_NOR_OATH": {
+		"hidden": true,
+		"creatureNature": false
+	},
+	"AOM_NOR_SACRIFICE": {
+		"hidden": true,
+		"creatureNature": false,
+		"valueDescriptions": {
+			"1": "Soul Offering: %s spends %d souls, effect +%d%.",
+			"2": "Ragnarok: %s spends no souls, effect +%d%."
+		}
+	},
+	"AOM_NOR_ODIN": {
+		"hidden": true,
+		"creatureNature": false
+	},
+	"AOM_NOR_SOULS": {
+		"hidden": false,
+		"creatureNature": false,
+		"description": "{Souls}\n${val} stored; a full step\nrecalls Einherjar (max 3)",
+		"valueDescriptions": {
+			"1": "Valhalla recalls %s (%d).",
+			"2": "Ragnarok: Valhalla recalls %s (%d).",
+			"9": "Souls %d/%d; Einherjar recalled %d/3."
+		},
+		"graphics": {
+			"icon": "aom/nor/abicons/souls.png"
+		}
+	},
+	"AOM_NOR_STARS": {
+		"hidden": false,
+		"creatureNature": false,
+		"description": "{Odin's Wain}\n${val} stars, souls +5% each\nAll lit: Ragnarok round 7+",
+		"valueDescriptions": {
+			"1": "Odin's Wain lights %d stars.",
+			"2": "Odin's Wain lights %d stars: Ragnarok falls in round %d.",
+			"3": "Odin's Wain lights %d stars (%d needed for Ragnarok)."
+		},
+		"graphics": {
+			"icon": "aom/nor/abicons/stars.png"
+		}
+	},
+	"AOM_NOR_RAGNAROK": {
+		"hidden": true,
+		"creatureNature": false,
+		"valueDescriptions": {
+			"1": "Ragnarok has come: Norse troops deal +30% damage this round."
+		}
+	},
+	"AOM_NOR_SHIELDWALL": {
+		"hidden": false,
+		"creatureNature": false,
+		"description": "{Shield Wall}\nIn formation with warband:\nranged damage -${val}%",
+		"valueDescriptions": {
+			"1": "Warband formations: %d Shield Wall, %d Svinfylking."
+		},
+		"graphics": {
+			"icon": "aom/nor/abicons/shieldwall.png"
+		}
+	},
+	"AOM_NOR_SVINFYLKING": {
+		"hidden": false,
+		"creatureNature": false,
+		"description": "{Svinfylking}\nAllies on both rear corners:\nmelee damage +${val}%",
+		"graphics": {
+			"icon": "aom/nor/abicons/svinfylking.png"
+		}
+	},
+	"AOM_NOR_OATH_MORALE": {
+		"hidden": true,
+		"creatureNature": false
+	},
+	"AOM_NOR_OATH_ARMOR": {
+		"hidden": true,
+		"creatureNature": false
+	},
+	"AOM_NOR_SAC_CAP": {
+		"hidden": true,
+		"creatureNature": false
+	},
+	"AOM_NOR_SAC_OATH": {
+		"hidden": true,
+		"creatureNature": false
+	},
+	"AOM_NOR_SAC_NOW": {
+		"hidden": true,
+		"creatureNature": false
+	},
+	"AOM_NOR_GOD": {
+		"hidden": true,
+		"creatureNature": false
+	},
+	"AOM_NOR_SITE": {
+		"hidden": true,
+		"creatureNature": false,
+		"valueDescriptions": {
+			"1": "Healing Spring heals %d stacks for %d health each.",
+			"2": "Spectral Bastion hits %s for %d damage, %d perish."
+		}
+	},
+	"AOM_NOR_FIREWOLF_LOCK": {
+		"hidden": true,
+		"creatureNature": false,
+		"valueDescriptions": {
+			"1": "Fenrir's Inferno rages: neither side can retreat or surrender.",
+			"2": "%d wolf stacks become fire wolves for %d rounds.",
+			"3": "%d fire wolf stacks turn back into wolves."
+		}
+	},
+	"AOM_NOR_DOT": {
+		"hidden": true,
+		"creatureNature": false,
+		"valueDescriptions": {
+			"1": "%s takes %d damage from the flames, %d perish.",
+			"2": "%s takes %d damage from the ice, %d perish."
+		}
+	},
+	"AOM_NOR_RAM": {
+		"hidden": false,
+		"creatureNature": false,
+		"description": "{Ram Strike}\nIn sieges rams adjacent\ngate, wall, tower or keep",
+		"graphics": {
+			"icon": "aom/nor/ram/bonusIcon.png"
+		},
+		"valueDescriptions": {
+			"1": "%s rams the wall for %d damage."
+		}
+	},
+	"AOM_NOR_STAR_BONUS": {
+		"hidden": true,
+		"creatureNature": false
+	},
+	"AOM_NOR_SOUL_BONUS": {
+		"hidden": true,
+		"creatureNature": false
+	},
+	"AOM_NOR_VALHALLA": {
+		"hidden": true,
+		"creatureNature": false
+	},
+	"AOM_NOR_HORN": {
+		"hidden": true,
+		"creatureNature": false
+	},
+	"AOM_NOR_GATE": {
+		"hidden": true,
+		"description": "{Gate of the Nine Worlds}\nEach round start, the next\ngiant comes to your side",
+		"valueDescriptions": {
+			"1": "Gate of the Nine Worlds: %s steps through the gate (%d)."
+		}
+	},
+	"AOM_NOR_GATE_N": {
+		"hidden": true
+	},
+	"AOM_NOR_GATE_SEEN": {
+		"hidden": true
+	},
+	"AOM_NOR_GATE_TICK": {
+		"hidden": true
+	},
+	"AOM_NOR_RUNE": {
+		"hidden": false,
+		"creatureNature": false,
+		"description": "{Runes}\n${val} runes\nAtt/Def +${val}",
+		"graphics": {
+			"icon": "aom/nor/abicons/rune.png"
+		},
+		"valueDescriptions": {
+			"1": "%s receives rune no. %d from the Rune Smith."
+		}
+	},
+	"AOM_NOR_DUSK": {
+		"hidden": false,
+		"creatureNature": false,
+		"description": "{Twilight Valor}\nA comrade fell: Morale +1,\nAttack +${val}",
+		"graphics": {
+			"icon": "aom/nor/abicons/dusk.png"
+		},
+		"valueDescriptions": {
+			"1": "%s has fallen, and the whole army burns with Twilight Valor (Attack +%d)."
+		}
+	},
+	"AOM_NOR_DUSK_SEEN": {
+		"hidden": true
+	},
+	"AOM_NOR_NEST": {
+		"hidden": true,
+		"valueDescriptions": {
+			"1": "%s flies back from Odin's side (%d)."
+		}
+	},
+	"AOM_NOR_SOULS_LOG": {
+		"hidden": true,
+		"creatureNature": false
+	},
+	"AOM_NOR_NEST_N": {
+		"hidden": true,
+		"creatureNature": false
+	},
+	"AOM_NOR_NEST_E": {
+		"hidden": true,
+		"creatureNature": false
+	},
+	"AOM_NOR_HEART_MOUNTAIN": {
+		"hidden": true,
+		"creatureNature": false
+	},
+	"AOM_NOR_HEART_ROCK": {
+		"hidden": true,
+		"creatureNature": false
+	},
+	"AOM_NOR_HEART_FROST": {
+		"hidden": true,
+		"creatureNature": false
+	},
+	"AOM_NOR_HEART_FIRE": {
+		"hidden": true,
+		"creatureNature": false
+	}
+}

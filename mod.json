@@ -1,0 +1,61 @@
+{
+	"language": "english",
+	"name": "Age of Mythology: Norse",
+	"description": "The Norse town of Age of Mythology: Retold: 8 dwellings with 24 unit forms, 4 hero classes and 28 heroes. Norse heroes lead an Einherjar Warband (Shield Wall, Svinfylking, the Einherjar recalled from Valhalla, Odin's Wain and Ragnarok), with the racial skills Warband Oath and Soul Offering and 16 god powers. The town passes through five ages and has the Jotun Altar, the Dwarven Armory, the Gjallarhorn and the Yggdrasil grail (Gate of the Nine Worlds). Also: the Norse Ballista war machine, the Battering Ram (its wall-ramming script is taken from the batteringRam mod by Karyoplasma), the Rune Smith commander, the combined artifact Asgard Hoard, 7 outside units with their dwellings, and four giant banks (Mountain, Rock, Frost and Fire Giants) whose hearts are offered at the Jotun Altar for kingdom-wide bonuses. Submod: Norse Wiki Page (a page explaining the mechanics in the in-game wiki).\n\nCredits: the models, textures and animations of creatures, heroes, buildings and effects, as well as sounds and music, come from Age of Mythology: Retold (© Microsoft / World's Edge) and were rendered for VCMI by the author; the town screen, buildings, portraits and icons were repainted with AI (OpenArt) on top of those renders. This is a non-commercial fan-made mod, not affiliated with or endorsed by Microsoft or World's Edge.",
+	"chinese": {
+		"name": "神话时代：北欧",
+		"description": "《神话时代：重述版》里北欧人的城镇：8座巢穴、24种兵种形态，4个英雄职业、28位英雄。北欧职业的英雄带兵有英灵战帮（盾墙、猪头阵、英灵殿召回英灵战士、奥丁之车与诸神黄昏），种族技能战帮之誓和献祭英灵，16个神力法术。城镇有五个时代、约顿祭坛、矮人兵工厂、加拉尔号角和圣杯世界之树（九界之门）。另有战争器械弩炮、特殊兵种便携式冲车（撞城脚本取自Karyoplasma的batteringRam mod）、指挥官符文匠、组合宝物阿斯加德宝库、7种城外兵和它们的巢穴，以及山、岩、霜、火四座巨人宝屋：打赢得到巨人之心，在约顿祭坛献上换王国永久加成。子模组：北欧百科（游戏百科里的机制讲解页）。\n\n素材来源：兵种、英雄、建筑和特效的模型、贴图、动作，以及音效和音乐，取自《神话时代：重述版》（Age of Mythology: Retold，© Microsoft / World's Edge），由作者渲染转换到 VCMI；城镇画面、建筑、头像和图标在这些渲染图的基础上用 AI（OpenArt）重绘。本 mod 是非商业的同人作品，与 Microsoft、World's Edge 无关，也未获其认可。",
+		"translations": [
+			"config/translations/chinese.json"
+		]
+	},
+	"version": "0.0.34",
+	"author": "yche2990",
+	"contact": "https://github.com/yche2990/aom-norse",
+	"modType": "Town",
+	"compatibility": {
+		"min": "1.8.0"
+	},
+	"changelog": {
+		"0.0.34": [
+			"First public release"
+		]
+	},
+	"creatures": [
+		"config/creatures.json"
+	],
+	"scripts": [
+		"config/scripts.json"
+	],
+	"bonuses": [
+		"config/bonuses.json"
+	],
+	"heroClasses": [
+		"config/heroClasses.json"
+	],
+	"heroes": [
+		"config/heroes.json"
+	],
+	"skills": [
+		"config/skills.json",
+		"config/artillery.json"
+	],
+	"spells": [
+		"config/spells.json"
+	],
+	"artifacts": [
+		"config/artifacts.json"
+	],
+	"factions": [
+		"config/faction.json"
+	],
+	"objects": [
+		"config/boats.json",
+		"config/dwellings.json",
+		"config/banks.json"
+	],
+	"rumors": [
+		"config/rumors/aomNorseRumors.json",
+		"config/rumors.json"
+	]
+}

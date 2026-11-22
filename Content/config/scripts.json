@@ -1,0 +1,458 @@
+{
+	"aomNorRage": {
+		"implements": "combatEvent",
+		"script": "combat/aomNorRage",
+		"patches": [],
+		"priority": 0,
+		"schema": {
+			"type": "object",
+			"properties": {
+				"threshold": {
+					"type": "number"
+				}
+			},
+			"additionalProperties": false
+		},
+		"description": "{Rage}\nAtt +${val}% below half HP"
+	},
+	"aomNorCapsize": {
+		"implements": "combatEvent",
+		"script": "combat/aomNorCapsize",
+		"patches": [],
+		"priority": 0,
+		"schema": {
+			"type": "object",
+			"properties": {},
+			"additionalProperties": false
+		},
+		"description": "{Capsize}\n+${val}% dmg vs two-hex foes"
+	},
+	"aomMend": {
+		"implements": "combatEvent",
+		"script": "combat/aomMend",
+		"patches": [],
+		"priority": 0,
+		"schema": {
+			"type": "object",
+			"properties": {
+				"mechanicalOnly": {
+					"type": "boolean"
+				},
+				"resurrect": {
+					"type": "boolean"
+				}
+			},
+			"additionalProperties": false
+		},
+		"description": "{Mend}\nRound start: heals each\nadjacent ally ${val} HP"
+	},
+	"aomNorBurn": {
+		"implements": "combatEvent",
+		"script": "combat/aomNorBurn",
+		"patches": [],
+		"priority": 0,
+		"schema": {
+			"type": "object",
+			"properties": {
+				"schools": {
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			},
+			"additionalProperties": false
+		},
+		"description": "{Elemental Burn}\nTarget takes ${val}% of hit\nagain as elemental damage"
+	},
+	"aomNorFreeze": {
+		"implements": "combatEvent",
+		"script": "combat/aomNorFreeze",
+		"patches": [],
+		"priority": 0,
+		"schema": {
+			"type": "object",
+			"properties": {
+				"turns": {
+					"type": "number"
+				}
+			},
+			"additionalProperties": false
+		},
+		"description": "{Freezing Strike}\nOnce per battle, freezes\nthe attacked target 1 round"
+	},
+	"aomNorFavor": {
+		"implements": "combatEvent",
+		"script": "combat/aomNorFavor",
+		"patches": [],
+		"priority": 0,
+		"schema": {
+			"type": "object",
+			"properties": {
+				"creatures": {
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				},
+				"patron": {
+					"type": "string"
+				},
+				"god": {
+					"type": "string"
+				}
+			},
+			"additionalProperties": false
+		},
+		"description": "{Favor}\n+${val}/round, +1 on acting\nA boon at 2/4/7 points"
+	},
+	"aomNorThorHammer": {
+		"implements": "combatEvent",
+		"script": "combat/aomNorThorHammer",
+		"patches": [],
+		"priority": 0,
+		"schema": {
+			"type": "object",
+			"properties": {
+				"base": {
+					"type": "number"
+				},
+				"perLevel": {
+					"type": "number"
+				}
+			},
+			"additionalProperties": false
+		},
+		"description": "{Thor's Hammer}\nStrikes strongest foe each\nround: 30 + hero level × 10"
+	},
+	"aomNorLokiIllusion": {
+		"implements": "combatEvent",
+		"script": "combat/aomNorLokiIllusion",
+		"patches": [],
+		"priority": 0,
+		"schema": {
+			"type": "object",
+			"properties": {
+				"base": {
+					"type": "number"
+				},
+				"perLevel": {
+					"type": "number"
+				},
+				"max": {
+					"type": "number"
+				}
+			},
+			"additionalProperties": false
+		},
+		"description": "{Trickster's Illusion}\nCopies strongest foe stack;\nvanishes when hit"
+	},
+	"aomNorFreyrBoar": {
+		"implements": "combatEvent",
+		"script": "combat/aomNorFreyrBoar",
+		"patches": [],
+		"priority": 0,
+		"schema": {
+			"type": "object",
+			"properties": {
+				"per": {
+					"type": "number"
+				}
+			},
+			"additionalProperties": false
+		},
+		"description": "{Golden Boar}\nGullinbursti joins you\nat the start of battle"
+	},
+	"aomNorWarband": {
+		"implements": "combatEvent",
+		"script": "combat/aomNorWarband",
+		"patches": [],
+		"priority": 0,
+		"schema": {
+			"type": "object",
+			"properties": {
+				"perLevel": {
+					"type": "number"
+				}
+			},
+			"additionalProperties": false
+		},
+		"description": "{Einherjar Warband}\nFormations: Shield Wall/Svin\nLosses store souls"
+	},
+	"aomNorSacrifice": {
+		"implements": "spellEffect",
+		"script": "spells/aomNorSacrifice",
+		"patches": [],
+		"schema": {
+			"type": "object",
+			"additionalProperties": true
+		}
+	},
+	"aomNorDamage": {
+		"implements": "spellEffect",
+		"script": "spells/aomNorDamage",
+		"patches": [],
+		"schema": {
+			"type": "object",
+			"additionalProperties": true
+		}
+	},
+	"aomNorHeal": {
+		"implements": "spellEffect",
+		"script": "spells/aomNorHeal",
+		"patches": [],
+		"schema": {
+			"type": "object",
+			"additionalProperties": true
+		}
+	},
+	"aomNorTimed": {
+		"implements": "spellEffect",
+		"script": "spells/aomNorTimed",
+		"patches": [],
+		"schema": {
+			"type": "object",
+			"additionalProperties": true
+		}
+	},
+	"aomNorDotEffect": {
+		"implements": "spellEffect",
+		"script": "spells/aomNorDot",
+		"patches": [],
+		"schema": {
+			"type": "object",
+			"additionalProperties": true
+		}
+	},
+	"aomNorSummon": {
+		"implements": "spellEffect",
+		"script": "spells/aomNorSummon",
+		"patches": [],
+		"schema": {
+			"type": "object",
+			"additionalProperties": true
+		}
+	},
+	"aomNorSiteEffect": {
+		"implements": "spellEffect",
+		"script": "spells/aomNorSite",
+		"patches": [],
+		"schema": {
+			"type": "object",
+			"additionalProperties": true
+		}
+	},
+	"aomNorQuake": {
+		"implements": "spellEffect",
+		"script": "spells/aomNorQuake",
+		"patches": [],
+		"schema": {
+			"type": "object",
+			"additionalProperties": true
+		}
+	},
+	"aomNorObstacle": {
+		"implements": "spellEffect",
+		"script": "spells/aomNorObstacle",
+		"patches": [],
+		"schema": {
+			"type": "object",
+			"additionalProperties": true
+		}
+	},
+	"aomNorFenrirDash": {
+		"implements": "spellEffect",
+		"script": "spells/aomNorFenrirDash",
+		"patches": [],
+		"schema": {
+			"type": "object",
+			"additionalProperties": true
+		}
+	},
+	"aomNorFireWolves": {
+		"implements": "spellEffect",
+		"script": "spells/aomNorFireWolves",
+		"patches": [],
+		"schema": {
+			"type": "object",
+			"additionalProperties": true
+		}
+	},
+	"aomNorSite": {
+		"implements": "combatEvent",
+		"script": "combat/aomNorSite",
+		"patches": [],
+		"priority": 0,
+		"schema": {
+			"type": "object",
+			"properties": {
+				"kind": {
+					"type": "string"
+				},
+				"x": {
+					"type": "number"
+				},
+				"y": {
+					"type": "number"
+				},
+				"radius": {
+					"type": "number"
+				},
+				"animation": {
+					"type": "string"
+				}
+			},
+			"additionalProperties": false
+		},
+		"description": "{Divine Site}\nRound effect of Healing\nSpring and Spectral Bastion"
+	},
+	"aomNorFireWolf": {
+		"implements": "combatEvent",
+		"script": "combat/aomNorFireWolf",
+		"patches": [],
+		"priority": 0,
+		"schema": {
+			"type": "object",
+			"properties": {
+				"role": {
+					"type": "string"
+				}
+			},
+			"additionalProperties": false
+		},
+		"description": "{Fenrir's Fire}\nA fire wolf while\nFenrir's Inferno burns"
+	},
+	"aomNorDot": {
+		"implements": "combatEvent",
+		"script": "combat/aomNorDot",
+		"patches": [],
+		"priority": 0,
+		"schema": {
+			"type": "object",
+			"properties": {
+				"school": {
+					"type": "string"
+				}
+			},
+			"additionalProperties": false
+		},
+		"description": "{Lingering Damage}\nTakes ${val} damage\nat the start of each round"
+	},
+	"aomNorRam": {
+		"implements": "spellEffect",
+		"script": "spells/aomNorRam",
+		"patches": [],
+		"priority": 0,
+		"schema": {
+			"type": "object",
+			"properties": {
+				"type": {},
+				"canAttackGate": {
+					"type": "boolean"
+				},
+				"canAttackTowers": {
+					"type": "boolean"
+				},
+				"canAttackKeep": {
+					"type": "boolean"
+				}
+			},
+			"additionalProperties": false
+		},
+		"description": "{Ram Strike}\nIn sieges rams adjacent\ngate, wall, tower or keep"
+	},
+	"aomNorRamAI": {
+		"implements": "combatEvent",
+		"script": "combat/aomNorRamAI",
+		"patches": [],
+		"priority": 0,
+		"schema": {
+			"type": "object",
+			"additionalProperties": true
+		},
+		"description": "{Battering Ram (AI)}\nAI ram walks to the wall\neach round and rams it"
+	},
+	"aomNorFx": {
+		"implements": "spellEffect",
+		"script": "spells/aomNorFx",
+		"patches": [],
+		"schema": {
+			"type": "object",
+			"additionalProperties": true
+		}
+	},
+	"aomNorGate": {
+		"implements": "combatEvent",
+		"script": "combat/aomNorGate",
+		"patches": [],
+		"priority": 0,
+		"schema": {
+			"type": "object",
+			"additionalProperties": false
+		},
+		"description": "{Gate of the Nine Worlds}\nEach round start, the next\ngiant comes to your side"
+	},
+	"aomNorGateCast": {
+		"implements": "spellEffect",
+		"script": "spells/aomNorGate",
+		"patches": [],
+		"schema": {
+			"type": "object",
+			"additionalProperties": true
+		}
+	},
+	"aomNorRune": {
+		"implements": "combatEvent",
+		"script": "combat/aomNorRune",
+		"patches": [],
+		"priority": 0,
+		"schema": {
+			"type": "object",
+			"properties": {
+				"max": {
+					"type": "number"
+				}
+			},
+			"additionalProperties": false
+		},
+		"description": "{Rune Forging}\nRunes a melee stack/round\nAtt/Def +${val}, max ${max}"
+	},
+	"aomNorDusk": {
+		"implements": "combatEvent",
+		"script": "combat/aomNorDusk",
+		"patches": [],
+		"priority": 0,
+		"schema": {
+			"type": "object",
+			"properties": {
+				"attack": {
+					"type": "number"
+				},
+				"turns": {
+					"type": "number"
+				}
+			},
+			"additionalProperties": false
+		},
+		"description": "{Twilight Valor}\nAlly dies: Morale +${val},\nAtt +${attack} ${turns} rnds"
+	},
+	"aomNorNest": {
+		"implements": "combatEvent",
+		"script": "combat/aomNorNest",
+		"patches": [],
+		"priority": 0,
+		"schema": {
+			"type": "object",
+			"properties": {
+				"creature": {
+					"type": "string"
+				},
+				"plus": {
+					"type": "number"
+				}
+			},
+			"additionalProperties": false
+		},
+		"description": "{Return to Nest}\nWiped out: back next round\n${val}x/battle w/ commander"
+	}
+}

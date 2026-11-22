@@ -1,0 +1,362 @@
+{
+	"aomNorThorClass": {
+		"name": "Thunder Warlord",
+		"faction": "aomNorse",
+		"affinity": "might",
+		"commander": "aomNorCommander",
+		"primarySkills": {
+			"attack": 2,
+			"defence": 2,
+			"spellpower": 1,
+			"knowledge": 1
+		},
+		"lowLevelChance": {
+			"attack": 40,
+			"defence": 35,
+			"spellpower": 12,
+			"knowledge": 13
+		},
+		"highLevelChance": {
+			"attack": 30,
+			"defence": 30,
+			"spellpower": 20,
+			"knowledge": 20
+		},
+		"secondarySkills": {
+			"pathfinding": 4,
+			"archery": 5,
+			"logistics": 5,
+			"scouting": 4,
+			"diplomacy": 4,
+			"navigation": 8,
+			"leadership": 10,
+			"wisdom": 3,
+			"mysticism": 2,
+			"luck": 3,
+			"ballistics": 8,
+			"eagleEye": 2,
+			"necromancy": 0,
+			"estates": 6,
+			"fireMagic": 1,
+			"airMagic": 3,
+			"waterMagic": 4,
+			"earthMagic": 2,
+			"scholar": 1,
+			"tactics": 7,
+			"artillery": 5,
+			"learning": 4,
+			"offence": 7,
+			"armorer": 5,
+			"intelligence": 1,
+			"sorcery": 1,
+			"resistance": 5,
+			"firstAid": 2,
+			"aomNorOath": 10,
+			"aomNorSacrifice": 10
+		},
+		"defaultTavern": 5,
+		"tavern": {
+			"castle": 4,
+			"rampart": 4,
+			"tower": 4,
+			"inferno": 4,
+			"necropolis": 4,
+			"dungeon": 4,
+			"stronghold": 4,
+			"fortress": 4,
+			"conflux": 4,
+			"aomNorse": 6
+		},
+		"animation": {
+			"battle": {
+				"male": "aom/nor/heroes/thor/battle.json",
+				"female": "aom/nor/heroes/thorF/battle.json"
+			}
+		},
+		"mapObject": {
+			"filters": {
+				"female": {
+					"female": true
+				}
+			},
+			"templates": {
+				"normal": {
+					"animation": "aom/nor/heroes/thor/map.json"
+				},
+				"female": {
+					"animation": "aom/nor/heroes/thorF/map.json"
+				}
+			}
+		}
+	},
+	"aomNorOdinClass": {
+		"name": "Raven Seer",
+		"faction": "aomNorse",
+		"affinity": "magic",
+		"commander": "aomNorCommander",
+		"primarySkills": {
+			"attack": 1,
+			"defence": 0,
+			"spellpower": 2,
+			"knowledge": 2
+		},
+		"lowLevelChance": {
+			"attack": 15,
+			"defence": 15,
+			"spellpower": 35,
+			"knowledge": 35
+		},
+		"highLevelChance": {
+			"attack": 20,
+			"defence": 20,
+			"spellpower": 30,
+			"knowledge": 30
+		},
+		"secondarySkills": {
+			"pathfinding": 2,
+			"archery": 3,
+			"logistics": 4,
+			"scouting": 3,
+			"diplomacy": 7,
+			"navigation": 5,
+			"leadership": 2,
+			"wisdom": 7,
+			"mysticism": 4,
+			"luck": 5,
+			"ballistics": 4,
+			"eagleEye": 6,
+			"necromancy": 0,
+			"estates": 3,
+			"fireMagic": 2,
+			"airMagic": 4,
+			"waterMagic": 4,
+			"earthMagic": 3,
+			"scholar": 6,
+			"tactics": 2,
+			"artillery": 2,
+			"learning": 4,
+			"offence": 4,
+			"armorer": 3,
+			"intelligence": 6,
+			"sorcery": 5,
+			"resistance": 2,
+			"firstAid": 10,
+			"aomNorOath": 10,
+			"aomNorSacrifice": 10
+		},
+		"defaultTavern": 5,
+		"tavern": {
+			"castle": 4,
+			"rampart": 4,
+			"tower": 4,
+			"inferno": 4,
+			"necropolis": 4,
+			"dungeon": 4,
+			"stronghold": 4,
+			"fortress": 4,
+			"conflux": 4,
+			"aomNorse": 6
+		},
+		"animation": {
+			"battle": {
+				"male": "aom/nor/heroes/odin/battle.json",
+				"female": "aom/nor/heroes/odinF/battle.json"
+			}
+		},
+		"mapObject": {
+			"filters": {
+				"female": {
+					"female": true
+				}
+			},
+			"templates": {
+				"normal": {
+					"animation": "aom/nor/heroes/odin/map.json"
+				},
+				"female": {
+					"animation": "aom/nor/heroes/odinF/map.json"
+				}
+			}
+		}
+	},
+	"aomNorLokiClass": {
+		"name": "Trickster",
+		"faction": "aomNorse",
+		"affinity": "magic",
+		"commander": "aomNorCommander",
+		"primarySkills": {
+			"attack": 0,
+			"defence": 1,
+			"spellpower": 2,
+			"knowledge": 2
+		},
+		"lowLevelChance": {
+			"attack": 10,
+			"defence": 15,
+			"spellpower": 45,
+			"knowledge": 30
+		},
+		"highLevelChance": {
+			"attack": 20,
+			"defence": 20,
+			"spellpower": 30,
+			"knowledge": 30
+		},
+		"secondarySkills": {
+			"pathfinding": 5,
+			"archery": 5,
+			"logistics": 5,
+			"scouting": 2,
+			"diplomacy": 4,
+			"navigation": 2,
+			"leadership": 2,
+			"wisdom": 8,
+			"mysticism": 6,
+			"luck": 9,
+			"ballistics": 4,
+			"eagleEye": 7,
+			"necromancy": 0,
+			"estates": 3,
+			"fireMagic": 1,
+			"airMagic": 2,
+			"waterMagic": 4,
+			"earthMagic": 4,
+			"scholar": 8,
+			"tactics": 1,
+			"artillery": 1,
+			"learning": 4,
+			"offence": 1,
+			"armorer": 3,
+			"intelligence": 7,
+			"sorcery": 6,
+			"resistance": 1,
+			"firstAid": 7,
+			"aomNorOath": 10,
+			"aomNorSacrifice": 10
+		},
+		"defaultTavern": 5,
+		"tavern": {
+			"castle": 4,
+			"rampart": 4,
+			"tower": 4,
+			"inferno": 4,
+			"necropolis": 4,
+			"dungeon": 4,
+			"stronghold": 4,
+			"fortress": 4,
+			"conflux": 4,
+			"aomNorse": 6
+		},
+		"animation": {
+			"battle": {
+				"male": "aom/nor/heroes/loki/battle.json",
+				"female": "aom/nor/heroes/lokiF/battle.json"
+			}
+		},
+		"mapObject": {
+			"filters": {
+				"female": {
+					"female": true
+				}
+			},
+			"templates": {
+				"normal": {
+					"animation": "aom/nor/heroes/loki/map.json"
+				},
+				"female": {
+					"animation": "aom/nor/heroes/lokiF/map.json"
+				}
+			}
+		}
+	},
+	"aomNorFreyrClass": {
+		"name": "Harvest Lord",
+		"faction": "aomNorse",
+		"affinity": "might",
+		"commander": "aomNorCommander",
+		"primarySkills": {
+			"attack": 2,
+			"defence": 1,
+			"spellpower": 1,
+			"knowledge": 2
+		},
+		"lowLevelChance": {
+			"attack": 35,
+			"defence": 25,
+			"spellpower": 15,
+			"knowledge": 25
+		},
+		"highLevelChance": {
+			"attack": 30,
+			"defence": 25,
+			"spellpower": 20,
+			"knowledge": 25
+		},
+		"secondarySkills": {
+			"pathfinding": 7,
+			"archery": 8,
+			"logistics": 5,
+			"scouting": 7,
+			"diplomacy": 4,
+			"navigation": 3,
+			"leadership": 6,
+			"wisdom": 3,
+			"mysticism": 3,
+			"luck": 6,
+			"ballistics": 4,
+			"eagleEye": 2,
+			"necromancy": 0,
+			"estates": 2,
+			"fireMagic": 0,
+			"airMagic": 1,
+			"waterMagic": 3,
+			"earthMagic": 3,
+			"scholar": 1,
+			"tactics": 5,
+			"artillery": 6,
+			"learning": 4,
+			"offence": 5,
+			"armorer": 8,
+			"intelligence": 2,
+			"sorcery": 2,
+			"resistance": 9,
+			"firstAid": 3,
+			"aomNorOath": 10,
+			"aomNorSacrifice": 10
+		},
+		"defaultTavern": 5,
+		"tavern": {
+			"castle": 4,
+			"rampart": 4,
+			"tower": 4,
+			"inferno": 4,
+			"necropolis": 4,
+			"dungeon": 4,
+			"stronghold": 4,
+			"fortress": 4,
+			"conflux": 4,
+			"aomNorse": 6
+		},
+		"animation": {
+			"battle": {
+				"male": "aom/nor/heroes/freyr/battle.json",
+				"female": "aom/nor/heroes/freyrF/battle.json"
+			}
+		},
+		"mapObject": {
+			"filters": {
+				"female": {
+					"female": true
+				}
+			},
+			"templates": {
+				"normal": {
+					"animation": "aom/nor/heroes/freyr/map.json"
+				},
+				"female": {
+					"animation": "aom/nor/heroes/freyrF/map.json"
+				}
+			}
+		}
+	}
+}

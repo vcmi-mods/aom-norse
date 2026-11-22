@@ -1,0 +1,32 @@
+{
+	"core:boat": {
+		"types": {
+			"boatAomNorse": {
+				"actualAnimation": "aom/nor/boat/aomNorBoat.def",
+				"overlayAnimation": "ABM01_.def",
+				"flagAnimations": [
+					"aom/nor/boat/aomNorBoatFL",
+					"aom/nor/boat/aomNorBoatFG",
+					"aom/nor/boat/aomNorBoatFR",
+					"aom/nor/boat/aomNorBoatFD",
+					"aom/nor/boat/aomNorBoatFB",
+					"aom/nor/boat/aomNorBoatFP",
+					"aom/nor/boat/aomNorBoatFW",
+					"aom/nor/boat/aomNorBoatFK"
+				],
+				"templates": {
+					"default": {
+						"animation": "aom/nor/boat/aomNorBoatMap",
+						"mask": [
+							"VVV",
+							"VAV"
+						],
+						"allowedTerrains": [
+							"water"
+						]
+					}
+				}
+			}
+		}
+	}
+}

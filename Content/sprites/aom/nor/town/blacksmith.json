@@ -1,0 +1,69 @@
+{
+	"basepath": "aom/nor/town/frames/",
+	"images": [
+		{
+			"frame": 0,
+			"file": "blacksmith_00.png"
+		},
+		{
+			"frame": 1,
+			"file": "blacksmith_01.png"
+		},
+		{
+			"frame": 2,
+			"file": "blacksmith_02.png"
+		},
+		{
+			"frame": 3,
+			"file": "blacksmith_03.png"
+		},
+		{
+			"frame": 4,
+			"file": "blacksmith_04.png"
+		},
+		{
+			"frame": 5,
+			"file": "blacksmith_05.png"
+		},
+		{
+			"frame": 6,
+			"file": "blacksmith_06.png"
+		},
+		{
+			"frame": 7,
+			"file": "blacksmith_07.png"
+		},
+		{
+			"frame": 8,
+			"file": "blacksmith_08.png"
+		},
+		{
+			"frame": 9,
+			"file": "blacksmith_09.png"
+		},
+		{
+			"frame": 10,
+			"file": "blacksmith_10.png"
+		},
+		{
+			"frame": 11,
+			"file": "blacksmith_11.png"
+		},
+		{
+			"frame": 12,
+			"file": "blacksmith_12.png"
+		},
+		{
+			"frame": 13,
+			"file": "blacksmith_13.png"
+		},
+		{
+			"frame": 14,
+			"file": "blacksmith_14.png"
+		},
+		{
+			"frame": 15,
+			"file": "blacksmith_15.png"
+		}
+	]
+}

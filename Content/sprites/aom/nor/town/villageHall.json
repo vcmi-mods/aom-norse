@@ -1,0 +1,69 @@
+{
+	"basepath": "aom/nor/town/frames/",
+	"images": [
+		{
+			"frame": 0,
+			"file": "villageHall_00.png"
+		},
+		{
+			"frame": 1,
+			"file": "villageHall_01.png"
+		},
+		{
+			"frame": 2,
+			"file": "villageHall_02.png"
+		},
+		{
+			"frame": 3,
+			"file": "villageHall_03.png"
+		},
+		{
+			"frame": 4,
+			"file": "villageHall_04.png"
+		},
+		{
+			"frame": 5,
+			"file": "villageHall_05.png"
+		},
+		{
+			"frame": 6,
+			"file": "villageHall_06.png"
+		},
+		{
+			"frame": 7,
+			"file": "villageHall_07.png"
+		},
+		{
+			"frame": 8,
+			"file": "villageHall_08.png"
+		},
+		{
+			"frame": 9,
+			"file": "villageHall_09.png"
+		},
+		{
+			"frame": 10,
+			"file": "villageHall_10.png"
+		},
+		{
+			"frame": 11,
+			"file": "villageHall_11.png"
+		},
+		{
+			"frame": 12,
+			"file": "villageHall_12.png"
+		},
+		{
+			"frame": 13,
+			"file": "villageHall_13.png"
+		},
+		{
+			"frame": 14,
+			"file": "villageHall_14.png"
+		},
+		{
+			"frame": 15,
+			"file": "villageHall_15.png"
+		}
+	]
+}

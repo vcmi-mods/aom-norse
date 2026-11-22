@@ -1,0 +1,69 @@
+{
+	"basepath": "aom/nor/town/frames/",
+	"images": [
+		{
+			"frame": 0,
+			"file": "horde2_00.png"
+		},
+		{
+			"frame": 1,
+			"file": "horde2_01.png"
+		},
+		{
+			"frame": 2,
+			"file": "horde2_02.png"
+		},
+		{
+			"frame": 3,
+			"file": "horde2_03.png"
+		},
+		{
+			"frame": 4,
+			"file": "horde2_04.png"
+		},
+		{
+			"frame": 5,
+			"file": "horde2_05.png"
+		},
+		{
+			"frame": 6,
+			"file": "horde2_06.png"
+		},
+		{
+			"frame": 7,
+			"file": "horde2_07.png"
+		},
+		{
+			"frame": 8,
+			"file": "horde2_08.png"
+		},
+		{
+			"frame": 9,
+			"file": "horde2_09.png"
+		},
+		{
+			"frame": 10,
+			"file": "horde2_10.png"
+		},
+		{
+			"frame": 11,
+			"file": "horde2_11.png"
+		},
+		{
+			"frame": 12,
+			"file": "horde2_12.png"
+		},
+		{
+			"frame": 13,
+			"file": "horde2_13.png"
+		},
+		{
+			"frame": 14,
+			"file": "horde2_14.png"
+		},
+		{
+			"frame": 15,
+			"file": "horde2_15.png"
+		}
+	]
+}

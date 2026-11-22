@@ -1,0 +1,260 @@
+{
+	"aomNorOath": {
+		"name": "Warband Oath",
+		"gainChance": {
+			"might": 0,
+			"magic": 0
+		},
+		"tags": {
+			"wisdom": false,
+			"special": false,
+			"onlyOnWaterMap": false,
+			"spellSchool": true,
+			"bannedForUniversity": true,
+			"bannedForWitchHut": true,
+			"bannedForScholar": true
+		},
+		"specialty": [],
+		"base": {
+			"effects": {
+				"combocreature1": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "attack",
+					"val": 2,
+					"valueType": "ADDITIVE_VALUE",
+					"limiters": [
+						"allOf",
+						{
+							"type": "CREATURE_TYPE_LIMITER",
+							"creature": "aomNorTitanYmir",
+							"includeUpgrades": false
+						}
+					]
+				},
+				"combocreature2": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "defence",
+					"val": 2,
+					"valueType": "ADDITIVE_VALUE",
+					"limiters": [
+						"allOf",
+						{
+							"type": "CREATURE_TYPE_LIMITER",
+							"creature": "aomNorTitanYmir",
+							"includeUpgrades": false
+						}
+					]
+				},
+				"mark": {
+					"type": "STACKS_SPEED",
+					"val": 0
+				},
+				"comboLeadership": {
+					"type": "AOM_NOR_OATH_MORALE",
+					"val": 1,
+					"valueType": "BASE_NUMBER",
+					"limiters": [
+						"allOf",
+						{
+							"type": "HAS_ANOTHER_BONUS_LIMITER",
+							"bonusType": "MORALE",
+							"bonusSourceType": "SECONDARY_SKILL",
+							"bonusSourceID": "leadership"
+						}
+					]
+				},
+				"comboArmorer": {
+					"type": "AOM_NOR_OATH_ARMOR",
+					"val": 5,
+					"valueType": "BASE_NUMBER",
+					"limiters": [
+						"allOf",
+						{
+							"type": "HAS_ANOTHER_BONUS_LIMITER",
+							"bonusType": "GENERAL_DAMAGE_REDUCTION",
+							"bonusSourceType": "SECONDARY_SKILL",
+							"bonusSourceID": "armorer"
+						}
+					]
+				}
+			}
+		},
+		"basic": {
+			"description": "{Basic Warband Oath}\n\nEinherjar Warband formation effects ×1.25, souls +20%.\nRagnarok can trigger once Odin's Wain lights 7 stars.\n\n {#F800F8|Synergies} \n {#002366|Ymir Frost Giant}: Ymir Frost Giants Attack and Defense +2.\n {#D7D7D7|Leadership}: troops in formation get Morale +1 this round.\n {#D7D7D7|Armorer}: Shield Wall ranged reduction +5% more.\n {#D7D7D7|Soul Offering}: after an offering, troops in formation get Attack +2 this round.",
+			"images": {
+				"small": "aom/nor/skills/aomNorOath_basic_32",
+				"medium": "aom/nor/skills/aomNorOath_basic_44",
+				"large": "aom/nor/skills/aomNorOath_basic_82",
+				"scenarioBonus": "aom/nor/skills/aomNorOath_basic_82"
+			},
+			"effects": {
+				"main": {
+					"type": "AOM_NOR_OATH",
+					"val": 1,
+					"valueType": "BASE_NUMBER"
+				}
+			}
+		},
+		"advanced": {
+			"description": "{Advanced Warband Oath}\n\nEinherjar Warband formation effects ×1.5, souls +40%.\nRagnarok can trigger once Odin's Wain lights 6 stars.\n\n {#F800F8|Synergies} \n {#002366|Ymir Frost Giant}: Ymir Frost Giants Attack and Defense +2.\n {#D7D7D7|Leadership}: troops in formation get Morale +1 this round.\n {#D7D7D7|Armorer}: Shield Wall ranged reduction +5% more.\n {#D7D7D7|Soul Offering}: after an offering, troops in formation get Attack +2 this round.",
+			"images": {
+				"small": "aom/nor/skills/aomNorOath_advanced_32",
+				"medium": "aom/nor/skills/aomNorOath_advanced_44",
+				"large": "aom/nor/skills/aomNorOath_advanced_82",
+				"scenarioBonus": "aom/nor/skills/aomNorOath_advanced_82"
+			},
+			"effects": {
+				"main": {
+					"type": "AOM_NOR_OATH",
+					"val": 2,
+					"valueType": "BASE_NUMBER"
+				}
+			}
+		},
+		"expert": {
+			"description": "{Expert Warband Oath}\n\nEinherjar Warband formation effects ×2, souls +60%.\nRagnarok can trigger once Odin's Wain lights 5 stars.\n\n {#F800F8|Synergies} \n {#002366|Ymir Frost Giant}: Ymir Frost Giants Attack and Defense +2.\n {#D7D7D7|Leadership}: troops in formation get Morale +1 this round.\n {#D7D7D7|Armorer}: Shield Wall ranged reduction +5% more.\n {#D7D7D7|Soul Offering}: after an offering, troops in formation get Attack +2 this round.",
+			"images": {
+				"small": "aom/nor/skills/aomNorOath_expert_32",
+				"medium": "aom/nor/skills/aomNorOath_expert_44",
+				"large": "aom/nor/skills/aomNorOath_expert_82",
+				"scenarioBonus": "aom/nor/skills/aomNorOath_expert_82"
+			},
+			"effects": {
+				"main": {
+					"type": "AOM_NOR_OATH",
+					"val": 3,
+					"valueType": "BASE_NUMBER"
+				}
+			}
+		}
+	},
+	"aomNorSacrifice": {
+		"name": "Soul Offering",
+		"gainChance": {
+			"might": 0,
+			"magic": 0
+		},
+		"tags": {
+			"wisdom": false,
+			"special": false,
+			"onlyOnWaterMap": false,
+			"spellSchool": true,
+			"bannedForUniversity": true,
+			"bannedForWitchHut": true,
+			"bannedForScholar": true
+		},
+		"specialty": [],
+		"base": {
+			"effects": {
+				"combocreature1": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "attack",
+					"val": 2,
+					"valueType": "ADDITIVE_VALUE",
+					"limiters": [
+						"allOf",
+						{
+							"type": "CREATURE_TYPE_LIMITER",
+							"creature": "aomNorTitanGap",
+							"includeUpgrades": false
+						}
+					]
+				},
+				"combocreature2": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "defence",
+					"val": 2,
+					"valueType": "ADDITIVE_VALUE",
+					"limiters": [
+						"allOf",
+						{
+							"type": "CREATURE_TYPE_LIMITER",
+							"creature": "aomNorTitanGap",
+							"includeUpgrades": false
+						}
+					]
+				},
+				"mark": {
+					"type": "STACKS_SPEED",
+					"val": 0
+				},
+				"comboSorcery": {
+					"type": "AOM_NOR_SAC_CAP",
+					"val": 10,
+					"valueType": "BASE_NUMBER",
+					"limiters": [
+						"allOf",
+						{
+							"type": "HAS_ANOTHER_BONUS_LIMITER",
+							"bonusType": "SPELL_DAMAGE",
+							"bonusSourceType": "SECONDARY_SKILL",
+							"bonusSourceID": "sorcery"
+						}
+					]
+				},
+				"comboOath": {
+					"type": "AOM_NOR_SAC_OATH",
+					"val": 2,
+					"valueType": "BASE_NUMBER",
+					"limiters": [
+						"allOf",
+						{
+							"type": "HAS_ANOTHER_BONUS_LIMITER",
+							"bonusType": "AOM_NOR_OATH",
+							"bonusSourceType": "SECONDARY_SKILL",
+							"bonusSourceID": "aomNorOath"
+						}
+					]
+				}
+			}
+		},
+		"basic": {
+			"description": "{Basic Soul Offering}\n\nWhen the hero casts a Norse god power, it spends souls (up to 25% of a step),\nraising the spell's effect in proportion, up to +15%.\nSpent souls no longer count toward recalls.\n\n {#F800F8|Synergies} \n {#002366|Ginnungagap Titan}: Ginnungagap Titans Attack and Defense +2.\n {#D7D7D7|Sorcery}: effect cap +10% more.\n {#C5FFA5|Ragnarok}: that round, god powers spend no souls and use the cap.\n {#D7D7D7|Warband Oath}: after an offering, troops in formation get Attack +2 this round.",
+			"images": {
+				"small": "aom/nor/skills/aomNorSacrifice_basic_32",
+				"medium": "aom/nor/skills/aomNorSacrifice_basic_44",
+				"large": "aom/nor/skills/aomNorSacrifice_basic_82",
+				"scenarioBonus": "aom/nor/skills/aomNorSacrifice_basic_82"
+			},
+			"effects": {
+				"main": {
+					"type": "AOM_NOR_SACRIFICE",
+					"val": 25,
+					"valueType": "BASE_NUMBER"
+				}
+			}
+		},
+		"advanced": {
+			"description": "{Advanced Soul Offering}\n\nWhen the hero casts a Norse god power, it spends souls (up to 50% of a step),\nraising the spell's effect in proportion, up to +30%.\nSpent souls no longer count toward recalls.\n\n {#F800F8|Synergies} \n {#002366|Ginnungagap Titan}: Ginnungagap Titans Attack and Defense +2.\n {#D7D7D7|Sorcery}: effect cap +10% more.\n {#C5FFA5|Ragnarok}: that round, god powers spend no souls and use the cap.\n {#D7D7D7|Warband Oath}: after an offering, troops in formation get Attack +2 this round.",
+			"images": {
+				"small": "aom/nor/skills/aomNorSacrifice_advanced_32",
+				"medium": "aom/nor/skills/aomNorSacrifice_advanced_44",
+				"large": "aom/nor/skills/aomNorSacrifice_advanced_82",
+				"scenarioBonus": "aom/nor/skills/aomNorSacrifice_advanced_82"
+			},
+			"effects": {
+				"main": {
+					"type": "AOM_NOR_SACRIFICE",
+					"val": 50,
+					"valueType": "BASE_NUMBER"
+				}
+			}
+		},
+		"expert": {
+			"description": "{Expert Soul Offering}\n\nWhen the hero casts a Norse god power, it spends souls (up to 75% of a step),\nraising the spell's effect in proportion, up to +45%.\nSpent souls no longer count toward recalls.\n\n {#F800F8|Synergies} \n {#002366|Ginnungagap Titan}: Ginnungagap Titans Attack and Defense +2.\n {#D7D7D7|Sorcery}: effect cap +10% more.\n {#C5FFA5|Ragnarok}: that round, god powers spend no souls and use the cap.\n {#D7D7D7|Warband Oath}: after an offering, troops in formation get Attack +2 this round.",
+			"images": {
+				"small": "aom/nor/skills/aomNorSacrifice_expert_32",
+				"medium": "aom/nor/skills/aomNorSacrifice_expert_44",
+				"large": "aom/nor/skills/aomNorSacrifice_expert_82",
+				"scenarioBonus": "aom/nor/skills/aomNorSacrifice_expert_82"
+			},
+			"effects": {
+				"main": {
+					"type": "AOM_NOR_SACRIFICE",
+					"val": 75,
+					"valueType": "BASE_NUMBER"
+				}
+			}
+		}
+	}
+}

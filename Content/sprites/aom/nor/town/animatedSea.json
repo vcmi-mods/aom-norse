@@ -1,0 +1,69 @@
+{
+	"basepath": "aom/nor/town/frames/",
+	"images": [
+		{
+			"frame": 0,
+			"file": "animatedSea_00.png"
+		},
+		{
+			"frame": 1,
+			"file": "animatedSea_01.png"
+		},
+		{
+			"frame": 2,
+			"file": "animatedSea_02.png"
+		},
+		{
+			"frame": 3,
+			"file": "animatedSea_03.png"
+		},
+		{
+			"frame": 4,
+			"file": "animatedSea_04.png"
+		},
+		{
+			"frame": 5,
+			"file": "animatedSea_05.png"
+		},
+		{
+			"frame": 6,
+			"file": "animatedSea_06.png"
+		},
+		{
+			"frame": 7,
+			"file": "animatedSea_07.png"
+		},
+		{
+			"frame": 8,
+			"file": "animatedSea_08.png"
+		},
+		{
+			"frame": 9,
+			"file": "animatedSea_09.png"
+		},
+		{
+			"frame": 10,
+			"file": "animatedSea_10.png"
+		},
+		{
+			"frame": 11,
+			"file": "animatedSea_11.png"
+		},
+		{
+			"frame": 12,
+			"file": "animatedSea_12.png"
+		},
+		{
+			"frame": 13,
+			"file": "animatedSea_13.png"
+		},
+		{
+			"frame": 14,
+			"file": "animatedSea_14.png"
+		},
+		{
+			"frame": 15,
+			"file": "animatedSea_15.png"
+		}
+	]
+}

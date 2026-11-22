@@ -1,0 +1,58 @@
+{
+	"aomNorseRumor0": {
+		"text": "Tundra Titans, Ymir Frost Giants and Ginnungagap Titans are the mightiest Norse creatures.",
+		"faction": "aomNorse"
+	},
+	"aomNorseRumor1": {
+		"text": "I hear the Norse plant Yggdrasil at the heart of their town to honor the hero who brought them the Grail.",
+		"faction": "aomNorse"
+	},
+	"aomNorseRumor2": {
+		"text": "The Norse fight by position: Berserkers and Throwing Axemen stand shoulder to shoulder in a shield wall, and arrows hurt far less.",
+		"faction": "aomNorse"
+	},
+	"aomNorseRumor3": {
+		"text": "When a Norse stack has allies on both rear diagonals, it hacks extra hard that round; veterans call it the Svinfylking.",
+		"faction": "aomNorse"
+	},
+	"aomNorseRumor4": {
+		"text": "Norse heroes remember those who fall in battle; once enough are stored, Valhalla sends a band of Einherjar back to help.",
+		"faction": "aomNorse"
+	},
+	"aomNorseRumor5": {
+		"text": "How many stars light up at the start of battle depends on the levels of the Norse troops in the army; when all seven are lit, Ragnarok comes from round 7.",
+		"faction": "aomNorse"
+	},
+	"aomNorseRumor6": {
+		"text": "Bearskin Berserkers grow wilder the more they are hurt: once a stack drops below half its health, they hit half again as hard.",
+		"faction": "aomNorse"
+	},
+	"aomNorseRumor7": {
+		"text": "The Ymir Frost Giant strikes with its freezing blow only once per battle; whoever it hits cannot move for the rest of that round and the whole next one.",
+		"faction": "aomNorse"
+	},
+	"aomNorseRumor8": {
+		"text": "The Fenris Pack never hunts alone: for every other kind of allied wolf beside it, it bites harder.",
+		"faction": "aomNorse"
+	},
+	"aomNorseRumor9": {
+		"text": "Storm Krakens love capsizing big targets: against two-hex enemies they deal a quarter more damage.",
+		"faction": "aomNorse"
+	},
+	"aomNorseRumor10": {
+		"text": "Valkyrie Choosers not only heal those around them, but sometimes raise those who have just fallen.",
+		"faction": "aomNorse"
+	},
+	"aomNorseRumor11": {
+		"text": "Once the Mead Hall opens in a Norse town, six more Berserkers come each week.",
+		"faction": "aomNorse"
+	},
+	"aomNorseRumor12": {
+		"text": "They say the Dwarven Armory in Norse towns builds Battering Rams every week, for gold only.",
+		"faction": "aomNorse"
+	},
+	"aomNorseRumor13": {
+		"text": "Four kinds of giants live in the snowy mountains: Mountain, Rock, Frost and Fire. Whoever brings their hearts back to the Jotun Altar benefits the whole kingdom.",
+		"faction": "aomNorse"
+	}
+}

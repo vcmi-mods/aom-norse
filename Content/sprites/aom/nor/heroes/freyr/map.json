@@ -1,0 +1,100 @@
+{
+	"basepath": "aom/nor/heroes/freyr/map/",
+	"sequences": [
+		{
+			"group": 0,
+			"frames": [
+				"g00_00.png"
+			]
+		},
+		{
+			"group": 1,
+			"frames": [
+				"g01_00.png"
+			]
+		},
+		{
+			"group": 2,
+			"frames": [
+				"g02_00.png"
+			]
+		},
+		{
+			"group": 3,
+			"frames": [
+				"g03_00.png"
+			]
+		},
+		{
+			"group": 4,
+			"frames": [
+				"g04_00.png"
+			]
+		},
+		{
+			"group": 5,
+			"frames": [
+				"g05_00.png",
+				"g05_01.png",
+				"g05_02.png",
+				"g05_03.png",
+				"g05_04.png",
+				"g05_05.png",
+				"g05_06.png",
+				"g05_07.png"
+			]
+		},
+		{
+			"group": 6,
+			"frames": [
+				"g06_00.png",
+				"g06_01.png",
+				"g06_02.png",
+				"g06_03.png",
+				"g06_04.png",
+				"g06_05.png",
+				"g06_06.png",
+				"g06_07.png"
+			]
+		},
+		{
+			"group": 7,
+			"frames": [
+				"g07_00.png",
+				"g07_01.png",
+				"g07_02.png",
+				"g07_03.png",
+				"g07_04.png",
+				"g07_05.png",
+				"g07_06.png",
+				"g07_07.png"
+			]
+		},
+		{
+			"group": 8,
+			"frames": [
+				"g08_00.png",
+				"g08_01.png",
+				"g08_02.png",
+				"g08_03.png",
+				"g08_04.png",
+				"g08_05.png",
+				"g08_06.png",
+				"g08_07.png"
+			]
+		},
+		{
+			"group": 9,
+			"frames": [
+				"g09_00.png",
+				"g09_01.png",
+				"g09_02.png",
+				"g09_03.png",
+				"g09_04.png",
+				"g09_05.png",
+				"g09_06.png",
+				"g09_07.png"
+			]
+		}
+	]
+}

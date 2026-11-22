@@ -1,0 +1,69 @@
+{
+	"basepath": "aom/nor/town/frames/",
+	"images": [
+		{
+			"frame": 0,
+			"file": "ship_00.png"
+		},
+		{
+			"frame": 1,
+			"file": "ship_01.png"
+		},
+		{
+			"frame": 2,
+			"file": "ship_02.png"
+		},
+		{
+			"frame": 3,
+			"file": "ship_03.png"
+		},
+		{
+			"frame": 4,
+			"file": "ship_04.png"
+		},
+		{
+			"frame": 5,
+			"file": "ship_05.png"
+		},
+		{
+			"frame": 6,
+			"file": "ship_06.png"
+		},
+		{
+			"frame": 7,
+			"file": "ship_07.png"
+		},
+		{
+			"frame": 8,
+			"file": "ship_08.png"
+		},
+		{
+			"frame": 9,
+			"file": "ship_09.png"
+		},
+		{
+			"frame": 10,
+			"file": "ship_10.png"
+		},
+		{
+			"frame": 11,
+			"file": "ship_11.png"
+		},
+		{
+			"frame": 12,
+			"file": "ship_12.png"
+		},
+		{
+			"frame": 13,
+			"file": "ship_13.png"
+		},
+		{
+			"frame": 14,
+			"file": "ship_14.png"
+		},
+		{
+			"frame": 15,
+			"file": "ship_15.png"
+		}
+	]
+}

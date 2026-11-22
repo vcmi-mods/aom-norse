@@ -1,0 +1,69 @@
+{
+	"basepath": "aom/nor/town/frames/",
+	"images": [
+		{
+			"frame": 0,
+			"file": "animatedAurora_00.png"
+		},
+		{
+			"frame": 1,
+			"file": "animatedAurora_01.png"
+		},
+		{
+			"frame": 2,
+			"file": "animatedAurora_02.png"
+		},
+		{
+			"frame": 3,
+			"file": "animatedAurora_03.png"
+		},
+		{
+			"frame": 4,
+			"file": "animatedAurora_04.png"
+		},
+		{
+			"frame": 5,
+			"file": "animatedAurora_05.png"
+		},
+		{
+			"frame": 6,
+			"file": "animatedAurora_06.png"
+		},
+		{
+			"frame": 7,
+			"file": "animatedAurora_07.png"
+		},
+		{
+			"frame": 8,
+			"file": "animatedAurora_08.png"
+		},
+		{
+			"frame": 9,
+			"file": "animatedAurora_09.png"
+		},
+		{
+			"frame": 10,
+			"file": "animatedAurora_10.png"
+		},
+		{
+			"frame": 11,
+			"file": "animatedAurora_11.png"
+		},
+		{
+			"frame": 12,
+			"file": "animatedAurora_12.png"
+		},
+		{
+			"frame": 13,
+			"file": "animatedAurora_13.png"
+		},
+		{
+			"frame": 14,
+			"file": "animatedAurora_14.png"
+		},
+		{
+			"frame": 15,
+			"file": "animatedAurora_15.png"
+		}
+	]
+}

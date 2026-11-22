@@ -1,0 +1,2921 @@
+{
+	"aomNorse": {
+		"name": "Norse",
+		"description": "{Norse}\nAlignment: Neutral, Chaotic\nNative terrain: Snow\nLocation: the northern fjords of Enroth\nThe Norse live in longhouse villages between the ice fields and the fjords, and worship four high gods: Odin, Thor, Loki and Freyr. Their berserkers and axemen fight together as warbands; trolls, winter wolves and giants roam the mountains, and valkyries descend from Valhalla to carry fallen warriors back to the gods. Every village awaits Ragnarok, when the Einherjar will rise again for the last battle.",
+		"alignment": "neutral",
+		"nativeTerrain": [
+			"snow"
+		],
+		"boat": "boatAomNorse",
+		"creatureBackground": {
+			"120px": "aom/nor/town/crbkg120.png",
+			"130px": "aom/nor/town/crbkg130.png"
+		},
+		"puzzleMap": {
+			"prefix": "aom/nor/puzzle/",
+			"pieces": [
+				{
+					"x": 7,
+					"y": 8,
+					"index": 6
+				},
+				{
+					"x": 126,
+					"y": 8,
+					"index": 13
+				},
+				{
+					"x": 176,
+					"y": 43,
+					"index": 30
+				},
+				{
+					"x": 251,
+					"y": 8,
+					"index": 18
+				},
+				{
+					"x": 306,
+					"y": 8,
+					"index": 23
+				},
+				{
+					"x": 454,
+					"y": 8,
+					"index": 3
+				},
+				{
+					"x": 488,
+					"y": 8,
+					"index": 4
+				},
+				{
+					"x": 7,
+					"y": 46,
+					"index": 5
+				},
+				{
+					"x": 15,
+					"y": 108,
+					"index": 12
+				},
+				{
+					"x": 89,
+					"y": 96,
+					"index": 29
+				},
+				{
+					"x": 153,
+					"y": 98,
+					"index": 38
+				},
+				{
+					"x": 282,
+					"y": 77,
+					"index": 37
+				},
+				{
+					"x": 381,
+					"y": 67,
+					"index": 31
+				},
+				{
+					"x": 439,
+					"y": 50,
+					"index": 19
+				},
+				{
+					"x": 427,
+					"y": 123,
+					"index": 28
+				},
+				{
+					"x": 496,
+					"y": 103,
+					"index": 9
+				},
+				{
+					"x": 7,
+					"y": 163,
+					"index": 16
+				},
+				{
+					"x": 93,
+					"y": 173,
+					"index": 39
+				},
+				{
+					"x": 147,
+					"y": 115,
+					"index": 45
+				},
+				{
+					"x": 303,
+					"y": 152,
+					"index": 44
+				},
+				{
+					"x": 385,
+					"y": 215,
+					"index": 40
+				},
+				{
+					"x": 466,
+					"y": 204,
+					"index": 24
+				},
+				{
+					"x": 7,
+					"y": 231,
+					"index": 21
+				},
+				{
+					"x": 15,
+					"y": 314,
+					"index": 17
+				},
+				{
+					"x": 87,
+					"y": 290,
+					"index": 34
+				},
+				{
+					"x": 168,
+					"y": 296,
+					"index": 43
+				},
+				{
+					"x": 189,
+					"y": 230,
+					"index": 47
+				},
+				{
+					"x": 203,
+					"y": 245,
+					"index": 48
+				},
+				{
+					"x": 311,
+					"y": 302,
+					"index": 46
+				},
+				{
+					"x": 391,
+					"y": 317,
+					"index": 36
+				},
+				{
+					"x": 489,
+					"y": 293,
+					"index": 20
+				},
+				{
+					"x": 7,
+					"y": 375,
+					"index": 11
+				},
+				{
+					"x": 161,
+					"y": 384,
+					"index": 32
+				},
+				{
+					"x": 205,
+					"y": 336,
+					"index": 42
+				},
+				{
+					"x": 205,
+					"y": 384,
+					"index": 35
+				},
+				{
+					"x": 277,
+					"y": 353,
+					"index": 41
+				},
+				{
+					"x": 361,
+					"y": 402,
+					"index": 33
+				},
+				{
+					"x": 458,
+					"y": 348,
+					"index": 27
+				},
+				{
+					"x": 467,
+					"y": 402,
+					"index": 8
+				},
+				{
+					"x": 506,
+					"y": 354,
+					"index": 10
+				},
+				{
+					"x": 7,
+					"y": 448,
+					"index": 2
+				},
+				{
+					"x": 81,
+					"y": 413,
+					"index": 15
+				},
+				{
+					"x": 136,
+					"y": 470,
+					"index": 14
+				},
+				{
+					"x": 218,
+					"y": 454,
+					"index": 26
+				},
+				{
+					"x": 282,
+					"y": 462,
+					"index": 25
+				},
+				{
+					"x": 367,
+					"y": 431,
+					"index": 22
+				},
+				{
+					"x": 408,
+					"y": 456,
+					"index": 7
+				},
+				{
+					"x": 505,
+					"y": 464,
+					"index": 1
+				}
+			]
+		},
+		"town": {
+			"names": [
+				"Uppsala",
+				"Hedeby",
+				"Birka",
+				"Nidaros",
+				"Jomsborg",
+				"Sigtuna",
+				"Roskilde",
+				"Jelling",
+				"Trondheim",
+				"Stavanger",
+				"Reykjavik",
+				"Bergen",
+				"Haithabu",
+				"Husavik",
+				"Skara",
+				"Valsgarde"
+			],
+			"creatures": [
+				[
+					"aomNorBerserk",
+					"aomNorBerserkBear",
+					"aomNorBerserkWolf"
+				],
+				[
+					"aomNorAxeman",
+					"aomNorAxemanBreaker",
+					"aomNorAxemanTwin"
+				],
+				[
+					"aomNorTroll",
+					"aomNorTrollCave",
+					"aomNorTrollStone"
+				],
+				[
+					"aomNorWolf",
+					"aomNorWolfPack",
+					"aomNorWolfFenrir"
+				],
+				[
+					"aomNorValkyrie",
+					"aomNorValkyrieShield",
+					"aomNorValkyrieChooser"
+				],
+				[
+					"aomNorKraken",
+					"aomNorKrakenAbyss",
+					"aomNorKrakenStorm"
+				],
+				[
+					"aomNorFafnir",
+					"aomNorFafnirVenom",
+					"aomNorFafnirFlame"
+				],
+				[
+					"aomNorTitan",
+					"aomNorTitanYmir",
+					"aomNorTitanGap"
+				]
+			],
+			"horde": [
+				0,
+				-1
+			],
+			"primaryResource": "crystal",
+			"mageGuild": 5,
+			"defaultTavern": 5,
+			"moatAbility": "castleMoat",
+			"hallSlots": [
+				[
+					[
+						"villageHall",
+						"townHall",
+						"cityHall",
+						"capitol"
+					],
+					[
+						"fort",
+						"citadel",
+						"castle"
+					],
+					[
+						"tavern",
+						"horde2Upgr"
+					],
+					[
+						"blacksmith",
+						"horde2Upgr2"
+					]
+				],
+				[
+					[
+						"marketplace",
+						"resourceSilo"
+					],
+					[
+						"mageGuild1",
+						"mageGuild2",
+						"mageGuild3",
+						"mageGuild4",
+						"mageGuild5"
+					],
+					[
+						"shipyard"
+					],
+					[
+						"special1"
+					]
+				],
+				[
+					[
+						"special2"
+					],
+					[
+						"extraCapitol",
+						"special3",
+						"special4",
+						"extraTownHall",
+						"extraCityHall"
+					],
+					[
+						"horde1",
+						"horde1Upgr"
+					],
+					[
+						"horde2"
+					]
+				],
+				[
+					[
+						"dwellingLvl1",
+						"dwellingUpLvl1",
+						"dwellingUp2Lvl1"
+					],
+					[
+						"dwellingLvl2",
+						"dwellingUpLvl2",
+						"dwellingUp2Lvl2"
+					],
+					[
+						"dwellingLvl3",
+						"dwellingUpLvl3",
+						"dwellingUp2Lvl3"
+					],
+					[
+						"dwellingLvl4",
+						"dwellingUpLvl4",
+						"dwellingUp2Lvl4"
+					]
+				],
+				[
+					[
+						"dwellingLvl5",
+						"dwellingUpLvl5",
+						"dwellingUp2Lvl5"
+					],
+					[
+						"dwellingLvl6",
+						"dwellingUpLvl6",
+						"dwellingUp2Lvl6"
+					],
+					[
+						"dwellingLvl7",
+						"dwellingUpLvl7",
+						"dwellingUp2Lvl7"
+					],
+					[
+						"dwellingLvl8",
+						"dwellingUpLvl8",
+						"dwellingUp2Lvl8"
+					]
+				]
+			],
+			"buildings": {
+				"dwellingLvl1": {
+					"name": "Berserker Lodge",
+					"description": "The Berserker Lodge allows you to recruit Viking Berserkers.",
+					"cost": {
+						"gold": 500,
+						"ore": 10
+					},
+					"requires": [
+						"fort"
+					]
+				},
+				"dwellingUpLvl1": {
+					"name": "Upgraded Berserker Lodge",
+					"description": "The Upgraded Berserker Lodge allows you to recruit Bearskin Berserkers and Wolfskin Warriors, and to convert between them in town.",
+					"cost": {
+						"gold": 1000,
+						"ore": 5
+					},
+					"upgrades": "dwellingLvl1"
+				},
+				"dwellingUp2Lvl1": {
+					"name": "Upgraded Berserker Lodge",
+					"description": "The Upgraded Berserker Lodge allows you to recruit Bearskin Berserkers and Wolfskin Warriors, and to convert between them in town.",
+					"cost": {
+						"gold": 1000,
+						"ore": 5
+					},
+					"upgrades": "dwellingUpLvl1",
+					"mode": "auto"
+				},
+				"dwellingLvl2": {
+					"name": "Axe Range",
+					"description": "The Axe Range allows you to recruit Throwing Axemen.",
+					"cost": {
+						"gold": 1000,
+						"wood": 5,
+						"ore": 5
+					},
+					"requires": [
+						"dwellingLvl1"
+					]
+				},
+				"dwellingUpLvl2": {
+					"name": "Upgraded Axe Range",
+					"description": "The Upgraded Axe Range allows you to recruit Shieldbreakers and Twin-Axe Throwers, and to convert between them in town.",
+					"cost": {
+						"gold": 1000,
+						"wood": 5,
+						"ore": 5
+					},
+					"upgrades": "dwellingLvl2"
+				},
+				"dwellingUp2Lvl2": {
+					"name": "Upgraded Axe Range",
+					"description": "The Upgraded Axe Range allows you to recruit Shieldbreakers and Twin-Axe Throwers, and to convert between them in town.",
+					"cost": {
+						"gold": 1000,
+						"wood": 5,
+						"ore": 5
+					},
+					"upgrades": "dwellingUpLvl2",
+					"mode": "auto"
+				},
+				"dwellingLvl3": {
+					"name": "Troll Cave",
+					"description": "The Troll Cave allows you to recruit Northern Trolls.",
+					"cost": {
+						"gold": 1500,
+						"ore": 5,
+						"crystal": 2
+					},
+					"requires": [
+						"allOf",
+						[
+							"blacksmith"
+						],
+						[
+							"dwellingLvl1"
+						]
+					]
+				},
+				"dwellingUpLvl3": {
+					"name": "Upgraded Troll Cave",
+					"description": "The Upgraded Troll Cave allows you to recruit Cave Trolls and Stone Trolls, and to convert between them in town.",
+					"cost": {
+						"gold": 1500,
+						"ore": 5,
+						"crystal": 2
+					},
+					"upgrades": "dwellingLvl3"
+				},
+				"dwellingUp2Lvl3": {
+					"name": "Upgraded Troll Cave",
+					"description": "The Upgraded Troll Cave allows you to recruit Cave Trolls and Stone Trolls, and to convert between them in town.",
+					"cost": {
+						"gold": 1500,
+						"ore": 5,
+						"crystal": 2
+					},
+					"upgrades": "dwellingUpLvl3",
+					"mode": "auto"
+				},
+				"dwellingLvl4": {
+					"name": "Wolf Den",
+					"description": "The Wolf Den allows you to recruit Fimbulwinter Wolves.",
+					"cost": {
+						"gold": 2000,
+						"wood": 5,
+						"crystal": 3
+					},
+					"requires": [
+						"allOf",
+						[
+							"dwellingLvl2"
+						],
+						[
+							"dwellingLvl3"
+						]
+					]
+				},
+				"dwellingUpLvl4": {
+					"name": "Upgraded Wolf Den",
+					"description": "The Upgraded Wolf Den allows you to recruit Fenris Packs and Fenrir Wolves, and to convert between them in town.",
+					"cost": {
+						"gold": 2000,
+						"wood": 5,
+						"crystal": 3
+					},
+					"upgrades": "dwellingLvl4"
+				},
+				"dwellingUp2Lvl4": {
+					"name": "Upgraded Wolf Den",
+					"description": "The Upgraded Wolf Den allows you to recruit Fenris Packs and Fenrir Wolves, and to convert between them in town.",
+					"cost": {
+						"gold": 2000,
+						"wood": 5,
+						"crystal": 3
+					},
+					"upgrades": "dwellingUpLvl4",
+					"mode": "auto"
+				},
+				"dwellingLvl5": {
+					"name": "Valkyrie Hall",
+					"description": "The Valkyrie Hall allows you to recruit Asgard Valkyries.",
+					"cost": {
+						"gold": 3000,
+						"wood": 5,
+						"ore": 5,
+						"crystal": 5
+					},
+					"requires": [
+						"allOf",
+						[
+							"mageGuild1"
+						],
+						[
+							"dwellingLvl4"
+						]
+					]
+				},
+				"dwellingUpLvl5": {
+					"name": "Upgraded Valkyrie Hall",
+					"description": "The Upgraded Valkyrie Hall allows you to recruit Shieldmaidens and Valkyrie Choosers, and to convert between them in town.",
+					"cost": {
+						"gold": 4000,
+						"ore": 5,
+						"crystal": 5
+					},
+					"upgrades": "dwellingLvl5"
+				},
+				"dwellingUp2Lvl5": {
+					"name": "Upgraded Valkyrie Hall",
+					"description": "The Upgraded Valkyrie Hall allows you to recruit Shieldmaidens and Valkyrie Choosers, and to convert between them in town.",
+					"cost": {
+						"gold": 2000,
+						"crystal": 5
+					},
+					"upgrades": "dwellingUpLvl5",
+					"mode": "auto"
+				},
+				"dwellingLvl6": {
+					"name": "Kraken Fjord",
+					"description": "The Kraken Fjord allows you to recruit Krakens.",
+					"cost": {
+						"gold": 5000,
+						"ore": 20,
+						"crystal": 5
+					},
+					"requires": [
+						"allOf",
+						[
+							"citadel"
+						],
+						[
+							"dwellingLvl5"
+						]
+					]
+				},
+				"dwellingUpLvl6": {
+					"name": "Upgraded Kraken Fjord",
+					"description": "The Upgraded Kraken Fjord allows you to recruit Abyssal Krakens and Storm Krakens, and to convert between them in town.",
+					"cost": {
+						"gold": 6000,
+						"ore": 10,
+						"crystal": 10
+					},
+					"upgrades": "dwellingLvl6"
+				},
+				"dwellingUp2Lvl6": {
+					"name": "Upgraded Kraken Fjord",
+					"description": "The Upgraded Kraken Fjord allows you to recruit Abyssal Krakens and Storm Krakens, and to convert between them in town.",
+					"cost": {
+						"gold": 3000,
+						"ore": 10,
+						"crystal": 5
+					},
+					"upgrades": "dwellingUpLvl6",
+					"mode": "auto"
+				},
+				"dwellingLvl7": {
+					"name": "Fafnir Hoard",
+					"description": "The Fafnir Hoard allows you to recruit Fafnirs.",
+					"cost": {
+						"gold": 5000,
+						"ore": 20,
+						"crystal": 5
+					},
+					"requires": [
+						"allOf",
+						[
+							"citadel"
+						],
+						[
+							"dwellingLvl5"
+						]
+					]
+				},
+				"dwellingUpLvl7": {
+					"name": "Upgraded Fafnir Hoard",
+					"description": "The Upgraded Fafnir Hoard allows you to recruit Venombreath Fafnirs and Flamebreath Fafnirs, and to convert between them in town.",
+					"cost": {
+						"gold": 6000,
+						"ore": 10,
+						"crystal": 10
+					},
+					"upgrades": "dwellingLvl7"
+				},
+				"dwellingUp2Lvl7": {
+					"name": "Upgraded Fafnir Hoard",
+					"description": "The Upgraded Fafnir Hoard allows you to recruit Venombreath Fafnirs and Flamebreath Fafnirs, and to convert between them in town.",
+					"cost": {
+						"gold": 3000,
+						"ore": 10,
+						"crystal": 5
+					},
+					"upgrades": "dwellingUpLvl7",
+					"mode": "auto"
+				},
+				"dwellingLvl8": {
+					"name": "Ginnungagap Gate",
+					"description": "The Ginnungagap Gate allows you to recruit Tundra Titans.",
+					"cost": {
+						"gold": 20000,
+						"mercury": 10,
+						"sulfur": 10,
+						"crystal": 10,
+						"gems": 10
+					},
+					"requires": [
+						"allOf",
+						[
+							"castle"
+						],
+						[
+							"anyOf",
+							[
+								"dwellingLvl6"
+							],
+							[
+								"dwellingLvl7"
+							]
+						]
+					]
+				},
+				"dwellingUpLvl8": {
+					"name": "Upgraded Ginnungagap Gate",
+					"description": "The Upgraded Ginnungagap Gate allows you to recruit Ymir Frost Giants and Ginnungagap Titans, and to convert between them in town.",
+					"cost": {
+						"gold": 25000,
+						"mercury": 10,
+						"sulfur": 10,
+						"crystal": 10,
+						"gems": 10
+					},
+					"upgrades": "dwellingLvl8"
+				},
+				"dwellingUp2Lvl8": {
+					"name": "Upgraded Ginnungagap Gate",
+					"description": "The Upgraded Ginnungagap Gate allows you to recruit Ymir Frost Giants and Ginnungagap Titans, and to convert between them in town.",
+					"cost": {
+						"gold": 20000,
+						"mercury": 10,
+						"sulfur": 10,
+						"crystal": 10,
+						"gems": 10
+					},
+					"upgrades": "dwellingUpLvl8",
+					"mode": "auto"
+				},
+				"villageHall": {
+					"name": "Village Hall",
+					"description": "The Village Hall allows you to purchase town buildings and provides 500 gold per day."
+				},
+				"townHall": {
+					"name": "Town Hall",
+					"description": "The Town Hall allows you to purchase town buildings and provides 1000 gold per day.",
+					"cost": {
+						"gold": 2500
+					},
+					"requires": [
+						"tavern"
+					]
+				},
+				"cityHall": {
+					"name": "City Hall",
+					"description": "The City Hall allows you to purchase town buildings and provides 2000 gold per day.",
+					"cost": {
+						"gold": 5000
+					},
+					"requires": [
+						"allOf",
+						[
+							"mageGuild1"
+						],
+						[
+							"marketplace"
+						],
+						[
+							"blacksmith"
+						]
+					]
+				},
+				"capitol": {
+					"name": "Capitol",
+					"description": "The Capitol provides 4000 gold per day.",
+					"cost": {
+						"gold": 10000
+					},
+					"requires": [
+						"castle"
+					]
+				},
+				"fort": {
+					"name": "Fort",
+					"description": "The Fort gives your town walls. Once the Rock Giant Heart is offered at the Jotun Altar, troops defending the town get Defense +2.",
+					"cost": {
+						"gold": 5000,
+						"wood": 20,
+						"ore": 20
+					},
+					"bonuses": [
+						{
+							"type": "PRIMARY_SKILL",
+							"val": 2,
+							"propagator": "TOWN_AND_VISITOR",
+							"subtype": "defence",
+							"limiters": [
+								{
+									"type": "HAS_ANOTHER_BONUS_LIMITER",
+									"bonusType": "AOM_NOR_HEART_ROCK"
+								}
+							],
+							"stacking": "aomNorHeartRock"
+						}
+					]
+				},
+				"citadel": {
+					"name": "Citadel",
+					"description": "The Citadel increases the basic growth rate of creatures by 50% and strengthens the town's defenses.",
+					"cost": {
+						"gold": 2500,
+						"ore": 5
+					}
+				},
+				"castle": {
+					"name": "Castle",
+					"description": "The Castle adds two arrow towers to the town's defenses and doubles the basic growth rate of creatures.",
+					"cost": {
+						"gold": 5000,
+						"wood": 10,
+						"ore": 10
+					}
+				},
+				"tavern": {
+					"name": "Tavern",
+					"description": "The Tavern raises the morale of the garrison.",
+					"cost": {
+						"gold": 500,
+						"wood": 5
+					}
+				},
+				"marketplace": {
+					"name": "Marketplace",
+					"description": "The Marketplace allows you to trade resources (the more marketplaces you own, the better the rates).",
+					"cost": {
+						"gold": 500,
+						"wood": 5
+					}
+				},
+				"shipyard": {
+					"name": "Shipyard",
+					"description": "The Shipyard allows you to build ships.",
+					"cost": {
+						"gold": 2000,
+						"wood": 20
+					}
+				},
+				"ship": {},
+				"resourceSilo": {
+					"name": "Resource Silo",
+					"description": "The Resource Silo provides 1 extra crystal per day.",
+					"cost": {
+						"gold": 5000,
+						"ore": 5
+					},
+					"produce": {
+						"crystal": 1
+					}
+				},
+				"mageGuild1": {
+					"cost": {
+						"gold": 2000,
+						"wood": 5,
+						"ore": 5
+					},
+					"name": "Mage Guild Level 1",
+					"description": "The Mage Guild allows heroes to learn the spells it contains."
+				},
+				"mageGuild2": {
+					"cost": {
+						"gold": 1000,
+						"wood": 5,
+						"ore": 5,
+						"mercury": 4,
+						"sulfur": 4,
+						"crystal": 4,
+						"gems": 4
+					},
+					"name": "Mage Guild Level 2",
+					"description": "The Mage Guild allows heroes to learn the spells it contains."
+				},
+				"mageGuild3": {
+					"cost": {
+						"gold": 1000,
+						"wood": 5,
+						"ore": 5,
+						"mercury": 6,
+						"sulfur": 6,
+						"crystal": 6,
+						"gems": 6
+					},
+					"name": "Mage Guild Level 3",
+					"description": "The Mage Guild allows heroes to learn the spells it contains."
+				},
+				"mageGuild4": {
+					"cost": {
+						"gold": 1000,
+						"wood": 5,
+						"ore": 5,
+						"mercury": 8,
+						"sulfur": 8,
+						"crystal": 8,
+						"gems": 8
+					},
+					"name": "Mage Guild Level 4",
+					"description": "The Mage Guild allows heroes to learn the spells it contains."
+				},
+				"mageGuild5": {
+					"cost": {
+						"gold": 1000,
+						"wood": 5,
+						"ore": 5,
+						"mercury": 10,
+						"sulfur": 10,
+						"crystal": 10,
+						"gems": 10
+					},
+					"name": "Mage Guild Level 5",
+					"description": "The Mage Guild allows heroes to learn the spells it contains."
+				},
+				"blacksmith": {
+					"name": "Blacksmith",
+					"description": "The Blacksmith allows you to purchase the Norse Ballista for your armies.",
+					"cost": {
+						"gold": 1000,
+						"wood": 5
+					},
+					"warMachine": "aomNorBallistaArt"
+				},
+				"special1": {
+					"name": "Temple of the Gods",
+					"description": "The Temple of the Gods blesses each visiting hero once, according to the god they serve:\nThor's heroes Attack +1, Odin's Knowledge +1, Loki's Spell Power +1, Freyr's Defense +1, all other heroes Defense +1.",
+					"cost": {
+						"gold": 2000,
+						"wood": 5,
+						"ore": 5
+					},
+					"requires": [
+						"mageGuild1"
+					],
+					"configuration": {
+						"visitMode": "hero",
+						"rewards": [
+							{
+								"limiter": {
+									"heroClasses": [
+										"aomNorThorClass"
+									]
+								},
+								"message": "You make an offering before Thor's statue, and the god of thunder grants you strength. (+1 Attack)",
+								"primary": {
+									"attack": 1
+								}
+							},
+							{
+								"limiter": {
+									"heroClasses": [
+										"aomNorOdinClass"
+									]
+								},
+								"message": "You make an offering before Odin's statue, and the All-Father grants you wisdom. (+1 Knowledge)",
+								"primary": {
+									"knowledge": 1
+								}
+							},
+							{
+								"limiter": {
+									"heroClasses": [
+										"aomNorLokiClass"
+									]
+								},
+								"message": "You make an offering before Loki's statue, and the god of trickery grants you power. (+1 Spell Power)",
+								"primary": {
+									"spellpower": 1
+								}
+							},
+							{
+								"limiter": {
+									"heroClasses": [
+										"aomNorFreyrClass"
+									]
+								},
+								"message": "You make an offering before Freyr's statue, and the god of plenty grants you protection. (+1 Defense)",
+								"primary": {
+									"defence": 1
+								}
+							},
+							{
+								"limiter": {
+									"noneOf": [
+										{
+											"heroClasses": [
+												"aomNorThorClass",
+												"aomNorOdinClass",
+												"aomNorLokiClass",
+												"aomNorFreyrClass"
+											]
+										}
+									]
+								},
+								"message": "The gods of the north do not know you, but the temple's wooden walls put you at ease. (+1 Defense)",
+								"primary": {
+									"defence": 1
+								}
+							}
+						]
+					}
+				},
+				"special2": {
+					"name": "Gjallarhorn",
+					"description": "Heimdall's horn increases the town's scouting radius by 15.\nIn sieges the garrison gets Morale +1, and Norse heroes start the battle with half a step of souls stored.",
+					"cost": {
+						"gold": 2000,
+						"wood": 5,
+						"crystal": 5
+					},
+					"requires": [
+						"fort"
+					],
+					"bonuses": [
+						{
+							"type": "SIGHT_RADIUS",
+							"val": 15
+						},
+						{
+							"type": "MORALE",
+							"val": 1
+						},
+						{
+							"type": "AOM_NOR_HORN",
+							"val": 50,
+							"valueType": "BASE_NUMBER",
+							"stacking": "aomNorHorn"
+						}
+					]
+				},
+				"horde2": {
+					"name": "Valhalla",
+					"description": "In sieges, Norse heroes need only half the souls to recall Einherjar.\nThe first hero to visit each week gains 500 experience.",
+					"cost": {
+						"gold": 3000,
+						"wood": 10,
+						"crystal": 5
+					},
+					"requires": [
+						"dwellingLvl5"
+					],
+					"bonuses": [
+						{
+							"type": "AOM_NOR_VALHALLA",
+							"val": 50,
+							"valueType": "BASE_NUMBER",
+							"stacking": "aomNorValhalla"
+						}
+					],
+					"configuration": {
+						"visitMode": "once",
+						"resetParameters": {
+							"days": 7,
+							"visitors": true,
+							"rewards": true
+						},
+						"onVisitedMessage": "The fallen have already told their battles to another hero this week.",
+						"rewards": [
+							{
+								"message": "The fallen gather round the long table and tell of their last battle; you learn much from them. (+500 experience)",
+								"heroExperience": 500
+							}
+						]
+					}
+				},
+				"horde2Upgr": {
+					"name": "Jotun Altar",
+					"description": "An altar for giants' hearts. A hero carrying a giant's heart into town offers it automatically, and the kingdom gains a permanent upgrade: Mountain Giant Heart - level 1-4 dwellings in Norse towns +1 growth; Rock Giant Heart - troops defending a Norse town with a Fort get Defense +2; Frost Giant Heart - Norse troops take 25% less water spell damage, Norse heroes' water spells +10%; Fire Giant Heart - Norse troops Attack +1, Norse heroes' fire spells +10%. Once all four are offered, level 5-7 dwellings in Norse towns get +1 growth more.",
+					"cost": {
+						"gold": 2000,
+						"ore": 10
+					},
+					"requires": [
+						"fort"
+					],
+					"mode": "normal",
+					"configuration": {
+						"visitMode": "unlimited",
+						"selectMode": "selectAll",
+						"rewards": [
+							{
+								"message": "You lay the Mountain Giant Heart on the Jotun Altar. One by one its runes light up, and the giant's strength flows into your kingdom: level 1-4 dwellings in Norse towns +1 weekly growth.",
+								"limiter": {
+									"artifacts": [
+										{
+											"type": "aomNorHeartMountain"
+										}
+									]
+								},
+								"takenArtifacts": [
+									"aomNorHeartMountain"
+								],
+								"playerBonuses": [
+									{
+										"type": "CREATURE_GROWTH",
+										"val": 1,
+										"subtype": "creatureLevel1",
+										"limiters": [
+											{
+												"type": "FACTION_LIMITER",
+												"faction": "aomNorse"
+											}
+										],
+										"stacking": "aomNorHeartMountain1"
+									},
+									{
+										"type": "CREATURE_GROWTH",
+										"val": 1,
+										"subtype": "creatureLevel2",
+										"limiters": [
+											{
+												"type": "FACTION_LIMITER",
+												"faction": "aomNorse"
+											}
+										],
+										"stacking": "aomNorHeartMountain2"
+									},
+									{
+										"type": "CREATURE_GROWTH",
+										"val": 1,
+										"subtype": "creatureLevel3",
+										"limiters": [
+											{
+												"type": "FACTION_LIMITER",
+												"faction": "aomNorse"
+											}
+										],
+										"stacking": "aomNorHeartMountain3"
+									},
+									{
+										"type": "CREATURE_GROWTH",
+										"val": 1,
+										"subtype": "creatureLevel4",
+										"limiters": [
+											{
+												"type": "FACTION_LIMITER",
+												"faction": "aomNorse"
+											}
+										],
+										"stacking": "aomNorHeartMountain4"
+									},
+									{
+										"type": "AOM_NOR_HEART_MOUNTAIN",
+										"val": 1,
+										"stacking": "aomNorHeartMarkMountain"
+									},
+									{
+										"type": "CREATURE_GROWTH",
+										"val": 1,
+										"subtype": "creatureLevel5",
+										"limiters": [
+											"allOf",
+											{
+												"type": "FACTION_LIMITER",
+												"faction": "aomNorse"
+											},
+											{
+												"type": "HAS_ANOTHER_BONUS_LIMITER",
+												"bonusType": "AOM_NOR_HEART_MOUNTAIN"
+											},
+											{
+												"type": "HAS_ANOTHER_BONUS_LIMITER",
+												"bonusType": "AOM_NOR_HEART_ROCK"
+											},
+											{
+												"type": "HAS_ANOTHER_BONUS_LIMITER",
+												"bonusType": "AOM_NOR_HEART_FROST"
+											},
+											{
+												"type": "HAS_ANOTHER_BONUS_LIMITER",
+												"bonusType": "AOM_NOR_HEART_FIRE"
+											}
+										],
+										"stacking": "aomNorRagnarokPrize"
+									},
+									{
+										"type": "CREATURE_GROWTH",
+										"val": 1,
+										"subtype": "creatureLevel6",
+										"limiters": [
+											"allOf",
+											{
+												"type": "FACTION_LIMITER",
+												"faction": "aomNorse"
+											},
+											{
+												"type": "HAS_ANOTHER_BONUS_LIMITER",
+												"bonusType": "AOM_NOR_HEART_MOUNTAIN"
+											},
+											{
+												"type": "HAS_ANOTHER_BONUS_LIMITER",
+												"bonusType": "AOM_NOR_HEART_ROCK"
+											},
+											{
+												"type": "HAS_ANOTHER_BONUS_LIMITER",
+												"bonusType": "AOM_NOR_HEART_FROST"
+											},
+											{
+												"type": "HAS_ANOTHER_BONUS_LIMITER",
+												"bonusType": "AOM_NOR_HEART_FIRE"
+											}
+										],
+										"stacking": "aomNorRagnarokPrize"
+									},
+									{
+										"type": "CREATURE_GROWTH",
+										"val": 1,
+										"subtype": "creatureLevel7",
+										"limiters": [
+											"allOf",
+											{
+												"type": "FACTION_LIMITER",
+												"faction": "aomNorse"
+											},
+											{
+												"type": "HAS_ANOTHER_BONUS_LIMITER",
+												"bonusType": "AOM_NOR_HEART_MOUNTAIN"
+											},
+											{
+												"type": "HAS_ANOTHER_BONUS_LIMITER",
+												"bonusType": "AOM_NOR_HEART_ROCK"
+											},
+											{
+												"type": "HAS_ANOTHER_BONUS_LIMITER",
+												"bonusType": "AOM_NOR_HEART_FROST"
+											},
+											{
+												"type": "HAS_ANOTHER_BONUS_LIMITER",
+												"bonusType": "AOM_NOR_HEART_FIRE"
+											}
+										],
+										"stacking": "aomNorRagnarokPrize"
+									},
+									{
+										"type": "CREATURE_GROWTH",
+										"val": 1,
+										// Dwelling no. 8 (Titan): the engine only registers creatureLevel1-7, so the built-in subtype name with the same value 8 is used here
+										"subtype": "combatEventAfterMove",
+										"limiters": [
+											"allOf",
+											{
+												"type": "FACTION_LIMITER",
+												"faction": "aomNorse"
+											},
+											{
+												"type": "HAS_ANOTHER_BONUS_LIMITER",
+												"bonusType": "AOM_NOR_HEART_MOUNTAIN"
+											},
+											{
+												"type": "HAS_ANOTHER_BONUS_LIMITER",
+												"bonusType": "AOM_NOR_HEART_ROCK"
+											},
+											{
+												"type": "HAS_ANOTHER_BONUS_LIMITER",
+												"bonusType": "AOM_NOR_HEART_FROST"
+											},
+											{
+												"type": "HAS_ANOTHER_BONUS_LIMITER",
+												"bonusType": "AOM_NOR_HEART_FIRE"
+											}
+										],
+										"stacking": "aomNorRagnarokPrize"
+									}
+								]
+							},
+							{
+								"message": "You lay the Rock Giant Heart on the Jotun Altar. One by one its runes light up, and the giant's strength flows into your kingdom: troops defending a Norse town (with a Fort) get Defense +2.",
+								"limiter": {
+									"artifacts": [
+										{
+											"type": "aomNorHeartRock"
+										}
+									]
+								},
+								"takenArtifacts": [
+									"aomNorHeartRock"
+								],
+								"playerBonuses": [
+									{
+										"type": "AOM_NOR_HEART_ROCK",
+										"val": 1,
+										"stacking": "aomNorHeartMarkRock"
+									},
+									{
+										"type": "CREATURE_GROWTH",
+										"val": 1,
+										"subtype": "creatureLevel5",
+										"limiters": [
+											"allOf",
+											{
+												"type": "FACTION_LIMITER",
+												"faction": "aomNorse"
+											},
+											{
+												"type": "HAS_ANOTHER_BONUS_LIMITER",
+												"bonusType": "AOM_NOR_HEART_MOUNTAIN"
+											},
+											{
+												"type": "HAS_ANOTHER_BONUS_LIMITER",
+												"bonusType": "AOM_NOR_HEART_ROCK"
+											},
+											{
+												"type": "HAS_ANOTHER_BONUS_LIMITER",
+												"bonusType": "AOM_NOR_HEART_FROST"
+											},
+											{
+												"type": "HAS_ANOTHER_BONUS_LIMITER",
+												"bonusType": "AOM_NOR_HEART_FIRE"
+											}
+										],
+										"stacking": "aomNorRagnarokPrize"
+									},
+									{
+										"type": "CREATURE_GROWTH",
+										"val": 1,
+										"subtype": "creatureLevel6",
+										"limiters": [
+											"allOf",
+											{
+												"type": "FACTION_LIMITER",
+												"faction": "aomNorse"
+											},
+											{
+												"type": "HAS_ANOTHER_BONUS_LIMITER",
+												"bonusType": "AOM_NOR_HEART_MOUNTAIN"
+											},
+											{
+												"type": "HAS_ANOTHER_BONUS_LIMITER",
+												"bonusType": "AOM_NOR_HEART_ROCK"
+											},
+											{
+												"type": "HAS_ANOTHER_BONUS_LIMITER",
+												"bonusType": "AOM_NOR_HEART_FROST"
+											},
+											{
+												"type": "HAS_ANOTHER_BONUS_LIMITER",
+												"bonusType": "AOM_NOR_HEART_FIRE"
+											}
+										],
+										"stacking": "aomNorRagnarokPrize"
+									},
+									{
+										"type": "CREATURE_GROWTH",
+										"val": 1,
+										"subtype": "creatureLevel7",
+										"limiters": [
+											"allOf",
+											{
+												"type": "FACTION_LIMITER",
+												"faction": "aomNorse"
+											},
+											{
+												"type": "HAS_ANOTHER_BONUS_LIMITER",
+												"bonusType": "AOM_NOR_HEART_MOUNTAIN"
+											},
+											{
+												"type": "HAS_ANOTHER_BONUS_LIMITER",
+												"bonusType": "AOM_NOR_HEART_ROCK"
+											},
+											{
+												"type": "HAS_ANOTHER_BONUS_LIMITER",
+												"bonusType": "AOM_NOR_HEART_FROST"
+											},
+											{
+												"type": "HAS_ANOTHER_BONUS_LIMITER",
+												"bonusType": "AOM_NOR_HEART_FIRE"
+											}
+										],
+										"stacking": "aomNorRagnarokPrize"
+									},
+									{
+										"type": "CREATURE_GROWTH",
+										"val": 1,
+										// Dwelling no. 8 (Titan): the engine only registers creatureLevel1-7, so the built-in subtype name with the same value 8 is used here
+										"subtype": "combatEventAfterMove",
+										"limiters": [
+											"allOf",
+											{
+												"type": "FACTION_LIMITER",
+												"faction": "aomNorse"
+											},
+											{
+												"type": "HAS_ANOTHER_BONUS_LIMITER",
+												"bonusType": "AOM_NOR_HEART_MOUNTAIN"
+											},
+											{
+												"type": "HAS_ANOTHER_BONUS_LIMITER",
+												"bonusType": "AOM_NOR_HEART_ROCK"
+											},
+											{
+												"type": "HAS_ANOTHER_BONUS_LIMITER",
+												"bonusType": "AOM_NOR_HEART_FROST"
+											},
+											{
+												"type": "HAS_ANOTHER_BONUS_LIMITER",
+												"bonusType": "AOM_NOR_HEART_FIRE"
+											}
+										],
+										"stacking": "aomNorRagnarokPrize"
+									}
+								]
+							},
+							{
+								"message": "You lay the Frost Giant Heart on the Jotun Altar. One by one its runes light up, and the giant's strength flows into your kingdom: Norse troops take 25% less water spell damage, and Norse heroes' water spells deal +10% damage.",
+								"limiter": {
+									"artifacts": [
+										{
+											"type": "aomNorHeartFrost"
+										}
+									]
+								},
+								"takenArtifacts": [
+									"aomNorHeartFrost"
+								],
+								"playerBonuses": [
+									{
+										"type": "SPELL_DAMAGE_REDUCTION",
+										"val": 25,
+										"subtype": "water",
+										"limiters": [
+											"allOf",
+											"CREATURES_ONLY",
+											{
+												"type": "FACTION_LIMITER",
+												"faction": "aomNorse"
+											}
+										],
+										"stacking": "aomNorHeartFrost"
+									},
+									{
+										"type": "SPELL_DAMAGE",
+										"val": 10,
+										"subtype": "water",
+										"limiters": [
+											{
+												"type": "FACTION_LIMITER",
+												"faction": "aomNorse"
+											}
+										],
+										"stacking": "aomNorHeartFrostH"
+									},
+									{
+										"type": "AOM_NOR_HEART_FROST",
+										"val": 1,
+										"stacking": "aomNorHeartMarkFrost"
+									},
+									{
+										"type": "CREATURE_GROWTH",
+										"val": 1,
+										"subtype": "creatureLevel5",
+										"limiters": [
+											"allOf",
+											{
+												"type": "FACTION_LIMITER",
+												"faction": "aomNorse"
+											},
+											{
+												"type": "HAS_ANOTHER_BONUS_LIMITER",
+												"bonusType": "AOM_NOR_HEART_MOUNTAIN"
+											},
+											{
+												"type": "HAS_ANOTHER_BONUS_LIMITER",
+												"bonusType": "AOM_NOR_HEART_ROCK"
+											},
+											{
+												"type": "HAS_ANOTHER_BONUS_LIMITER",
+												"bonusType": "AOM_NOR_HEART_FROST"
+											},
+											{
+												"type": "HAS_ANOTHER_BONUS_LIMITER",
+												"bonusType": "AOM_NOR_HEART_FIRE"
+											}
+										],
+										"stacking": "aomNorRagnarokPrize"
+									},
+									{
+										"type": "CREATURE_GROWTH",
+										"val": 1,
+										"subtype": "creatureLevel6",
+										"limiters": [
+											"allOf",
+											{
+												"type": "FACTION_LIMITER",
+												"faction": "aomNorse"
+											},
+											{
+												"type": "HAS_ANOTHER_BONUS_LIMITER",
+												"bonusType": "AOM_NOR_HEART_MOUNTAIN"
+											},
+											{
+												"type": "HAS_ANOTHER_BONUS_LIMITER",
+												"bonusType": "AOM_NOR_HEART_ROCK"
+											},
+											{
+												"type": "HAS_ANOTHER_BONUS_LIMITER",
+												"bonusType": "AOM_NOR_HEART_FROST"
+											},
+											{
+												"type": "HAS_ANOTHER_BONUS_LIMITER",
+												"bonusType": "AOM_NOR_HEART_FIRE"
+											}
+										],
+										"stacking": "aomNorRagnarokPrize"
+									},
+									{
+										"type": "CREATURE_GROWTH",
+										"val": 1,
+										"subtype": "creatureLevel7",
+										"limiters": [
+											"allOf",
+											{
+												"type": "FACTION_LIMITER",
+												"faction": "aomNorse"
+											},
+											{
+												"type": "HAS_ANOTHER_BONUS_LIMITER",
+												"bonusType": "AOM_NOR_HEART_MOUNTAIN"
+											},
+											{
+												"type": "HAS_ANOTHER_BONUS_LIMITER",
+												"bonusType": "AOM_NOR_HEART_ROCK"
+											},
+											{
+												"type": "HAS_ANOTHER_BONUS_LIMITER",
+												"bonusType": "AOM_NOR_HEART_FROST"
+											},
+											{
+												"type": "HAS_ANOTHER_BONUS_LIMITER",
+												"bonusType": "AOM_NOR_HEART_FIRE"
+											}
+										],
+										"stacking": "aomNorRagnarokPrize"
+									},
+									{
+										"type": "CREATURE_GROWTH",
+										"val": 1,
+										// Dwelling no. 8 (Titan): the engine only registers creatureLevel1-7, so the built-in subtype name with the same value 8 is used here
+										"subtype": "combatEventAfterMove",
+										"limiters": [
+											"allOf",
+											{
+												"type": "FACTION_LIMITER",
+												"faction": "aomNorse"
+											},
+											{
+												"type": "HAS_ANOTHER_BONUS_LIMITER",
+												"bonusType": "AOM_NOR_HEART_MOUNTAIN"
+											},
+											{
+												"type": "HAS_ANOTHER_BONUS_LIMITER",
+												"bonusType": "AOM_NOR_HEART_ROCK"
+											},
+											{
+												"type": "HAS_ANOTHER_BONUS_LIMITER",
+												"bonusType": "AOM_NOR_HEART_FROST"
+											},
+											{
+												"type": "HAS_ANOTHER_BONUS_LIMITER",
+												"bonusType": "AOM_NOR_HEART_FIRE"
+											}
+										],
+										"stacking": "aomNorRagnarokPrize"
+									}
+								]
+							},
+							{
+								"message": "You lay the Fire Giant Heart on the Jotun Altar. One by one its runes light up, and the giant's strength flows into your kingdom: Norse troops Attack +1, and Norse heroes' fire spells deal +10% damage.",
+								"limiter": {
+									"artifacts": [
+										{
+											"type": "aomNorHeartFire"
+										}
+									]
+								},
+								"takenArtifacts": [
+									"aomNorHeartFire"
+								],
+								"playerBonuses": [
+									{
+										"type": "PRIMARY_SKILL",
+										"val": 1,
+										"subtype": "attack",
+										"limiters": [
+											"allOf",
+											"CREATURES_ONLY",
+											{
+												"type": "FACTION_LIMITER",
+												"faction": "aomNorse"
+											}
+										],
+										"stacking": "aomNorHeartFire"
+									},
+									{
+										"type": "SPELL_DAMAGE",
+										"val": 10,
+										"subtype": "fire",
+										"limiters": [
+											{
+												"type": "FACTION_LIMITER",
+												"faction": "aomNorse"
+											}
+										],
+										"stacking": "aomNorHeartFireH"
+									},
+									{
+										"type": "AOM_NOR_HEART_FIRE",
+										"val": 1,
+										"stacking": "aomNorHeartMarkFire"
+									},
+									{
+										"type": "CREATURE_GROWTH",
+										"val": 1,
+										"subtype": "creatureLevel5",
+										"limiters": [
+											"allOf",
+											{
+												"type": "FACTION_LIMITER",
+												"faction": "aomNorse"
+											},
+											{
+												"type": "HAS_ANOTHER_BONUS_LIMITER",
+												"bonusType": "AOM_NOR_HEART_MOUNTAIN"
+											},
+											{
+												"type": "HAS_ANOTHER_BONUS_LIMITER",
+												"bonusType": "AOM_NOR_HEART_ROCK"
+											},
+											{
+												"type": "HAS_ANOTHER_BONUS_LIMITER",
+												"bonusType": "AOM_NOR_HEART_FROST"
+											},
+											{
+												"type": "HAS_ANOTHER_BONUS_LIMITER",
+												"bonusType": "AOM_NOR_HEART_FIRE"
+											}
+										],
+										"stacking": "aomNorRagnarokPrize"
+									},
+									{
+										"type": "CREATURE_GROWTH",
+										"val": 1,
+										"subtype": "creatureLevel6",
+										"limiters": [
+											"allOf",
+											{
+												"type": "FACTION_LIMITER",
+												"faction": "aomNorse"
+											},
+											{
+												"type": "HAS_ANOTHER_BONUS_LIMITER",
+												"bonusType": "AOM_NOR_HEART_MOUNTAIN"
+											},
+											{
+												"type": "HAS_ANOTHER_BONUS_LIMITER",
+												"bonusType": "AOM_NOR_HEART_ROCK"
+											},
+											{
+												"type": "HAS_ANOTHER_BONUS_LIMITER",
+												"bonusType": "AOM_NOR_HEART_FROST"
+											},
+											{
+												"type": "HAS_ANOTHER_BONUS_LIMITER",
+												"bonusType": "AOM_NOR_HEART_FIRE"
+											}
+										],
+										"stacking": "aomNorRagnarokPrize"
+									},
+									{
+										"type": "CREATURE_GROWTH",
+										"val": 1,
+										"subtype": "creatureLevel7",
+										"limiters": [
+											"allOf",
+											{
+												"type": "FACTION_LIMITER",
+												"faction": "aomNorse"
+											},
+											{
+												"type": "HAS_ANOTHER_BONUS_LIMITER",
+												"bonusType": "AOM_NOR_HEART_MOUNTAIN"
+											},
+											{
+												"type": "HAS_ANOTHER_BONUS_LIMITER",
+												"bonusType": "AOM_NOR_HEART_ROCK"
+											},
+											{
+												"type": "HAS_ANOTHER_BONUS_LIMITER",
+												"bonusType": "AOM_NOR_HEART_FROST"
+											},
+											{
+												"type": "HAS_ANOTHER_BONUS_LIMITER",
+												"bonusType": "AOM_NOR_HEART_FIRE"
+											}
+										],
+										"stacking": "aomNorRagnarokPrize"
+									},
+									{
+										"type": "CREATURE_GROWTH",
+										"val": 1,
+										// Dwelling no. 8 (Titan): the engine only registers creatureLevel1-7, so the built-in subtype name with the same value 8 is used here
+										"subtype": "combatEventAfterMove",
+										"limiters": [
+											"allOf",
+											{
+												"type": "FACTION_LIMITER",
+												"faction": "aomNorse"
+											},
+											{
+												"type": "HAS_ANOTHER_BONUS_LIMITER",
+												"bonusType": "AOM_NOR_HEART_MOUNTAIN"
+											},
+											{
+												"type": "HAS_ANOTHER_BONUS_LIMITER",
+												"bonusType": "AOM_NOR_HEART_ROCK"
+											},
+											{
+												"type": "HAS_ANOTHER_BONUS_LIMITER",
+												"bonusType": "AOM_NOR_HEART_FROST"
+											},
+											{
+												"type": "HAS_ANOTHER_BONUS_LIMITER",
+												"bonusType": "AOM_NOR_HEART_FIRE"
+											}
+										],
+										"stacking": "aomNorRagnarokPrize"
+									}
+								]
+							}
+						]
+					}
+				},
+				"horde2Upgr2": {
+					"name": "Dwarven Armory",
+					"description": "The Dwarven Armory builds 2 Battering Rams each week, at 900 gold each, for visiting heroes to buy.",
+					"cost": {
+						"gold": 2000,
+						"wood": 5,
+						"ore": 5
+					},
+					"requires": [
+						"blacksmith"
+					],
+					"mode": "normal",
+					"configuration": {
+						"visitMode": "once",
+						"resetParameters": {
+							"days": 7,
+							"visitors": true,
+							"rewards": true
+						},
+						"selectMode": "selectPlayer",
+						"onSelectMessage": "The dwarven smiths have built 2 Battering Rams this week, at 900 gold each. How many will you buy?",
+						"onVisitedMessage": "This week's rams are sold out. Come back next week.",
+						"onEmptyMessage": "You lack the gold, or there is no free slot in your army.",
+						"rewards": [
+							{
+								"limiter": {
+									"resources": {
+										"gold": 900
+									},
+									"canReceiveCreatures": [
+										{
+											"type": "aomNorRam",
+											"amount": 1
+										}
+									]
+								},
+								"resources": {
+									"gold": -900
+								},
+								"creatures": [
+									{
+										"type": "aomNorRam",
+										"amount": 1
+									}
+								],
+								"message": "The dwarven smiths hand you 1 Battering Ram."
+							},
+							{
+								"limiter": {
+									"resources": {
+										"gold": 1800
+									},
+									"canReceiveCreatures": [
+										{
+											"type": "aomNorRam",
+											"amount": 2
+										}
+									]
+								},
+								"resources": {
+									"gold": -1800
+								},
+								"creatures": [
+									{
+										"type": "aomNorRam",
+										"amount": 2
+									}
+								],
+								"message": "The dwarven smiths hand you 2 Battering Rams."
+							}
+						]
+					}
+				},
+				"grail": {
+					"name": "Yggdrasil",
+					"description": "Yggdrasil increases the town's income by 5000 gold per day and creature growth by 50%.\nRoots of the Nine Worlds: when any of your Norse heroes enters battle, the Big Dipper lights 2 more stars, and souls +25%.\nA hero of a Norse class who visits this town learns {Gate of the Nine Worlds}: once cast in battle, the Mountain, Rock, Frost and Fire Giants descend to your side one after another over four rounds.",
+					"bonuses": [
+						{
+							"type": "AOM_NOR_STAR_BONUS",
+							"val": 2,
+							"valueType": "BASE_NUMBER",
+							"propagator": "PLAYER",
+							"stacking": "aomNorYggStars"
+						},
+						{
+							"type": "AOM_NOR_SOUL_BONUS",
+							"val": 25,
+							"valueType": "BASE_NUMBER",
+							"propagator": "PLAYER",
+							"stacking": "aomNorYggSouls"
+						}
+					],
+					"configuration": {
+						"visitMode": "hero",
+						"rewards": [
+							{
+								"limiter": {
+									"heroClasses": [
+										"aomNorThorClass",
+										"aomNorOdinClass",
+										"aomNorLokiClass",
+										"aomNorFreyrClass"
+									]
+								},
+								"message": "A gate glows among the roots of Yggdrasil, and beyond it lie the nine worlds. You commit the runes on the gate to memory, and can now open it on the battlefield. (Learned Gate of the Nine Worlds)",
+								"bonuses": [
+									{
+										"type": "SPELL",
+										"subtype": "aomNorNineRealms",
+										"val": 0,
+										"duration": "PERMANENT",
+										"addInfo": true
+									}
+								]
+							},
+							{
+								"limiter": {
+									"noneOf": [
+										{
+											"heroClasses": [
+												"aomNorThorClass",
+												"aomNorOdinClass",
+												"aomNorLokiClass",
+												"aomNorFreyrClass"
+											]
+										}
+									]
+								},
+								"message": "The shadow of a gate lies among the roots of Yggdrasil, but you cannot read the runes on it. Only a Norse hero can open it."
+							}
+						]
+					}
+				},
+				"horde1": {
+					"name": "Mead Hall",
+					"description": "The Mead Hall increases the weekly growth of Viking Berserkers, Bearskin Berserkers and Wolfskin Warriors by 6.",
+					"cost": {
+						"gold": 1000
+					},
+					"upgrades": "dwellingLvl1"
+				},
+				"horde1Upgr": {
+					"name": "Mead Hall",
+					"description": "The Mead Hall increases the weekly growth of Viking Berserkers, Bearskin Berserkers and Wolfskin Warriors by 6.",
+					"cost": {
+						"gold": 1000
+					},
+					"upgrades": "dwellingUp2Lvl1",
+					"requires": [
+						"horde1"
+					],
+					"mode": "auto"
+				},
+				"extraCapitol": {
+					"name": "Archaic Age",
+					"description": "A Norse town starts in the Archaic Age. When every building of an age is built, the town moves on to the next age automatically.\nThe next age is the {Classical Age}: needs Tavern, Fort, Marketplace, Berserker Lodge and Axe Range.",
+					"mode": "auto",
+					"cost": {},
+					"requires": [
+						"villageHall"
+					]
+				},
+				"special3": {
+					"name": "Classical Age",
+					"description": "Reached automatically when all of this age's buildings are built.\nLevel 1-2 creature growth +2 per week.\nThe next age is the {Heroic Age}: needs Town Hall, Mage Guild Level 2, Citadel, Blacksmith, Troll Cave and Wolf Den.",
+					"mode": "auto",
+					"cost": {},
+					"upgrades": "extraCapitol",
+					"requires": [
+						"allOf",
+						[
+							"tavern"
+						],
+						[
+							"fort"
+						],
+						[
+							"marketplace"
+						],
+						[
+							"dwellingLvl1"
+						],
+						[
+							"dwellingLvl2"
+						]
+					],
+					"bonuses": [
+						{
+							"type": "CREATURE_GROWTH",
+							"subtype": "creatureLevel1",
+							"val": 2
+						},
+						{
+							"type": "CREATURE_GROWTH",
+							"subtype": "creatureLevel2",
+							"val": 2
+						}
+					],
+					"configuration": {
+						"visitMode": "once",
+						"rewards": [
+							{
+								"message": "This town has entered the {Classical Age}.\n\nLevel 1-2 creature growth +2 per week."
+							}
+						]
+					}
+				},
+				"special4": {
+					"name": "Heroic Age",
+					"description": "Reached automatically when all of this age's buildings are built.\nLevel 1-2 creature growth +3 per week, level 3-4 +1.\nYour troops gain +20% stack experience (counted once however many towns).\nThe next age is the {Mythic Age}: needs City Hall, Mage Guild Level 3, Castle, Temple of the Gods, Valkyrie Hall, and Kraken Fjord or Fafnir Hoard.",
+					"mode": "auto",
+					"cost": {},
+					"upgrades": "special3",
+					"requires": [
+						"allOf",
+						[
+							"townHall"
+						],
+						[
+							"mageGuild2"
+						],
+						[
+							"citadel"
+						],
+						[
+							"blacksmith"
+						],
+						[
+							"dwellingLvl3"
+						],
+						[
+							"dwellingLvl4"
+						]
+					],
+					"bonuses": [
+						{
+							"type": "CREATURE_GROWTH",
+							"subtype": "creatureLevel1",
+							"val": 3
+						},
+						{
+							"type": "CREATURE_GROWTH",
+							"subtype": "creatureLevel2",
+							"val": 3
+						},
+						{
+							"type": "CREATURE_GROWTH",
+							"subtype": "creatureLevel3",
+							"val": 1
+						},
+						{
+							"type": "CREATURE_GROWTH",
+							"subtype": "creatureLevel4",
+							"val": 1
+						},
+						{
+							"type": "STACK_EXPERIENCE_GAIN_PERCENT",
+							"val": 20,
+							"propagator": "PLAYER",
+							"stacking": "aomNorHeroicAge"
+						}
+					],
+					"configuration": {
+						"visitMode": "once",
+						"rewards": [
+							{
+								"message": "This town has entered the {Heroic Age}.\n\nLevel 1-2 creature growth +3 per week, level 3-4 +1.\nYour troops gain +20% stack experience (counted once however many towns)."
+							}
+						]
+					},
+					"upgradeReplacesBonuses": true
+				},
+				"extraTownHall": {
+					"name": "Mythic Age",
+					"description": "Reached automatically when all of this age's buildings are built.\nLevel 1-2 creature growth +3 per week, level 3-4 +2.\nYour troops gain +20% stack experience (counted once however many towns).\nIn sieges, Norse heroes gain +10% souls.\nThe next age is the {Wonder Age}: needs Capitol, Mage Guild Level 5, Gjallarhorn, Resource Silo and Ginnungagap Gate.",
+					"mode": "auto",
+					"cost": {},
+					"upgrades": "special4",
+					"requires": [
+						"allOf",
+						[
+							"cityHall"
+						],
+						[
+							"mageGuild3"
+						],
+						[
+							"castle"
+						],
+						[
+							"special1"
+						],
+						[
+							"dwellingLvl5"
+						],
+						[
+							"anyOf",
+							[
+								"dwellingLvl6"
+							],
+							[
+								"dwellingLvl7"
+							]
+						]
+					],
+					"bonuses": [
+						{
+							"type": "CREATURE_GROWTH",
+							"subtype": "creatureLevel1",
+							"val": 3
+						},
+						{
+							"type": "CREATURE_GROWTH",
+							"subtype": "creatureLevel2",
+							"val": 3
+						},
+						{
+							"type": "CREATURE_GROWTH",
+							"subtype": "creatureLevel3",
+							"val": 2
+						},
+						{
+							"type": "CREATURE_GROWTH",
+							"subtype": "creatureLevel4",
+							"val": 2
+						},
+						{
+							"type": "STACK_EXPERIENCE_GAIN_PERCENT",
+							"val": 20,
+							"propagator": "PLAYER",
+							"stacking": "aomNorHeroicAge"
+						},
+						{
+							"type": "AOM_NOR_SOUL_BONUS",
+							"val": 10,
+							"valueType": "BASE_NUMBER",
+							"stacking": "aomNorAgeSouls"
+						}
+					],
+					"configuration": {
+						"visitMode": "once",
+						"rewards": [
+							{
+								"message": "This town has entered the {Mythic Age}.\n\nLevel 1-2 creature growth +3 per week, level 3-4 +2.\nYour troops gain +20% stack experience (counted once however many towns).\nIn sieges, Norse heroes gain +10% souls."
+							}
+						]
+					},
+					"upgradeReplacesBonuses": true
+				},
+				"extraCityHall": {
+					"name": "Wonder Age",
+					"description": "Reached automatically when all of this age's buildings are built.\nLevel 1-2 creature growth +3 per week, level 3-4 +2, level 5-6 +1.\nYour troops gain +20% stack experience (counted once however many towns).\nIn sieges, Norse heroes gain +10% souls and defending troops +10% health.",
+					"mode": "auto",
+					"cost": {},
+					"upgrades": "extraTownHall",
+					"requires": [
+						"allOf",
+						[
+							"capitol"
+						],
+						[
+							"mageGuild5"
+						],
+						[
+							"special2"
+						],
+						[
+							"resourceSilo"
+						],
+						[
+							"dwellingLvl8"
+						]
+					],
+					"bonuses": [
+						{
+							"type": "CREATURE_GROWTH",
+							"subtype": "creatureLevel1",
+							"val": 3
+						},
+						{
+							"type": "CREATURE_GROWTH",
+							"subtype": "creatureLevel2",
+							"val": 3
+						},
+						{
+							"type": "CREATURE_GROWTH",
+							"subtype": "creatureLevel3",
+							"val": 2
+						},
+						{
+							"type": "CREATURE_GROWTH",
+							"subtype": "creatureLevel4",
+							"val": 2
+						},
+						{
+							"type": "CREATURE_GROWTH",
+							"subtype": "creatureLevel5",
+							"val": 1
+						},
+						{
+							"type": "CREATURE_GROWTH",
+							"subtype": "creatureLevel6",
+							"val": 1
+						},
+						{
+							"type": "CREATURE_GROWTH",
+							"subtype": "creatureLevel7",
+							"val": 1
+						},
+						{
+							"type": "STACK_EXPERIENCE_GAIN_PERCENT",
+							"val": 20,
+							"propagator": "PLAYER",
+							"stacking": "aomNorHeroicAge"
+						},
+						{
+							"type": "AOM_NOR_SOUL_BONUS",
+							"val": 10,
+							"valueType": "BASE_NUMBER",
+							"stacking": "aomNorAgeSouls"
+						},
+						{
+							"type": "STACK_HEALTH",
+							"val": 10,
+							"valueType": "PERCENT_TO_BASE"
+						}
+					],
+					"configuration": {
+						"visitMode": "once",
+						"rewards": [
+							{
+								"message": "This town has entered the {Wonder Age}.\n\nLevel 1-2 creature growth +3 per week, level 3-4 +2, level 5-6 +1.\nYour troops gain +20% stack experience (counted once however many towns).\nIn sieges, Norse heroes gain +10% souls and defending troops +10% health."
+							}
+						]
+					},
+					"upgradeReplacesBonuses": true
+				}
+			},
+			"guildSpells": {
+				"summonBoat": 4,
+				"scuttleBoat": 5,
+				"visions": 2,
+				"viewEarth": 3,
+				"disguise": 2,
+				"viewAir": 3,
+				"fly": 11,
+				"waterWalk": 10,
+				"dimensionDoor": 11,
+				"townPortal": 10,
+				"quicksand": 5,
+				"landMine": 8,
+				"forceField": 5,
+				"fireWall": 4,
+				"earthquake": 5,
+				"magicArrow": 30,
+				"iceBolt": 35,
+				"lightningBolt": 19,
+				"implosion": 10,
+				"chainLightning": 10,
+				"frostRing": 16,
+				"fireball": 8,
+				"inferno": 5,
+				"meteorShower": 10,
+				"destroyUndead": 9,
+				"shield": 6,
+				"airShield": 7,
+				"fireShield": 5,
+				"protectAir": 2,
+				"protectFire": 3,
+				"protectWater": 3,
+				"protectEarth": 4,
+				"antiMagic": 9,
+				"dispel": 10,
+				"magicMirror": 10,
+				"cure": 8,
+				"resurrection": 10,
+				"bless": 7,
+				"curse": 1,
+				"precision": 5,
+				"weakness": 2,
+				"stoneSkin": 7,
+				"disruptingRay": 5,
+				"prayer": 7,
+				"mirth": 4,
+				"sorrow": 5,
+				"fortune": 5,
+				"misfortune": 4,
+				"haste": 7,
+				"slow": 8,
+				"slayer": 5,
+				"frenzy": 5,
+				"counterstrike": 7,
+				"berserk": 5,
+				"hypnotize": 5,
+				"forgetfulness": 7,
+				"blind": 4,
+				"teleport": 8,
+				"removeObstacle": 5,
+				"clone": 7,
+				"earthElemental": 10,
+				"waterElemental": 10,
+				"airElemental": 5,
+				"aomNorDwarfArmor": 20,
+				"aomNorGreatHunt": 20,
+				"aomNorSpyEye": 20,
+				"aomNorGoldenBoar": 20,
+				"aomNorForestFire": 20,
+				"aomNorFrost": 20,
+				"aomNorFlameWeapons": 20,
+				"aomNorWalkingWoods": 20,
+				"aomNorTempest": 20,
+				"aomNorNidhogg": 20,
+				"aomNorEinherjar": 20,
+				"aomNorFimbulwinter": 20,
+				"aomNorHealingSpring": 20,
+				"aomNorUndermine": 20,
+				"aomNorBastion": 20,
+				"aomNorInferno": 20
+			},
+			"siege": {
+				"shooter": "aomNorAxeman",
+				"towerIconSmall": "aom/nor/town/icons/tower-small.png",
+				"towerIconLarge": "aom/nor/town/icons/tower-large.png",
+				"imagePrefix": "aom/nor/siege/SgNo",
+				"gate": {
+					"arch": {
+						"x": 477,
+						"y": 238
+					},
+					"gate": {
+						"x": 399,
+						"y": 274
+					}
+				},
+				"moat": {
+					"bank": {
+						"x": 403,
+						"y": 80
+					},
+					"moat": {
+						"x": 410,
+						"y": 90
+					}
+				},
+				"static": {
+					"background": {
+						"x": 600,
+						"y": 49
+					},
+					"bottom": {
+						"x": 512,
+						"y": 347
+					},
+					"top": {
+						"x": 489,
+						"y": 79
+					}
+				},
+				"towers": {
+					"bottom": {
+						"battlement": {
+							"x": 602,
+							"y": 500
+						},
+						"creature": {
+							"x": 394,
+							"y": 299
+						},
+						"tower": {
+							"x": 602,
+							"y": 500
+						}
+					},
+					"keep": {
+						"battlement": {
+							"x": 720,
+							"y": 158
+						},
+						"creature": {
+							"x": 526,
+							"y": -29
+						},
+						"tower": {
+							"x": 720,
+							"y": 158
+						}
+					},
+					"top": {
+						"battlement": {
+							"x": 557,
+							"y": 24
+						},
+						"creature": {
+							"x": 342,
+							"y": -187
+						},
+						"tower": {
+							"x": 569,
+							"y": 35
+						}
+					}
+				},
+				"walls": {
+					"bottom": {
+						"x": 528,
+						"y": 350
+					},
+					"bottomMid": {
+						"x": 469,
+						"y": 291
+					},
+					"upper": {
+						"x": 524,
+						"y": 32
+					},
+					"upperMid": {
+						"x": 470,
+						"y": 127
+					}
+				}
+			},
+			"structures": {
+				"villageHall": {
+					"animation": "aom/nor/town/villageHall.json",
+					"area": "aom/nor/town/area/villageHall.png",
+					"border": "aom/nor/town/border/villageHall.png",
+					"x": 396,
+					"y": 147,
+					"z": 236
+				},
+				"townHall": {
+					"animation": "aom/nor/town/townHall.json",
+					"area": "aom/nor/town/area/townHall.png",
+					"border": "aom/nor/town/border/townHall.png",
+					"x": 363,
+					"y": 128,
+					"z": 236
+				},
+				"cityHall": {
+					"animation": "aom/nor/town/cityHall.json",
+					"area": "aom/nor/town/area/cityHall.png",
+					"border": "aom/nor/town/border/cityHall.png",
+					"x": 356,
+					"y": 106,
+					"z": 236
+				},
+				"capitol": {
+					"animation": "aom/nor/town/capitol.json",
+					"area": "aom/nor/town/area/capitol.png",
+					"border": "aom/nor/town/border/capitol.png",
+					"x": 348,
+					"y": 101,
+					"z": 236
+				},
+				"fort": {
+					"animation": "aom/nor/town/fort.json",
+					"area": "aom/nor/town/area/fort.png",
+					"border": "aom/nor/town/border/fort.png",
+					"x": 336,
+					"y": 18,
+					"z": 130
+				},
+				"citadel": {
+					"animation": "aom/nor/town/citadel.json",
+					"area": "aom/nor/town/area/citadel.png",
+					"border": "aom/nor/town/border/citadel.png",
+					"x": 326,
+					"y": 7,
+					"z": 130
+				},
+				"castle": {
+					"animation": "aom/nor/town/castle.json",
+					"area": "aom/nor/town/area/castle.png",
+					"border": "aom/nor/town/border/castle.png",
+					"x": 315,
+					"y": 0,
+					"z": 130
+				},
+				"tavern": {
+					"animation": "aom/nor/town/tavern.json",
+					"area": "aom/nor/town/area/tavern.png",
+					"border": "aom/nor/town/border/tavern.png",
+					"x": 304,
+					"y": 190,
+					"z": 252
+				},
+				"blacksmith": {
+					"animation": "aom/nor/town/blacksmith.json",
+					"area": "aom/nor/town/area/blacksmith.png",
+					"border": "aom/nor/town/border/blacksmith.png",
+					"x": 565,
+					"y": 169,
+					"z": 236
+				},
+				"marketplace": {
+					"animation": "aom/nor/town/marketplace.json",
+					"area": "aom/nor/town/area/marketplace.png",
+					"border": "aom/nor/town/border/marketplace.png",
+					"x": 672,
+					"y": 148,
+					"z": 212
+				},
+				"resourceSilo": {
+					"animation": "aom/nor/town/resourceSilo.json",
+					"area": "aom/nor/town/area/resourceSilo.png",
+					"border": "aom/nor/town/border/resourceSilo.png",
+					"x": 192,
+					"y": 173,
+					"z": 238
+				},
+				"shipyard": {
+					"animation": "aom/nor/town/shipyard.json",
+					"area": "aom/nor/town/area/shipyard.png",
+					"border": "aom/nor/town/border/shipyard.png",
+					"x": 642,
+					"y": 242,
+					"z": 335
+				},
+				"special1": {
+					"animation": "aom/nor/town/special1.json",
+					"area": "aom/nor/town/area/special1.png",
+					"border": "aom/nor/town/border/special1.png",
+					"x": 511,
+					"y": 99,
+					"z": 186
+				},
+				"special2": {
+					"animation": "aom/nor/town/special2.json",
+					"area": "aom/nor/town/area/special2.png",
+					"border": "aom/nor/town/border/special2.png",
+					"x": 215,
+					"y": 83,
+					"z": 132
+				},
+				"horde2": {
+					"animation": "aom/nor/town/horde2.json",
+					"area": "aom/nor/town/area/horde2.png",
+					"border": "aom/nor/town/border/horde2.png",
+					"x": 589,
+					"y": 123,
+					"z": 184
+				},
+				"horde2Upgr": {
+					"animation": "aom/nor/town/horde2Upgr.json",
+					"area": "aom/nor/town/area/horde2Upgr.png",
+					"border": "aom/nor/town/border/horde2Upgr.png",
+					"x": 598,
+					"y": 247,
+					"z": 290
+				},
+				"horde2Upgr2": {
+					"animation": "aom/nor/town/horde2Upgr2.json",
+					"area": "aom/nor/town/area/horde2Upgr2.png",
+					"border": "aom/nor/town/border/horde2Upgr2.png",
+					"x": 729,
+					"y": 189,
+					"z": 252
+				},
+				"extraCapitol": {
+					"animation": "aom/nor/town/extraCapitol.json",
+					"area": "aom/nor/town/area/extraCapitol.png",
+					"border": "aom/nor/town/border/extraCapitol.png",
+					"x": 191,
+					"y": 153,
+					"z": 176
+				},
+				"ship": {
+					"animation": "aom/nor/town/ship.json",
+					"area": "aom/nor/town/area/ship.png",
+					"border": "aom/nor/town/border/ship.png",
+					"x": 565,
+					"y": 242,
+					"z": 335,
+					"hidden": true
+				},
+				"horde1": {
+					"animation": "aom/nor/town/horde1.json",
+					"area": "aom/nor/town/area/horde1.png",
+					"border": "aom/nor/town/border/horde1.png",
+					"x": 169,
+					"y": 215,
+					"z": 305,
+					"hidden": true
+				},
+				"horde1Upgr": {
+					"animation": "aom/nor/town/horde1Upgr.json",
+					"area": "aom/nor/town/area/horde1Upgr.png",
+					"border": "aom/nor/town/border/horde1Upgr.png",
+					"x": 156,
+					"y": 197,
+					"z": 305,
+					"hidden": true
+				},
+				"special3": {
+					"animation": "aom/nor/town/special3.json",
+					"area": "aom/nor/town/area/special3.png",
+					"border": "aom/nor/town/border/special3.png",
+					"x": 188,
+					"y": 120,
+					"z": 176
+				},
+				"special4": {
+					"animation": "aom/nor/town/special4.json",
+					"area": "aom/nor/town/area/special4.png",
+					"border": "aom/nor/town/border/special4.png",
+					"x": 187,
+					"y": 135,
+					"z": 176
+				},
+				"extraTownHall": {
+					"animation": "aom/nor/town/extraTownHall.json",
+					"area": "aom/nor/town/area/extraTownHall.png",
+					"border": "aom/nor/town/border/extraTownHall.png",
+					"x": 186,
+					"y": 139,
+					"z": 176
+				},
+				"extraCityHall": {
+					"animation": "aom/nor/town/extraCityHall.json",
+					"area": "aom/nor/town/area/extraCityHall.png",
+					"border": "aom/nor/town/border/extraCityHall.png",
+					"x": 184,
+					"y": 131,
+					"z": 176
+				},
+				"grail": {
+					"animation": "aom/nor/town/grail.json",
+					"area": "aom/nor/town/area/grail.png",
+					"border": "aom/nor/town/border/grail.png",
+					"x": 440,
+					"y": 0,
+					"z": 1
+				},
+				"mageGuild1": {
+					"animation": "aom/nor/town/mageGuild1.json",
+					"area": "aom/nor/town/area/mageGuild1.png",
+					"border": "aom/nor/town/border/mageGuild1.png",
+					"x": 639,
+					"y": 77,
+					"z": 136
+				},
+				"mageGuild2": {
+					"animation": "aom/nor/town/mageGuild2.json",
+					"area": "aom/nor/town/area/mageGuild2.png",
+					"border": "aom/nor/town/border/mageGuild2.png",
+					"x": 623,
+					"y": 63,
+					"z": 136
+				},
+				"mageGuild3": {
+					"animation": "aom/nor/town/mageGuild3.json",
+					"area": "aom/nor/town/area/mageGuild3.png",
+					"border": "aom/nor/town/border/mageGuild3.png",
+					"x": 625,
+					"y": 63,
+					"z": 136
+				},
+				"mageGuild4": {
+					"animation": "aom/nor/town/mageGuild4.json",
+					"area": "aom/nor/town/area/mageGuild4.png",
+					"border": "aom/nor/town/border/mageGuild4.png",
+					"x": 618,
+					"y": 53,
+					"z": 136
+				},
+				"mageGuild5": {
+					"animation": "aom/nor/town/mageGuild5.json",
+					"area": "aom/nor/town/area/mageGuild5.png",
+					"border": "aom/nor/town/border/mageGuild5.png",
+					"x": 610,
+					"y": 39,
+					"z": 136
+				},
+				"dwellingLvl1": {
+					"animation": "aom/nor/town/dwellingLvl1.json",
+					"area": "aom/nor/town/area/dwellingLvl1.png",
+					"border": "aom/nor/town/border/dwellingLvl1.png",
+					"x": 169,
+					"y": 215,
+					"z": 305
+				},
+				"dwellingUpLvl1": {
+					"animation": "aom/nor/town/dwellingUpLvl1.json",
+					"area": "aom/nor/town/area/dwellingUpLvl1.png",
+					"border": "aom/nor/town/border/dwellingUpLvl1.png",
+					"x": 162,
+					"y": 213,
+					"z": 305
+				},
+				"dwellingUp2Lvl1": {
+					"animation": "aom/nor/town/dwellingUp2Lvl1.json",
+					"area": "aom/nor/town/area/dwellingUp2Lvl1.png",
+					"border": "aom/nor/town/border/dwellingUp2Lvl1.png",
+					"x": 156,
+					"y": 197,
+					"z": 305
+				},
+				"dwellingLvl2": {
+					"animation": "aom/nor/town/dwellingLvl2.json",
+					"area": "aom/nor/town/area/dwellingLvl2.png",
+					"border": "aom/nor/town/border/dwellingLvl2.png",
+					"x": 466,
+					"y": 226,
+					"z": 300
+				},
+				"dwellingUpLvl2": {
+					"animation": "aom/nor/town/dwellingUpLvl2.json",
+					"area": "aom/nor/town/area/dwellingUpLvl2.png",
+					"border": "aom/nor/town/border/dwellingUpLvl2.png",
+					"x": 461,
+					"y": 223,
+					"z": 300
+				},
+				"dwellingUp2Lvl2": {
+					"animation": "aom/nor/town/dwellingUp2Lvl2.json",
+					"area": "aom/nor/town/area/dwellingUp2Lvl2.png",
+					"border": "aom/nor/town/border/dwellingUp2Lvl2.png",
+					"x": 456,
+					"y": 201,
+					"z": 300
+				},
+				"dwellingLvl3": {
+					"animation": "aom/nor/town/dwellingLvl3.json",
+					"area": "aom/nor/town/area/dwellingLvl3.png",
+					"border": "aom/nor/town/border/dwellingLvl3.png",
+					"x": 81,
+					"y": 134,
+					"z": 196
+				},
+				"dwellingUpLvl3": {
+					"animation": "aom/nor/town/dwellingUpLvl3.json",
+					"area": "aom/nor/town/area/dwellingUpLvl3.png",
+					"border": "aom/nor/town/border/dwellingUpLvl3.png",
+					"x": 80,
+					"y": 130,
+					"z": 196
+				},
+				"dwellingUp2Lvl3": {
+					"animation": "aom/nor/town/dwellingUp2Lvl3.json",
+					"area": "aom/nor/town/area/dwellingUp2Lvl3.png",
+					"border": "aom/nor/town/border/dwellingUp2Lvl3.png",
+					"x": 76,
+					"y": 115,
+					"z": 196
+				},
+				"dwellingLvl4": {
+					"animation": "aom/nor/town/dwellingLvl4.json",
+					"area": "aom/nor/town/area/dwellingLvl4.png",
+					"border": "aom/nor/town/border/dwellingLvl4.png",
+					"x": 5,
+					"y": 134,
+					"z": 192
+				},
+				"dwellingUpLvl4": {
+					"animation": "aom/nor/town/dwellingUpLvl4.json",
+					"area": "aom/nor/town/area/dwellingUpLvl4.png",
+					"border": "aom/nor/town/border/dwellingUpLvl4.png",
+					"x": 1,
+					"y": 130,
+					"z": 192
+				},
+				"dwellingUp2Lvl4": {
+					"animation": "aom/nor/town/dwellingUp2Lvl4.json",
+					"area": "aom/nor/town/area/dwellingUp2Lvl4.png",
+					"border": "aom/nor/town/border/dwellingUp2Lvl4.png",
+					"x": 0,
+					"y": 122,
+					"z": 192
+				},
+				"dwellingLvl5": {
+					"animation": "aom/nor/town/dwellingLvl5.json",
+					"area": "aom/nor/town/area/dwellingLvl5.png",
+					"border": "aom/nor/town/border/dwellingLvl5.png",
+					"x": 251,
+					"y": 103,
+					"z": 182
+				},
+				"dwellingUpLvl5": {
+					"animation": "aom/nor/town/dwellingUpLvl5.json",
+					"area": "aom/nor/town/area/dwellingUpLvl5.png",
+					"border": "aom/nor/town/border/dwellingUpLvl5.png",
+					"x": 246,
+					"y": 93,
+					"z": 182
+				},
+				"dwellingUp2Lvl5": {
+					"animation": "aom/nor/town/dwellingUp2Lvl5.json",
+					"area": "aom/nor/town/area/dwellingUp2Lvl5.png",
+					"border": "aom/nor/town/border/dwellingUp2Lvl5.png",
+					"x": 242,
+					"y": 84,
+					"z": 182
+				},
+				"dwellingLvl6": {
+					"animation": "aom/nor/town/dwellingLvl6.json",
+					"area": "aom/nor/town/area/dwellingLvl6.png",
+					"border": "aom/nor/town/border/dwellingLvl6.png",
+					"x": 8,
+					"y": 270,
+					"z": 352
+				},
+				"dwellingUpLvl6": {
+					"animation": "aom/nor/town/dwellingUpLvl6.json",
+					"area": "aom/nor/town/area/dwellingUpLvl6.png",
+					"border": "aom/nor/town/border/dwellingUpLvl6.png",
+					"x": 5,
+					"y": 247,
+					"z": 352
+				},
+				"dwellingUp2Lvl6": {
+					"animation": "aom/nor/town/dwellingUp2Lvl6.json",
+					"area": "aom/nor/town/area/dwellingUp2Lvl6.png",
+					"border": "aom/nor/town/border/dwellingUp2Lvl6.png",
+					"x": 0,
+					"y": 226,
+					"z": 352
+				},
+				"dwellingLvl7": {
+					"animation": "aom/nor/town/dwellingLvl7.json",
+					"area": "aom/nor/town/area/dwellingLvl7.png",
+					"border": "aom/nor/town/border/dwellingLvl7.png",
+					"x": 98,
+					"y": 191,
+					"z": 258
+				},
+				"dwellingUpLvl7": {
+					"animation": "aom/nor/town/dwellingUpLvl7.json",
+					"area": "aom/nor/town/area/dwellingUpLvl7.png",
+					"border": "aom/nor/town/border/dwellingUpLvl7.png",
+					"x": 91,
+					"y": 184,
+					"z": 258
+				},
+				"dwellingUp2Lvl7": {
+					"animation": "aom/nor/town/dwellingUp2Lvl7.json",
+					"area": "aom/nor/town/area/dwellingUp2Lvl7.png",
+					"border": "aom/nor/town/border/dwellingUp2Lvl7.png",
+					"x": 87,
+					"y": 171,
+					"z": 258
+				},
+				"dwellingLvl8": {
+					"animation": "aom/nor/town/dwellingLvl8.json",
+					"area": "aom/nor/town/area/dwellingLvl8.png",
+					"border": "aom/nor/town/border/dwellingLvl8.png",
+					"x": 26,
+					"y": 39,
+					"z": 122
+				},
+				"dwellingUpLvl8": {
+					"animation": "aom/nor/town/dwellingUpLvl8.json",
+					"area": "aom/nor/town/area/dwellingUpLvl8.png",
+					"border": "aom/nor/town/border/dwellingUpLvl8.png",
+					"x": 21,
+					"y": 37,
+					"z": 122
+				},
+				"dwellingUp2Lvl8": {
+					"animation": "aom/nor/town/dwellingUp2Lvl8.json",
+					"area": "aom/nor/town/area/dwellingUp2Lvl8.png",
+					"border": "aom/nor/town/border/dwellingUp2Lvl8.png",
+					"x": 17,
+					"y": 21,
+					"z": 122
+				},
+				"animatedSea": {
+					"animation": "aom/nor/town/animatedSea.json",
+					"x": 0,
+					"y": 301,
+					"z": -1
+				},
+				"animatedAurora": {
+					"animation": "aom/nor/town/animatedAurora.json",
+					"x": 191,
+					"y": 0,
+					"z": -1
+				}
+			},
+			"mapObject": {
+				"filters": {
+					"fort": [
+						"allOf",
+						[
+							"fort"
+						],
+						[
+							"noneOf",
+							[
+								"citadel"
+							]
+						]
+					],
+					// Castle look while the citadel is built and the capitol is not yet
+					"castle": ["allOf", ["citadel"], ["noneOf", ["capitol"]]]
+				},
+				// Entrance at the original position (third tile from the right in the bottom row); the gate in the image is drawn on that tile
+				"templates": {
+					"village": {
+						"animation": "aom/nor/map/aomNorVillage.def",
+						"mask": [
+							"VVVVVV",
+							"VVVVVV",
+							"VVVVVV",
+							"VVBBBV",
+							"VBBBBB",
+							"VBBABB"
+						]
+					},
+					"fort": {
+						"animation": "aom/nor/map/aomNorFort.def",
+						"mask": [
+							"VVVVVV",
+							"VVVVVV",
+							"VVVVVV",
+							"VVBBBV",
+							"VBBBBB",
+							"VBBABB"
+						]
+					},
+					"castle": {
+						"animation": "aom/nor/map/aomNorCastle.def",
+						"mask": [
+							"VVVVVV",
+							"VVVVVV",
+							"VVVVVV",
+							"VVBBBV",
+							"VBBBBB",
+							"VBBABB"
+						]
+					},
+					"capitol": {
+						"animation": "aom/nor/map/aomNorCapitol.def",
+						"mask": [
+							"VVVVVV",
+							"VVVVVV",
+							"VVVVVV",
+							"VVBBBV",
+							"VBBBBB",
+							"VBBABB"
+						]
+					}
+				}
+			},
+			"musicTheme": [
+				"music/aomNorTown"
+			],
+			"tavernVideo": "aomNorTavern.ogv",
+			"guildBackground": [
+				"aom/nor/town/guild-bg.png"
+			],
+			"guildWindow": [
+				"aom/nor/town/guild-window.png"
+			],
+			"hallBackground": "aom/nor/town/hall-bg",
+			"townBackground": "aom/nor/town/background.png",
+			"buildingsIcons": "aom/nor/town/hall.json",
+			"icons": {
+				"village": {
+					"normal": {
+						"large": "aom/nor/town/icons/village-large.png",
+						"small": "aom/nor/town/icons/village-small.png"
+					},
+					"built": {
+						"large": "aom/nor/town/icons/village-large-built.png",
+						"small": "aom/nor/town/icons/village-small-built.png"
+					}
+				},
+				"fort": {
+					"normal": {
+						"large": "aom/nor/town/icons/fort-large.png",
+						"small": "aom/nor/town/icons/fort-small.png"
+					},
+					"built": {
+						"large": "aom/nor/town/icons/fort-large-built.png",
+						"small": "aom/nor/town/icons/fort-small-built.png"
+					}
+				}
+			}
+		}
+	}
+}

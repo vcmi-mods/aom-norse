@@ -1,0 +1,375 @@
+{
+	"aomNorBallistaArt": {
+		"type": [
+			"HERO"
+		],
+		"warMachine": "aomNorBallista",
+		"class": "SPECIAL",
+		"slot": "MACH1",
+		"value": 2500,
+		"text": {
+			"name": "Norse Ballista",
+			"description": "{Norse Ballista}\n\nIn battle the ballista shoots at enemy troops, its damage rising with the hero's Attack. With Artillery you can aim it yourself.",
+			"event": "A Norse ballista lies abandoned in the snow, its arms still drawn and an iron-headed bolt in the groove. You have it hitched up and hauled into your column."
+		},
+		"graphics": {
+			"image": "aom/nor/artifacts/backpack/aomNorBallistaArt.png",
+			"scenarioBonus": "aom/nor/artifacts/bonus/aomNorBallistaArt.png",
+			"map": "aom/nor/aomNorBallista/map.json"
+		}
+	},
+	"aomNorHeartMountain": {
+		"type": [
+			"HERO"
+		],
+		"class": "SPECIAL",
+		"slot": "MISC",
+		"value": 3000,
+		"text": {
+			"name": "Mountain Giant Heart",
+			"description": "{Mountain Giant Heart}\n\nThe heart left by the giant of the Mountain Giant Grotto; it has no power of its own. Offer it at the Jotun Altar in a Norse town (the artifact is taken), and the kingdom gains for good: level 1-4 dwellings in Norse towns +1 weekly growth.\nOnce all four giant hearts are offered, level 5-7 dwellings in Norse towns get +1 weekly growth more (Ragnarok).",
+			"event": "Deep in the grotto, the fallen Mountain Giant's chest splits open, and a grey-white stone heart still beats slowly. You put the Mountain Giant Heart in your pack."
+		},
+		"graphics": {
+			"image": "aom/nor/artifacts/backpack/aomNorHeartMountain.png",
+			"scenarioBonus": "aom/nor/artifacts/bonus/aomNorHeartMountain.png",
+			"map": "aom/nor/artifacts/map/aomNorHeartMountain.json"
+		}
+	},
+	"aomNorHeartRock": {
+		"type": [
+			"HERO"
+		],
+		"class": "SPECIAL",
+		"slot": "MISC",
+		"value": 3000,
+		"text": {
+			"name": "Rock Giant Heart",
+			"description": "{Rock Giant Heart}\n\nThe heart left by the giant of the Rock Giant Lair; it has no power of its own. Offer it at the Jotun Altar in a Norse town (the artifact is taken), and the kingdom gains for good: troops defending a Norse town (with a Fort) get Defense +2.\nOnce all four giant hearts are offered, level 5-7 dwellings in Norse towns get +1 weekly growth more (Ragnarok).",
+			"event": "The Rock Giant crumbles into rubble, and a dark red stone heart rolls out. You pick up the Rock Giant Heart."
+		},
+		"graphics": {
+			"image": "aom/nor/artifacts/backpack/aomNorHeartRock.png",
+			"scenarioBonus": "aom/nor/artifacts/bonus/aomNorHeartRock.png",
+			"map": "aom/nor/artifacts/map/aomNorHeartRock.json"
+		}
+	},
+	"aomNorHeartFrost": {
+		"type": [
+			"HERO"
+		],
+		"class": "SPECIAL",
+		"slot": "MISC",
+		"value": 3000,
+		"text": {
+			"name": "Frost Giant Heart",
+			"description": "{Frost Giant Heart}\n\nThe heart left by the giant of the Frost Giant Ice Cave; it has no power of its own. Offer it at the Jotun Altar in a Norse town (the artifact is taken), and the kingdom gains for good: Norse troops take 25% less water spell damage, and Norse heroes' water spells deal +10% damage.\nOnce all four giant hearts are offered, level 5-7 dwellings in Norse towns get +1 weekly growth more (Ragnarok).",
+			"event": "The chill of the cave fades, and the Frost Giant leaves behind a heart like an ice crystal, bitterly cold in your hand. You have obtained the Frost Giant Heart."
+		},
+		"graphics": {
+			"image": "aom/nor/artifacts/backpack/aomNorHeartFrost.png",
+			"scenarioBonus": "aom/nor/artifacts/bonus/aomNorHeartFrost.png",
+			"map": "aom/nor/artifacts/map/aomNorHeartFrost.json"
+		}
+	},
+	"aomNorHeartFire": {
+		"type": [
+			"HERO"
+		],
+		"class": "SPECIAL",
+		"slot": "MISC",
+		"value": 3000,
+		"text": {
+			"name": "Fire Giant Heart",
+			"description": "{Fire Giant Heart}\n\nThe heart left by the giant of the Fire Giant Lava Rift; it has no power of its own. Offer it at the Jotun Altar in a Norse town (the artifact is taken), and the kingdom gains for good: Norse troops Attack +1, and Norse heroes' fire spells deal +10% damage.\nOnce all four giant hearts are offered, level 5-7 dwellings in Norse towns get +1 weekly growth more (Ragnarok).",
+			"event": "The flames of the rift slowly die, and in the Fire Giant's chest only a scorched heart still burns hot. You have obtained the Fire Giant Heart."
+		},
+		"graphics": {
+			"image": "aom/nor/artifacts/backpack/aomNorHeartFire.png",
+			"scenarioBonus": "aom/nor/artifacts/bonus/aomNorHeartFire.png",
+			"map": "aom/nor/artifacts/map/aomNorHeartFire.json"
+		}
+	},
+	"aomNorGungnir": {
+		"text": {
+			"name": "Gungnir",
+			"description": "{Gungnir}\n\nAttack +3, your troops deal +5% damage.\n\nA component of the Asgard Hoard.",
+			"event": "A spear stands in the frozen ground, the runes on its head glinting in the snowlight. Legend says Odin never misses when he throws it. This is Odin's spear Gungnir."
+		},
+		"type": [
+			"HERO"
+		],
+		"slot": "RIGHT_HAND",
+		"class": "MAJOR",
+		"value": 9000,
+		"graphics": {
+			"image": "aom/nor/artifacts/backpack/aomNorGungnir.png",
+			"map": "aom/nor/artifacts/map/aomNorGungnir.json",
+			"scenarioBonus": "aom/nor/artifacts/bonus/aomNorGungnir.png"
+		},
+		"bonuses": {
+			"attack": {
+				"type": "PRIMARY_SKILL",
+				"val": 3,
+				"valueType": "BASE_NUMBER",
+				"subtype": "attack"
+			},
+			"dmg": {
+				"type": "GENERAL_DAMAGE_PREMY",
+				"val": 5,
+				"valueType": "BASE_NUMBER"
+			}
+		}
+	},
+	"aomNorGambanteinn": {
+		"text": {
+			"name": "Gambanteinn",
+			"description": "{Gambanteinn}\n\nSpell Power +3, Knowledge +2.\n\nA component of the Asgard Hoard.",
+			"event": "A raven drops a short wooden staff wound with silver wire at your feet, then settles on a branch to watch you. This is Odin's wand Gambanteinn."
+		},
+		"type": [
+			"HERO"
+		],
+		"slot": "MISC",
+		"class": "MAJOR",
+		"value": 8000,
+		"graphics": {
+			"image": "aom/nor/artifacts/backpack/aomNorGambanteinn.png",
+			"map": "aom/nor/artifacts/map/aomNorGambanteinn.json",
+			"scenarioBonus": "aom/nor/artifacts/bonus/aomNorGambanteinn.png"
+		},
+		"bonuses": {
+			"power": {
+				"type": "PRIMARY_SKILL",
+				"val": 3,
+				"valueType": "BASE_NUMBER",
+				"subtype": "spellpower"
+			},
+			"knowledge": {
+				"type": "PRIMARY_SKILL",
+				"val": 2,
+				"valueType": "BASE_NUMBER",
+				"subtype": "knowledge"
+			}
+		}
+	},
+	"aomNorUllrsBow": {
+		"text": {
+			"name": "Ullr's Bow",
+			"description": "{Ullr's Bow}\n\nYour shooters suffer no range penalty, scouting radius +1.\n\nA component of the Asgard Hoard.",
+			"event": "A line of ski tracks crosses the snowfield, ending at a stump where a long birch bow hangs, frost on its string. This is the bow of Ullr, god of the winter hunt."
+		},
+		"type": [
+			"HERO"
+		],
+		"slot": "MISC",
+		"class": "MAJOR",
+		"value": 6000,
+		"graphics": {
+			"image": "aom/nor/artifacts/backpack/aomNorUllrsBow.png",
+			"map": "aom/nor/artifacts/map/aomNorUllrsBow.json",
+			"scenarioBonus": "aom/nor/artifacts/bonus/aomNorUllrsBow.png"
+		},
+		"bonuses": {
+			"range": {
+				"type": "NO_DISTANCE_PENALTY",
+				"val": 0,
+				"valueType": "BASE_NUMBER"
+			},
+			"sight": {
+				"type": "SIGHT_RADIUS",
+				"val": 1,
+				"valueType": "BASE_NUMBER"
+			}
+		}
+	},
+	"aomNorNibelungRing": {
+		"text": {
+			"name": "Nibelung Ring",
+			"description": "{Nibelung Ring}\n\nProvides 750 gold per day.\n\nA component of the Asgard Hoard.",
+			"event": "Wedged in a crack in the riverbed is a red-gold ring carved as a dragon biting its own tail. When you put it on, the gold in your purse seems to grow heavier. This is the Nibelung Ring."
+		},
+		"type": [
+			"HERO"
+		],
+		"slot": "RING",
+		"class": "MAJOR",
+		"value": 8000,
+		"graphics": {
+			"image": "aom/nor/artifacts/backpack/aomNorNibelungRing.png",
+			"map": "aom/nor/artifacts/map/aomNorNibelungRing.json",
+			"scenarioBonus": "aom/nor/artifacts/bonus/aomNorNibelungRing.png"
+		},
+		"bonuses": {
+			"setMark": {
+				"type": "STACKS_SPEED",
+				"val": 0,
+				"valueType": "BASE_NUMBER",
+				"hidden": true
+			}
+		},
+		"instanceBonuses": {
+			"gold": {
+				"type": "GENERATE_RESOURCE",
+				"val": 750,
+				"valueType": "BASE_NUMBER",
+				"subtype": "gold",
+				"stacking": "ALWAYS"
+			}
+		}
+	},
+	"aomNorFenrirFetters": {
+		"text": {
+			"name": "Fenrir's Fetters",
+			"description": "{Fenrir's Fetters}\n\nEnemy troops Speed -1.\n\nA component of the Asgard Hoard.",
+			"event": "Tied to a broken length of chain is a ribbon so thin you can barely see it, yet no pull can tear it. With it the gods bound Fenrir. These are Fenrir's Fetters."
+		},
+		"type": [
+			"HERO"
+		],
+		"slot": "NECK",
+		"class": "MAJOR",
+		"value": 7000,
+		"graphics": {
+			"image": "aom/nor/artifacts/backpack/aomNorFenrirFetters.png",
+			"map": "aom/nor/artifacts/map/aomNorFenrirFetters.json",
+			"scenarioBonus": "aom/nor/artifacts/bonus/aomNorFenrirFetters.png"
+		},
+		"bonuses": {
+			"slow": {
+				"type": "STACKS_SPEED",
+				"val": -1,
+				"valueType": "ADDITIVE_VALUE",
+				"propagator": "BATTLE_WIDE",
+				"propagationUpdater": "BONUS_OWNER_UPDATER",
+				"limiters": [
+					"OPPOSITE_SIDE"
+				],
+				"stacking": "ycEnemySpeedAura"
+			}
+		}
+	},
+	"aomNorDwarvenHorseshoes": {
+		"text": {
+			"name": "Dwarven Horseshoes",
+			"description": "{Dwarven Horseshoes}\n\nLand movement +300.\n\nA component of the Asgard Hoard.",
+			"event": "The roadside smithy has long been empty, but on the anvil lies a set of horseshoes inlaid with golden runes, still warm to the touch. These are horseshoes forged by dwarves."
+		},
+		"type": [
+			"HERO"
+		],
+		"slot": "FEET",
+		"class": "MINOR",
+		"value": 4000,
+		"graphics": {
+			"image": "aom/nor/artifacts/backpack/aomNorDwarvenHorseshoes.png",
+			"map": "aom/nor/artifacts/map/aomNorDwarvenHorseshoes.json",
+			"scenarioBonus": "aom/nor/artifacts/bonus/aomNorDwarvenHorseshoes.png"
+		},
+		"bonuses": {
+			"move": {
+				"type": "MOVEMENT",
+				"val": 300,
+				"valueType": "ADDITIVE_VALUE",
+				"subtype": "heroMovementLand"
+			}
+		}
+	},
+	"aomNorAsgardHoard": {
+		"text": {
+			"name": "Asgard Hoard",
+			"description": "{Asgard Hoard}\n\nAttack +3, Spell Power +3, Knowledge +2, land movement +300.\nYour troops deal +5% damage, and shooters suffer no range penalty; enemy troops Speed -1.\nProvides 750 gold per day, scouting radius +1.\nEinherjar Warband: souls +50%, and the Big Dipper lights 1 more star at the start of battle.\n\nCombined from Gungnir, Gambanteinn, Ullr's Bow, the Nibelung Ring, Fenrir's Fetters and the Dwarven Horseshoes.\n(The components are consumed when combined)",
+			"event": "The six artifacts form a circle on the snow; their runes light one after another, and at last all are drawn into a golden chest bound with triple knots. As the lid closes you seem to hear singing from Valhalla. You have obtained the Asgard Hoard."
+		},
+		"type": [
+			"HERO"
+		],
+		"slot": "MISC",
+		"class": "RELIC",
+		"value": 50000,
+		"components": [
+			"aomNorGungnir",
+			"aomNorGambanteinn",
+			"aomNorUllrsBow",
+			"aomNorNibelungRing",
+			"aomNorFenrirFetters",
+			"aomNorDwarvenHorseshoes"
+		],
+		"fusedComponents": true,
+		"bonuses": {
+			"Gungnir_attack": {
+				"type": "PRIMARY_SKILL",
+				"val": 3,
+				"valueType": "BASE_NUMBER",
+				"subtype": "attack"
+			},
+			"Gungnir_dmg": {
+				"type": "GENERAL_DAMAGE_PREMY",
+				"val": 5,
+				"valueType": "BASE_NUMBER"
+			},
+			"Gambanteinn_power": {
+				"type": "PRIMARY_SKILL",
+				"val": 3,
+				"valueType": "BASE_NUMBER",
+				"subtype": "spellpower"
+			},
+			"Gambanteinn_knowledge": {
+				"type": "PRIMARY_SKILL",
+				"val": 2,
+				"valueType": "BASE_NUMBER",
+				"subtype": "knowledge"
+			},
+			"UllrsBow_range": {
+				"type": "NO_DISTANCE_PENALTY",
+				"val": 0,
+				"valueType": "BASE_NUMBER"
+			},
+			"UllrsBow_sight": {
+				"type": "SIGHT_RADIUS",
+				"val": 1,
+				"valueType": "BASE_NUMBER"
+			},
+			"NibelungRing_gold": {
+				"type": "GENERATE_RESOURCE",
+				"val": 750,
+				"valueType": "BASE_NUMBER",
+				"subtype": "gold"
+			},
+			"FenrirFetters_slow": {
+				"type": "STACKS_SPEED",
+				"val": -1,
+				"valueType": "ADDITIVE_VALUE",
+				"propagator": "BATTLE_WIDE",
+				"propagationUpdater": "BONUS_OWNER_UPDATER",
+				"limiters": [
+					"OPPOSITE_SIDE"
+				],
+				"stacking": "ycEnemySpeedAura"
+			},
+			"DwarvenHorseshoes_move": {
+				"type": "MOVEMENT",
+				"val": 300,
+				"valueType": "ADDITIVE_VALUE",
+				"subtype": "heroMovementLand"
+			},
+			"souls": {
+				"type": "AOM_NOR_SOUL_BONUS",
+				"val": 50,
+				"valueType": "BASE_NUMBER",
+				"stacking": "aomNorHoardSouls"
+			},
+			"stars": {
+				"type": "AOM_NOR_STAR_BONUS",
+				"val": 1,
+				"valueType": "BASE_NUMBER",
+				"stacking": "aomNorHoardStars"
+			}
+		},
+		"graphics": {
+			"image": "aom/nor/artifacts/backpack/aomNorAsgardHoard.png",
+			"map": "aom/nor/artifacts/map/aomNorAsgardHoard.json",
+			"scenarioBonus": "aom/nor/artifacts/bonus/aomNorAsgardHoard.png"
+		}
+	}
+}

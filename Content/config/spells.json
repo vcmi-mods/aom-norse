@@ -1,0 +1,2073 @@
+{
+	"aomNorDwarfArmor": {
+		"type": "combat",
+		"name": "Dwarven Armor",
+		"targetType": "CREATURE",
+		"school": {
+			"air": false,
+			"earth": true,
+			"fire": false,
+			"water": false
+		},
+		"level": 2,
+		"power": 10,
+		"defaultGainChance": 0,
+		"gainChance": {},
+		"flags": {
+			"positive": true
+		},
+		"targetCondition": {
+			"noneOf": {
+				"bonus.SIEGE_WEAPON": "absolute"
+			}
+		},
+		"animation": {
+			"affect": [
+				"aom/nor/fx/spDwarfArmor"
+			]
+		},
+		"sounds": {
+			"cast": "aom/nor/sp_aomNorDwarfArmor.wav"
+		},
+		"graphics": {
+			"iconBook": "aom/nor/spells/aomNorDwarfArmor_book",
+			"iconScroll": "aom/nor/spells/aomNorDwarfArmor_scroll",
+			"iconScenarioBonus": "aom/nor/spells/aomNorDwarfArmor_bonus",
+			"iconEffect": "aom/nor/spells/aomNorDwarfArmor_effect",
+			"iconImmune": "aom/nor/spells/aomNorDwarfArmor_effect"
+		},
+		"levels": {
+			"base": {
+				"range": "0",
+				"targetModifier": {
+					"smart": true
+				},
+				"battleEffects": {
+					"0sac": {
+						"type": "aomNorSacrifice"
+					},
+					"armor": {
+						"type": "aomNorTimed",
+						"bonus": {
+							"def": {
+								"type": "PRIMARY_SKILL",
+								"val": 3,
+								"duration": "N_TURNS",
+								"subtype": "defence"
+							}
+						},
+						"gods": [
+							1
+						]
+					},
+					"repair": {
+						"type": "aomNorHeal",
+						"filter": "siege",
+						"mass": "own",
+						"optional": true,
+						"healLevel": "heal",
+						"healPower": "permanent"
+					}
+				}
+			},
+			"none": {
+				"description": "{Dwarven Armor}\n\nDwarves forge armor for one allied stack: Defense +3 for rounds equal to Spell Power.\nYour war machines are also repaired by (Spell Power × 10 + 10) health.\n{Affinity}: when cast by a hero whose patron is Thor, it lasts 1 round longer.",
+				"cost": 10,
+				"power": 10
+			},
+			"basic": {
+				"description": "{Basic Dwarven Armor}\n\nDwarves forge armor for one allied stack: Defense +3 for rounds equal to Spell Power.\nYour war machines are also repaired by (Spell Power × 10 + 10) health.\n{Affinity}: when cast by a hero whose patron is Thor, it lasts 1 round longer.",
+				"cost": 8,
+				"power": 10
+			},
+			"advanced": {
+				"battleEffects": {
+					"armor": {
+						"bonus": {
+							"def": {
+								"type": "PRIMARY_SKILL",
+								"val": 4,
+								"duration": "N_TURNS",
+								"subtype": "defence"
+							}
+						}
+					}
+				},
+				"description": "{Advanced Dwarven Armor}\n\nDwarves forge armor for one allied stack: Defense +4 for rounds equal to Spell Power.\nYour war machines are also repaired by (Spell Power × 10 + 20) health.\n{Affinity}: when cast by a hero whose patron is Thor, it lasts 1 round longer.",
+				"cost": 8,
+				"power": 20
+			},
+			"expert": {
+				"range": "X",
+				"targetModifier": {
+					"smart": true
+				},
+				"battleEffects": {
+					"armor": {
+						"bonus": {
+							"def": {
+								"type": "PRIMARY_SKILL",
+								"val": 4,
+								"duration": "N_TURNS",
+								"subtype": "defence"
+							}
+						},
+						"mass": "own"
+					}
+				},
+				"description": "{Expert Dwarven Armor}\n\nDwarves forge armor for your whole army: Defense +4 for rounds equal to Spell Power.\nYour war machines are also repaired by (Spell Power × 10 + 50) health.\n{Affinity}: when cast by a hero whose patron is Thor, it lasts 1 round longer.",
+				"cost": 8,
+				"power": 50
+			}
+		}
+	},
+	"aomNorGreatHunt": {
+		"type": "combat",
+		"name": "Great Hunt",
+		"targetType": "NO_TARGET",
+		"school": {
+			"air": false,
+			"earth": true,
+			"fire": false,
+			"water": false
+		},
+		"level": 3,
+		"power": 0,
+		"defaultGainChance": 0,
+		"gainChance": {},
+		"flags": {
+			"indifferent": true
+		},
+		"targetCondition": {},
+		"animation": {},
+		"sounds": {
+			"cast": "aom/nor/sp_aomNorGreatHunt.wav"
+		},
+		"graphics": {
+			"iconBook": "aom/nor/spells/aomNorGreatHunt_book",
+			"iconScroll": "aom/nor/spells/aomNorGreatHunt_scroll",
+			"iconScenarioBonus": "aom/nor/spells/aomNorGreatHunt_bonus",
+			"iconEffect": "aom/nor/spells/aomNorGreatHunt_effect",
+			"iconImmune": "aom/nor/spells/aomNorGreatHunt_effect"
+		},
+		"levels": {
+			"base": {
+				"range": "X",
+				"battleEffects": {
+					"0sac": {
+						"type": "aomNorSacrifice"
+					},
+					"summon": {
+						"type": "aomNorSummon",
+						"id": "core:griffin",
+						"pool": [
+							"core:griffin",
+							"core:serpentFly",
+							"core:boar"
+						],
+						"exclusive": false,
+						"permanent": false,
+						"summonByHealth": true,
+						"summonSameUnit": false,
+						"animation": "aom/nor/fx/apHunt.json"
+					}
+				}
+			},
+			"none": {
+				"description": "{Great Hunt}\n\nOdin's horn calls a pack of beasts to fight for this battle: one random level 1-3 animal, total health Spell Power × 15.\n{Affinity}: when cast by a hero whose patron is Odin, summoned amount +25%.",
+				"cost": 15,
+				"power": 15
+			},
+			"basic": {
+				"description": "{Basic Great Hunt}\n\nOdin's horn calls a pack of beasts to fight for this battle: one random level 1-3 animal, total health Spell Power × 15.\n{Affinity}: when cast by a hero whose patron is Odin, summoned amount +25%.",
+				"cost": 12,
+				"power": 15
+			},
+			"advanced": {
+				"description": "{Advanced Great Hunt}\n\nOdin's horn calls a pack of beasts to fight for this battle: one random level 1-3 animal, total health Spell Power × 20.\n{Affinity}: when cast by a hero whose patron is Odin, summoned amount +25%.",
+				"cost": 12,
+				"power": 20
+			},
+			"expert": {
+				"description": "{Expert Great Hunt}\n\nOdin's horn calls a pack of beasts to fight for this battle: one random level 1-3 animal, total health Spell Power × 30.\n{Affinity}: when cast by a hero whose patron is Odin, summoned amount +25%.",
+				"cost": 12,
+				"power": 30
+			}
+		}
+	},
+	"aomNorSpyEye": {
+		"type": "combat",
+		"name": "Spy Eye",
+		"targetType": "CREATURE",
+		"school": {
+			"air": true,
+			"earth": false,
+			"fire": false,
+			"water": false
+		},
+		"level": 1,
+		"power": 0,
+		"defaultGainChance": 0,
+		"gainChance": {},
+		"flags": {
+			"negative": true
+		},
+		"targetCondition": {
+			"noneOf": {
+				"bonus.SIEGE_WEAPON": "absolute"
+			}
+		},
+		"animation": {
+			"affect": [
+				"aom/nor/fx/spSpyEye"
+			]
+		},
+		"sounds": {
+			"cast": "aom/nor/sp_aomNorSpyEye.wav"
+		},
+		"graphics": {
+			"iconBook": "aom/nor/spells/aomNorSpyEye_book",
+			"iconScroll": "aom/nor/spells/aomNorSpyEye_scroll",
+			"iconScenarioBonus": "aom/nor/spells/aomNorSpyEye_bonus",
+			"iconEffect": "aom/nor/spells/aomNorSpyEye_effect",
+			"iconImmune": "aom/nor/spells/aomNorSpyEye_effect"
+		},
+		"levels": {
+			"base": {
+				"range": "0",
+				"targetModifier": {
+					"smart": true
+				},
+				"battleEffects": {
+					"0sac": {
+						"type": "aomNorSacrifice"
+					},
+					"spy": {
+						"type": "aomNorTimed",
+						"bonus": {
+							"def": {
+								"type": "PRIMARY_SKILL",
+								"val": -3,
+								"duration": "N_TURNS",
+								"subtype": "defence"
+							}
+						},
+						"gods": [
+							3
+						]
+					}
+				}
+			},
+			"none": {
+				"description": "{Spy Eye}\n\nLoki's eye sees through one enemy stack's guard: Defense -3 for rounds equal to Spell Power.\n{Affinity}: when cast by a hero whose patron is Loki, it lasts 1 round longer.",
+				"cost": 6,
+				"power": 0
+			},
+			"basic": {
+				"description": "{Basic Spy Eye}\n\nLoki's eye sees through one enemy stack's guard: Defense -3 for rounds equal to Spell Power.\n{Affinity}: when cast by a hero whose patron is Loki, it lasts 1 round longer.",
+				"cost": 5,
+				"power": 0
+			},
+			"advanced": {
+				"battleEffects": {
+					"spy": {
+						"bonus": {
+							"def": {
+								"type": "PRIMARY_SKILL",
+								"val": -4,
+								"duration": "N_TURNS",
+								"subtype": "defence"
+							}
+						}
+					}
+				},
+				"description": "{Advanced Spy Eye}\n\nLoki's eye sees through one enemy stack's guard: Defense -4 for rounds equal to Spell Power.\n{Affinity}: when cast by a hero whose patron is Loki, it lasts 1 round longer.",
+				"cost": 5,
+				"power": 0
+			},
+			"expert": {
+				"battleEffects": {
+					"spy": {
+						"bonus": {
+							"def": {
+								"type": "PRIMARY_SKILL",
+								"val": -5,
+								"duration": "N_TURNS",
+								"subtype": "defence"
+							}
+						}
+					}
+				},
+				"description": "{Expert Spy Eye}\n\nLoki's eye sees through one enemy stack's guard: Defense -5 for rounds equal to Spell Power.\n{Affinity}: when cast by a hero whose patron is Loki, it lasts 1 round longer.",
+				"cost": 5,
+				"power": 0
+			}
+		}
+	},
+	"aomNorGoldenBoar": {
+		"type": "combat",
+		"name": "Golden Boar",
+		"targetType": "NO_TARGET",
+		"school": {
+			"air": false,
+			"earth": true,
+			"fire": false,
+			"water": false
+		},
+		"level": 4,
+		"power": 0,
+		"defaultGainChance": 0,
+		"gainChance": {},
+		"flags": {
+			"indifferent": true
+		},
+		"targetCondition": {},
+		"animation": {},
+		"sounds": {
+			"cast": "aom/nor/sp_aomNorGoldenBoar.wav"
+		},
+		"graphics": {
+			"iconBook": "aom/nor/spells/aomNorGoldenBoar_book",
+			"iconScroll": "aom/nor/spells/aomNorGoldenBoar_scroll",
+			"iconScenarioBonus": "aom/nor/spells/aomNorGoldenBoar_bonus",
+			"iconEffect": "aom/nor/spells/aomNorGoldenBoar_effect",
+			"iconImmune": "aom/nor/spells/aomNorGoldenBoar_effect"
+		},
+		"levels": {
+			"base": {
+				"range": "X",
+				"battleEffects": {
+					"0sac": {
+						"type": "aomNorSacrifice"
+					},
+					"summon": {
+						"type": "aomNorSummon",
+						"id": "aom-norse:aomNorGullinbursti",
+						"exclusive": false,
+						"permanent": false,
+						"summonByHealth": true,
+						"summonSameUnit": true,
+						"animation": "aom/nor/fx/apBoar.json"
+					}
+				}
+			},
+			"none": {
+				"description": "{Golden Boar}\n\nFreyr's golden boar Gullinbursti descends from the sky for this battle: total health Spell Power × 40 (200 health each).\n{Affinity}: when cast by a hero whose patron is Freyr, summoned amount +25%.",
+				"cost": 20,
+				"power": 40
+			},
+			"basic": {
+				"description": "{Basic Golden Boar}\n\nFreyr's golden boar Gullinbursti descends from the sky for this battle: total health Spell Power × 40 (200 health each).\n{Affinity}: when cast by a hero whose patron is Freyr, summoned amount +25%.",
+				"cost": 16,
+				"power": 40
+			},
+			"advanced": {
+				"description": "{Advanced Golden Boar}\n\nFreyr's golden boar Gullinbursti descends from the sky for this battle: total health Spell Power × 55 (200 health each).\n{Affinity}: when cast by a hero whose patron is Freyr, summoned amount +25%.",
+				"cost": 16,
+				"power": 55
+			},
+			"expert": {
+				"description": "{Expert Golden Boar}\n\nFreyr's golden boar Gullinbursti descends from the sky for this battle: total health Spell Power × 70 (200 health each).\n{Affinity}: when cast by a hero whose patron is Freyr, summoned amount +25%.",
+				"cost": 16,
+				"power": 70
+			}
+		}
+	},
+	"aomNorForestFire": {
+		"type": "combat",
+		"name": "Forest Fire",
+		"targetType": "LOCATION",
+		"school": {
+			"air": false,
+			"earth": false,
+			"fire": true,
+			"water": false
+		},
+		"level": 3,
+		"power": 10,
+		"defaultGainChance": 0,
+		"gainChance": {},
+		"flags": {
+			"damage": true,
+			"negative": true
+		},
+		"targetCondition": {
+			"noneOf": {
+				"bonus.SIEGE_WEAPON": "absolute"
+			}
+		},
+		"animation": {
+			"affect": [
+				"aom/nor/fx/spForestFire"
+			]
+		},
+		"sounds": {
+			"cast": "aom/nor/sp_aomNorForestFire.wav"
+		},
+		"graphics": {
+			"iconBook": "aom/nor/spells/aomNorForestFire_book",
+			"iconScroll": "aom/nor/spells/aomNorForestFire_scroll",
+			"iconScenarioBonus": "aom/nor/spells/aomNorForestFire_bonus",
+			"iconEffect": "aom/nor/spells/aomNorForestFire_effect",
+			"iconImmune": "aom/nor/spells/aomNorForestFire_effect"
+		},
+		"levels": {
+			"base": {
+				"range": "0-1",
+				"targetModifier": {
+					"smart": false
+				},
+				"battleEffects": {
+					"0sac": {
+						"type": "aomNorSacrifice"
+					},
+					"damage": {
+						"type": "aomNorDamage"
+					},
+					"dot": {
+						"type": "aomNorDotEffect",
+						"factor": 0.5,
+						"turns": 2,
+						"school": "fire",
+						"optional": true
+					}
+				}
+			},
+			"none": {
+				"description": "{Forest Fire}\n\nA forest fire breaks out on the target hex and one ring around it: all troops take (Spell Power × 10 + 10) fire damage, and half that again at the start of each of the next two rounds.\n{Affinity}: when cast by a hero whose patron is Thor or Odin or Freyr, damage +25%.",
+				"cost": 15,
+				"power": 10
+			},
+			"basic": {
+				"description": "{Basic Forest Fire}\n\nA forest fire breaks out on the target hex and one ring around it: all troops take (Spell Power × 10 + 10) fire damage, and half that again at the start of each of the next two rounds.\n{Affinity}: when cast by a hero whose patron is Thor or Odin or Freyr, damage +25%.",
+				"cost": 12,
+				"power": 10
+			},
+			"advanced": {
+				"description": "{Advanced Forest Fire}\n\nA forest fire breaks out on the target hex and one ring around it: all troops take (Spell Power × 10 + 20) fire damage, and half that again at the start of each of the next two rounds.\n{Affinity}: when cast by a hero whose patron is Thor or Odin or Freyr, damage +25%.",
+				"cost": 12,
+				"power": 20
+			},
+			"expert": {
+				"range": "0-2",
+				"description": "{Expert Forest Fire}\n\nA forest fire breaks out on the target hex and two rings around it: all troops take (Spell Power × 10 + 50) fire damage, and half that again at the start of each of the next two rounds.\n{Affinity}: when cast by a hero whose patron is Thor or Odin or Freyr, damage +25%.",
+				"cost": 12,
+				"power": 50
+			}
+		}
+	},
+	"aomNorFrost": {
+		"type": "combat",
+		"name": "Frost Prison",
+		"targetType": "LOCATION",
+		"school": {
+			"air": false,
+			"earth": false,
+			"fire": false,
+			"water": true
+		},
+		"level": 4,
+		"power": 0,
+		"defaultGainChance": 0,
+		"gainChance": {},
+		"flags": {
+			"negative": true
+		},
+		"targetCondition": {
+			"noneOf": {
+				"bonus.SIEGE_WEAPON": "absolute"
+			}
+		},
+		"animation": {
+			"affect": [
+				"aom/nor/fx/spFrost"
+			]
+		},
+		"sounds": {
+			"cast": "aom/nor/sp_aomNorFrost.wav"
+		},
+		"graphics": {
+			"iconBook": "aom/nor/spells/aomNorFrost_book",
+			"iconScroll": "aom/nor/spells/aomNorFrost_scroll",
+			"iconScenarioBonus": "aom/nor/spells/aomNorFrost_bonus",
+			"iconEffect": "aom/nor/spells/aomNorFrost_effect",
+			"iconImmune": "aom/nor/spells/aomNorFrost_effect"
+		},
+		"levels": {
+			"base": {
+				"range": "0-1",
+				"targetModifier": {
+					"smart": true
+				},
+				"battleEffects": {
+					"0sac": {
+						"type": "aomNorSacrifice"
+					},
+					"frost": {
+						"type": "aomNorTimed",
+						"bonus": {
+							"notActive": {
+								"type": "NOT_ACTIVE",
+								"val": 0,
+								"duration": "N_TURNS",
+								"subtype": "aomNorFrost",
+								"turns": 1
+							},
+							"noRet": {
+								"type": "NO_RETALIATION",
+								"val": 0,
+								"duration": "N_TURNS",
+								"turns": 1
+							},
+							"shell": {
+								"type": "GENERAL_DAMAGE_REDUCTION",
+								"val": 50,
+								"duration": "N_TURNS",
+								"subtype": "damageTypeAll",
+								"turns": 1
+							}
+						},
+						"gods": [
+							1,
+							2
+						],
+						"noScale": true,
+						"filter": "noBoss"
+					}
+				}
+			},
+			"none": {
+				"description": "{Frost Prison}\n\nEnemies on the target hex and one ring around it are frozen for 1 round: they cannot act or retaliate, and take 50% less damage.\n{Affinity}: when cast by a hero whose patron is Thor or Odin, it lasts 1 round longer.",
+				"cost": 20,
+				"power": 0
+			},
+			"basic": {
+				"description": "{Basic Frost Prison}\n\nEnemies on the target hex and one ring around it are frozen for 1 round: they cannot act or retaliate, and take 50% less damage.\n{Affinity}: when cast by a hero whose patron is Thor or Odin, it lasts 1 round longer.",
+				"cost": 16,
+				"power": 0
+			},
+			"advanced": {
+				"description": "{Advanced Frost Prison}\n\nEnemies on the target hex and one ring around it are frozen for 1 round: they cannot act or retaliate, and take 50% less damage.\n{Affinity}: when cast by a hero whose patron is Thor or Odin, it lasts 1 round longer.",
+				"cost": 16,
+				"power": 0
+			},
+			"expert": {
+				"battleEffects": {
+					"frost": {
+						"bonus": {
+							"notActive": {
+								"type": "NOT_ACTIVE",
+								"val": 0,
+								"duration": "N_TURNS",
+								"subtype": "aomNorFrost",
+								"turns": 2
+							},
+							"noRet": {
+								"type": "NO_RETALIATION",
+								"val": 0,
+								"duration": "N_TURNS",
+								"turns": 2
+							},
+							"shell": {
+								"type": "GENERAL_DAMAGE_REDUCTION",
+								"val": 50,
+								"duration": "N_TURNS",
+								"subtype": "damageTypeAll",
+								"turns": 2
+							}
+						}
+					}
+				},
+				"description": "{Expert Frost Prison}\n\nEnemies on the target hex and one ring around it are frozen for 2 rounds: they cannot act or retaliate, and take 50% less damage.\n{Affinity}: when cast by a hero whose patron is Thor or Odin, it lasts 1 round longer.",
+				"cost": 16,
+				"power": 0
+			}
+		}
+	},
+	"aomNorFlameWeapons": {
+		"type": "combat",
+		"name": "Flaming Weapons",
+		"targetType": "NO_TARGET",
+		"school": {
+			"air": false,
+			"earth": false,
+			"fire": true,
+			"water": false
+		},
+		"level": 3,
+		"power": 0,
+		"defaultGainChance": 0,
+		"gainChance": {},
+		"flags": {
+			"positive": true
+		},
+		"targetCondition": {},
+		"animation": {},
+		"sounds": {
+			"cast": "aom/nor/sp_aomNorFlameWeapons.wav"
+		},
+		"graphics": {
+			"iconBook": "aom/nor/spells/aomNorFlameWeapons_book",
+			"iconScroll": "aom/nor/spells/aomNorFlameWeapons_scroll",
+			"iconScenarioBonus": "aom/nor/spells/aomNorFlameWeapons_bonus",
+			"iconEffect": "aom/nor/spells/aomNorFlameWeapons_effect",
+			"iconImmune": "aom/nor/spells/aomNorFlameWeapons_effect"
+		},
+		"levels": {
+			"base": {
+				"range": "X",
+				"battleEffects": {
+					"0sac": {
+						"type": "aomNorSacrifice"
+					},
+					"flame": {
+						"type": "aomNorTimed",
+						"bonus": {
+							"melee": {
+								"type": "PERCENTAGE_DAMAGE_BOOST",
+								"val": 15,
+								"duration": "N_TURNS",
+								"subtype": "damageTypeMelee"
+							},
+							"burn": {
+								"type": "COMBAT_EVENT_TRIGGER",
+								"val": 10,
+								"duration": "N_TURNS",
+								"subtype": "aomNorBurn",
+								"addInfo": {
+									"schools": [
+										"fire"
+									]
+								}
+							}
+						},
+						"gods": [
+							1,
+							3,
+							4
+						],
+						"mass": "own",
+						"filter": "living"
+					},
+					"1fx": {
+						"type": "aomNorFx",
+						"perUnit": {
+							"mass": "own",
+							"filter": "living",
+							"prefix": "aom/nor/fx/fw/",
+							"known": [
+								"aomNorAxeman",
+								"aomNorAxemanBreaker",
+								"aomNorAxemanTwin",
+								"aomNorBerserk",
+								"aomNorBerserkBear",
+								"aomNorBerserkWolf",
+								"aomNorEinheri",
+								"aomNorFafnir",
+								"aomNorFafnirFlame",
+								"aomNorFafnirVenom",
+								"aomNorKraken",
+								"aomNorKrakenAbyss",
+								"aomNorKrakenStorm",
+								"aomNorTitan",
+								"aomNorTitanGap",
+								"aomNorTitanYmir",
+								"aomNorTroll",
+								"aomNorTrollCave",
+								"aomNorTrollStone",
+								"aomNorValkyrie",
+								"aomNorValkyrieChooser",
+								"aomNorValkyrieShield"
+							],
+							"fallback": "_body"
+						}
+					}
+				}
+			},
+			"none": {
+				"description": "{Flaming Weapons}\n\nThe weapons of all your living troops burst into flame: melee damage +15%, and after each attack the target takes a further 10% of that damage as fire damage, for rounds equal to Spell Power.\n{Affinity}: when cast by a hero whose patron is Thor or Loki or Freyr, it lasts 1 round longer.",
+				"cost": 15,
+				"power": 0
+			},
+			"basic": {
+				"description": "{Basic Flaming Weapons}\n\nThe weapons of all your living troops burst into flame: melee damage +15%, and after each attack the target takes a further 10% of that damage as fire damage, for rounds equal to Spell Power.\n{Affinity}: when cast by a hero whose patron is Thor or Loki or Freyr, it lasts 1 round longer.",
+				"cost": 12,
+				"power": 0
+			},
+			"advanced": {
+				"battleEffects": {
+					"flame": {
+						"bonus": {
+							"melee": {
+								"type": "PERCENTAGE_DAMAGE_BOOST",
+								"val": 20,
+								"duration": "N_TURNS",
+								"subtype": "damageTypeMelee"
+							},
+							"burn": {
+								"type": "COMBAT_EVENT_TRIGGER",
+								"val": 15,
+								"duration": "N_TURNS",
+								"subtype": "aomNorBurn",
+								"addInfo": {
+									"schools": [
+										"fire"
+									]
+								}
+							}
+						}
+					}
+				},
+				"description": "{Advanced Flaming Weapons}\n\nThe weapons of all your living troops burst into flame: melee damage +20%, and after each attack the target takes a further 15% of that damage as fire damage, for rounds equal to Spell Power.\n{Affinity}: when cast by a hero whose patron is Thor or Loki or Freyr, it lasts 1 round longer.",
+				"cost": 12,
+				"power": 0
+			},
+			"expert": {
+				"battleEffects": {
+					"flame": {
+						"bonus": {
+							"melee": {
+								"type": "PERCENTAGE_DAMAGE_BOOST",
+								"val": 25,
+								"duration": "N_TURNS",
+								"subtype": "damageTypeMelee"
+							},
+							"burn": {
+								"type": "COMBAT_EVENT_TRIGGER",
+								"val": 20,
+								"duration": "N_TURNS",
+								"subtype": "aomNorBurn",
+								"addInfo": {
+									"schools": [
+										"fire"
+									]
+								}
+							}
+						}
+					}
+				},
+				"description": "{Expert Flaming Weapons}\n\nThe weapons of all your living troops burst into flame: melee damage +25%, and after each attack the target takes a further 20% of that damage as fire damage, for rounds equal to Spell Power.\n{Affinity}: when cast by a hero whose patron is Thor or Loki or Freyr, it lasts 1 round longer.",
+				"cost": 12,
+				"power": 0
+			}
+		}
+	},
+	"aomNorWalkingWoods": {
+		"type": "combat",
+		"name": "Walking Woods",
+		"targetType": "NO_TARGET",
+		"school": {
+			"air": false,
+			"earth": true,
+			"fire": false,
+			"water": false
+		},
+		"level": 4,
+		"power": 0,
+		"defaultGainChance": 0,
+		"gainChance": {},
+		"flags": {
+			"indifferent": true
+		},
+		"targetCondition": {},
+		"animation": {},
+		"sounds": {
+			"cast": "aom/nor/sp_aomNorWalkingWoods.wav"
+		},
+		"graphics": {
+			"iconBook": "aom/nor/spells/aomNorWalkingWoods_book",
+			"iconScroll": "aom/nor/spells/aomNorWalkingWoods_scroll",
+			"iconScenarioBonus": "aom/nor/spells/aomNorWalkingWoods_bonus",
+			"iconEffect": "aom/nor/spells/aomNorWalkingWoods_effect",
+			"iconImmune": "aom/nor/spells/aomNorWalkingWoods_effect"
+		},
+		"levels": {
+			"base": {
+				"range": "X",
+				"battleEffects": {
+					"0sac": {
+						"type": "aomNorSacrifice"
+					},
+					"summon": {
+						"type": "aomNorSummon",
+						"id": "aom-norse:aomNorWalkingWoods",
+						"exclusive": false,
+						"permanent": false,
+						"summonByHealth": true,
+						"summonSameUnit": true,
+						"animation": "aom/nor/fx/apWoods.json"
+					}
+				}
+			},
+			"none": {
+				"description": "{Walking Woods}\n\nNjord awakens the cedars, which tear up their roots to fight for you this battle: total health Spell Power × 30 (70 health each).\n{Affinity}: when cast by a hero whose patron is Odin or Loki, summoned amount +25%.",
+				"cost": 20,
+				"power": 30
+			},
+			"basic": {
+				"description": "{Basic Walking Woods}\n\nNjord awakens the cedars, which tear up their roots to fight for you this battle: total health Spell Power × 30 (70 health each).\n{Affinity}: when cast by a hero whose patron is Odin or Loki, summoned amount +25%.",
+				"cost": 16,
+				"power": 30
+			},
+			"advanced": {
+				"description": "{Advanced Walking Woods}\n\nNjord awakens the cedars, which tear up their roots to fight for you this battle: total health Spell Power × 40 (70 health each).\n{Affinity}: when cast by a hero whose patron is Odin or Loki, summoned amount +25%.",
+				"cost": 16,
+				"power": 40
+			},
+			"expert": {
+				"description": "{Expert Walking Woods}\n\nNjord awakens the cedars, which tear up their roots to fight for you this battle: total health Spell Power × 55 (70 health each).\n{Affinity}: when cast by a hero whose patron is Odin or Loki, summoned amount +25%.",
+				"cost": 16,
+				"power": 55
+			}
+		}
+	},
+	"aomNorTempest": {
+		"type": "combat",
+		"name": "Hailstorm",
+		"targetType": "LOCATION",
+		"school": {
+			"air": false,
+			"earth": false,
+			"fire": false,
+			"water": true
+		},
+		"level": 4,
+		"power": 10,
+		"defaultGainChance": 0,
+		"gainChance": {},
+		"flags": {
+			"damage": true,
+			"negative": true
+		},
+		"targetCondition": {
+			"noneOf": {
+				"bonus.SIEGE_WEAPON": "absolute"
+			}
+		},
+		"animation": {
+			"affect": [
+				"aom/nor/fx/spTempest"
+			]
+		},
+		"sounds": {
+			"cast": "aom/nor/sp_aomNorTempest.wav"
+		},
+		"graphics": {
+			"iconBook": "aom/nor/spells/aomNorTempest_book",
+			"iconScroll": "aom/nor/spells/aomNorTempest_scroll",
+			"iconScenarioBonus": "aom/nor/spells/aomNorTempest_bonus",
+			"iconEffect": "aom/nor/spells/aomNorTempest_effect",
+			"iconImmune": "aom/nor/spells/aomNorTempest_effect"
+		},
+		"levels": {
+			"base": {
+				"range": "0-1",
+				"targetModifier": {
+					"smart": false
+				},
+				"battleEffects": {
+					"0sac": {
+						"type": "aomNorSacrifice"
+					},
+					"damage": {
+						"type": "aomNorDamage",
+						"filter": "notFlying"
+					},
+					"slow": {
+						"type": "aomNorTimed",
+						"bonus": {
+							"slow": {
+								"type": "STACKS_SPEED",
+								"val": -2,
+								"duration": "N_TURNS",
+								"turns": 2
+							}
+						},
+						"filter": "notFlying",
+						"noScale": true,
+						"optional": true,
+						"trialRatio": 0.04
+					},
+					"zdot": {
+						"type": "aomNorDotEffect",
+						"factor": 0.3,
+						"turns": 1,
+						"school": "water",
+						"filter": "notFlying",
+						"optional": true
+					}
+				}
+			},
+			"none": {
+				"description": "{Hailstorm}\n\nHail falls on the target hex and one ring around it: all non-flying troops take (Spell Power × 10 + 20) damage and Speed -2 for 2 rounds, and 30% of that damage again at the start of the next round.\n{Affinity}: when cast by a hero whose patron is Freyr, damage +25%.",
+				"cost": 20,
+				"power": 20
+			},
+			"basic": {
+				"description": "{Basic Hailstorm}\n\nHail falls on the target hex and one ring around it: all non-flying troops take (Spell Power × 10 + 20) damage and Speed -2 for 2 rounds, and 30% of that damage again at the start of the next round.\n{Affinity}: when cast by a hero whose patron is Freyr, damage +25%.",
+				"cost": 16,
+				"power": 20
+			},
+			"advanced": {
+				"battleEffects": {
+					"slow": {
+						"bonus": {
+							"slow": {
+								"type": "STACKS_SPEED",
+								"val": -3,
+								"duration": "N_TURNS",
+								"turns": 2
+							}
+						}
+					}
+				},
+				"description": "{Advanced Hailstorm}\n\nHail falls on the target hex and one ring around it: all non-flying troops take (Spell Power × 10 + 40) damage and Speed -3 for 2 rounds, and 30% of that damage again at the start of the next round.\n{Affinity}: when cast by a hero whose patron is Freyr, damage +25%.",
+				"cost": 16,
+				"power": 40
+			},
+			"expert": {
+				"range": "0-2",
+				"battleEffects": {
+					"slow": {
+						"bonus": {
+							"slow": {
+								"type": "STACKS_SPEED",
+								"val": -3,
+								"duration": "N_TURNS",
+								"turns": 2
+							}
+						}
+					}
+				},
+				"description": "{Expert Hailstorm}\n\nHail falls on the target hex and two rings around it: all non-flying troops take (Spell Power × 10 + 80) damage and Speed -3 for 2 rounds, and 30% of that damage again at the start of the next round.\n{Affinity}: when cast by a hero whose patron is Freyr, damage +25%.",
+				"cost": 16,
+				"power": 80
+			}
+		}
+	},
+	"aomNorNidhogg": {
+		"type": "combat",
+		"name": "Nidhogg",
+		"targetType": "NO_TARGET",
+		"school": {
+			"air": false,
+			"earth": false,
+			"fire": true,
+			"water": false
+		},
+		"level": 5,
+		"power": 0,
+		"defaultGainChance": 0,
+		"gainChance": {},
+		"flags": {
+			"indifferent": true
+		},
+		"targetCondition": {},
+		"animation": {},
+		"sounds": {
+			"cast": "aom/nor/sp_aomNorNidhogg.wav"
+		},
+		"graphics": {
+			"iconBook": "aom/nor/spells/aomNorNidhogg_book",
+			"iconScroll": "aom/nor/spells/aomNorNidhogg_scroll",
+			"iconScenarioBonus": "aom/nor/spells/aomNorNidhogg_bonus",
+			"iconEffect": "aom/nor/spells/aomNorNidhogg_effect",
+			"iconImmune": "aom/nor/spells/aomNorNidhogg_effect"
+		},
+		"levels": {
+			"base": {
+				"range": "X",
+				"battleEffects": {
+					"0sac": {
+						"type": "aomNorSacrifice"
+					},
+					"summon": {
+						"type": "aomNorSummon",
+						"id": "aom-norse:aomNorNidhogg",
+						"once": true,
+						"minCount": 1,
+						"exclusive": false,
+						"permanent": false,
+						"summonByHealth": true,
+						"summonSameUnit": true,
+						"animation": "aom/nor/fx/apNidhogg.json"
+					}
+				}
+			},
+			"none": {
+				"description": "{Nidhogg}\n\nHel calls the dragon Nidhogg from the underworld for this battle: total health Spell Power × 30 (300 health each), at least one.\nCan be summoned only once per battle.\n{Affinity}: when cast by a hero whose patron is Loki or Freyr, summoned amount +25%.",
+				"cost": 25,
+				"power": 30
+			},
+			"basic": {
+				"description": "{Basic Nidhogg}\n\nHel calls the dragon Nidhogg from the underworld for this battle: total health Spell Power × 30 (300 health each), at least one.\nCan be summoned only once per battle.\n{Affinity}: when cast by a hero whose patron is Loki or Freyr, summoned amount +25%.",
+				"cost": 20,
+				"power": 30
+			},
+			"advanced": {
+				"description": "{Advanced Nidhogg}\n\nHel calls the dragon Nidhogg from the underworld for this battle: total health Spell Power × 40 (300 health each), at least one.\nCan be summoned only once per battle.\n{Affinity}: when cast by a hero whose patron is Loki or Freyr, summoned amount +25%.",
+				"cost": 20,
+				"power": 40
+			},
+			"expert": {
+				"description": "{Expert Nidhogg}\n\nHel calls the dragon Nidhogg from the underworld for this battle: total health Spell Power × 50 (300 health each), at least one.\nCan be summoned only once per battle.\n{Affinity}: when cast by a hero whose patron is Loki or Freyr, summoned amount +25%.",
+				"cost": 20,
+				"power": 50
+			}
+		}
+	},
+	"aomNorEinherjar": {
+		"type": "combat",
+		"name": "Einherjar Awakening",
+		"targetType": "NO_TARGET",
+		"school": {
+			"air": false,
+			"earth": false,
+			"fire": true,
+			"water": false
+		},
+		"level": 5,
+		"power": 0,
+		"defaultGainChance": 0,
+		"gainChance": {},
+		"flags": {
+			"positive": true
+		},
+		"targetCondition": {},
+		"animation": {
+			"affect": [
+				"aom/nor/fx/spEinherjar"
+			]
+		},
+		"sounds": {
+			"cast": "aom/nor/sp_aomNorEinherjar.wav"
+		},
+		"graphics": {
+			"iconBook": "aom/nor/spells/aomNorEinherjar_book",
+			"iconScroll": "aom/nor/spells/aomNorEinherjar_scroll",
+			"iconScenarioBonus": "aom/nor/spells/aomNorEinherjar_bonus",
+			"iconEffect": "aom/nor/spells/aomNorEinherjar_effect",
+			"iconImmune": "aom/nor/spells/aomNorEinherjar_effect"
+		},
+		"levels": {
+			"base": {
+				"range": "X",
+				"battleEffects": {
+					"0sac": {
+						"type": "aomNorSacrifice"
+					},
+					"awake": {
+						"type": "aomNorTimed",
+						"bonus": {
+							"atk": {
+								"type": "PRIMARY_SKILL",
+								"val": 3,
+								"duration": "N_TURNS",
+								"subtype": "attack"
+							},
+							"def": {
+								"type": "PRIMARY_SKILL",
+								"val": 3,
+								"duration": "N_TURNS",
+								"subtype": "defence"
+							},
+							"spd": {
+								"type": "STACKS_SPEED",
+								"val": 1,
+								"duration": "N_TURNS"
+							}
+						},
+						"gods": [
+							1,
+							2
+						],
+						"mass": "own",
+						"filter": "lines"
+					}
+				}
+			},
+			"none": {
+				"description": "{Einherjar Awakening}\n\nBaldr awakens the Einherjar in your Berserkers and Throwing Axemen: Attack and Defense +3, Speed +1, for rounds equal to Spell Power.\n{Affinity}: when cast by a hero whose patron is Thor or Odin, it lasts 1 round longer.",
+				"cost": 25,
+				"power": 0
+			},
+			"basic": {
+				"description": "{Basic Einherjar Awakening}\n\nBaldr awakens the Einherjar in your Berserkers and Throwing Axemen: Attack and Defense +3, Speed +1, for rounds equal to Spell Power.\n{Affinity}: when cast by a hero whose patron is Thor or Odin, it lasts 1 round longer.",
+				"cost": 20,
+				"power": 0
+			},
+			"advanced": {
+				"battleEffects": {
+					"awake": {
+						"bonus": {
+							"atk": {
+								"type": "PRIMARY_SKILL",
+								"val": 4,
+								"duration": "N_TURNS",
+								"subtype": "attack"
+							},
+							"def": {
+								"type": "PRIMARY_SKILL",
+								"val": 4,
+								"duration": "N_TURNS",
+								"subtype": "defence"
+							},
+							"spd": {
+								"type": "STACKS_SPEED",
+								"val": 1,
+								"duration": "N_TURNS"
+							}
+						}
+					}
+				},
+				"description": "{Advanced Einherjar Awakening}\n\nBaldr awakens the Einherjar in your Berserkers and Throwing Axemen: Attack and Defense +4, Speed +1, for rounds equal to Spell Power.\n{Affinity}: when cast by a hero whose patron is Thor or Odin, it lasts 1 round longer.",
+				"cost": 20,
+				"power": 0
+			},
+			"expert": {
+				"battleEffects": {
+					"awake": {
+						"bonus": {
+							"atk": {
+								"type": "PRIMARY_SKILL",
+								"val": 6,
+								"duration": "N_TURNS",
+								"subtype": "attack"
+							},
+							"def": {
+								"type": "PRIMARY_SKILL",
+								"val": 6,
+								"duration": "N_TURNS",
+								"subtype": "defence"
+							},
+							"spd": {
+								"type": "STACKS_SPEED",
+								"val": 2,
+								"duration": "N_TURNS"
+							}
+						}
+					}
+				},
+				"description": "{Expert Einherjar Awakening}\n\nBaldr awakens the Einherjar in your Berserkers and Throwing Axemen: Attack and Defense +6, Speed +2, for rounds equal to Spell Power.\n{Affinity}: when cast by a hero whose patron is Thor or Odin, it lasts 1 round longer.",
+				"cost": 20,
+				"power": 0
+			}
+		}
+	},
+	"aomNorFimbulwinter": {
+		"type": "combat",
+		"name": "Fimbulwinter",
+		"targetType": "NO_TARGET",
+		"school": {
+			"air": false,
+			"earth": false,
+			"fire": false,
+			"water": true
+		},
+		"level": 5,
+		"power": 5,
+		"defaultGainChance": 0,
+		"gainChance": {},
+		"flags": {
+			"damage": true,
+			"negative": true
+		},
+		"targetCondition": {
+			"noneOf": {
+				"bonus.SIEGE_WEAPON": "absolute"
+			}
+		},
+		"animation": {
+			"affect": [
+				"aom/nor/fx/spFimbulwinter"
+			]
+		},
+		"sounds": {
+			"cast": "aom/nor/sp_aomNorFimbulwinter.wav"
+		},
+		"graphics": {
+			"iconBook": "aom/nor/spells/aomNorFimbulwinter_book",
+			"iconScroll": "aom/nor/spells/aomNorFimbulwinter_scroll",
+			"iconScenarioBonus": "aom/nor/spells/aomNorFimbulwinter_bonus",
+			"iconEffect": "aom/nor/spells/aomNorFimbulwinter_effect",
+			"iconImmune": "aom/nor/spells/aomNorFimbulwinter_effect"
+		},
+		"levels": {
+			"base": {
+				"range": "X",
+				"battleEffects": {
+					"0sac": {
+						"type": "aomNorSacrifice"
+					},
+					"damage": {
+						"type": "aomNorDamage",
+						"mass": "enemy"
+					},
+					"slow": {
+						"type": "aomNorTimed",
+						"bonus": {
+							"slow": {
+								"type": "STACKS_SPEED",
+								"val": -2,
+								"duration": "N_TURNS",
+								"turns": 3
+							}
+						},
+						"mass": "enemy",
+						"noScale": true,
+						"optional": true,
+						"trialRatio": 0.04
+					},
+					"zdot": {
+						"type": "aomNorDotEffect",
+						"factor": 1.0,
+						"turns": 2,
+						"school": "water",
+						"mass": "enemy",
+						"optional": true
+					},
+					"1fx": {
+						"type": "aomNorFx",
+						"screen": "aom/nor/fx/fxFimbulScreen.json"
+					}
+				}
+			},
+			"none": {
+				"description": "{Fimbulwinter}\n\nThe blizzard of the end times sweeps the field: all enemies Speed -2 for 3 rounds; they take (Spell Power × 5 + 10) frost damage at once, and again at the start of each of the next two rounds.\n{Affinity}: when cast by a hero whose patron is Thor or Odin or Loki, damage +25%.",
+				"cost": 25,
+				"power": 10
+			},
+			"basic": {
+				"description": "{Basic Fimbulwinter}\n\nThe blizzard of the end times sweeps the field: all enemies Speed -2 for 3 rounds; they take (Spell Power × 5 + 10) frost damage at once, and again at the start of each of the next two rounds.\n{Affinity}: when cast by a hero whose patron is Thor or Odin or Loki, damage +25%.",
+				"cost": 20,
+				"power": 10
+			},
+			"advanced": {
+				"description": "{Advanced Fimbulwinter}\n\nThe blizzard of the end times sweeps the field: all enemies Speed -2 for 3 rounds; they take (Spell Power × 5 + 20) frost damage at once, and again at the start of each of the next two rounds.\n{Affinity}: when cast by a hero whose patron is Thor or Odin or Loki, damage +25%.",
+				"cost": 20,
+				"power": 20
+			},
+			"expert": {
+				"battleEffects": {
+					"slow": {
+						"bonus": {
+							"slow": {
+								"type": "STACKS_SPEED",
+								"val": -3,
+								"duration": "N_TURNS",
+								"turns": 3
+							}
+						}
+					}
+				},
+				"description": "{Expert Fimbulwinter}\n\nThe blizzard of the end times sweeps the field: all enemies Speed -3 for 3 rounds; they take (Spell Power × 5 + 40) frost damage at once, and again at the start of each of the next two rounds.\n{Affinity}: when cast by a hero whose patron is Thor or Odin or Loki, damage +25%.",
+				"cost": 20,
+				"power": 40
+			}
+		}
+	},
+	"aomNorHealingSpring": {
+		"type": "combat",
+		"name": "Healing Spring",
+		"targetType": "LOCATION",
+		"school": {
+			"air": false,
+			"earth": false,
+			"fire": false,
+			"water": true
+		},
+		"level": 3,
+		"power": 5,
+		"defaultGainChance": 0,
+		"gainChance": {},
+		"flags": {
+			"indifferent": true
+		},
+		"targetCondition": {},
+		"animation": {},
+		"sounds": {
+			"cast": "aom/nor/sp_aomNorHealingSpring.wav"
+		},
+		"graphics": {
+			"iconBook": "aom/nor/spells/aomNorHealingSpring_book",
+			"iconScroll": "aom/nor/spells/aomNorHealingSpring_scroll",
+			"iconScenarioBonus": "aom/nor/spells/aomNorHealingSpring_bonus",
+			"iconEffect": "aom/nor/spells/aomNorHealingSpring_effect",
+			"iconImmune": "aom/nor/spells/aomNorHealingSpring_effect"
+		},
+		"levels": {
+			"base": {
+				"range": "0",
+				"targetModifier": {
+					"clearAffected": true
+				},
+				"battleEffects": {
+					"0sac": {
+						"type": "aomNorSacrifice"
+					},
+					"obstacle": {
+						"type": "aomNorObstacle",
+						"hidden": false,
+						"passable": false,
+						"trap": false,
+						"turnsRemaining": 3,
+						"attacker": {
+							"animation": "aom/nor/fx/obSpring",
+							"appearAnimation": "aom/nor/fx/obSpring",
+							"range": [
+								[
+									"L"
+								]
+							],
+							"shape": [
+								[
+									"R"
+								]
+							]
+						},
+						"defender": {
+							"animation": "aom/nor/fx/obSpring",
+							"appearAnimation": "aom/nor/fx/obSpring",
+							"range": [
+								[
+									"L"
+								]
+							],
+							"shape": [
+								[
+									"R"
+								]
+							]
+						},
+						"gods": [
+							1,
+							3
+						]
+					},
+					"site": {
+						"type": "aomNorSiteEffect",
+						"kind": "spring",
+						"radius": 2,
+						"factor": 1,
+						"turns": 3,
+						"gods": [
+							1,
+							3
+						],
+						"animation": "aom/nor/fx/nvHeal.json"
+					}
+				}
+			},
+			"none": {
+				"description": "{Healing Spring}\n\nA spring wells up on the target hex (1 hex, blocks movement) for 3 rounds: at the start of each round, allied troops within 2 hexes of it each heal (Spell Power × 5 + 10) health.\n{Affinity}: when cast by a hero whose patron is Thor or Loki, healing +25% and it lasts 1 round longer.",
+				"cost": 15,
+				"power": 10
+			},
+			"basic": {
+				"description": "{Basic Healing Spring}\n\nA spring wells up on the target hex (1 hex, blocks movement) for 3 rounds: at the start of each round, allied troops within 2 hexes of it each heal (Spell Power × 5 + 10) health.\n{Affinity}: when cast by a hero whose patron is Thor or Loki, healing +25% and it lasts 1 round longer.",
+				"cost": 12,
+				"power": 10
+			},
+			"advanced": {
+				"battleEffects": {
+					"obstacle": {
+						"type": "aomNorObstacle",
+						"hidden": false,
+						"passable": false,
+						"trap": false,
+						"turnsRemaining": 4,
+						"attacker": {
+							"animation": "aom/nor/fx/obSpring",
+							"appearAnimation": "aom/nor/fx/obSpring",
+							"range": [
+								[
+									"L"
+								]
+							],
+							"shape": [
+								[
+									"R"
+								]
+							]
+						},
+						"defender": {
+							"animation": "aom/nor/fx/obSpring",
+							"appearAnimation": "aom/nor/fx/obSpring",
+							"range": [
+								[
+									"L"
+								]
+							],
+							"shape": [
+								[
+									"R"
+								]
+							]
+						},
+						"gods": [
+							1,
+							3
+						]
+					},
+					"site": {
+						"type": "aomNorSiteEffect",
+						"kind": "spring",
+						"radius": 2,
+						"factor": 1,
+						"turns": 4,
+						"gods": [
+							1,
+							3
+						],
+						"animation": "aom/nor/fx/nvHeal.json"
+					}
+				},
+				"description": "{Advanced Healing Spring}\n\nA spring wells up on the target hex (1 hex, blocks movement) for 4 rounds: at the start of each round, allied troops within 2 hexes of it each heal (Spell Power × 5 + 20) health.\n{Affinity}: when cast by a hero whose patron is Thor or Loki, healing +25% and it lasts 1 round longer.",
+				"cost": 12,
+				"power": 20
+			},
+			"expert": {
+				"battleEffects": {
+					"obstacle": {
+						"type": "aomNorObstacle",
+						"hidden": false,
+						"passable": false,
+						"trap": false,
+						"turnsRemaining": 5,
+						"attacker": {
+							"animation": "aom/nor/fx/obSpring",
+							"appearAnimation": "aom/nor/fx/obSpring",
+							"range": [
+								[
+									"L"
+								]
+							],
+							"shape": [
+								[
+									"R"
+								]
+							]
+						},
+						"defender": {
+							"animation": "aom/nor/fx/obSpring",
+							"appearAnimation": "aom/nor/fx/obSpring",
+							"range": [
+								[
+									"L"
+								]
+							],
+							"shape": [
+								[
+									"R"
+								]
+							]
+						},
+						"gods": [
+							1,
+							3
+						]
+					},
+					"site": {
+						"type": "aomNorSiteEffect",
+						"kind": "spring",
+						"radius": 2,
+						"factor": 1,
+						"turns": 5,
+						"gods": [
+							1,
+							3
+						],
+						"animation": "aom/nor/fx/nvHeal.json"
+					}
+				},
+				"description": "{Expert Healing Spring}\n\nA spring wells up on the target hex (1 hex, blocks movement) for 5 rounds: at the start of each round, allied troops within 2 hexes of it each heal (Spell Power × 5 + 30) health.\n{Affinity}: when cast by a hero whose patron is Thor or Loki, healing +25% and it lasts 1 round longer.",
+				"cost": 12,
+				"power": 30
+			}
+		}
+	},
+	"aomNorUndermine": {
+		"type": "combat",
+		"name": "Undermine",
+		"targetType": "LOCATION",
+		"school": {
+			"air": false,
+			"earth": true,
+			"fire": false,
+			"water": false
+		},
+		"level": 2,
+		"power": 5,
+		"defaultGainChance": 0,
+		"gainChance": {},
+		"flags": {
+			"damage": true,
+			"negative": true
+		},
+		"targetCondition": {},
+		"animation": {
+			"affect": [
+				"aom/nor/fx/spUndermine"
+			]
+		},
+		"sounds": {
+			"cast": "aom/nor/sp_aomNorUndermine.wav"
+		},
+		"graphics": {
+			"iconBook": "aom/nor/spells/aomNorUndermine_book",
+			"iconScroll": "aom/nor/spells/aomNorUndermine_scroll",
+			"iconScenarioBonus": "aom/nor/spells/aomNorUndermine_bonus",
+			"iconEffect": "aom/nor/spells/aomNorUndermine_effect",
+			"iconImmune": "aom/nor/spells/aomNorUndermine_effect"
+		},
+		"levels": {
+			"base": {
+				"range": "0",
+				"targetModifier": {
+					"smart": false
+				},
+				"battleEffects": {
+					"0sac": {
+						"type": "aomNorSacrifice"
+					},
+					"quake": {
+						"type": "aomNorQuake",
+						"wall": 1,
+						"siegeFactor": 3
+					}
+				}
+			},
+			"none": {
+				"description": "{Undermine}\n\nThe earth splits along the target hex's row: enemies in the row take (Spell Power × 5 + 10) damage, war machines triple; in sieges, walls, gate and towers in the row each take 1 damage.\n{Affinity}: when cast by a hero whose patron is Odin or Loki, damage +25%.",
+				"cost": 10,
+				"power": 10
+			},
+			"basic": {
+				"description": "{Basic Undermine}\n\nThe earth splits along the target hex's row: enemies in the row take (Spell Power × 5 + 10) damage, war machines triple; in sieges, walls, gate and towers in the row each take 1 damage.\n{Affinity}: when cast by a hero whose patron is Odin or Loki, damage +25%.",
+				"cost": 8,
+				"power": 10
+			},
+			"advanced": {
+				"battleEffects": {
+					"quake": {
+						"type": "aomNorQuake",
+						"wall": 2,
+						"siegeFactor": 3
+					}
+				},
+				"description": "{Advanced Undermine}\n\nThe earth splits along the target hex's row: enemies in the row take (Spell Power × 5 + 20) damage, war machines triple; in sieges, walls, gate and towers in the row each take 2 damage.\n{Affinity}: when cast by a hero whose patron is Odin or Loki, damage +25%.",
+				"cost": 8,
+				"power": 20
+			},
+			"expert": {
+				"battleEffects": {
+					"quake": {
+						"type": "aomNorQuake",
+						"wall": 2,
+						"siegeFactor": 3
+					}
+				},
+				"description": "{Expert Undermine}\n\nThe earth splits along the target hex's row: enemies in the row take (Spell Power × 5 + 40) damage, war machines triple; in sieges, walls, gate and towers in the row each take 2 damage.\n{Affinity}: when cast by a hero whose patron is Odin or Loki, damage +25%.",
+				"cost": 8,
+				"power": 40
+			}
+		}
+	},
+	"aomNorBastion": {
+		"type": "combat",
+		"name": "Spectral Bastion",
+		"targetType": "LOCATION",
+		"school": {
+			"air": false,
+			"earth": true,
+			"fire": false,
+			"water": false
+		},
+		"level": 4,
+		"power": 10,
+		"defaultGainChance": 0,
+		"gainChance": {},
+		"flags": {
+			"damage": true,
+			"indifferent": true
+		},
+		"targetCondition": {},
+		"animation": {},
+		"sounds": {
+			"cast": "aom/nor/sp_aomNorBastion.wav"
+		},
+		"graphics": {
+			"iconBook": "aom/nor/spells/aomNorBastion_book",
+			"iconScroll": "aom/nor/spells/aomNorBastion_scroll",
+			"iconScenarioBonus": "aom/nor/spells/aomNorBastion_bonus",
+			"iconEffect": "aom/nor/spells/aomNorBastion_effect",
+			"iconImmune": "aom/nor/spells/aomNorBastion_effect"
+		},
+		"levels": {
+			"base": {
+				"range": "0",
+				"targetModifier": {
+					"clearAffected": true
+				},
+				"battleEffects": {
+					"0sac": {
+						"type": "aomNorSacrifice"
+					},
+					"obstacle": {
+						"type": "aomNorObstacle",
+						"hidden": false,
+						"passable": false,
+						"trap": false,
+						"turnsRemaining": 3,
+						"attacker": {
+							"animation": "aom/nor/fx/obBastion",
+							"appearAnimation": "aom/nor/fx/obBastionIn",
+							"range": [
+								[
+									"L"
+								]
+							],
+							"shape": [
+								[
+									"R"
+								]
+							]
+						},
+						"defender": {
+							"animation": "aom/nor/fx/obBastion",
+							"appearAnimation": "aom/nor/fx/obBastionIn",
+							"range": [
+								[
+									"L"
+								]
+							],
+							"shape": [
+								[
+									"R"
+								]
+							]
+						},
+						"gods": [
+							4
+						],
+						"ownHalf": true
+					},
+					"site": {
+						"type": "aomNorSiteEffect",
+						"kind": "fort",
+						"factor": 1,
+						"turns": 3,
+						"gods": [
+							4
+						],
+						"animation": "aom/nor/fx/spBastionShot.json"
+					}
+				}
+			},
+			"none": {
+				"description": "{Spectral Bastion}\n\nRaises a spectral Asgardian stockade on the target hex on your half of the field (1 hex, blocks movement) for 3 rounds: at the start of each round it shoots the nearest enemy for (Spell Power × 10 + 20) damage.\n{Affinity}: when cast by a hero whose patron is Freyr, damage +25% and it lasts 1 round longer.",
+				"cost": 20,
+				"power": 20
+			},
+			"basic": {
+				"description": "{Basic Spectral Bastion}\n\nRaises a spectral Asgardian stockade on the target hex on your half of the field (1 hex, blocks movement) for 3 rounds: at the start of each round it shoots the nearest enemy for (Spell Power × 10 + 20) damage.\n{Affinity}: when cast by a hero whose patron is Freyr, damage +25% and it lasts 1 round longer.",
+				"cost": 16,
+				"power": 20
+			},
+			"advanced": {
+				"battleEffects": {
+					"obstacle": {
+						"type": "aomNorObstacle",
+						"hidden": false,
+						"passable": false,
+						"trap": false,
+						"turnsRemaining": 4,
+						"attacker": {
+							"animation": "aom/nor/fx/obBastion",
+							"appearAnimation": "aom/nor/fx/obBastionIn",
+							"range": [
+								[
+									"L"
+								]
+							],
+							"shape": [
+								[
+									"R"
+								]
+							]
+						},
+						"defender": {
+							"animation": "aom/nor/fx/obBastion",
+							"appearAnimation": "aom/nor/fx/obBastionIn",
+							"range": [
+								[
+									"L"
+								]
+							],
+							"shape": [
+								[
+									"R"
+								]
+							]
+						},
+						"gods": [
+							4
+						],
+						"ownHalf": true
+					},
+					"site": {
+						"type": "aomNorSiteEffect",
+						"kind": "fort",
+						"factor": 1,
+						"turns": 4,
+						"gods": [
+							4
+						],
+						"animation": "aom/nor/fx/spBastionShot.json"
+					}
+				},
+				"description": "{Advanced Spectral Bastion}\n\nRaises a spectral Asgardian stockade on the target hex on your half of the field (1 hex, blocks movement) for 4 rounds: at the start of each round it shoots the nearest enemy for (Spell Power × 10 + 40) damage.\n{Affinity}: when cast by a hero whose patron is Freyr, damage +25% and it lasts 1 round longer.",
+				"cost": 16,
+				"power": 40
+			},
+			"expert": {
+				"battleEffects": {
+					"obstacle": {
+						"type": "aomNorObstacle",
+						"hidden": false,
+						"passable": false,
+						"trap": false,
+						"turnsRemaining": 5,
+						"attacker": {
+							"animation": "aom/nor/fx/obBastion",
+							"appearAnimation": "aom/nor/fx/obBastionIn",
+							"range": [
+								[
+									"L"
+								]
+							],
+							"shape": [
+								[
+									"R"
+								]
+							]
+						},
+						"defender": {
+							"animation": "aom/nor/fx/obBastion",
+							"appearAnimation": "aom/nor/fx/obBastionIn",
+							"range": [
+								[
+									"L"
+								]
+							],
+							"shape": [
+								[
+									"R"
+								]
+							]
+						},
+						"gods": [
+							4
+						],
+						"ownHalf": true
+					},
+					"site": {
+						"type": "aomNorSiteEffect",
+						"kind": "fort",
+						"factor": 1,
+						"turns": 5,
+						"gods": [
+							4
+						],
+						"animation": "aom/nor/fx/spBastionShot.json"
+					}
+				},
+				"description": "{Expert Spectral Bastion}\n\nRaises a spectral Asgardian stockade on the target hex on your half of the field (1 hex, blocks movement) for 5 rounds: at the start of each round it shoots the nearest enemy for (Spell Power × 10 + 60) damage.\n{Affinity}: when cast by a hero whose patron is Freyr, damage +25% and it lasts 1 round longer.",
+				"cost": 16,
+				"power": 60
+			}
+		}
+	},
+	"aomNorInferno": {
+		"type": "combat",
+		"name": "Fenrir's Inferno",
+		"targetType": "LOCATION",
+		"school": {
+			"air": false,
+			"earth": false,
+			"fire": true,
+			"water": false
+		},
+		"level": 5,
+		"power": 10,
+		"defaultGainChance": 0,
+		"gainChance": {},
+		"flags": {
+			"damage": true,
+			"negative": true
+		},
+		"targetCondition": {
+			"noneOf": {
+				"bonus.SIEGE_WEAPON": "absolute"
+			}
+		},
+		"animation": {
+			"affect": [
+				"aom/nor/fx/spInferno"
+			]
+		},
+		"sounds": {
+			"cast": "aom/nor/sp_aomNorInferno.wav"
+		},
+		"graphics": {
+			"iconBook": "aom/nor/spells/aomNorInferno_book",
+			"iconScroll": "aom/nor/spells/aomNorInferno_scroll",
+			"iconScenarioBonus": "aom/nor/spells/aomNorInferno_bonus",
+			"iconEffect": "aom/nor/spells/aomNorInferno_effect",
+			"iconImmune": "aom/nor/spells/aomNorInferno_effect"
+		},
+		"levels": {
+			"base": {
+				"range": "0-1",
+				"targetModifier": {
+					"smart": true
+				},
+				"battleEffects": {
+					"0sac": {
+						"type": "aomNorSacrifice"
+					},
+					"dash": {
+						"type": "aomNorFenrirDash"
+					},
+					"explode": {
+						"type": "aomNorDamage"
+					},
+					"wolves": {
+						"type": "aomNorFireWolves",
+						"gods": [
+							4
+						],
+						"animation": "aom/nor/fx/spFlameWeapons.json"
+					},
+					"zdot": {
+						"type": "aomNorDotEffect",
+						"factor": 0.5,
+						"turns": 1,
+						"school": "fire",
+						"optional": true
+					}
+				}
+			},
+			"none": {
+				"description": "{Fenrir's Inferno}\n\nFenrir charges from your side along the target hex's row to the target, savaging enemies on the way, then bursts into a sea of fire on the target hex and one ring around it: enemies on the path and in the fire each take (Spell Power × 10 + 30) fire damage, and half that again at the start of the next round.\nYour wolves become fire wolves for rounds equal to Spell Power.\nAfter it is cast, neither side can retreat or surrender.\n{Affinity}: when cast by a hero whose patron is Freyr, damage +25% and it lasts 1 round longer.",
+				"cost": 25,
+				"power": 30
+			},
+			"basic": {
+				"description": "{Basic Fenrir's Inferno}\n\nFenrir charges from your side along the target hex's row to the target, savaging enemies on the way, then bursts into a sea of fire on the target hex and one ring around it: enemies on the path and in the fire each take (Spell Power × 10 + 30) fire damage, and half that again at the start of the next round.\nYour wolves become fire wolves for rounds equal to Spell Power.\nAfter it is cast, neither side can retreat or surrender.\n{Affinity}: when cast by a hero whose patron is Freyr, damage +25% and it lasts 1 round longer.",
+				"cost": 20,
+				"power": 30
+			},
+			"advanced": {
+				"description": "{Advanced Fenrir's Inferno}\n\nFenrir charges from your side along the target hex's row to the target, savaging enemies on the way, then bursts into a sea of fire on the target hex and one ring around it: enemies on the path and in the fire each take (Spell Power × 10 + 60) fire damage, and half that again at the start of the next round.\nYour wolves become fire wolves for rounds equal to Spell Power.\nAfter it is cast, neither side can retreat or surrender.\n{Affinity}: when cast by a hero whose patron is Freyr, damage +25% and it lasts 1 round longer.",
+				"cost": 20,
+				"power": 60
+			},
+			"expert": {
+				"range": "0-2",
+				"description": "{Expert Fenrir's Inferno}\n\nFenrir charges from your side along the target hex's row to the target, savaging enemies on the way, then bursts into a sea of fire on the target hex and two rings around it: enemies on the path and in the fire each take (Spell Power × 10 + 100) fire damage, and half that again at the start of the next round.\nYour wolves become fire wolves for rounds equal to Spell Power.\nAfter it is cast, neither side can retreat or surrender.\n{Affinity}: when cast by a hero whose patron is Freyr, damage +25% and it lasts 1 round longer.",
+				"cost": 20,
+				"power": 100
+			}
+		}
+	},
+	"aomNorRamStrike": {
+		"targetType": "NO_TARGET",
+		"type": "ability",
+		"name": "Ram Strike",
+		"school": {},
+		"level": 0,
+		"power": 0,
+		"defaultGainChance": 0,
+		"animation": {},
+		"targetCondition": {},
+		"gainChance": {},
+		"graphics": {
+			"iconEffect": "aom/nor/ram/spellIcon.png"
+		},
+		"sounds": {
+			"cast": "aom/nor/aomNorRam_attack.wav"
+		},
+		"levels": {
+			"base": {
+				"description": "{Ram Strike}\n\nIn a siege, standing by the wall, it rams the wall next to it.",
+				"power": 0,
+				"cost": 0,
+				"range": "X",
+				"battleEffects": {
+					"ram": {
+						"type": "aomNorRam"
+					}
+				}
+			},
+			"none": {},
+			"basic": {
+				"description": "{Ram Strike}\n\nIn a siege, standing by the wall, it rams the gate or wall next to it (gate first).",
+				"battleEffects": {
+					"ram": {
+						"type": "aomNorRam",
+						"canAttackGate": true
+					}
+				}
+			},
+			"advanced": {
+				"description": "{Ram Strike}\n\nIn a siege, standing by the wall, it rams the gate, wall or tower next to it (gate first).",
+				"battleEffects": {
+					"ram": {
+						"type": "aomNorRam",
+						"canAttackGate": true,
+						"canAttackTowers": true
+					}
+				}
+			},
+			"expert": {
+				"description": "{Ram Strike}\n\nIn a siege, standing by the wall, it rams the gate, wall, tower or keep next to it (gate first).",
+				"battleEffects": {
+					"ram": {
+						"type": "aomNorRam",
+						"canAttackGate": true,
+						"canAttackTowers": true,
+						"canAttackKeep": true
+					}
+				}
+			}
+		},
+		"flags": {
+			"nonMagical": true,
+			"indifferent": true,
+			"special": true
+		}
+	},
+	"aomNorNineRealms": {
+		"type": "combat",
+		"name": "Gate of the Nine Worlds",
+		"targetType": "CREATURE",
+		"school": {
+			"air": true,
+			"earth": true,
+			"fire": true,
+			"water": true
+		},
+		"level": 5,
+		"power": 0,
+		"defaultGainChance": 0,
+		"gainChance": {},
+		"flags": {
+			"positive": true,
+			"special": true
+		},
+		"targetCondition": {},
+		"animation": {},
+		"sounds": {
+			"cast": "aom/nor/sp_aomNorEinherjar.wav"
+		},
+		"graphics": {
+			"iconBook": "aom/nor/spells/aomNorNineRealms_book",
+			"iconScroll": "aom/nor/spells/aomNorNineRealms_scroll",
+			"iconScenarioBonus": "aom/nor/spells/aomNorNineRealms_bonus",
+			"iconEffect": "aom/nor/spells/aomNorNineRealms_effect",
+			"iconImmune": "aom/nor/spells/aomNorNineRealms_effect"
+		},
+		"levels": {
+			"base": {
+				"range": "X",
+				"targetModifier": {
+					"smart": true
+				},
+				"battleEffects": {
+					"mark": {
+						"type": "timed",
+						"bonus": {
+							"gate": {
+								"type": "COMBAT_EVENT_TRIGGER",
+								"subtype": "aomNorGate",
+								"val": 1,
+								"duration": "ONE_BATTLE",
+								"hidden": true
+							}
+						}
+					},
+					"drop": {
+						"type": "aomNorGateCast"
+					}
+				}
+			},
+			"none": {
+				"description": "{Gate of the Nine Worlds}\n\nThe Gate of the Nine Worlds beneath Yggdrasil opens: a Mountain Giant descends to your side at once, then a Rock Giant, a Frost Giant and a Fire Giant at the start of each following round, until all four have come.\nEach stack has total health Spell Power × 20, at least 1. Can be cast only once per battle.",
+				"cost": 30,
+				"power": 20
+			},
+			"basic": {
+				"description": "{Basic Gate of the Nine Worlds}\n\nThe Gate of the Nine Worlds beneath Yggdrasil opens: a Mountain Giant descends to your side at once, then a Rock Giant, a Frost Giant and a Fire Giant at the start of each following round, until all four have come.\nEach stack has total health Spell Power × 20, at least 1. Can be cast only once per battle.",
+				"cost": 25,
+				"power": 20
+			},
+			"advanced": {
+				"description": "{Advanced Gate of the Nine Worlds}\n\nThe Gate of the Nine Worlds beneath Yggdrasil opens: a Mountain Giant descends to your side at once, then a Rock Giant, a Frost Giant and a Fire Giant at the start of each following round, until all four have come.\nEach stack has total health Spell Power × 30, at least 1. Can be cast only once per battle.",
+				"cost": 25,
+				"power": 30
+			},
+			"expert": {
+				"description": "{Expert Gate of the Nine Worlds}\n\nThe Gate of the Nine Worlds beneath Yggdrasil opens: a Mountain Giant descends to your side at once, then a Rock Giant, a Frost Giant and a Fire Giant at the start of each following round, until all four have come.\nEach stack has total health Spell Power × 40, at least 1. Can be cast only once per battle.",
+				"cost": 25,
+				"power": 40
+			}
+		}
+	},
+	"aomNorGiantFireball": {
+		"type": "ability",
+		"name": "Lava Fireball",
+		"targetType": "LOCATION",
+		"animation": {
+			"hit": [
+				"C13SPF"
+			]
+		},
+		"sounds": {
+			"cast": "SPONTCOMB"
+		},
+		"level": 0,
+		"levels": {
+			"none": {
+				"range": "0-1",
+				"targetModifier": {
+					"smart": true
+				},
+				"battleEffects": {
+					"damage": {
+						"type": "core:damage"
+					}
+				},
+				"description": "{Lava Fireball}\n\nA fireball hurled by a Fire Giant; it hurts only enemies on the target hex and one ring around it.",
+				"cost": 0,
+				"power": 0
+			}
+		},
+		"flags": {
+			"damage": true,
+			"negative": true,
+			"nonMagical": true,
+			"special": true
+		},
+		"targetCondition": {},
+		"school": {
+			"air": false,
+			"earth": false,
+			"fire": true,
+			"water": false
+		},
+		"power": 0,
+		"gainChance": {},
+		"defaultGainChance": 0
+	}
+}

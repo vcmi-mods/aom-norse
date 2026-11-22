@@ -1,0 +1,83 @@
+{
+	"core:artillery": {
+		"base": {
+			"effects": {
+				"aomNorBallistaChance": {
+					"type": "BONUS_DAMAGE_CHANCE",
+					"subtype": "aomNorBallista",
+					"valueType": "BASE_NUMBER"
+				},
+				"aomNorBallistaPower": {
+					"type": "BONUS_DAMAGE_PERCENTAGE",
+					"subtype": "aomNorBallista",
+					"valueType": "BASE_NUMBER"
+				},
+				"aomNorBallistaAttacks": {
+					"type": "ADDITIONAL_ATTACK",
+					"limiters": [
+						{
+							"type": "CREATURE_TYPE_LIMITER",
+							"creature": "aomNorBallista"
+						}
+					],
+					"valueType": "BASE_NUMBER"
+				},
+				"aomNorBallistaManual": {
+					"type": "MANUAL_CONTROL",
+					"subtype": "aomNorBallista",
+					"val": 100
+				},
+				"aomNorBallistaCap": {
+					"type": "DAMAGE_RECEIVED_CAP",
+					"limiters": [
+						{
+							"type": "CREATURE_TYPE_LIMITER",
+							"creature": "aomNorBallista"
+						}
+					],
+					"valueType": "AT_MOST",
+					"val": 40
+				}
+			}
+		},
+		"basic": {
+			"effects": {
+				"aomNorBallistaChance": {
+					"val": 50
+				},
+				"aomNorBallistaPower": {
+					"val": 100
+				},
+				"aomNorBallistaAttacks": {
+					"val": 0
+				}
+			}
+		},
+		"advanced": {
+			"effects": {
+				"aomNorBallistaChance": {
+					"val": 75
+				},
+				"aomNorBallistaPower": {
+					"val": 100
+				},
+				"aomNorBallistaAttacks": {
+					"val": 1
+				}
+			}
+		},
+		"expert": {
+			"effects": {
+				"aomNorBallistaChance": {
+					"val": 100
+				},
+				"aomNorBallistaPower": {
+					"val": 150
+				},
+				"aomNorBallistaAttacks": {
+					"val": 1
+				}
+			}
+		}
+	}
+}

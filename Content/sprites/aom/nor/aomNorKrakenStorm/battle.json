@@ -1,0 +1,166 @@
+{
+	"basepath": "aom/nor/aomNorKrakenStorm/battle/",
+	"sequences": [
+		{
+			"group": 0,
+			"frames": [
+				"g00_00.png",
+				"g00_01.png",
+				"g00_02.png",
+				"g00_03.png",
+				"g00_04.png",
+				"g00_05.png",
+				"g00_06.png",
+				"g00_07.png",
+				"g00_08.png",
+				"g00_09.png",
+				"g00_10.png",
+				"g00_11.png",
+				"g00_12.png",
+				"g00_13.png",
+				"g00_14.png",
+				"g00_15.png"
+			]
+		},
+		{
+			"group": 1,
+			"frames": [
+				"g01_00.png",
+				"g01_01.png",
+				"g01_02.png",
+				"g01_03.png",
+				"g01_04.png",
+				"g01_05.png"
+			]
+		},
+		{
+			"group": 2,
+			"frames": [
+				"g02_00.png",
+				"g02_01.png",
+				"g02_02.png",
+				"g02_03.png",
+				"g02_04.png",
+				"g02_05.png",
+				"g02_06.png",
+				"g02_07.png",
+				"g02_08.png",
+				"g02_09.png",
+				"g02_10.png",
+				"g02_11.png"
+			]
+		},
+		{
+			"group": 3,
+			"frames": [
+				"g03_00.png",
+				"g03_01.png",
+				"g03_02.png",
+				"g03_03.png",
+				"g03_04.png",
+				"g03_05.png"
+			]
+		},
+		{
+			"group": 4,
+			"frames": [
+				"g04_00.png",
+				"g04_01.png",
+				"g04_02.png",
+				"g04_03.png",
+				"g04_04.png"
+			]
+		},
+		{
+			"group": 5,
+			"frames": [
+				"g05_00.png",
+				"g05_01.png",
+				"g05_02.png",
+				"g05_03.png",
+				"g05_04.png",
+				"g05_05.png",
+				"g05_06.png",
+				"g05_07.png",
+				"g05_08.png",
+				"g05_09.png",
+				"g05_10.png",
+				"g05_11.png"
+			]
+		},
+		{
+			"group": 11,
+			"frames": [
+				"g11_00.png",
+				"g11_01.png",
+				"g11_02.png",
+				"g11_03.png",
+				"g11_04.png",
+				"g11_05.png",
+				"g11_06.png",
+				"g11_07.png",
+				"g11_08.png",
+				"g11_09.png",
+				"g11_10.png",
+				"g11_11.png",
+				"g11_12.png",
+				"g11_13.png",
+				"g11_14.png"
+			]
+		},
+		{
+			"group": 12,
+			"frames": [
+				"g12_00.png",
+				"g12_01.png",
+				"g12_02.png",
+				"g12_03.png",
+				"g12_04.png",
+				"g12_05.png",
+				"g12_06.png",
+				"g12_07.png",
+				"g12_08.png",
+				"g12_09.png",
+				"g12_10.png",
+				"g12_11.png",
+				"g12_12.png",
+				"g12_13.png",
+				"g12_14.png"
+			]
+		},
+		{
+			"group": 13,
+			"frames": [
+				"g13_00.png",
+				"g13_01.png",
+				"g13_02.png",
+				"g13_03.png",
+				"g13_04.png",
+				"g13_05.png",
+				"g13_06.png",
+				"g13_07.png",
+				"g13_08.png",
+				"g13_09.png",
+				"g13_10.png",
+				"g13_11.png",
+				"g13_12.png",
+				"g13_13.png",
+				"g13_14.png"
+			]
+		},
+		{
+			"group": 20,
+			"frames": [
+				"g20_00.png",
+				"g20_01.png"
+			]
+		},
+		{
+			"group": 21,
+			"frames": [
+				"g21_00.png",
+				"g21_01.png"
+			]
+		}
+	]
+}

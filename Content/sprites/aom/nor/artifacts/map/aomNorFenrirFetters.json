@@ -1,0 +1,37 @@
+{
+	"basepath": "aom/nor/artifacts/map/",
+	"images": [
+		{
+			"frame": 0,
+			"file": "aomNorFenrirFetters_0.png"
+		},
+		{
+			"frame": 1,
+			"file": "aomNorFenrirFetters_1.png"
+		},
+		{
+			"frame": 2,
+			"file": "aomNorFenrirFetters_2.png"
+		},
+		{
+			"frame": 3,
+			"file": "aomNorFenrirFetters_3.png"
+		},
+		{
+			"frame": 4,
+			"file": "aomNorFenrirFetters_4.png"
+		},
+		{
+			"frame": 5,
+			"file": "aomNorFenrirFetters_5.png"
+		},
+		{
+			"frame": 6,
+			"file": "aomNorFenrirFetters_6.png"
+		},
+		{
+			"frame": 7,
+			"file": "aomNorFenrirFetters_7.png"
+		}
+	]
+}

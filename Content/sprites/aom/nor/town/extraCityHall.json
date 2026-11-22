@@ -1,0 +1,69 @@
+{
+	"basepath": "aom/nor/town/frames/",
+	"images": [
+		{
+			"frame": 0,
+			"file": "extraCityHall_00.png"
+		},
+		{
+			"frame": 1,
+			"file": "extraCityHall_01.png"
+		},
+		{
+			"frame": 2,
+			"file": "extraCityHall_02.png"
+		},
+		{
+			"frame": 3,
+			"file": "extraCityHall_03.png"
+		},
+		{
+			"frame": 4,
+			"file": "extraCityHall_04.png"
+		},
+		{
+			"frame": 5,
+			"file": "extraCityHall_05.png"
+		},
+		{
+			"frame": 6,
+			"file": "extraCityHall_06.png"
+		},
+		{
+			"frame": 7,
+			"file": "extraCityHall_07.png"
+		},
+		{
+			"frame": 8,
+			"file": "extraCityHall_08.png"
+		},
+		{
+			"frame": 9,
+			"file": "extraCityHall_09.png"
+		},
+		{
+			"frame": 10,
+			"file": "extraCityHall_10.png"
+		},
+		{
+			"frame": 11,
+			"file": "extraCityHall_11.png"
+		},
+		{
+			"frame": 12,
+			"file": "extraCityHall_12.png"
+		},
+		{
+			"frame": 13,
+			"file": "extraCityHall_13.png"
+		},
+		{
+			"frame": 14,
+			"file": "extraCityHall_14.png"
+		},
+		{
+			"frame": 15,
+			"file": "extraCityHall_15.png"
+		}
+	]
+}

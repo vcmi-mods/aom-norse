@@ -1,0 +1,69 @@
+{
+	"basepath": "aom/nor/town/frames/",
+	"images": [
+		{
+			"frame": 0,
+			"file": "citadel_00.png"
+		},
+		{
+			"frame": 1,
+			"file": "citadel_01.png"
+		},
+		{
+			"frame": 2,
+			"file": "citadel_02.png"
+		},
+		{
+			"frame": 3,
+			"file": "citadel_03.png"
+		},
+		{
+			"frame": 4,
+			"file": "citadel_04.png"
+		},
+		{
+			"frame": 5,
+			"file": "citadel_05.png"
+		},
+		{
+			"frame": 6,
+			"file": "citadel_06.png"
+		},
+		{
+			"frame": 7,
+			"file": "citadel_07.png"
+		},
+		{
+			"frame": 8,
+			"file": "citadel_08.png"
+		},
+		{
+			"frame": 9,
+			"file": "citadel_09.png"
+		},
+		{
+			"frame": 10,
+			"file": "citadel_10.png"
+		},
+		{
+			"frame": 11,
+			"file": "citadel_11.png"
+		},
+		{
+			"frame": 12,
+			"file": "citadel_12.png"
+		},
+		{
+			"frame": 13,
+			"file": "citadel_13.png"
+		},
+		{
+			"frame": 14,
+			"file": "citadel_14.png"
+		},
+		{
+			"frame": 15,
+			"file": "citadel_15.png"
+		}
+	]
+}

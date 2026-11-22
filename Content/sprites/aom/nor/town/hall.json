@@ -1,0 +1,225 @@
+{
+	"basepath": "aom/nor/town/hall/",
+	"images": [
+		{
+			"frame": 0,
+			"file": "00_mageGuild1.png"
+		},
+		{
+			"frame": 1,
+			"file": "01_mageGuild2.png"
+		},
+		{
+			"frame": 2,
+			"file": "02_mageGuild3.png"
+		},
+		{
+			"frame": 3,
+			"file": "03_mageGuild4.png"
+		},
+		{
+			"frame": 4,
+			"file": "04_mageGuild5.png"
+		},
+		{
+			"frame": 5,
+			"file": "05_tavern.png"
+		},
+		{
+			"frame": 6,
+			"file": "06_shipyard.png"
+		},
+		{
+			"frame": 7,
+			"file": "07_fort.png"
+		},
+		{
+			"frame": 8,
+			"file": "08_citadel.png"
+		},
+		{
+			"frame": 9,
+			"file": "09_castle.png"
+		},
+		{
+			"frame": 10,
+			"file": "10_villageHall.png"
+		},
+		{
+			"frame": 11,
+			"file": "11_townHall.png"
+		},
+		{
+			"frame": 12,
+			"file": "12_cityHall.png"
+		},
+		{
+			"frame": 13,
+			"file": "13_capitol.png"
+		},
+		{
+			"frame": 14,
+			"file": "14_marketplace.png"
+		},
+		{
+			"frame": 15,
+			"file": "15_resourceSilo.png"
+		},
+		{
+			"frame": 16,
+			"file": "16_blacksmith.png"
+		},
+		{
+			"frame": 17,
+			"file": "17_special1.png"
+		},
+		{
+			"frame": 18,
+			"file": "18_horde1.png"
+		},
+		{
+			"frame": 19,
+			"file": "19_horde1Upgr.png"
+		},
+		{
+			"frame": 20,
+			"file": "20_ship.png"
+		},
+		{
+			"frame": 21,
+			"file": "21_special2.png"
+		},
+		{
+			"frame": 22,
+			"file": "22_special3.png"
+		},
+		{
+			"frame": 23,
+			"file": "23_special4.png"
+		},
+		{
+			"frame": 24,
+			"file": "24_horde2.png"
+		},
+		{
+			"frame": 25,
+			"file": "25_horde2Upgr.png"
+		},
+		{
+			"frame": 26,
+			"file": "26_grail.png"
+		},
+		{
+			"frame": 27,
+			"file": "27_extraTownHall.png"
+		},
+		{
+			"frame": 28,
+			"file": "28_extraCityHall.png"
+		},
+		{
+			"frame": 29,
+			"file": "29_extraCapitol.png"
+		},
+		{
+			"frame": 30,
+			"file": "30_dwellingLvl1.png"
+		},
+		{
+			"frame": 31,
+			"file": "31_dwellingLvl2.png"
+		},
+		{
+			"frame": 32,
+			"file": "32_dwellingLvl3.png"
+		},
+		{
+			"frame": 33,
+			"file": "33_dwellingLvl4.png"
+		},
+		{
+			"frame": 34,
+			"file": "34_dwellingLvl5.png"
+		},
+		{
+			"frame": 35,
+			"file": "35_dwellingLvl6.png"
+		},
+		{
+			"frame": 36,
+			"file": "36_dwellingLvl7.png"
+		},
+		{
+			"frame": 37,
+			"file": "37_dwellingUpLvl1.png"
+		},
+		{
+			"frame": 38,
+			"file": "38_dwellingUpLvl2.png"
+		},
+		{
+			"frame": 39,
+			"file": "39_dwellingUpLvl3.png"
+		},
+		{
+			"frame": 40,
+			"file": "40_dwellingUpLvl4.png"
+		},
+		{
+			"frame": 41,
+			"file": "41_dwellingUpLvl5.png"
+		},
+		{
+			"frame": 42,
+			"file": "42_dwellingUpLvl6.png"
+		},
+		{
+			"frame": 43,
+			"file": "43_dwellingUpLvl7.png"
+		},
+		{
+			"frame": 44,
+			"file": "44_dwellingUp2Lvl1.png"
+		},
+		{
+			"frame": 45,
+			"file": "45_dwellingUp2Lvl2.png"
+		},
+		{
+			"frame": 46,
+			"file": "46_dwellingUp2Lvl3.png"
+		},
+		{
+			"frame": 47,
+			"file": "47_dwellingUp2Lvl4.png"
+		},
+		{
+			"frame": 48,
+			"file": "48_dwellingUp2Lvl5.png"
+		},
+		{
+			"frame": 49,
+			"file": "49_dwellingUp2Lvl6.png"
+		},
+		{
+			"frame": 50,
+			"file": "50_dwellingUp2Lvl7.png"
+		},
+		{
+			"frame": 110,
+			"file": "110_horde2Upgr2.png"
+		},
+		{
+			"frame": 150,
+			"file": "150_dwellingLvl8.png"
+		},
+		{
+			"frame": 151,
+			"file": "151_dwellingUpLvl8.png"
+		},
+		{
+			"frame": 152,
+			"file": "152_dwellingUp2Lvl8.png"
+		}
+	]
+}

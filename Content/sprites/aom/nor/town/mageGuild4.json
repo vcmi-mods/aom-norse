@@ -1,0 +1,69 @@
+{
+	"basepath": "aom/nor/town/frames/",
+	"images": [
+		{
+			"frame": 0,
+			"file": "mageGuild4_00.png"
+		},
+		{
+			"frame": 1,
+			"file": "mageGuild4_01.png"
+		},
+		{
+			"frame": 2,
+			"file": "mageGuild4_02.png"
+		},
+		{
+			"frame": 3,
+			"file": "mageGuild4_03.png"
+		},
+		{
+			"frame": 4,
+			"file": "mageGuild4_04.png"
+		},
+		{
+			"frame": 5,
+			"file": "mageGuild4_05.png"
+		},
+		{
+			"frame": 6,
+			"file": "mageGuild4_06.png"
+		},
+		{
+			"frame": 7,
+			"file": "mageGuild4_07.png"
+		},
+		{
+			"frame": 8,
+			"file": "mageGuild4_08.png"
+		},
+		{
+			"frame": 9,
+			"file": "mageGuild4_09.png"
+		},
+		{
+			"frame": 10,
+			"file": "mageGuild4_10.png"
+		},
+		{
+			"frame": 11,
+			"file": "mageGuild4_11.png"
+		},
+		{
+			"frame": 12,
+			"file": "mageGuild4_12.png"
+		},
+		{
+			"frame": 13,
+			"file": "mageGuild4_13.png"
+		},
+		{
+			"frame": 14,
+			"file": "mageGuild4_14.png"
+		},
+		{
+			"frame": 15,
+			"file": "mageGuild4_15.png"
+		}
+	]
+}

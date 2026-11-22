@@ -1,0 +1,2977 @@
+{
+	"aomNorThor": {
+		"class": "aomNorThorClass",
+		"female": false,
+		"special": false,
+		"texts": {
+			"name": "Thor",
+			"biography": "God of thunder and the mightiest warrior of Asgard. Wherever Mjolnir falls, giants go down.",
+			"specialty": {
+				"name": "Thor's Hammer",
+				"tooltip": "Thor's Hammer",
+				"description": "At the start of each round the hammer strikes the enemy stack with the most health for 30 + hero level × 10 air spell damage.\n\n{Affinity}: god powers under Thor are stronger; see each spell."
+			}
+		},
+		"images": {
+			"large": "aom/nor/heroes/portrait/aomNorThor_large.png",
+			"small": "aom/nor/heroes/portrait/aomNorThor_small.png",
+			"specialtyLarge": "aom/nor/heroes/specialty/aomNorThor_large.png",
+			"specialtySmall": "aom/nor/heroes/specialty/aomNorThor_small.png"
+		},
+		"skills": [
+			{
+				"skill": "offence",
+				"level": "basic"
+			},
+			{
+				"skill": "tactics",
+				"level": "basic"
+			}
+		],
+		"army": [
+			{
+				"creature": "aomNorBerserk",
+				"min": 10,
+				"max": 20
+			},
+			{
+				"creature": "aomNorAxeman",
+				"min": 4,
+				"max": 7
+			},
+			{
+				"creature": "aomNorTroll",
+				"min": 2,
+				"max": 3
+			}
+		],
+		"specialty": {
+			"bonuses": {
+				"creative": {
+					"type": "COMBAT_EVENT_TRIGGER",
+					"subtype": "aomNorThorHammer",
+					"icon": "aom/nor/abicons/thorHammer.png",
+					"limiters": [
+						"noneOf",
+						{
+							"type": "HAS_ANOTHER_BONUS_LIMITER",
+							"bonusType": "SIEGE_WEAPON"
+						},
+						{
+							"type": "CREATURE_TYPE_LIMITER",
+							"creature": "aomNorRam"
+						}
+					],
+					"val": 1
+				},
+				"heroLevel": {
+					"type": "AOM_NOR_HERO_LEVEL",
+					"val": 1,
+					"valueType": "BASE_NUMBER",
+					"updater": "TIMES_HERO_LEVEL",
+					"hidden": true
+				},
+				"warband": {
+					"type": "COMBAT_EVENT_TRIGGER",
+					"subtype": "aomNorWarband",
+					"val": 1,
+					"hidden": true
+				},
+				"aomNorGod": {
+					"type": "AOM_NOR_GOD",
+					"val": 1,
+					"valueType": "BASE_NUMBER",
+					"hidden": true
+				},
+				"affinity_aomNorForestFire": {
+					"type": "SPECIFIC_SPELL_DAMAGE",
+					"subtype": "aomNorForestFire",
+					"val": 25
+				},
+				"affinity_aomNorFimbulwinter": {
+					"type": "SPECIFIC_SPELL_DAMAGE",
+					"subtype": "aomNorFimbulwinter",
+					"val": 25
+				},
+				"affinity_aomNorHealingSpring": {
+					"type": "SPECIFIC_SPELL_DAMAGE",
+					"subtype": "aomNorHealingSpring",
+					"val": 25
+				}
+			}
+		}
+	},
+	"aomNorForseti": {
+		"class": "aomNorThorClass",
+		"female": false,
+		"special": false,
+		"texts": {
+			"name": "Forseti",
+			"biography": "God of justice and reconciliation; every quarrel is settled in his hall. Even trolls heed his judgement.",
+			"specialty": {
+				"name": "Favor: Troll",
+				"tooltip": "Favor: Troll",
+				"description": "Favor +1 each round (+1 more after acting); at each threshold a boon:\n{2 pts}: Northern Trolls gain Divinity for 2 rounds.\n{4 pts}: Healing Spring: Northern Trolls heal to full health.\n{7 pts}: Thunder Dread: all enemies Defense -4 for 2 rounds.\n\n{Affinity}: god powers under Thor are stronger; see each spell."
+			}
+		},
+		"images": {
+			"large": "aom/nor/heroes/portrait/aomNorForseti_large.png",
+			"small": "aom/nor/heroes/portrait/aomNorForseti_small.png",
+			"specialtyLarge": "aom/nor/heroes/specialty/aomNorForseti_large.png",
+			"specialtySmall": "aom/nor/heroes/specialty/aomNorForseti_small.png"
+		},
+		"skills": [
+			{
+				"skill": "leadership",
+				"level": "basic"
+			},
+			{
+				"skill": "diplomacy",
+				"level": "basic"
+			}
+		],
+		"army": [
+			{
+				"creature": "aomNorBerserk",
+				"min": 10,
+				"max": 20
+			},
+			{
+				"creature": "aomNorAxeman",
+				"min": 4,
+				"max": 7
+			},
+			{
+				"creature": "aomNorTroll",
+				"min": 2,
+				"max": 3
+			}
+		],
+		"specialty": {
+			"bonuses": {
+				"favor": {
+					"type": "COMBAT_EVENT_TRIGGER",
+					"subtype": "aomNorFavor",
+					"icon": "aom/nor/abicons/favor.png",
+					"limiters": [
+						"noneOf",
+						{
+							"type": "HAS_ANOTHER_BONUS_LIMITER",
+							"bonusType": "SIEGE_WEAPON"
+						},
+						{
+							"type": "CREATURE_TYPE_LIMITER",
+							"creature": "aomNorRam"
+						}
+					],
+					"val": 1,
+					"addInfo": {
+						"creatures": [
+							"aomNorTroll",
+							"aomNorTrollCave",
+							"aomNorTrollStone"
+						],
+						"patron": "forseti",
+						"god": "thor"
+					}
+				},
+				"warband": {
+					"type": "COMBAT_EVENT_TRIGGER",
+					"subtype": "aomNorWarband",
+					"val": 1,
+					"hidden": true
+				},
+				"heroLevel": {
+					"type": "AOM_NOR_HERO_LEVEL",
+					"val": 1,
+					"valueType": "BASE_NUMBER",
+					"updater": "TIMES_HERO_LEVEL",
+					"hidden": true
+				},
+				"aomNorGod": {
+					"type": "AOM_NOR_GOD",
+					"val": 1,
+					"valueType": "BASE_NUMBER",
+					"hidden": true
+				},
+				"affinity_aomNorForestFire": {
+					"type": "SPECIFIC_SPELL_DAMAGE",
+					"subtype": "aomNorForestFire",
+					"val": 25
+				},
+				"affinity_aomNorFimbulwinter": {
+					"type": "SPECIFIC_SPELL_DAMAGE",
+					"subtype": "aomNorFimbulwinter",
+					"val": 25
+				},
+				"affinity_aomNorHealingSpring": {
+					"type": "SPECIFIC_SPELL_DAMAGE",
+					"subtype": "aomNorHealingSpring",
+					"val": 25
+				}
+			}
+		}
+	},
+	"aomNorSkadi": {
+		"class": "aomNorThorClass",
+		"female": true,
+		"special": false,
+		"texts": {
+			"name": "Skadi",
+			"biography": "Huntress of the snowfields who chases her prey on skis; her arrows never miss.",
+			"specialty": {
+				"name": "Archery",
+				"tooltip": "Skill bonus: Archery",
+				"description": "Receives a 5% per level bonus to Archery skill percentage.\n\n{Affinity}: god powers under Thor are stronger; see each spell."
+			}
+		},
+		"images": {
+			"large": "aom/nor/heroes/portrait/aomNorSkadi_large.png",
+			"small": "aom/nor/heroes/portrait/aomNorSkadi_small.png",
+			"specialtyLarge": "aom/nor/heroes/specialty/aomNorSkadi_large.png",
+			"specialtySmall": "aom/nor/heroes/specialty/aomNorSkadi_small.png"
+		},
+		"skills": [
+			{
+				"skill": "archery",
+				"level": "basic"
+			},
+			{
+				"skill": "pathfinding",
+				"level": "basic"
+			}
+		],
+		"army": [
+			{
+				"creature": "aomNorBerserk",
+				"min": 10,
+				"max": 20
+			},
+			{
+				"creature": "aomNorAxeman",
+				"min": 4,
+				"max": 7
+			},
+			{
+				"creature": "aomNorTroll",
+				"min": 2,
+				"max": 3
+			}
+		],
+		"specialty": {
+			"secondary": "archery",
+			"bonuses": {
+				"warband": {
+					"type": "COMBAT_EVENT_TRIGGER",
+					"subtype": "aomNorWarband",
+					"val": 1,
+					"hidden": true
+				},
+				"heroLevel": {
+					"type": "AOM_NOR_HERO_LEVEL",
+					"val": 1,
+					"valueType": "BASE_NUMBER",
+					"updater": "TIMES_HERO_LEVEL",
+					"hidden": true
+				},
+				"aomNorGod": {
+					"type": "AOM_NOR_GOD",
+					"val": 1,
+					"valueType": "BASE_NUMBER",
+					"hidden": true
+				},
+				"affinity_aomNorForestFire": {
+					"type": "SPECIFIC_SPELL_DAMAGE",
+					"subtype": "aomNorForestFire",
+					"val": 25
+				},
+				"affinity_aomNorFimbulwinter": {
+					"type": "SPECIFIC_SPELL_DAMAGE",
+					"subtype": "aomNorFimbulwinter",
+					"val": 25
+				},
+				"affinity_aomNorHealingSpring": {
+					"type": "SPECIFIC_SPELL_DAMAGE",
+					"subtype": "aomNorHealingSpring",
+					"val": 25
+				}
+			}
+		}
+	},
+	"aomNorTyr": {
+		"class": "aomNorThorClass",
+		"female": false,
+		"special": false,
+		"texts": {
+			"name": "Tyr",
+			"biography": "The one-handed god of war, who gave his right hand to bind the wolf Fenrir. Wolves know his scent.",
+			"specialty": {
+				"name": "Favor: Winter Wolf",
+				"tooltip": "Favor: Winter Wolf",
+				"description": "Favor +1 each round (+1 more after acting); at each threshold a boon:\n{2 pts}: Fimbulwinter Wolves gain Divinity for 2 rounds.\n{4 pts}: War God's Valor: Fimbulwinter Wolves Attack +6 for 2 rounds.\n{7 pts}: Thunder Dread: all enemies Defense -4 for 2 rounds.\n\n{Affinity}: god powers under Thor are stronger; see each spell."
+			}
+		},
+		"images": {
+			"large": "aom/nor/heroes/portrait/aomNorTyr_large.png",
+			"small": "aom/nor/heroes/portrait/aomNorTyr_small.png",
+			"specialtyLarge": "aom/nor/heroes/specialty/aomNorTyr_large.png",
+			"specialtySmall": "aom/nor/heroes/specialty/aomNorTyr_small.png"
+		},
+		"skills": [
+			{
+				"skill": "offence",
+				"level": "basic"
+			},
+			{
+				"skill": "armorer",
+				"level": "basic"
+			}
+		],
+		"army": [
+			{
+				"creature": "aomNorBerserk",
+				"min": 10,
+				"max": 20
+			},
+			{
+				"creature": "aomNorAxeman",
+				"min": 4,
+				"max": 7
+			},
+			{
+				"creature": "aomNorTroll",
+				"min": 2,
+				"max": 3
+			}
+		],
+		"specialty": {
+			"bonuses": {
+				"favor": {
+					"type": "COMBAT_EVENT_TRIGGER",
+					"subtype": "aomNorFavor",
+					"icon": "aom/nor/abicons/favor.png",
+					"limiters": [
+						"noneOf",
+						{
+							"type": "HAS_ANOTHER_BONUS_LIMITER",
+							"bonusType": "SIEGE_WEAPON"
+						},
+						{
+							"type": "CREATURE_TYPE_LIMITER",
+							"creature": "aomNorRam"
+						}
+					],
+					"val": 1,
+					"addInfo": {
+						"creatures": [
+							"aomNorWolf",
+							"aomNorWolfPack",
+							"aomNorWolfFenrir"
+						],
+						"patron": "tyr",
+						"god": "thor"
+					}
+				},
+				"warband": {
+					"type": "COMBAT_EVENT_TRIGGER",
+					"subtype": "aomNorWarband",
+					"val": 1,
+					"hidden": true
+				},
+				"heroLevel": {
+					"type": "AOM_NOR_HERO_LEVEL",
+					"val": 1,
+					"valueType": "BASE_NUMBER",
+					"updater": "TIMES_HERO_LEVEL",
+					"hidden": true
+				},
+				"aomNorGod": {
+					"type": "AOM_NOR_GOD",
+					"val": 1,
+					"valueType": "BASE_NUMBER",
+					"hidden": true
+				},
+				"affinity_aomNorForestFire": {
+					"type": "SPECIFIC_SPELL_DAMAGE",
+					"subtype": "aomNorForestFire",
+					"val": 25
+				},
+				"affinity_aomNorFimbulwinter": {
+					"type": "SPECIFIC_SPELL_DAMAGE",
+					"subtype": "aomNorFimbulwinter",
+					"val": 25
+				},
+				"affinity_aomNorHealingSpring": {
+					"type": "SPECIFIC_SPELL_DAMAGE",
+					"subtype": "aomNorHealingSpring",
+					"val": 25
+				}
+			}
+		}
+	},
+	"aomNorSif": {
+		"class": "aomNorThorClass",
+		"female": true,
+		"special": false,
+		"texts": {
+			"name": "Sif",
+			"biography": "Thor's wife, whose golden hair the dwarves spun from real gold. Those she guards do not fall easily.",
+			"specialty": {
+				"name": "Armorer",
+				"tooltip": "Skill bonus: Armorer",
+				"description": "Receives a 5% per level bonus to Armorer skill percentage.\n\n{Affinity}: god powers under Thor are stronger; see each spell."
+			}
+		},
+		"images": {
+			"large": "aom/nor/heroes/portrait/aomNorSif_large.png",
+			"small": "aom/nor/heroes/portrait/aomNorSif_small.png",
+			"specialtyLarge": "aom/nor/heroes/specialty/aomNorSif_large.png",
+			"specialtySmall": "aom/nor/heroes/specialty/aomNorSif_small.png"
+		},
+		"skills": [
+			{
+				"skill": "armorer",
+				"level": "basic"
+			},
+			{
+				"skill": "leadership",
+				"level": "basic"
+			}
+		],
+		"army": [
+			{
+				"creature": "aomNorBerserk",
+				"min": 10,
+				"max": 20
+			},
+			{
+				"creature": "aomNorAxeman",
+				"min": 4,
+				"max": 7
+			},
+			{
+				"creature": "aomNorTroll",
+				"min": 2,
+				"max": 3
+			}
+		],
+		"specialty": {
+			"secondary": "armorer",
+			"bonuses": {
+				"warband": {
+					"type": "COMBAT_EVENT_TRIGGER",
+					"subtype": "aomNorWarband",
+					"val": 1,
+					"hidden": true
+				},
+				"heroLevel": {
+					"type": "AOM_NOR_HERO_LEVEL",
+					"val": 1,
+					"valueType": "BASE_NUMBER",
+					"updater": "TIMES_HERO_LEVEL",
+					"hidden": true
+				},
+				"aomNorGod": {
+					"type": "AOM_NOR_GOD",
+					"val": 1,
+					"valueType": "BASE_NUMBER",
+					"hidden": true
+				},
+				"affinity_aomNorForestFire": {
+					"type": "SPECIFIC_SPELL_DAMAGE",
+					"subtype": "aomNorForestFire",
+					"val": 25
+				},
+				"affinity_aomNorFimbulwinter": {
+					"type": "SPECIFIC_SPELL_DAMAGE",
+					"subtype": "aomNorFimbulwinter",
+					"val": 25
+				},
+				"affinity_aomNorHealingSpring": {
+					"type": "SPECIFIC_SPELL_DAMAGE",
+					"subtype": "aomNorHealingSpring",
+					"val": 25
+				}
+			}
+		}
+	},
+	"aomNorThjalfi": {
+		"class": "aomNorThorClass",
+		"female": false,
+		"special": false,
+		"texts": {
+			"name": "Thjalfi",
+			"biography": "Thor's servant, the fastest mortal among the gods, who once raced thought itself.",
+			"specialty": {
+				"name": "Logistics",
+				"tooltip": "Skill bonus: Logistics",
+				"description": "Receives a 5% per level bonus to Logistics skill percentage.\n\n{Affinity}: god powers under Thor are stronger; see each spell."
+			}
+		},
+		"images": {
+			"large": "aom/nor/heroes/portrait/aomNorThjalfi_large.png",
+			"small": "aom/nor/heroes/portrait/aomNorThjalfi_small.png",
+			"specialtyLarge": "aom/nor/heroes/specialty/aomNorThjalfi_large.png",
+			"specialtySmall": "aom/nor/heroes/specialty/aomNorThjalfi_small.png"
+		},
+		"skills": [
+			{
+				"skill": "logistics",
+				"level": "basic"
+			},
+			{
+				"skill": "pathfinding",
+				"level": "basic"
+			}
+		],
+		"army": [
+			{
+				"creature": "aomNorBerserk",
+				"min": 10,
+				"max": 20
+			},
+			{
+				"creature": "aomNorAxeman",
+				"min": 4,
+				"max": 7
+			},
+			{
+				"creature": "aomNorTroll",
+				"min": 2,
+				"max": 3
+			}
+		],
+		"specialty": {
+			"secondary": "logistics",
+			"bonuses": {
+				"warband": {
+					"type": "COMBAT_EVENT_TRIGGER",
+					"subtype": "aomNorWarband",
+					"val": 1,
+					"hidden": true
+				},
+				"heroLevel": {
+					"type": "AOM_NOR_HERO_LEVEL",
+					"val": 1,
+					"valueType": "BASE_NUMBER",
+					"updater": "TIMES_HERO_LEVEL",
+					"hidden": true
+				},
+				"aomNorGod": {
+					"type": "AOM_NOR_GOD",
+					"val": 1,
+					"valueType": "BASE_NUMBER",
+					"hidden": true
+				},
+				"affinity_aomNorForestFire": {
+					"type": "SPECIFIC_SPELL_DAMAGE",
+					"subtype": "aomNorForestFire",
+					"val": 25
+				},
+				"affinity_aomNorFimbulwinter": {
+					"type": "SPECIFIC_SPELL_DAMAGE",
+					"subtype": "aomNorFimbulwinter",
+					"val": 25
+				},
+				"affinity_aomNorHealingSpring": {
+					"type": "SPECIFIC_SPELL_DAMAGE",
+					"subtype": "aomNorHealingSpring",
+					"val": 25
+				}
+			}
+		}
+	},
+	"aomNorBrokk": {
+		"class": "aomNorThorClass",
+		"female": false,
+		"special": false,
+		"texts": {
+			"name": "Brokk",
+			"biography": "A dwarven smith who, with his brother Eitri, forged the hammer Mjolnir.",
+			"specialty": {
+				"name": "Norse Ballista",
+				"tooltip": "Creature bonus: Norse Ballista",
+				"description": "Increases the Attack and Defense of the Norse Ballista by 20% for every 5 levels.\n\n{Affinity}: god powers under Thor are stronger; see each spell."
+			}
+		},
+		"images": {
+			"large": "aom/nor/heroes/portrait/aomNorBrokk_large.png",
+			"small": "aom/nor/heroes/portrait/aomNorBrokk_small.png",
+			"specialtyLarge": "aom/nor/heroes/specialty/aomNorBrokk_large.png",
+			"specialtySmall": "aom/nor/heroes/specialty/aomNorBrokk_small.png"
+		},
+		"skills": [
+			{
+				"skill": "artillery",
+				"level": "basic"
+			},
+			{
+				"skill": "armorer",
+				"level": "basic"
+			}
+		],
+		"army": [
+			{
+				"creature": "aomNorBerserk",
+				"min": 10,
+				"max": 20
+			},
+			{
+				"creature": "aomNorAxeman",
+				"min": 4,
+				"max": 7
+			},
+			{
+				"creature": "aomNorBallista",
+				"min": 1,
+				"max": 1
+			}
+		],
+		"specialty": {
+			"creature": "aomNorBallista",
+			"creatureLevel": 5,
+			"bonuses": {
+				"warband": {
+					"type": "COMBAT_EVENT_TRIGGER",
+					"subtype": "aomNorWarband",
+					"val": 1,
+					"hidden": true
+				},
+				"heroLevel": {
+					"type": "AOM_NOR_HERO_LEVEL",
+					"val": 1,
+					"valueType": "BASE_NUMBER",
+					"updater": "TIMES_HERO_LEVEL",
+					"hidden": true
+				},
+				"aomNorGod": {
+					"type": "AOM_NOR_GOD",
+					"val": 1,
+					"valueType": "BASE_NUMBER",
+					"hidden": true
+				},
+				"affinity_aomNorForestFire": {
+					"type": "SPECIFIC_SPELL_DAMAGE",
+					"subtype": "aomNorForestFire",
+					"val": 25
+				},
+				"affinity_aomNorFimbulwinter": {
+					"type": "SPECIFIC_SPELL_DAMAGE",
+					"subtype": "aomNorFimbulwinter",
+					"val": 25
+				},
+				"affinity_aomNorHealingSpring": {
+					"type": "SPECIFIC_SPELL_DAMAGE",
+					"subtype": "aomNorHealingSpring",
+					"val": 25
+				}
+			}
+		}
+	},
+	"aomNorOdin": {
+		"class": "aomNorOdinClass",
+		"female": false,
+		"special": false,
+		"texts": {
+			"name": "Odin",
+			"biography": "The All-Father, who traded an eye for wisdom. Two ravens bring him the world's news each day, and the warriors of Valhalla await only his call.",
+			"specialty": {
+				"name": "Call of the Einherjar",
+				"tooltip": "Call of the Einherjar",
+				"description": "Valhalla gathers Einherjar faster: + hero level × 2% (up to +50%); the first recall of Einherjar each battle brings one more stack.\n\n{Affinity}: god powers under Odin are stronger; see each spell."
+			}
+		},
+		"images": {
+			"large": "aom/nor/heroes/portrait/aomNorOdin_large.png",
+			"small": "aom/nor/heroes/portrait/aomNorOdin_small.png",
+			"specialtyLarge": "aom/nor/heroes/specialty/aomNorOdin_large.png",
+			"specialtySmall": "aom/nor/heroes/specialty/aomNorOdin_small.png"
+		},
+		"skills": [
+			{
+				"skill": "wisdom",
+				"level": "basic"
+			},
+			{
+				"skill": "eagleEye",
+				"level": "basic"
+			}
+		],
+		"army": [
+			{
+				"creature": "aomNorBerserk",
+				"min": 10,
+				"max": 20
+			},
+			{
+				"creature": "aomNorAxeman",
+				"min": 4,
+				"max": 7
+			},
+			{
+				"creature": "aomNorTroll",
+				"min": 2,
+				"max": 3
+			}
+		],
+		"specialty": {
+			"bonuses": {
+				"warband": {
+					"type": "COMBAT_EVENT_TRIGGER",
+					"subtype": "aomNorWarband",
+					"val": 1,
+					"hidden": true
+				},
+				"heroLevel": {
+					"type": "AOM_NOR_HERO_LEVEL",
+					"val": 1,
+					"valueType": "BASE_NUMBER",
+					"updater": "TIMES_HERO_LEVEL",
+					"hidden": true
+				},
+				"odin": {
+					"type": "AOM_NOR_ODIN",
+					"val": 2,
+					"valueType": "BASE_NUMBER",
+					"updater": "TIMES_HERO_LEVEL",
+					"hidden": true
+				},
+				"aomNorGod": {
+					"type": "AOM_NOR_GOD",
+					"val": 2,
+					"valueType": "BASE_NUMBER",
+					"hidden": true
+				},
+				"affinity_aomNorGreatHunt": {
+					"type": "SPECIFIC_SPELL_DAMAGE",
+					"subtype": "aomNorGreatHunt",
+					"val": 25
+				},
+				"affinity_aomNorForestFire": {
+					"type": "SPECIFIC_SPELL_DAMAGE",
+					"subtype": "aomNorForestFire",
+					"val": 25
+				},
+				"affinity_aomNorWalkingWoods": {
+					"type": "SPECIFIC_SPELL_DAMAGE",
+					"subtype": "aomNorWalkingWoods",
+					"val": 25
+				},
+				"affinity_aomNorFimbulwinter": {
+					"type": "SPECIFIC_SPELL_DAMAGE",
+					"subtype": "aomNorFimbulwinter",
+					"val": 25
+				},
+				"affinity_aomNorUndermine": {
+					"type": "SPECIFIC_SPELL_DAMAGE",
+					"subtype": "aomNorUndermine",
+					"val": 25
+				}
+			}
+		},
+		"spellbook": [
+			"precision"
+		]
+	},
+	"aomNorFreyja": {
+		"class": "aomNorOdinClass",
+		"female": true,
+		"special": false,
+		"texts": {
+			"name": "Freyja",
+			"biography": "Goddess of love and war, who shares the fallen of the battlefield with Odin. The valkyries are her messengers.",
+			"specialty": {
+				"name": "Favor: Valkyrie",
+				"tooltip": "Favor: Valkyrie",
+				"description": "Favor +1 each round (+1 more after acting); at each threshold a boon:\n{2 pts}: Asgard Valkyries gain Divinity for 2 rounds.\n{4 pts}: Goddess's Tears: all living troops heal 20% health.\n{7 pts}: Raven Omen: whole army morale +1 and Attack +2 for 2 rounds.\n\n{Affinity}: god powers under Odin are stronger; see each spell."
+			}
+		},
+		"images": {
+			"large": "aom/nor/heroes/portrait/aomNorFreyja_large.png",
+			"small": "aom/nor/heroes/portrait/aomNorFreyja_small.png",
+			"specialtyLarge": "aom/nor/heroes/specialty/aomNorFreyja_large.png",
+			"specialtySmall": "aom/nor/heroes/specialty/aomNorFreyja_small.png"
+		},
+		"skills": [
+			{
+				"skill": "wisdom",
+				"level": "basic"
+			},
+			{
+				"skill": "firstAid",
+				"level": "basic"
+			}
+		],
+		"army": [
+			{
+				"creature": "aomNorBerserk",
+				"min": 10,
+				"max": 20
+			},
+			{
+				"creature": "aomNorAxeman",
+				"min": 4,
+				"max": 7
+			},
+			{
+				"creature": "firstAidTent",
+				"min": 1,
+				"max": 1
+			}
+		],
+		"specialty": {
+			"bonuses": {
+				"favor": {
+					"type": "COMBAT_EVENT_TRIGGER",
+					"subtype": "aomNorFavor",
+					"icon": "aom/nor/abicons/favor.png",
+					"limiters": [
+						"noneOf",
+						{
+							"type": "HAS_ANOTHER_BONUS_LIMITER",
+							"bonusType": "SIEGE_WEAPON"
+						},
+						{
+							"type": "CREATURE_TYPE_LIMITER",
+							"creature": "aomNorRam"
+						}
+					],
+					"val": 1,
+					"addInfo": {
+						"creatures": [
+							"aomNorValkyrie",
+							"aomNorValkyrieShield",
+							"aomNorValkyrieChooser"
+						],
+						"patron": "freyja",
+						"god": "odin"
+					}
+				},
+				"warband": {
+					"type": "COMBAT_EVENT_TRIGGER",
+					"subtype": "aomNorWarband",
+					"val": 1,
+					"hidden": true
+				},
+				"heroLevel": {
+					"type": "AOM_NOR_HERO_LEVEL",
+					"val": 1,
+					"valueType": "BASE_NUMBER",
+					"updater": "TIMES_HERO_LEVEL",
+					"hidden": true
+				},
+				"aomNorGod": {
+					"type": "AOM_NOR_GOD",
+					"val": 2,
+					"valueType": "BASE_NUMBER",
+					"hidden": true
+				},
+				"affinity_aomNorGreatHunt": {
+					"type": "SPECIFIC_SPELL_DAMAGE",
+					"subtype": "aomNorGreatHunt",
+					"val": 25
+				},
+				"affinity_aomNorForestFire": {
+					"type": "SPECIFIC_SPELL_DAMAGE",
+					"subtype": "aomNorForestFire",
+					"val": 25
+				},
+				"affinity_aomNorWalkingWoods": {
+					"type": "SPECIFIC_SPELL_DAMAGE",
+					"subtype": "aomNorWalkingWoods",
+					"val": 25
+				},
+				"affinity_aomNorFimbulwinter": {
+					"type": "SPECIFIC_SPELL_DAMAGE",
+					"subtype": "aomNorFimbulwinter",
+					"val": 25
+				},
+				"affinity_aomNorUndermine": {
+					"type": "SPECIFIC_SPELL_DAMAGE",
+					"subtype": "aomNorUndermine",
+					"val": 25
+				}
+			}
+		},
+		"spellbook": [
+			"cure"
+		]
+	},
+	"aomNorNjord": {
+		"class": "aomNorOdinClass",
+		"female": false,
+		"special": false,
+		"texts": {
+			"name": "Njord",
+			"biography": "God of sea winds and sailing; sailors pray to him for calm seas before they set out.",
+			"specialty": {
+				"name": "Navigation",
+				"tooltip": "Skill bonus: Navigation",
+				"description": "Receives a 5% per level bonus to Navigation skill percentage.\n\n{Affinity}: god powers under Odin are stronger; see each spell."
+			}
+		},
+		"images": {
+			"large": "aom/nor/heroes/portrait/aomNorNjord_large.png",
+			"small": "aom/nor/heroes/portrait/aomNorNjord_small.png",
+			"specialtyLarge": "aom/nor/heroes/specialty/aomNorNjord_large.png",
+			"specialtySmall": "aom/nor/heroes/specialty/aomNorNjord_small.png"
+		},
+		"skills": [
+			{
+				"skill": "navigation",
+				"level": "basic"
+			},
+			{
+				"skill": "wisdom",
+				"level": "basic"
+			}
+		],
+		"army": [
+			{
+				"creature": "aomNorBerserk",
+				"min": 10,
+				"max": 20
+			},
+			{
+				"creature": "aomNorAxeman",
+				"min": 4,
+				"max": 7
+			},
+			{
+				"creature": "aomNorTroll",
+				"min": 2,
+				"max": 3
+			}
+		],
+		"specialty": {
+			"secondary": "navigation",
+			"bonuses": {
+				"warband": {
+					"type": "COMBAT_EVENT_TRIGGER",
+					"subtype": "aomNorWarband",
+					"val": 1,
+					"hidden": true
+				},
+				"heroLevel": {
+					"type": "AOM_NOR_HERO_LEVEL",
+					"val": 1,
+					"valueType": "BASE_NUMBER",
+					"updater": "TIMES_HERO_LEVEL",
+					"hidden": true
+				},
+				"aomNorGod": {
+					"type": "AOM_NOR_GOD",
+					"val": 2,
+					"valueType": "BASE_NUMBER",
+					"hidden": true
+				},
+				"affinity_aomNorGreatHunt": {
+					"type": "SPECIFIC_SPELL_DAMAGE",
+					"subtype": "aomNorGreatHunt",
+					"val": 25
+				},
+				"affinity_aomNorForestFire": {
+					"type": "SPECIFIC_SPELL_DAMAGE",
+					"subtype": "aomNorForestFire",
+					"val": 25
+				},
+				"affinity_aomNorWalkingWoods": {
+					"type": "SPECIFIC_SPELL_DAMAGE",
+					"subtype": "aomNorWalkingWoods",
+					"val": 25
+				},
+				"affinity_aomNorFimbulwinter": {
+					"type": "SPECIFIC_SPELL_DAMAGE",
+					"subtype": "aomNorFimbulwinter",
+					"val": 25
+				},
+				"affinity_aomNorUndermine": {
+					"type": "SPECIFIC_SPELL_DAMAGE",
+					"subtype": "aomNorUndermine",
+					"val": 25
+				}
+			}
+		},
+		"spellbook": [
+			"iceBolt"
+		]
+	},
+	"aomNorBaldr": {
+		"class": "aomNorOdinClass",
+		"female": false,
+		"special": false,
+		"texts": {
+			"name": "Baldr",
+			"biography": "God of light; all things once swore never to harm him. Wherever his light falls, blades cut keener.",
+			"specialty": {
+				"name": "Bless Master",
+				"tooltip": "Bless Master",
+				"description": "Blessed troops deal even more damage (3% per level ÷ target level);\nthe higher the hero and the lower the target, the more.\n\n{Affinity}: god powers under Odin are stronger; see each spell."
+			}
+		},
+		"images": {
+			"large": "aom/nor/heroes/portrait/aomNorBaldr_large.png",
+			"small": "aom/nor/heroes/portrait/aomNorBaldr_small.png",
+			"specialtyLarge": "aom/nor/heroes/specialty/aomNorBaldr_large.png",
+			"specialtySmall": "aom/nor/heroes/specialty/aomNorBaldr_small.png"
+		},
+		"skills": [
+			{
+				"skill": "wisdom",
+				"level": "basic"
+			},
+			{
+				"skill": "firstAid",
+				"level": "basic"
+			}
+		],
+		"army": [
+			{
+				"creature": "aomNorBerserk",
+				"min": 10,
+				"max": 20
+			},
+			{
+				"creature": "aomNorAxeman",
+				"min": 4,
+				"max": 7
+			},
+			{
+				"creature": "firstAidTent",
+				"min": 1,
+				"max": 1
+			}
+		],
+		"specialty": {
+			"bonuses": {
+				"bless": {
+					"type": "GENERAL_DAMAGE_PREMY",
+					"limiters": [
+						{
+							"type": "HAS_ANOTHER_BONUS_LIMITER",
+							"bonusSourceType": "SPELL_EFFECT",
+							"bonusSourceID": "bless"
+						}
+					],
+					"updater": "TIMES_HERO_LEVEL_DIVIDE_STACK_LEVEL",
+					"val": 3
+				},
+				"warband": {
+					"type": "COMBAT_EVENT_TRIGGER",
+					"subtype": "aomNorWarband",
+					"val": 1,
+					"hidden": true
+				},
+				"heroLevel": {
+					"type": "AOM_NOR_HERO_LEVEL",
+					"val": 1,
+					"valueType": "BASE_NUMBER",
+					"updater": "TIMES_HERO_LEVEL",
+					"hidden": true
+				},
+				"aomNorGod": {
+					"type": "AOM_NOR_GOD",
+					"val": 2,
+					"valueType": "BASE_NUMBER",
+					"hidden": true
+				},
+				"affinity_aomNorGreatHunt": {
+					"type": "SPECIFIC_SPELL_DAMAGE",
+					"subtype": "aomNorGreatHunt",
+					"val": 25
+				},
+				"affinity_aomNorForestFire": {
+					"type": "SPECIFIC_SPELL_DAMAGE",
+					"subtype": "aomNorForestFire",
+					"val": 25
+				},
+				"affinity_aomNorWalkingWoods": {
+					"type": "SPECIFIC_SPELL_DAMAGE",
+					"subtype": "aomNorWalkingWoods",
+					"val": 25
+				},
+				"affinity_aomNorFimbulwinter": {
+					"type": "SPECIFIC_SPELL_DAMAGE",
+					"subtype": "aomNorFimbulwinter",
+					"val": 25
+				},
+				"affinity_aomNorUndermine": {
+					"type": "SPECIFIC_SPELL_DAMAGE",
+					"subtype": "aomNorUndermine",
+					"val": 25
+				}
+			}
+		},
+		"spellbook": [
+			"bless"
+		]
+	},
+	"aomNorFrigg": {
+		"class": "aomNorOdinClass",
+		"female": true,
+		"special": false,
+		"texts": {
+			"name": "Frigg",
+			"biography": "Odin's wife, who foresees every fate yet never speaks of it.",
+			"specialty": {
+				"name": "Mysticism",
+				"tooltip": "Skill bonus: Mysticism",
+				"description": "Receives a 5% per level bonus to Mysticism skill percentage.\n\n{Affinity}: god powers under Odin are stronger; see each spell."
+			}
+		},
+		"images": {
+			"large": "aom/nor/heroes/portrait/aomNorFrigg_large.png",
+			"small": "aom/nor/heroes/portrait/aomNorFrigg_small.png",
+			"specialtyLarge": "aom/nor/heroes/specialty/aomNorFrigg_large.png",
+			"specialtySmall": "aom/nor/heroes/specialty/aomNorFrigg_small.png"
+		},
+		"skills": [
+			{
+				"skill": "mysticism",
+				"level": "basic"
+			},
+			{
+				"skill": "wisdom",
+				"level": "basic"
+			}
+		],
+		"army": [
+			{
+				"creature": "aomNorBerserk",
+				"min": 10,
+				"max": 20
+			},
+			{
+				"creature": "aomNorAxeman",
+				"min": 4,
+				"max": 7
+			},
+			{
+				"creature": "aomNorTroll",
+				"min": 2,
+				"max": 3
+			}
+		],
+		"specialty": {
+			"secondary": "mysticism",
+			"bonuses": {
+				"warband": {
+					"type": "COMBAT_EVENT_TRIGGER",
+					"subtype": "aomNorWarband",
+					"val": 1,
+					"hidden": true
+				},
+				"heroLevel": {
+					"type": "AOM_NOR_HERO_LEVEL",
+					"val": 1,
+					"valueType": "BASE_NUMBER",
+					"updater": "TIMES_HERO_LEVEL",
+					"hidden": true
+				},
+				"aomNorGod": {
+					"type": "AOM_NOR_GOD",
+					"val": 2,
+					"valueType": "BASE_NUMBER",
+					"hidden": true
+				},
+				"affinity_aomNorGreatHunt": {
+					"type": "SPECIFIC_SPELL_DAMAGE",
+					"subtype": "aomNorGreatHunt",
+					"val": 25
+				},
+				"affinity_aomNorForestFire": {
+					"type": "SPECIFIC_SPELL_DAMAGE",
+					"subtype": "aomNorForestFire",
+					"val": 25
+				},
+				"affinity_aomNorWalkingWoods": {
+					"type": "SPECIFIC_SPELL_DAMAGE",
+					"subtype": "aomNorWalkingWoods",
+					"val": 25
+				},
+				"affinity_aomNorFimbulwinter": {
+					"type": "SPECIFIC_SPELL_DAMAGE",
+					"subtype": "aomNorFimbulwinter",
+					"val": 25
+				},
+				"affinity_aomNorUndermine": {
+					"type": "SPECIFIC_SPELL_DAMAGE",
+					"subtype": "aomNorUndermine",
+					"val": 25
+				}
+			}
+		},
+		"spellbook": [
+			"fortune"
+		]
+	},
+	"aomNorMimir": {
+		"class": "aomNorOdinClass",
+		"female": false,
+		"special": false,
+		"texts": {
+			"name": "Mimir",
+			"biography": "Keeper of the well of wisdom. His head still counsels Odin beside the well.",
+			"specialty": {
+				"name": "Learning",
+				"tooltip": "Skill bonus: Learning",
+				"description": "Receives a 5% per level bonus to Learning skill percentage.\n\n{Affinity}: god powers under Odin are stronger; see each spell."
+			}
+		},
+		"images": {
+			"large": "aom/nor/heroes/portrait/aomNorMimir_large.png",
+			"small": "aom/nor/heroes/portrait/aomNorMimir_small.png",
+			"specialtyLarge": "aom/nor/heroes/specialty/aomNorMimir_large.png",
+			"specialtySmall": "aom/nor/heroes/specialty/aomNorMimir_small.png"
+		},
+		"skills": [
+			{
+				"skill": "learning",
+				"level": "basic"
+			},
+			{
+				"skill": "wisdom",
+				"level": "basic"
+			}
+		],
+		"army": [
+			{
+				"creature": "aomNorBerserk",
+				"min": 10,
+				"max": 20
+			},
+			{
+				"creature": "aomNorAxeman",
+				"min": 4,
+				"max": 7
+			},
+			{
+				"creature": "aomNorTroll",
+				"min": 2,
+				"max": 3
+			}
+		],
+		"specialty": {
+			"secondary": "learning",
+			"bonuses": {
+				"warband": {
+					"type": "COMBAT_EVENT_TRIGGER",
+					"subtype": "aomNorWarband",
+					"val": 1,
+					"hidden": true
+				},
+				"heroLevel": {
+					"type": "AOM_NOR_HERO_LEVEL",
+					"val": 1,
+					"valueType": "BASE_NUMBER",
+					"updater": "TIMES_HERO_LEVEL",
+					"hidden": true
+				},
+				"aomNorGod": {
+					"type": "AOM_NOR_GOD",
+					"val": 2,
+					"valueType": "BASE_NUMBER",
+					"hidden": true
+				},
+				"affinity_aomNorGreatHunt": {
+					"type": "SPECIFIC_SPELL_DAMAGE",
+					"subtype": "aomNorGreatHunt",
+					"val": 25
+				},
+				"affinity_aomNorForestFire": {
+					"type": "SPECIFIC_SPELL_DAMAGE",
+					"subtype": "aomNorForestFire",
+					"val": 25
+				},
+				"affinity_aomNorWalkingWoods": {
+					"type": "SPECIFIC_SPELL_DAMAGE",
+					"subtype": "aomNorWalkingWoods",
+					"val": 25
+				},
+				"affinity_aomNorFimbulwinter": {
+					"type": "SPECIFIC_SPELL_DAMAGE",
+					"subtype": "aomNorFimbulwinter",
+					"val": 25
+				},
+				"affinity_aomNorUndermine": {
+					"type": "SPECIFIC_SPELL_DAMAGE",
+					"subtype": "aomNorUndermine",
+					"val": 25
+				}
+			}
+		},
+		"spellbook": [
+			"dispel"
+		]
+	},
+	"aomNorReginleif": {
+		"class": "aomNorOdinClass",
+		"female": true,
+		"special": false,
+		"texts": {
+			"name": "Reginleif",
+			"biography": "A valkyrie Odin sent to the world of men, fighting beside mortal heroes on the eve of Ragnarok.",
+			"specialty": {
+				"name": "Haste Master",
+				"tooltip": "Haste Master",
+				"description": "Haste raises the target's Speed further:\nlevel 1-2 +3, level 3-4 +2, level 5-6 +1.\n\n{Affinity}: god powers under Odin are stronger; see each spell."
+			}
+		},
+		"images": {
+			"large": "aom/nor/heroes/portrait/aomNorReginleif_large.png",
+			"small": "aom/nor/heroes/portrait/aomNorReginleif_small.png",
+			"specialtyLarge": "aom/nor/heroes/specialty/aomNorReginleif_large.png",
+			"specialtySmall": "aom/nor/heroes/specialty/aomNorReginleif_small.png"
+		},
+		"skills": [
+			{
+				"skill": "tactics",
+				"level": "basic"
+			},
+			{
+				"skill": "wisdom",
+				"level": "basic"
+			}
+		],
+		"army": [
+			{
+				"creature": "aomNorBerserk",
+				"min": 10,
+				"max": 20
+			},
+			{
+				"creature": "aomNorAxeman",
+				"min": 4,
+				"max": 7
+			},
+			{
+				"creature": "aomNorTroll",
+				"min": 2,
+				"max": 3
+			}
+		],
+		"specialty": {
+			"spellFixedAdditive": "haste",
+			"bonuses": {
+				"warband": {
+					"type": "COMBAT_EVENT_TRIGGER",
+					"subtype": "aomNorWarband",
+					"val": 1,
+					"hidden": true
+				},
+				"heroLevel": {
+					"type": "AOM_NOR_HERO_LEVEL",
+					"val": 1,
+					"valueType": "BASE_NUMBER",
+					"updater": "TIMES_HERO_LEVEL",
+					"hidden": true
+				},
+				"aomNorGod": {
+					"type": "AOM_NOR_GOD",
+					"val": 2,
+					"valueType": "BASE_NUMBER",
+					"hidden": true
+				},
+				"affinity_aomNorGreatHunt": {
+					"type": "SPECIFIC_SPELL_DAMAGE",
+					"subtype": "aomNorGreatHunt",
+					"val": 25
+				},
+				"affinity_aomNorForestFire": {
+					"type": "SPECIFIC_SPELL_DAMAGE",
+					"subtype": "aomNorForestFire",
+					"val": 25
+				},
+				"affinity_aomNorWalkingWoods": {
+					"type": "SPECIFIC_SPELL_DAMAGE",
+					"subtype": "aomNorWalkingWoods",
+					"val": 25
+				},
+				"affinity_aomNorFimbulwinter": {
+					"type": "SPECIFIC_SPELL_DAMAGE",
+					"subtype": "aomNorFimbulwinter",
+					"val": 25
+				},
+				"affinity_aomNorUndermine": {
+					"type": "SPECIFIC_SPELL_DAMAGE",
+					"subtype": "aomNorUndermine",
+					"val": 25
+				}
+			}
+		},
+		"spellbook": [
+			"haste"
+		]
+	},
+	"aomNorLoki": {
+		"class": "aomNorLokiClass",
+		"female": false,
+		"special": false,
+		"texts": {
+			"name": "Loki",
+			"biography": "God of trickery, who can take any shape. His enemies cannot tell which foe is real.",
+			"specialty": {
+				"name": "Trickster's Illusion",
+				"tooltip": "Trickster's Illusion",
+				"description": "At the start of battle, the enemy stack with the most health (except level 7) is copied as an illusion that fights for you: 10% of its size + 1% per level (up to 35%).\n\n{Affinity}: god powers under Loki are stronger; see each spell."
+			}
+		},
+		"images": {
+			"large": "aom/nor/heroes/portrait/aomNorLoki_large.png",
+			"small": "aom/nor/heroes/portrait/aomNorLoki_small.png",
+			"specialtyLarge": "aom/nor/heroes/specialty/aomNorLoki_large.png",
+			"specialtySmall": "aom/nor/heroes/specialty/aomNorLoki_small.png"
+		},
+		"skills": [
+			{
+				"skill": "wisdom",
+				"level": "basic"
+			},
+			{
+				"skill": "sorcery",
+				"level": "basic"
+			}
+		],
+		"army": [
+			{
+				"creature": "aomNorBerserk",
+				"min": 10,
+				"max": 20
+			},
+			{
+				"creature": "aomNorAxeman",
+				"min": 4,
+				"max": 7
+			},
+			{
+				"creature": "aomNorTroll",
+				"min": 2,
+				"max": 3
+			}
+		],
+		"specialty": {
+			"bonuses": {
+				"creative": {
+					"type": "COMBAT_EVENT_TRIGGER",
+					"subtype": "aomNorLokiIllusion",
+					"icon": "aom/nor/abicons/illusion.png",
+					"limiters": [
+						"noneOf",
+						{
+							"type": "HAS_ANOTHER_BONUS_LIMITER",
+							"bonusType": "SIEGE_WEAPON"
+						},
+						{
+							"type": "CREATURE_TYPE_LIMITER",
+							"creature": "aomNorRam"
+						}
+					],
+					"val": 1
+				},
+				"heroLevel": {
+					"type": "AOM_NOR_HERO_LEVEL",
+					"val": 1,
+					"valueType": "BASE_NUMBER",
+					"updater": "TIMES_HERO_LEVEL",
+					"hidden": true
+				},
+				"warband": {
+					"type": "COMBAT_EVENT_TRIGGER",
+					"subtype": "aomNorWarband",
+					"val": 1,
+					"hidden": true
+				},
+				"aomNorGod": {
+					"type": "AOM_NOR_GOD",
+					"val": 3,
+					"valueType": "BASE_NUMBER",
+					"hidden": true
+				},
+				"affinity_aomNorWalkingWoods": {
+					"type": "SPECIFIC_SPELL_DAMAGE",
+					"subtype": "aomNorWalkingWoods",
+					"val": 25
+				},
+				"affinity_aomNorNidhogg": {
+					"type": "SPECIFIC_SPELL_DAMAGE",
+					"subtype": "aomNorNidhogg",
+					"val": 25
+				},
+				"affinity_aomNorFimbulwinter": {
+					"type": "SPECIFIC_SPELL_DAMAGE",
+					"subtype": "aomNorFimbulwinter",
+					"val": 25
+				},
+				"affinity_aomNorHealingSpring": {
+					"type": "SPECIFIC_SPELL_DAMAGE",
+					"subtype": "aomNorHealingSpring",
+					"val": 25
+				},
+				"affinity_aomNorUndermine": {
+					"type": "SPECIFIC_SPELL_DAMAGE",
+					"subtype": "aomNorUndermine",
+					"val": 25
+				}
+			}
+		},
+		"spellbook": [
+			"blind"
+		]
+	},
+	"aomNorHeimdall": {
+		"class": "aomNorLokiClass",
+		"female": false,
+		"special": false,
+		"texts": {
+			"name": "Heimdall",
+			"biography": "Watchman of the rainbow bridge, who can hear the grass grow. When Ragnarok comes he will sound his horn.",
+			"specialty": {
+				"name": "Scouting",
+				"tooltip": "Special: scouting radius grows with level",
+				"description": "Scouting radius grows with level: +1 at level 2, +2 at 8, +3 at 14, then about +1 every 6-7 levels.\n\n{Affinity}: god powers under Loki are stronger; see each spell."
+			}
+		},
+		"images": {
+			"large": "aom/nor/heroes/portrait/aomNorHeimdall_large.png",
+			"small": "aom/nor/heroes/portrait/aomNorHeimdall_small.png",
+			"specialtyLarge": "aom/nor/heroes/specialty/aomNorHeimdall_large.png",
+			"specialtySmall": "aom/nor/heroes/specialty/aomNorHeimdall_small.png"
+		},
+		"skills": [
+			{
+				"skill": "scouting",
+				"level": "basic"
+			},
+			{
+				"skill": "wisdom",
+				"level": "basic"
+			}
+		],
+		"army": [
+			{
+				"creature": "aomNorBerserk",
+				"min": 10,
+				"max": 20
+			},
+			{
+				"creature": "aomNorAxeman",
+				"min": 4,
+				"max": 7
+			},
+			{
+				"creature": "aomNorTroll",
+				"min": 2,
+				"max": 3
+			}
+		],
+		"specialty": {
+			"bonuses": {
+				"sight": {
+					"type": "SIGHT_RADIUS",
+					"valueType": "BASE_NUMBER",
+					"val": 0,
+					"updater": {
+						"type": "GROWS_WITH_LEVEL",
+						"valPer20": 6,
+						"stepSize": 2
+					}
+				},
+				"warband": {
+					"type": "COMBAT_EVENT_TRIGGER",
+					"subtype": "aomNorWarband",
+					"val": 1,
+					"hidden": true
+				},
+				"heroLevel": {
+					"type": "AOM_NOR_HERO_LEVEL",
+					"val": 1,
+					"valueType": "BASE_NUMBER",
+					"updater": "TIMES_HERO_LEVEL",
+					"hidden": true
+				},
+				"aomNorGod": {
+					"type": "AOM_NOR_GOD",
+					"val": 3,
+					"valueType": "BASE_NUMBER",
+					"hidden": true
+				},
+				"affinity_aomNorWalkingWoods": {
+					"type": "SPECIFIC_SPELL_DAMAGE",
+					"subtype": "aomNorWalkingWoods",
+					"val": 25
+				},
+				"affinity_aomNorNidhogg": {
+					"type": "SPECIFIC_SPELL_DAMAGE",
+					"subtype": "aomNorNidhogg",
+					"val": 25
+				},
+				"affinity_aomNorFimbulwinter": {
+					"type": "SPECIFIC_SPELL_DAMAGE",
+					"subtype": "aomNorFimbulwinter",
+					"val": 25
+				},
+				"affinity_aomNorHealingSpring": {
+					"type": "SPECIFIC_SPELL_DAMAGE",
+					"subtype": "aomNorHealingSpring",
+					"val": 25
+				},
+				"affinity_aomNorUndermine": {
+					"type": "SPECIFIC_SPELL_DAMAGE",
+					"subtype": "aomNorUndermine",
+					"val": 25
+				}
+			}
+		},
+		"spellbook": [
+			"visions"
+		]
+	},
+	"aomNorBragi": {
+		"class": "aomNorLokiClass",
+		"female": false,
+		"special": false,
+		"texts": {
+			"name": "Bragi",
+			"biography": "God of poetry, with runes carved on his tongue. His war songs make the most timid man charge.",
+			"specialty": {
+				"name": "Bloodlust Master",
+				"tooltip": "Bloodlust Master",
+				"description": "Bloodlust raises the target's Attack further:\nlevel 1-2 +3, level 3-4 +2, level 5-6 +1.\n\n{Affinity}: god powers under Loki are stronger; see each spell."
+			}
+		},
+		"images": {
+			"large": "aom/nor/heroes/portrait/aomNorBragi_large.png",
+			"small": "aom/nor/heroes/portrait/aomNorBragi_small.png",
+			"specialtyLarge": "aom/nor/heroes/specialty/aomNorBragi_large.png",
+			"specialtySmall": "aom/nor/heroes/specialty/aomNorBragi_small.png"
+		},
+		"skills": [
+			{
+				"skill": "leadership",
+				"level": "basic"
+			},
+			{
+				"skill": "wisdom",
+				"level": "basic"
+			}
+		],
+		"army": [
+			{
+				"creature": "aomNorBerserk",
+				"min": 10,
+				"max": 20
+			},
+			{
+				"creature": "aomNorAxeman",
+				"min": 4,
+				"max": 7
+			},
+			{
+				"creature": "aomNorTroll",
+				"min": 2,
+				"max": 3
+			}
+		],
+		"specialty": {
+			"spellFixedAdditive": "bloodlust",
+			"bonuses": {
+				"warband": {
+					"type": "COMBAT_EVENT_TRIGGER",
+					"subtype": "aomNorWarband",
+					"val": 1,
+					"hidden": true
+				},
+				"heroLevel": {
+					"type": "AOM_NOR_HERO_LEVEL",
+					"val": 1,
+					"valueType": "BASE_NUMBER",
+					"updater": "TIMES_HERO_LEVEL",
+					"hidden": true
+				},
+				"aomNorGod": {
+					"type": "AOM_NOR_GOD",
+					"val": 3,
+					"valueType": "BASE_NUMBER",
+					"hidden": true
+				},
+				"affinity_aomNorWalkingWoods": {
+					"type": "SPECIFIC_SPELL_DAMAGE",
+					"subtype": "aomNorWalkingWoods",
+					"val": 25
+				},
+				"affinity_aomNorNidhogg": {
+					"type": "SPECIFIC_SPELL_DAMAGE",
+					"subtype": "aomNorNidhogg",
+					"val": 25
+				},
+				"affinity_aomNorFimbulwinter": {
+					"type": "SPECIFIC_SPELL_DAMAGE",
+					"subtype": "aomNorFimbulwinter",
+					"val": 25
+				},
+				"affinity_aomNorHealingSpring": {
+					"type": "SPECIFIC_SPELL_DAMAGE",
+					"subtype": "aomNorHealingSpring",
+					"val": 25
+				},
+				"affinity_aomNorUndermine": {
+					"type": "SPECIFIC_SPELL_DAMAGE",
+					"subtype": "aomNorUndermine",
+					"val": 25
+				}
+			}
+		},
+		"spellbook": [
+			"bloodlust"
+		]
+	},
+	"aomNorHel": {
+		"class": "aomNorLokiClass",
+		"female": true,
+		"special": false,
+		"texts": {
+			"name": "Hel",
+			"biography": "Loki's daughter, queen of the dead, half living and half rotting. The frost giants obey her.",
+			"specialty": {
+				"name": "Favor: Titan",
+				"tooltip": "Favor: Titan",
+				"description": "Favor +1 each round (+1 more after acting); at each threshold a boon:\n{2 pts}: Tundra Titans gain Divinity for 2 rounds.\n{4 pts}: Queen of the Dead: Tundra Titans deal +25% damage for 2 rounds.\n{7 pts}: Trickery: all enemies Attack -3 for 2 rounds.\n\n{Affinity}: god powers under Loki are stronger; see each spell."
+			}
+		},
+		"images": {
+			"large": "aom/nor/heroes/portrait/aomNorHel_large.png",
+			"small": "aom/nor/heroes/portrait/aomNorHel_small.png",
+			"specialtyLarge": "aom/nor/heroes/specialty/aomNorHel_large.png",
+			"specialtySmall": "aom/nor/heroes/specialty/aomNorHel_small.png"
+		},
+		"skills": [
+			{
+				"skill": "wisdom",
+				"level": "basic"
+			},
+			{
+				"skill": "sorcery",
+				"level": "basic"
+			}
+		],
+		"army": [
+			{
+				"creature": "aomNorBerserk",
+				"min": 10,
+				"max": 20
+			},
+			{
+				"creature": "aomNorAxeman",
+				"min": 4,
+				"max": 7
+			},
+			{
+				"creature": "aomNorTroll",
+				"min": 2,
+				"max": 3
+			}
+		],
+		"specialty": {
+			"bonuses": {
+				"favor": {
+					"type": "COMBAT_EVENT_TRIGGER",
+					"subtype": "aomNorFavor",
+					"icon": "aom/nor/abicons/favor.png",
+					"limiters": [
+						"noneOf",
+						{
+							"type": "HAS_ANOTHER_BONUS_LIMITER",
+							"bonusType": "SIEGE_WEAPON"
+						},
+						{
+							"type": "CREATURE_TYPE_LIMITER",
+							"creature": "aomNorRam"
+						}
+					],
+					"val": 1,
+					"addInfo": {
+						"creatures": [
+							"aomNorTitan",
+							"aomNorTitanYmir",
+							"aomNorTitanGap"
+						],
+						"patron": "hel",
+						"god": "loki"
+					}
+				},
+				"warband": {
+					"type": "COMBAT_EVENT_TRIGGER",
+					"subtype": "aomNorWarband",
+					"val": 1,
+					"hidden": true
+				},
+				"heroLevel": {
+					"type": "AOM_NOR_HERO_LEVEL",
+					"val": 1,
+					"valueType": "BASE_NUMBER",
+					"updater": "TIMES_HERO_LEVEL",
+					"hidden": true
+				},
+				"aomNorGod": {
+					"type": "AOM_NOR_GOD",
+					"val": 3,
+					"valueType": "BASE_NUMBER",
+					"hidden": true
+				},
+				"affinity_aomNorWalkingWoods": {
+					"type": "SPECIFIC_SPELL_DAMAGE",
+					"subtype": "aomNorWalkingWoods",
+					"val": 25
+				},
+				"affinity_aomNorNidhogg": {
+					"type": "SPECIFIC_SPELL_DAMAGE",
+					"subtype": "aomNorNidhogg",
+					"val": 25
+				},
+				"affinity_aomNorFimbulwinter": {
+					"type": "SPECIFIC_SPELL_DAMAGE",
+					"subtype": "aomNorFimbulwinter",
+					"val": 25
+				},
+				"affinity_aomNorHealingSpring": {
+					"type": "SPECIFIC_SPELL_DAMAGE",
+					"subtype": "aomNorHealingSpring",
+					"val": 25
+				},
+				"affinity_aomNorUndermine": {
+					"type": "SPECIFIC_SPELL_DAMAGE",
+					"subtype": "aomNorUndermine",
+					"val": 25
+				}
+			}
+		},
+		"spellbook": [
+			"deathRipple"
+		]
+	},
+	"aomNorSigyn": {
+		"class": "aomNorLokiClass",
+		"female": true,
+		"special": false,
+		"texts": {
+			"name": "Sigyn",
+			"biography": "Loki's wife, who holds a bowl over him to catch the venom while he is punished, and never leaves.",
+			"specialty": {
+				"name": "First Aid",
+				"tooltip": "Skill bonus: First Aid",
+				"description": "Receives a 5% per level bonus to First Aid skill percentage.\n\n{Affinity}: god powers under Loki are stronger; see each spell."
+			}
+		},
+		"images": {
+			"large": "aom/nor/heroes/portrait/aomNorSigyn_large.png",
+			"small": "aom/nor/heroes/portrait/aomNorSigyn_small.png",
+			"specialtyLarge": "aom/nor/heroes/specialty/aomNorSigyn_large.png",
+			"specialtySmall": "aom/nor/heroes/specialty/aomNorSigyn_small.png"
+		},
+		"skills": [
+			{
+				"skill": "firstAid",
+				"level": "basic"
+			},
+			{
+				"skill": "wisdom",
+				"level": "basic"
+			}
+		],
+		"army": [
+			{
+				"creature": "aomNorBerserk",
+				"min": 10,
+				"max": 20
+			},
+			{
+				"creature": "aomNorAxeman",
+				"min": 4,
+				"max": 7
+			},
+			{
+				"creature": "firstAidTent",
+				"min": 1,
+				"max": 1
+			}
+		],
+		"specialty": {
+			"secondary": "firstAid",
+			"bonuses": {
+				"warband": {
+					"type": "COMBAT_EVENT_TRIGGER",
+					"subtype": "aomNorWarband",
+					"val": 1,
+					"hidden": true
+				},
+				"heroLevel": {
+					"type": "AOM_NOR_HERO_LEVEL",
+					"val": 1,
+					"valueType": "BASE_NUMBER",
+					"updater": "TIMES_HERO_LEVEL",
+					"hidden": true
+				},
+				"aomNorGod": {
+					"type": "AOM_NOR_GOD",
+					"val": 3,
+					"valueType": "BASE_NUMBER",
+					"hidden": true
+				},
+				"affinity_aomNorWalkingWoods": {
+					"type": "SPECIFIC_SPELL_DAMAGE",
+					"subtype": "aomNorWalkingWoods",
+					"val": 25
+				},
+				"affinity_aomNorNidhogg": {
+					"type": "SPECIFIC_SPELL_DAMAGE",
+					"subtype": "aomNorNidhogg",
+					"val": 25
+				},
+				"affinity_aomNorFimbulwinter": {
+					"type": "SPECIFIC_SPELL_DAMAGE",
+					"subtype": "aomNorFimbulwinter",
+					"val": 25
+				},
+				"affinity_aomNorHealingSpring": {
+					"type": "SPECIFIC_SPELL_DAMAGE",
+					"subtype": "aomNorHealingSpring",
+					"val": 25
+				},
+				"affinity_aomNorUndermine": {
+					"type": "SPECIFIC_SPELL_DAMAGE",
+					"subtype": "aomNorUndermine",
+					"val": 25
+				}
+			}
+		},
+		"spellbook": [
+			"shield"
+		]
+	},
+	"aomNorAngrboda": {
+		"class": "aomNorLokiClass",
+		"female": true,
+		"special": false,
+		"texts": {
+			"name": "Angrboda",
+			"biography": "Giantess of the Iron Wood, mother of Fenrir, Jormungandr and Hel. The monsters of the deep are all her brood.",
+			"specialty": {
+				"name": "Favor: Kraken",
+				"tooltip": "Favor: Kraken",
+				"description": "Favor +1 each round (+1 more after acting); at each threshold a boon:\n{2 pts}: Krakens gain Divinity for 2 rounds.\n{4 pts}: Mother's Shelter: Krakens take 50% less damage this round.\n{7 pts}: Trickery: all enemies Attack -3 for 2 rounds.\n\n{Affinity}: god powers under Loki are stronger; see each spell."
+			}
+		},
+		"images": {
+			"large": "aom/nor/heroes/portrait/aomNorAngrboda_large.png",
+			"small": "aom/nor/heroes/portrait/aomNorAngrboda_small.png",
+			"specialtyLarge": "aom/nor/heroes/specialty/aomNorAngrboda_large.png",
+			"specialtySmall": "aom/nor/heroes/specialty/aomNorAngrboda_small.png"
+		},
+		"skills": [
+			{
+				"skill": "navigation",
+				"level": "basic"
+			},
+			{
+				"skill": "wisdom",
+				"level": "basic"
+			}
+		],
+		"army": [
+			{
+				"creature": "aomNorBerserk",
+				"min": 10,
+				"max": 20
+			},
+			{
+				"creature": "aomNorAxeman",
+				"min": 4,
+				"max": 7
+			},
+			{
+				"creature": "aomNorTroll",
+				"min": 2,
+				"max": 3
+			}
+		],
+		"specialty": {
+			"bonuses": {
+				"favor": {
+					"type": "COMBAT_EVENT_TRIGGER",
+					"subtype": "aomNorFavor",
+					"icon": "aom/nor/abicons/favor.png",
+					"limiters": [
+						"noneOf",
+						{
+							"type": "HAS_ANOTHER_BONUS_LIMITER",
+							"bonusType": "SIEGE_WEAPON"
+						},
+						{
+							"type": "CREATURE_TYPE_LIMITER",
+							"creature": "aomNorRam"
+						}
+					],
+					"val": 1,
+					"addInfo": {
+						"creatures": [
+							"aomNorKraken",
+							"aomNorKrakenAbyss",
+							"aomNorKrakenStorm"
+						],
+						"patron": "angrboda",
+						"god": "loki"
+					}
+				},
+				"warband": {
+					"type": "COMBAT_EVENT_TRIGGER",
+					"subtype": "aomNorWarband",
+					"val": 1,
+					"hidden": true
+				},
+				"heroLevel": {
+					"type": "AOM_NOR_HERO_LEVEL",
+					"val": 1,
+					"valueType": "BASE_NUMBER",
+					"updater": "TIMES_HERO_LEVEL",
+					"hidden": true
+				},
+				"aomNorGod": {
+					"type": "AOM_NOR_GOD",
+					"val": 3,
+					"valueType": "BASE_NUMBER",
+					"hidden": true
+				},
+				"affinity_aomNorWalkingWoods": {
+					"type": "SPECIFIC_SPELL_DAMAGE",
+					"subtype": "aomNorWalkingWoods",
+					"val": 25
+				},
+				"affinity_aomNorNidhogg": {
+					"type": "SPECIFIC_SPELL_DAMAGE",
+					"subtype": "aomNorNidhogg",
+					"val": 25
+				},
+				"affinity_aomNorFimbulwinter": {
+					"type": "SPECIFIC_SPELL_DAMAGE",
+					"subtype": "aomNorFimbulwinter",
+					"val": 25
+				},
+				"affinity_aomNorHealingSpring": {
+					"type": "SPECIFIC_SPELL_DAMAGE",
+					"subtype": "aomNorHealingSpring",
+					"val": 25
+				},
+				"affinity_aomNorUndermine": {
+					"type": "SPECIFIC_SPELL_DAMAGE",
+					"subtype": "aomNorUndermine",
+					"val": 25
+				}
+			}
+		},
+		"spellbook": [
+			"curse"
+		]
+	},
+	"aomNorSkult": {
+		"class": "aomNorLokiClass",
+		"female": false,
+		"special": false,
+		"texts": {
+			"name": "Skult",
+			"biography": "A traitor posing as a Norse envoy, sowing discord on behalf of the underworld.",
+			"specialty": {
+				"name": "Intelligence",
+				"tooltip": "Skill bonus: Intelligence",
+				"description": "Receives a 5% per level bonus to Intelligence skill percentage.\n\n{Affinity}: god powers under Loki are stronger; see each spell."
+			}
+		},
+		"images": {
+			"large": "aom/nor/heroes/portrait/aomNorSkult_large.png",
+			"small": "aom/nor/heroes/portrait/aomNorSkult_small.png",
+			"specialtyLarge": "aom/nor/heroes/specialty/aomNorSkult_large.png",
+			"specialtySmall": "aom/nor/heroes/specialty/aomNorSkult_small.png"
+		},
+		"skills": [
+			{
+				"skill": "intelligence",
+				"level": "basic"
+			},
+			{
+				"skill": "wisdom",
+				"level": "basic"
+			}
+		],
+		"army": [
+			{
+				"creature": "aomNorBerserk",
+				"min": 10,
+				"max": 20
+			},
+			{
+				"creature": "aomNorAxeman",
+				"min": 4,
+				"max": 7
+			},
+			{
+				"creature": "aomNorTroll",
+				"min": 2,
+				"max": 3
+			}
+		],
+		"specialty": {
+			"secondary": "intelligence",
+			"bonuses": {
+				"warband": {
+					"type": "COMBAT_EVENT_TRIGGER",
+					"subtype": "aomNorWarband",
+					"val": 1,
+					"hidden": true
+				},
+				"heroLevel": {
+					"type": "AOM_NOR_HERO_LEVEL",
+					"val": 1,
+					"valueType": "BASE_NUMBER",
+					"updater": "TIMES_HERO_LEVEL",
+					"hidden": true
+				},
+				"aomNorGod": {
+					"type": "AOM_NOR_GOD",
+					"val": 3,
+					"valueType": "BASE_NUMBER",
+					"hidden": true
+				},
+				"affinity_aomNorWalkingWoods": {
+					"type": "SPECIFIC_SPELL_DAMAGE",
+					"subtype": "aomNorWalkingWoods",
+					"val": 25
+				},
+				"affinity_aomNorNidhogg": {
+					"type": "SPECIFIC_SPELL_DAMAGE",
+					"subtype": "aomNorNidhogg",
+					"val": 25
+				},
+				"affinity_aomNorFimbulwinter": {
+					"type": "SPECIFIC_SPELL_DAMAGE",
+					"subtype": "aomNorFimbulwinter",
+					"val": 25
+				},
+				"affinity_aomNorHealingSpring": {
+					"type": "SPECIFIC_SPELL_DAMAGE",
+					"subtype": "aomNorHealingSpring",
+					"val": 25
+				},
+				"affinity_aomNorUndermine": {
+					"type": "SPECIFIC_SPELL_DAMAGE",
+					"subtype": "aomNorUndermine",
+					"val": 25
+				}
+			}
+		},
+		"spellbook": [
+			"slow"
+		]
+	},
+	"aomNorFreyr": {
+		"class": "aomNorFreyrClass",
+		"female": false,
+		"special": false,
+		"texts": {
+			"name": "Freyr",
+			"biography": "God of fertility, sun and rain, who rides the golden boar Gullinbursti. Wherever he goes, the harvest is rich.",
+			"specialty": {
+				"name": "Gullinbursti",
+				"tooltip": "Gullinbursti",
+				"description": "At the start of battle Gullinbursti joins in: 1 + hero level ÷ 8 of them; they leave when the battle ends.\n\n{Affinity}: god powers under Freyr are stronger; see each spell."
+			}
+		},
+		"images": {
+			"large": "aom/nor/heroes/portrait/aomNorFreyr_large.png",
+			"small": "aom/nor/heroes/portrait/aomNorFreyr_small.png",
+			"specialtyLarge": "aom/nor/heroes/specialty/aomNorFreyr_large.png",
+			"specialtySmall": "aom/nor/heroes/specialty/aomNorFreyr_small.png"
+		},
+		"skills": [
+			{
+				"skill": "estates",
+				"level": "basic"
+			},
+			{
+				"skill": "leadership",
+				"level": "basic"
+			}
+		],
+		"army": [
+			{
+				"creature": "aomNorBerserk",
+				"min": 10,
+				"max": 20
+			},
+			{
+				"creature": "aomNorAxeman",
+				"min": 4,
+				"max": 7
+			},
+			{
+				"creature": "aomNorTroll",
+				"min": 2,
+				"max": 3
+			}
+		],
+		"specialty": {
+			"bonuses": {
+				"creative": {
+					"type": "COMBAT_EVENT_TRIGGER",
+					"subtype": "aomNorFreyrBoar",
+					"icon": "aom/nor/abicons/freyrBoar.png",
+					"limiters": [
+						"noneOf",
+						{
+							"type": "HAS_ANOTHER_BONUS_LIMITER",
+							"bonusType": "SIEGE_WEAPON"
+						},
+						{
+							"type": "CREATURE_TYPE_LIMITER",
+							"creature": "aomNorRam"
+						}
+					],
+					"val": 1
+				},
+				"heroLevel": {
+					"type": "AOM_NOR_HERO_LEVEL",
+					"val": 1,
+					"valueType": "BASE_NUMBER",
+					"updater": "TIMES_HERO_LEVEL",
+					"hidden": true
+				},
+				"warband": {
+					"type": "COMBAT_EVENT_TRIGGER",
+					"subtype": "aomNorWarband",
+					"val": 1,
+					"hidden": true
+				},
+				"aomNorGod": {
+					"type": "AOM_NOR_GOD",
+					"val": 4,
+					"valueType": "BASE_NUMBER",
+					"hidden": true
+				},
+				"affinity_aomNorGoldenBoar": {
+					"type": "SPECIFIC_SPELL_DAMAGE",
+					"subtype": "aomNorGoldenBoar",
+					"val": 25
+				},
+				"affinity_aomNorForestFire": {
+					"type": "SPECIFIC_SPELL_DAMAGE",
+					"subtype": "aomNorForestFire",
+					"val": 25
+				},
+				"affinity_aomNorTempest": {
+					"type": "SPECIFIC_SPELL_DAMAGE",
+					"subtype": "aomNorTempest",
+					"val": 25
+				},
+				"affinity_aomNorNidhogg": {
+					"type": "SPECIFIC_SPELL_DAMAGE",
+					"subtype": "aomNorNidhogg",
+					"val": 25
+				},
+				"affinity_aomNorBastion": {
+					"type": "SPECIFIC_SPELL_DAMAGE",
+					"subtype": "aomNorBastion",
+					"val": 25
+				},
+				"affinity_aomNorInferno": {
+					"type": "SPECIFIC_SPELL_DAMAGE",
+					"subtype": "aomNorInferno",
+					"val": 25
+				}
+			}
+		}
+	},
+	"aomNorUllr": {
+		"class": "aomNorFreyrClass",
+		"female": false,
+		"special": false,
+		"texts": {
+			"name": "Ullr",
+			"biography": "God of archery and the hunt, who lives in Yew Dale. Thrown blades fly as true as arrows in his eyes.",
+			"specialty": {
+				"name": "Favor: Axeman",
+				"tooltip": "Favor: Axeman",
+				"description": "Favor +1 each round (+1 more after acting); at each threshold a boon:\n{2 pts}: Throwing Axemen gain Divinity for 2 rounds.\n{4 pts}: Hunter's Eye: Throwing Axemen ranged damage +30% for 2 rounds.\n{7 pts}: Plenty: all living troops heal 30% health.\n\n{Affinity}: god powers under Freyr are stronger; see each spell."
+			}
+		},
+		"images": {
+			"large": "aom/nor/heroes/portrait/aomNorUllr_large.png",
+			"small": "aom/nor/heroes/portrait/aomNorUllr_small.png",
+			"specialtyLarge": "aom/nor/heroes/specialty/aomNorUllr_large.png",
+			"specialtySmall": "aom/nor/heroes/specialty/aomNorUllr_small.png"
+		},
+		"skills": [
+			{
+				"skill": "archery",
+				"level": "basic"
+			},
+			{
+				"skill": "offence",
+				"level": "basic"
+			}
+		],
+		"army": [
+			{
+				"creature": "aomNorBerserk",
+				"min": 10,
+				"max": 20
+			},
+			{
+				"creature": "aomNorAxeman",
+				"min": 4,
+				"max": 7
+			},
+			{
+				"creature": "aomNorTroll",
+				"min": 2,
+				"max": 3
+			}
+		],
+		"specialty": {
+			"bonuses": {
+				"favor": {
+					"type": "COMBAT_EVENT_TRIGGER",
+					"subtype": "aomNorFavor",
+					"icon": "aom/nor/abicons/favor.png",
+					"limiters": [
+						"noneOf",
+						{
+							"type": "HAS_ANOTHER_BONUS_LIMITER",
+							"bonusType": "SIEGE_WEAPON"
+						},
+						{
+							"type": "CREATURE_TYPE_LIMITER",
+							"creature": "aomNorRam"
+						}
+					],
+					"val": 1,
+					"addInfo": {
+						"creatures": [
+							"aomNorAxeman",
+							"aomNorAxemanBreaker",
+							"aomNorAxemanTwin"
+						],
+						"patron": "ullr",
+						"god": "freyr"
+					}
+				},
+				"warband": {
+					"type": "COMBAT_EVENT_TRIGGER",
+					"subtype": "aomNorWarband",
+					"val": 1,
+					"hidden": true
+				},
+				"heroLevel": {
+					"type": "AOM_NOR_HERO_LEVEL",
+					"val": 1,
+					"valueType": "BASE_NUMBER",
+					"updater": "TIMES_HERO_LEVEL",
+					"hidden": true
+				},
+				"aomNorGod": {
+					"type": "AOM_NOR_GOD",
+					"val": 4,
+					"valueType": "BASE_NUMBER",
+					"hidden": true
+				},
+				"affinity_aomNorGoldenBoar": {
+					"type": "SPECIFIC_SPELL_DAMAGE",
+					"subtype": "aomNorGoldenBoar",
+					"val": 25
+				},
+				"affinity_aomNorForestFire": {
+					"type": "SPECIFIC_SPELL_DAMAGE",
+					"subtype": "aomNorForestFire",
+					"val": 25
+				},
+				"affinity_aomNorTempest": {
+					"type": "SPECIFIC_SPELL_DAMAGE",
+					"subtype": "aomNorTempest",
+					"val": 25
+				},
+				"affinity_aomNorNidhogg": {
+					"type": "SPECIFIC_SPELL_DAMAGE",
+					"subtype": "aomNorNidhogg",
+					"val": 25
+				},
+				"affinity_aomNorBastion": {
+					"type": "SPECIFIC_SPELL_DAMAGE",
+					"subtype": "aomNorBastion",
+					"val": 25
+				},
+				"affinity_aomNorInferno": {
+					"type": "SPECIFIC_SPELL_DAMAGE",
+					"subtype": "aomNorInferno",
+					"val": 25
+				}
+			}
+		}
+	},
+	"aomNorAegir": {
+		"class": "aomNorFreyrClass",
+		"female": false,
+		"special": false,
+		"texts": {
+			"name": "Aegir",
+			"biography": "King of the sea giants. The gods linger at his feasts, and the treasures of the deep never run dry.",
+			"specialty": {
+				"name": "+350 Gold",
+				"tooltip": "Resource: +350 gold per day",
+				"description": "The kingdom receives an additional 350 gold per day.\n\n{Affinity}: god powers under Freyr are stronger; see each spell."
+			}
+		},
+		"images": {
+			"large": "aom/nor/heroes/portrait/aomNorAegir_large.png",
+			"small": "aom/nor/heroes/portrait/aomNorAegir_small.png",
+			"specialtyLarge": "aom/nor/heroes/specialty/aomNorAegir_large.png",
+			"specialtySmall": "aom/nor/heroes/specialty/aomNorAegir_small.png"
+		},
+		"skills": [
+			{
+				"skill": "estates",
+				"level": "basic"
+			},
+			{
+				"skill": "navigation",
+				"level": "basic"
+			}
+		],
+		"army": [
+			{
+				"creature": "aomNorBerserk",
+				"min": 10,
+				"max": 20
+			},
+			{
+				"creature": "aomNorAxeman",
+				"min": 4,
+				"max": 7
+			},
+			{
+				"creature": "aomNorTroll",
+				"min": 2,
+				"max": 3
+			}
+		],
+		"specialty": {
+			"bonuses": {
+				"gold": {
+					"type": "GENERATE_RESOURCE",
+					"subtype": "gold",
+					"val": 350,
+					"valueType": "BASE_NUMBER"
+				},
+				"warband": {
+					"type": "COMBAT_EVENT_TRIGGER",
+					"subtype": "aomNorWarband",
+					"val": 1,
+					"hidden": true
+				},
+				"heroLevel": {
+					"type": "AOM_NOR_HERO_LEVEL",
+					"val": 1,
+					"valueType": "BASE_NUMBER",
+					"updater": "TIMES_HERO_LEVEL",
+					"hidden": true
+				},
+				"aomNorGod": {
+					"type": "AOM_NOR_GOD",
+					"val": 4,
+					"valueType": "BASE_NUMBER",
+					"hidden": true
+				},
+				"affinity_aomNorGoldenBoar": {
+					"type": "SPECIFIC_SPELL_DAMAGE",
+					"subtype": "aomNorGoldenBoar",
+					"val": 25
+				},
+				"affinity_aomNorForestFire": {
+					"type": "SPECIFIC_SPELL_DAMAGE",
+					"subtype": "aomNorForestFire",
+					"val": 25
+				},
+				"affinity_aomNorTempest": {
+					"type": "SPECIFIC_SPELL_DAMAGE",
+					"subtype": "aomNorTempest",
+					"val": 25
+				},
+				"affinity_aomNorNidhogg": {
+					"type": "SPECIFIC_SPELL_DAMAGE",
+					"subtype": "aomNorNidhogg",
+					"val": 25
+				},
+				"affinity_aomNorBastion": {
+					"type": "SPECIFIC_SPELL_DAMAGE",
+					"subtype": "aomNorBastion",
+					"val": 25
+				},
+				"affinity_aomNorInferno": {
+					"type": "SPECIFIC_SPELL_DAMAGE",
+					"subtype": "aomNorInferno",
+					"val": 25
+				}
+			}
+		}
+	},
+	"aomNorVidar": {
+		"class": "aomNorFreyrClass",
+		"female": false,
+		"special": false,
+		"texts": {
+			"name": "Vidar",
+			"biography": "The silent god of vengeance, fated to avenge his father Odin at Ragnarok. Dragon fire serves him.",
+			"specialty": {
+				"name": "Favor: Fafnir",
+				"tooltip": "Favor: Fafnir",
+				"description": "Favor +1 each round (+1 more after acting); at each threshold a boon:\n{2 pts}: Fafnirs gain Divinity for 2 rounds.\n{4 pts}: Silent Vengeance: Fafnirs Attack and Defense +4 for 2 rounds.\n{7 pts}: Plenty: all living troops heal 30% health.\n\n{Affinity}: god powers under Freyr are stronger; see each spell."
+			}
+		},
+		"images": {
+			"large": "aom/nor/heroes/portrait/aomNorVidar_large.png",
+			"small": "aom/nor/heroes/portrait/aomNorVidar_small.png",
+			"specialtyLarge": "aom/nor/heroes/specialty/aomNorVidar_large.png",
+			"specialtySmall": "aom/nor/heroes/specialty/aomNorVidar_small.png"
+		},
+		"skills": [
+			{
+				"skill": "offence",
+				"level": "basic"
+			},
+			{
+				"skill": "armorer",
+				"level": "basic"
+			}
+		],
+		"army": [
+			{
+				"creature": "aomNorBerserk",
+				"min": 10,
+				"max": 20
+			},
+			{
+				"creature": "aomNorAxeman",
+				"min": 4,
+				"max": 7
+			},
+			{
+				"creature": "aomNorTroll",
+				"min": 2,
+				"max": 3
+			}
+		],
+		"specialty": {
+			"bonuses": {
+				"favor": {
+					"type": "COMBAT_EVENT_TRIGGER",
+					"subtype": "aomNorFavor",
+					"icon": "aom/nor/abicons/favor.png",
+					"limiters": [
+						"noneOf",
+						{
+							"type": "HAS_ANOTHER_BONUS_LIMITER",
+							"bonusType": "SIEGE_WEAPON"
+						},
+						{
+							"type": "CREATURE_TYPE_LIMITER",
+							"creature": "aomNorRam"
+						}
+					],
+					"val": 1,
+					"addInfo": {
+						"creatures": [
+							"aomNorFafnir",
+							"aomNorFafnirVenom",
+							"aomNorFafnirFlame"
+						],
+						"patron": "vidar",
+						"god": "freyr"
+					}
+				},
+				"warband": {
+					"type": "COMBAT_EVENT_TRIGGER",
+					"subtype": "aomNorWarband",
+					"val": 1,
+					"hidden": true
+				},
+				"heroLevel": {
+					"type": "AOM_NOR_HERO_LEVEL",
+					"val": 1,
+					"valueType": "BASE_NUMBER",
+					"updater": "TIMES_HERO_LEVEL",
+					"hidden": true
+				},
+				"aomNorGod": {
+					"type": "AOM_NOR_GOD",
+					"val": 4,
+					"valueType": "BASE_NUMBER",
+					"hidden": true
+				},
+				"affinity_aomNorGoldenBoar": {
+					"type": "SPECIFIC_SPELL_DAMAGE",
+					"subtype": "aomNorGoldenBoar",
+					"val": 25
+				},
+				"affinity_aomNorForestFire": {
+					"type": "SPECIFIC_SPELL_DAMAGE",
+					"subtype": "aomNorForestFire",
+					"val": 25
+				},
+				"affinity_aomNorTempest": {
+					"type": "SPECIFIC_SPELL_DAMAGE",
+					"subtype": "aomNorTempest",
+					"val": 25
+				},
+				"affinity_aomNorNidhogg": {
+					"type": "SPECIFIC_SPELL_DAMAGE",
+					"subtype": "aomNorNidhogg",
+					"val": 25
+				},
+				"affinity_aomNorBastion": {
+					"type": "SPECIFIC_SPELL_DAMAGE",
+					"subtype": "aomNorBastion",
+					"val": 25
+				},
+				"affinity_aomNorInferno": {
+					"type": "SPECIFIC_SPELL_DAMAGE",
+					"subtype": "aomNorInferno",
+					"val": 25
+				}
+			}
+		}
+	},
+	"aomNorGerd": {
+		"class": "aomNorFreyrClass",
+		"female": true,
+		"special": false,
+		"texts": {
+			"name": "Gerd",
+			"biography": "Freyr's wife, a beautiful giantess. To win her, Freyr gave away his sword.",
+			"specialty": {
+				"name": "Estates",
+				"tooltip": "Skill bonus: Estates",
+				"description": "Receives a 5% per level bonus to Estates skill percentage.\n\n{Affinity}: god powers under Freyr are stronger; see each spell."
+			}
+		},
+		"images": {
+			"large": "aom/nor/heroes/portrait/aomNorGerd_large.png",
+			"small": "aom/nor/heroes/portrait/aomNorGerd_small.png",
+			"specialtyLarge": "aom/nor/heroes/specialty/aomNorGerd_large.png",
+			"specialtySmall": "aom/nor/heroes/specialty/aomNorGerd_small.png"
+		},
+		"skills": [
+			{
+				"skill": "estates",
+				"level": "basic"
+			},
+			{
+				"skill": "diplomacy",
+				"level": "basic"
+			}
+		],
+		"army": [
+			{
+				"creature": "aomNorBerserk",
+				"min": 10,
+				"max": 20
+			},
+			{
+				"creature": "aomNorAxeman",
+				"min": 4,
+				"max": 7
+			},
+			{
+				"creature": "aomNorTroll",
+				"min": 2,
+				"max": 3
+			}
+		],
+		"specialty": {
+			"secondary": "estates",
+			"bonuses": {
+				"warband": {
+					"type": "COMBAT_EVENT_TRIGGER",
+					"subtype": "aomNorWarband",
+					"val": 1,
+					"hidden": true
+				},
+				"heroLevel": {
+					"type": "AOM_NOR_HERO_LEVEL",
+					"val": 1,
+					"valueType": "BASE_NUMBER",
+					"updater": "TIMES_HERO_LEVEL",
+					"hidden": true
+				},
+				"aomNorGod": {
+					"type": "AOM_NOR_GOD",
+					"val": 4,
+					"valueType": "BASE_NUMBER",
+					"hidden": true
+				},
+				"affinity_aomNorGoldenBoar": {
+					"type": "SPECIFIC_SPELL_DAMAGE",
+					"subtype": "aomNorGoldenBoar",
+					"val": 25
+				},
+				"affinity_aomNorForestFire": {
+					"type": "SPECIFIC_SPELL_DAMAGE",
+					"subtype": "aomNorForestFire",
+					"val": 25
+				},
+				"affinity_aomNorTempest": {
+					"type": "SPECIFIC_SPELL_DAMAGE",
+					"subtype": "aomNorTempest",
+					"val": 25
+				},
+				"affinity_aomNorNidhogg": {
+					"type": "SPECIFIC_SPELL_DAMAGE",
+					"subtype": "aomNorNidhogg",
+					"val": 25
+				},
+				"affinity_aomNorBastion": {
+					"type": "SPECIFIC_SPELL_DAMAGE",
+					"subtype": "aomNorBastion",
+					"val": 25
+				},
+				"affinity_aomNorInferno": {
+					"type": "SPECIFIC_SPELL_DAMAGE",
+					"subtype": "aomNorInferno",
+					"val": 25
+				}
+			}
+		}
+	},
+	"aomNorSkirnir": {
+		"class": "aomNorFreyrClass",
+		"female": false,
+		"special": false,
+		"texts": {
+			"name": "Skirnir",
+			"biography": "Freyr's messenger, who went to the land of the giants to woo a bride for his master; his tongue is worth a thousand swords.",
+			"specialty": {
+				"name": "Diplomacy",
+				"tooltip": "Skill bonus: Diplomacy",
+				"description": "Receives a 5% per level bonus to Diplomacy skill percentage.\n\n{Affinity}: god powers under Freyr are stronger; see each spell."
+			}
+		},
+		"images": {
+			"large": "aom/nor/heroes/portrait/aomNorSkirnir_large.png",
+			"small": "aom/nor/heroes/portrait/aomNorSkirnir_small.png",
+			"specialtyLarge": "aom/nor/heroes/specialty/aomNorSkirnir_large.png",
+			"specialtySmall": "aom/nor/heroes/specialty/aomNorSkirnir_small.png"
+		},
+		"skills": [
+			{
+				"skill": "diplomacy",
+				"level": "basic"
+			},
+			{
+				"skill": "logistics",
+				"level": "basic"
+			}
+		],
+		"army": [
+			{
+				"creature": "aomNorBerserk",
+				"min": 10,
+				"max": 20
+			},
+			{
+				"creature": "aomNorAxeman",
+				"min": 4,
+				"max": 7
+			},
+			{
+				"creature": "aomNorTroll",
+				"min": 2,
+				"max": 3
+			}
+		],
+		"specialty": {
+			"secondary": "diplomacy",
+			"bonuses": {
+				"warband": {
+					"type": "COMBAT_EVENT_TRIGGER",
+					"subtype": "aomNorWarband",
+					"val": 1,
+					"hidden": true
+				},
+				"heroLevel": {
+					"type": "AOM_NOR_HERO_LEVEL",
+					"val": 1,
+					"valueType": "BASE_NUMBER",
+					"updater": "TIMES_HERO_LEVEL",
+					"hidden": true
+				},
+				"aomNorGod": {
+					"type": "AOM_NOR_GOD",
+					"val": 4,
+					"valueType": "BASE_NUMBER",
+					"hidden": true
+				},
+				"affinity_aomNorGoldenBoar": {
+					"type": "SPECIFIC_SPELL_DAMAGE",
+					"subtype": "aomNorGoldenBoar",
+					"val": 25
+				},
+				"affinity_aomNorForestFire": {
+					"type": "SPECIFIC_SPELL_DAMAGE",
+					"subtype": "aomNorForestFire",
+					"val": 25
+				},
+				"affinity_aomNorTempest": {
+					"type": "SPECIFIC_SPELL_DAMAGE",
+					"subtype": "aomNorTempest",
+					"val": 25
+				},
+				"affinity_aomNorNidhogg": {
+					"type": "SPECIFIC_SPELL_DAMAGE",
+					"subtype": "aomNorNidhogg",
+					"val": 25
+				},
+				"affinity_aomNorBastion": {
+					"type": "SPECIFIC_SPELL_DAMAGE",
+					"subtype": "aomNorBastion",
+					"val": 25
+				},
+				"affinity_aomNorInferno": {
+					"type": "SPECIFIC_SPELL_DAMAGE",
+					"subtype": "aomNorInferno",
+					"val": 25
+				}
+			}
+		}
+	},
+	"aomNorSigurd": {
+		"class": "aomNorFreyrClass",
+		"female": false,
+		"special": false,
+		"texts": {
+			"name": "Sigurd",
+			"biography": "The dragon slayer who killed Fafnir with the sword Gram; after tasting the dragon's blood he understood the speech of birds.",
+			"specialty": {
+				"name": "Favor: Berserker",
+				"tooltip": "Favor: Berserker",
+				"description": "Favor +1 each round (+1 more after acting); at each threshold a boon:\n{2 pts}: Viking Berserkers gain Divinity for 2 rounds.\n{4 pts}: Dragon-Slayer's Valor: Viking Berserkers attack one more time this round.\n{7 pts}: Plenty: all living troops heal 30% health.\n\n{Affinity}: god powers under Freyr are stronger; see each spell."
+			}
+		},
+		"images": {
+			"large": "aom/nor/heroes/portrait/aomNorSigurd_large.png",
+			"small": "aom/nor/heroes/portrait/aomNorSigurd_small.png",
+			"specialtyLarge": "aom/nor/heroes/specialty/aomNorSigurd_large.png",
+			"specialtySmall": "aom/nor/heroes/specialty/aomNorSigurd_small.png"
+		},
+		"skills": [
+			{
+				"skill": "offence",
+				"level": "basic"
+			},
+			{
+				"skill": "leadership",
+				"level": "basic"
+			}
+		],
+		"army": [
+			{
+				"creature": "aomNorBerserk",
+				"min": 10,
+				"max": 20
+			},
+			{
+				"creature": "aomNorAxeman",
+				"min": 4,
+				"max": 7
+			},
+			{
+				"creature": "aomNorTroll",
+				"min": 2,
+				"max": 3
+			}
+		],
+		"specialty": {
+			"bonuses": {
+				"favor": {
+					"type": "COMBAT_EVENT_TRIGGER",
+					"subtype": "aomNorFavor",
+					"icon": "aom/nor/abicons/favor.png",
+					"limiters": [
+						"noneOf",
+						{
+							"type": "HAS_ANOTHER_BONUS_LIMITER",
+							"bonusType": "SIEGE_WEAPON"
+						},
+						{
+							"type": "CREATURE_TYPE_LIMITER",
+							"creature": "aomNorRam"
+						}
+					],
+					"val": 1,
+					"addInfo": {
+						"creatures": [
+							"aomNorBerserk",
+							"aomNorBerserkBear",
+							"aomNorBerserkWolf"
+						],
+						"patron": "sigurd",
+						"god": "freyr"
+					}
+				},
+				"warband": {
+					"type": "COMBAT_EVENT_TRIGGER",
+					"subtype": "aomNorWarband",
+					"val": 1,
+					"hidden": true
+				},
+				"heroLevel": {
+					"type": "AOM_NOR_HERO_LEVEL",
+					"val": 1,
+					"valueType": "BASE_NUMBER",
+					"updater": "TIMES_HERO_LEVEL",
+					"hidden": true
+				},
+				"aomNorGod": {
+					"type": "AOM_NOR_GOD",
+					"val": 4,
+					"valueType": "BASE_NUMBER",
+					"hidden": true
+				},
+				"affinity_aomNorGoldenBoar": {
+					"type": "SPECIFIC_SPELL_DAMAGE",
+					"subtype": "aomNorGoldenBoar",
+					"val": 25
+				},
+				"affinity_aomNorForestFire": {
+					"type": "SPECIFIC_SPELL_DAMAGE",
+					"subtype": "aomNorForestFire",
+					"val": 25
+				},
+				"affinity_aomNorTempest": {
+					"type": "SPECIFIC_SPELL_DAMAGE",
+					"subtype": "aomNorTempest",
+					"val": 25
+				},
+				"affinity_aomNorNidhogg": {
+					"type": "SPECIFIC_SPELL_DAMAGE",
+					"subtype": "aomNorNidhogg",
+					"val": 25
+				},
+				"affinity_aomNorBastion": {
+					"type": "SPECIFIC_SPELL_DAMAGE",
+					"subtype": "aomNorBastion",
+					"val": 25
+				},
+				"affinity_aomNorInferno": {
+					"type": "SPECIFIC_SPELL_DAMAGE",
+					"subtype": "aomNorInferno",
+					"val": 25
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,71 @@
+{
+	"basepath": "aom/nor/heroes/thor/battle/",
+	"sequences": [
+		{
+			"group": 0,
+			"frames": [
+				"g00_00.png"
+			]
+		},
+		{
+			"group": 1,
+			"frames": [
+				"g01_00.png",
+				"g01_01.png",
+				"g01_02.png",
+				"g01_03.png",
+				"g01_04.png",
+				"g01_05.png",
+				"g01_06.png",
+				"g01_07.png"
+			]
+		},
+		{
+			"group": 2,
+			"frames": [
+				"g02_00.png",
+				"g02_01.png",
+				"g02_02.png",
+				"g02_03.png",
+				"g02_04.png",
+				"g02_05.png",
+				"g02_06.png",
+				"g02_07.png",
+				"g02_08.png"
+			]
+		},
+		{
+			"group": 3,
+			"frames": [
+				"g03_00.png",
+				"g03_01.png",
+				"g03_02.png",
+				"g03_03.png",
+				"g03_04.png",
+				"g03_05.png",
+				"g03_06.png",
+				"g03_07.png",
+				"g03_08.png",
+				"g03_09.png",
+				"g03_10.png",
+				"g03_11.png",
+				"g03_12.png"
+			]
+		},
+		{
+			"group": 4,
+			"frames": [
+				"g04_00.png",
+				"g04_01.png",
+				"g04_02.png",
+				"g04_03.png",
+				"g04_04.png",
+				"g04_05.png",
+				"g04_06.png",
+				"g04_07.png",
+				"g04_08.png",
+				"g04_09.png"
+			]
+		}
+	]
+}

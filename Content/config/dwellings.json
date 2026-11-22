@@ -1,0 +1,381 @@
+{
+	"core:creatureGeneratorCommon": {
+		"types": {
+			"aomNorDwell1": {
+				"name": "Berserker Lodge",
+				"creatures": [
+					[
+						"aomNorBerserk"
+					]
+				],
+				"guards": true,
+				"kingdomOverviewImage": "icons/kingdomOverview/aom-norse/aomNorDwell1",
+				"sounds": {
+					"ambient": [
+						"LOOPSWOR"
+					],
+					"visit": [
+						"MILITARY"
+					]
+				},
+				"templates": {
+					"default": {
+						"animation": "aom/nor/map/aomNorDwell1.def",
+						"mask": [
+							"VVV",
+							"VVV",
+							"VAB"
+						],
+						"visitableFrom": [
+							"---",
+							"+++",
+							"+++"
+						]
+					}
+				}
+			},
+			"aomNorDwell2": {
+				"name": "Axe Range",
+				"creatures": [
+					[
+						"aomNorAxeman"
+					]
+				],
+				"guards": true,
+				"kingdomOverviewImage": "icons/kingdomOverview/aom-norse/aomNorDwell2",
+				"sounds": {
+					"ambient": [
+						"LOOPARCH"
+					],
+					"visit": [
+						"MILITARY"
+					]
+				},
+				"templates": {
+					"default": {
+						"animation": "aom/nor/map/aomNorDwell2.def",
+						"mask": [
+							"VVV",
+							"VVV",
+							"VAB"
+						],
+						"visitableFrom": [
+							"---",
+							"+++",
+							"+++"
+						]
+					}
+				}
+			},
+			"aomNorDwell3": {
+				"name": "Troll Cave",
+				"creatures": [
+					[
+						"aomNorTroll"
+					]
+				],
+				"guards": true,
+				"kingdomOverviewImage": "icons/kingdomOverview/aom-norse/aomNorDwell3",
+				"sounds": {
+					"ambient": [
+						"LOOPCAVE"
+					],
+					"visit": [
+						"MILITARY"
+					]
+				},
+				"templates": {
+					"default": {
+						"animation": "aom/nor/map/aomNorDwell3.def",
+						"mask": [
+							"VVV",
+							"VVV",
+							"VAB"
+						],
+						"visitableFrom": [
+							"---",
+							"+++",
+							"+++"
+						]
+					}
+				}
+			},
+			"aomNorDwell4": {
+				"name": "Wolf Den",
+				"creatures": [
+					[
+						"aomNorWolf"
+					]
+				],
+				"guards": true,
+				"kingdomOverviewImage": "icons/kingdomOverview/aom-norse/aomNorDwell4",
+				"sounds": {
+					"ambient": [
+						"LOOPWOLF"
+					],
+					"visit": [
+						"MILITARY"
+					]
+				},
+				"templates": {
+					"default": {
+						"animation": "aom/nor/map/aomNorDwell4.def",
+						"mask": [
+							"VVV",
+							"VVV",
+							"VAB"
+						],
+						"visitableFrom": [
+							"---",
+							"+++",
+							"+++"
+						]
+					}
+				}
+			},
+			"aomNorDwell5": {
+				"name": "Valkyrie Hall",
+				"creatures": [
+					[
+						"aomNorValkyrie"
+					]
+				],
+				"guards": true,
+				"kingdomOverviewImage": "icons/kingdomOverview/aom-norse/aomNorDwell5",
+				"sounds": {
+					"ambient": [
+						"LOOPPEGA"
+					],
+					"visit": [
+						"MILITARY"
+					]
+				},
+				"templates": {
+					"default": {
+						"animation": "aom/nor/map/aomNorDwell5.def",
+						"mask": [
+							"VVV",
+							"VVV",
+							"VAB"
+						],
+						"visitableFrom": [
+							"---",
+							"+++",
+							"+++"
+						]
+					}
+				}
+			},
+			"aomNorDwell6": {
+				"name": "Kraken Fjord",
+				"creatures": [
+					[
+						"aomNorKraken"
+					]
+				],
+				"guards": true,
+				"kingdomOverviewImage": "icons/kingdomOverview/aom-norse/aomNorDwell6",
+				"sounds": {
+					"ambient": [
+						"LOOPHYDR"
+					],
+					"visit": [
+						"MILITARY"
+					]
+				},
+				"templates": {
+					"default": {
+						"animation": "aom/nor/map/aomNorDwell6.def",
+						"mask": [
+							"VVV",
+							"VVV",
+							"VAB"
+						],
+						"visitableFrom": [
+							"---",
+							"+++",
+							"+++"
+						]
+					}
+				}
+			},
+			"aomNorDwell7": {
+				"name": "Fafnir Hoard",
+				"creatures": [
+					[
+						"aomNorFafnir"
+					]
+				],
+				"guards": true,
+				"kingdomOverviewImage": "icons/kingdomOverview/aom-norse/aomNorDwell7",
+				"sounds": {
+					"ambient": [
+						"LOOPDRAG"
+					],
+					"visit": [
+						"MILITARY"
+					]
+				},
+				"templates": {
+					"default": {
+						"animation": "aom/nor/map/aomNorDwell7.def",
+						"mask": [
+							"VVV",
+							"VBB",
+							"VAB"
+						],
+						"visitableFrom": [
+							"---",
+							"+++",
+							"+++"
+						]
+					}
+				}
+			},
+			"aomNorDwell8": {
+				"name": "Ginnungagap Gate",
+				"creatures": [
+					[
+						"aomNorTitan"
+					]
+				],
+				"guards": true,
+				"kingdomOverviewImage": "icons/kingdomOverview/aom-norse/aomNorDwell8",
+				"sounds": {
+					"ambient": [
+						"LOOPTITA"
+					],
+					"visit": [
+						"MILITARY"
+					]
+				},
+				"templates": {
+					"default": {
+						"animation": "aom/nor/map/aomNorDwell8.def",
+						"mask": [
+							"VVV",
+							"VBB",
+							"VAB"
+						],
+						"visitableFrom": [
+							"---",
+							"+++",
+							"+++"
+						]
+					}
+				}
+			},
+			"aomNorDwellCamp": {
+				"name": "Viking Camp",
+				"creatures": [
+					[
+						"aomNorHirdman"
+					],
+					[
+						"aomNorHuskarl"
+					],
+					[
+						"aomNorRaider"
+					],
+					[
+						"aomNorJarl"
+					]
+				],
+				"guards": true,
+				"kingdomOverviewImage": "icons/kingdomOverview/aom-norse/aomNorDwellCamp",
+				"sounds": {
+					"ambient": [
+						"LOOPCAMP"
+					],
+					"visit": [
+						"MILITARY"
+					]
+				},
+				"templates": {
+					"default": {
+						"animation": "aom/nor/map/aomNorDwellCamp.def",
+						"mask": [
+							"VVV",
+							"VVV",
+							"VAB"
+						],
+						"visitableFrom": [
+							"---",
+							"+++",
+							"+++"
+						]
+					}
+				},
+				"bannedForRandomDwelling": true
+			},
+			"aomNorDwellBarrow": {
+				"name": "Barrow",
+				"creatures": [
+					[
+						"aomNorDraugr"
+					]
+				],
+				"guards": true,
+				"kingdomOverviewImage": "icons/kingdomOverview/aom-norse/aomNorDwellBarrow",
+				"sounds": {
+					"ambient": [
+						"LOOPDEAD"
+					],
+					"visit": [
+						"MILITARY"
+					]
+				},
+				"templates": {
+					"default": {
+						"animation": "aom/nor/map/aomNorDwellBarrow.def",
+						"mask": [
+							"VVV",
+							"VVV",
+							"VAB"
+						],
+						"visitableFrom": [
+							"---",
+							"+++",
+							"+++"
+						]
+					}
+				},
+				"bannedForRandomDwelling": true
+			},
+			"aomNorDwellBoar": {
+				"name": "Boar Grove",
+				"creatures": [
+					[
+						"aomNorBattleBoar"
+					]
+				],
+				"guards": true,
+				"kingdomOverviewImage": "icons/kingdomOverview/aom-norse/aomNorDwellBoar",
+				"sounds": {
+					"ambient": [
+						"LOOPANIM"
+					],
+					"visit": [
+						"MILITARY"
+					]
+				},
+				"templates": {
+					"default": {
+						"animation": "aom/nor/map/aomNorDwellBoar.def",
+						"mask": [
+							"VVV",
+							"VVV",
+							"VAB"
+						],
+						"visitableFrom": [
+							"---",
+							"+++",
+							"+++"
+						]
+					}
+				},
+				"bannedForRandomDwelling": true
+			}
+		}
+	}
+}

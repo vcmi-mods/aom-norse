@@ -1,0 +1,9 @@
+{
+	"basepath": "aom/nor/map/bank/",
+	"images": [
+		{
+			"frame": 0,
+			"file": "aomNorFrostLair.png"
+		}
+	]
+}

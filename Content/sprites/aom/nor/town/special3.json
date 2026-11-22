@@ -1,0 +1,69 @@
+{
+	"basepath": "aom/nor/town/frames/",
+	"images": [
+		{
+			"frame": 0,
+			"file": "special3_00.png"
+		},
+		{
+			"frame": 1,
+			"file": "special3_01.png"
+		},
+		{
+			"frame": 2,
+			"file": "special3_02.png"
+		},
+		{
+			"frame": 3,
+			"file": "special3_03.png"
+		},
+		{
+			"frame": 4,
+			"file": "special3_04.png"
+		},
+		{
+			"frame": 5,
+			"file": "special3_05.png"
+		},
+		{
+			"frame": 6,
+			"file": "special3_06.png"
+		},
+		{
+			"frame": 7,
+			"file": "special3_07.png"
+		},
+		{
+			"frame": 8,
+			"file": "special3_08.png"
+		},
+		{
+			"frame": 9,
+			"file": "special3_09.png"
+		},
+		{
+			"frame": 10,
+			"file": "special3_10.png"
+		},
+		{
+			"frame": 11,
+			"file": "special3_11.png"
+		},
+		{
+			"frame": 12,
+			"file": "special3_12.png"
+		},
+		{
+			"frame": 13,
+			"file": "special3_13.png"
+		},
+		{
+			"frame": 14,
+			"file": "special3_14.png"
+		},
+		{
+			"frame": 15,
+			"file": "special3_15.png"
+		}
+	]
+}

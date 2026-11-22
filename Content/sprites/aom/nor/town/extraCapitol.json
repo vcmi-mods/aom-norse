@@ -1,0 +1,9 @@
+{
+	"basepath": "aom/nor/town/frames/",
+	"images": [
+		{
+			"frame": 0,
+			"file": "extraCapitol_00.png"
+		}
+	]
+}

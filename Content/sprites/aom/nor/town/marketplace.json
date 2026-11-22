@@ -1,0 +1,69 @@
+{
+	"basepath": "aom/nor/town/frames/",
+	"images": [
+		{
+			"frame": 0,
+			"file": "marketplace_00.png"
+		},
+		{
+			"frame": 1,
+			"file": "marketplace_01.png"
+		},
+		{
+			"frame": 2,
+			"file": "marketplace_02.png"
+		},
+		{
+			"frame": 3,
+			"file": "marketplace_03.png"
+		},
+		{
+			"frame": 4,
+			"file": "marketplace_04.png"
+		},
+		{
+			"frame": 5,
+			"file": "marketplace_05.png"
+		},
+		{
+			"frame": 6,
+			"file": "marketplace_06.png"
+		},
+		{
+			"frame": 7,
+			"file": "marketplace_07.png"
+		},
+		{
+			"frame": 8,
+			"file": "marketplace_08.png"
+		},
+		{
+			"frame": 9,
+			"file": "marketplace_09.png"
+		},
+		{
+			"frame": 10,
+			"file": "marketplace_10.png"
+		},
+		{
+			"frame": 11,
+			"file": "marketplace_11.png"
+		},
+		{
+			"frame": 12,
+			"file": "marketplace_12.png"
+		},
+		{
+			"frame": 13,
+			"file": "marketplace_13.png"
+		},
+		{
+			"frame": 14,
+			"file": "marketplace_14.png"
+		},
+		{
+			"frame": 15,
+			"file": "marketplace_15.png"
+		}
+	]
+}

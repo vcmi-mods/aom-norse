@@ -1,0 +1,69 @@
+{
+	"basepath": "aom/nor/town/frames/",
+	"images": [
+		{
+			"frame": 0,
+			"file": "fort_00.png"
+		},
+		{
+			"frame": 1,
+			"file": "fort_01.png"
+		},
+		{
+			"frame": 2,
+			"file": "fort_02.png"
+		},
+		{
+			"frame": 3,
+			"file": "fort_03.png"
+		},
+		{
+			"frame": 4,
+			"file": "fort_04.png"
+		},
+		{
+			"frame": 5,
+			"file": "fort_05.png"
+		},
+		{
+			"frame": 6,
+			"file": "fort_06.png"
+		},
+		{
+			"frame": 7,
+			"file": "fort_07.png"
+		},
+		{
+			"frame": 8,
+			"file": "fort_08.png"
+		},
+		{
+			"frame": 9,
+			"file": "fort_09.png"
+		},
+		{
+			"frame": 10,
+			"file": "fort_10.png"
+		},
+		{
+			"frame": 11,
+			"file": "fort_11.png"
+		},
+		{
+			"frame": 12,
+			"file": "fort_12.png"
+		},
+		{
+			"frame": 13,
+			"file": "fort_13.png"
+		},
+		{
+			"frame": 14,
+			"file": "fort_14.png"
+		},
+		{
+			"frame": 15,
+			"file": "fort_15.png"
+		}
+	]
+}

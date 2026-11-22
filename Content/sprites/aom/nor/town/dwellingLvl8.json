@@ -1,0 +1,69 @@
+{
+	"basepath": "aom/nor/town/frames/",
+	"images": [
+		{
+			"frame": 0,
+			"file": "dwellingLvl8_00.png"
+		},
+		{
+			"frame": 1,
+			"file": "dwellingLvl8_01.png"
+		},
+		{
+			"frame": 2,
+			"file": "dwellingLvl8_02.png"
+		},
+		{
+			"frame": 3,
+			"file": "dwellingLvl8_03.png"
+		},
+		{
+			"frame": 4,
+			"file": "dwellingLvl8_04.png"
+		},
+		{
+			"frame": 5,
+			"file": "dwellingLvl8_05.png"
+		},
+		{
+			"frame": 6,
+			"file": "dwellingLvl8_06.png"
+		},
+		{
+			"frame": 7,
+			"file": "dwellingLvl8_07.png"
+		},
+		{
+			"frame": 8,
+			"file": "dwellingLvl8_08.png"
+		},
+		{
+			"frame": 9,
+			"file": "dwellingLvl8_09.png"
+		},
+		{
+			"frame": 10,
+			"file": "dwellingLvl8_10.png"
+		},
+		{
+			"frame": 11,
+			"file": "dwellingLvl8_11.png"
+		},
+		{
+			"frame": 12,
+			"file": "dwellingLvl8_12.png"
+		},
+		{
+			"frame": 13,
+			"file": "dwellingLvl8_13.png"
+		},
+		{
+			"frame": 14,
+			"file": "dwellingLvl8_14.png"
+		},
+		{
+			"frame": 15,
+			"file": "dwellingLvl8_15.png"
+		}
+	]
+}

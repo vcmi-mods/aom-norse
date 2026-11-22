@@ -1,0 +1,69 @@
+{
+	"basepath": "aom/nor/town/frames/",
+	"images": [
+		{
+			"frame": 0,
+			"file": "castle_00.png"
+		},
+		{
+			"frame": 1,
+			"file": "castle_01.png"
+		},
+		{
+			"frame": 2,
+			"file": "castle_02.png"
+		},
+		{
+			"frame": 3,
+			"file": "castle_03.png"
+		},
+		{
+			"frame": 4,
+			"file": "castle_04.png"
+		},
+		{
+			"frame": 5,
+			"file": "castle_05.png"
+		},
+		{
+			"frame": 6,
+			"file": "castle_06.png"
+		},
+		{
+			"frame": 7,
+			"file": "castle_07.png"
+		},
+		{
+			"frame": 8,
+			"file": "castle_08.png"
+		},
+		{
+			"frame": 9,
+			"file": "castle_09.png"
+		},
+		{
+			"frame": 10,
+			"file": "castle_10.png"
+		},
+		{
+			"frame": 11,
+			"file": "castle_11.png"
+		},
+		{
+			"frame": 12,
+			"file": "castle_12.png"
+		},
+		{
+			"frame": 13,
+			"file": "castle_13.png"
+		},
+		{
+			"frame": 14,
+			"file": "castle_14.png"
+		},
+		{
+			"frame": 15,
+			"file": "castle_15.png"
+		}
+	]
+}

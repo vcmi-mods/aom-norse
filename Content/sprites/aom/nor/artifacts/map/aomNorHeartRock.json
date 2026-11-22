@@ -1,0 +1,37 @@
+{
+	"basepath": "aom/nor/artifacts/map/",
+	"images": [
+		{
+			"frame": 0,
+			"file": "aomNorHeartRock_0.png"
+		},
+		{
+			"frame": 1,
+			"file": "aomNorHeartRock_1.png"
+		},
+		{
+			"frame": 2,
+			"file": "aomNorHeartRock_2.png"
+		},
+		{
+			"frame": 3,
+			"file": "aomNorHeartRock_3.png"
+		},
+		{
+			"frame": 4,
+			"file": "aomNorHeartRock_4.png"
+		},
+		{
+			"frame": 5,
+			"file": "aomNorHeartRock_5.png"
+		},
+		{
+			"frame": 6,
+			"file": "aomNorHeartRock_6.png"
+		},
+		{
+			"frame": 7,
+			"file": "aomNorHeartRock_7.png"
+		}
+	]
+}

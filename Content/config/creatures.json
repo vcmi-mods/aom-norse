@@ -1,0 +1,7556 @@
+{
+	"aomNorBerserk": {
+		"name": {
+			"singular": "Viking Berserker",
+			"plural": "Viking Berserkers"
+		},
+		"description": "",
+		"faction": "aomNorse",
+		"level": 1,
+		"cost": {
+			"gold": 80
+		},
+		"speed": 6,
+		"hitPoints": 7,
+		"attack": 6,
+		"defense": 3,
+		"damage": {
+			"min": 3,
+			"max": 3
+		},
+		"doubleWide": false,
+		"growth": 12,
+		"advMapAmount": {
+			"min": 1,
+			"max": 4
+		},
+		"abilities": {},
+		"graphics": {
+			"animation": "aom/nor/aomNorBerserk/battle.json",
+			"map": "aom/nor/aomNorBerserk/map.json",
+			"mapMask": [
+				"VV",
+				"VA"
+			],
+			"mapAttackFromRight": "aom/nor/aomNorBerserk/map/atkR.png",
+			"mapAttackFromLeft": "aom/nor/aomNorBerserk/map/atkL.png",
+			"iconLarge": "aom/nor/aomNorBerserk/iconLarge.png",
+			"iconSmall": "aom/nor/aomNorBerserk/iconSmall.png",
+			"animationTime": {
+				"walk": 1,
+				"attack": 1,
+				"idle": 10
+			},
+			"timeBetweenFidgets": 1
+		},
+		"aiValue": 96,
+		"fightValue": 96,
+		"upgrades": [
+			"aomNorBerserkBear",
+			"aomNorBerserkWolf"
+		],
+		"sound": {
+			"attack": "aom/nor/aomNorBerserk_attack.wav",
+			"defend": "aom/nor/aomNorBerserk_defend.wav",
+			"wince": "aom/nor/aomNorBerserk_wince.wav",
+			"killed": "aom/nor/aomNorBerserk_killed.wav",
+			"move": "SWRDMOVE.wav"
+		},
+		"horde": 6,
+		"stackExperience": [
+			{
+				"bonus": {
+					"type": "STACK_HEALTH",
+					"valueType": "PERCENT_TO_BASE"
+				},
+				"values": [
+					5,
+					10,
+					15,
+					20,
+					25,
+					30,
+					35,
+					40,
+					45,
+					50
+				]
+			},
+			{
+				"bonus": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "attack"
+				},
+				"values": [
+					0,
+					1,
+					1,
+					1,
+					1,
+					2,
+					2,
+					2,
+					2,
+					3
+				]
+			},
+			{
+				"bonus": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "defence"
+				},
+				"values": [
+					1,
+					1,
+					1,
+					1,
+					2,
+					2,
+					2,
+					2,
+					3,
+					3
+				]
+			},
+			{
+				"bonus": {
+					"type": "CREATURE_DAMAGE",
+					"subtype": "creatureDamageMin"
+				},
+				"values": [
+					0,
+					0,
+					0,
+					1,
+					1,
+					1,
+					1,
+					2,
+					2,
+					2
+				]
+			},
+			{
+				"bonus": {
+					"type": "CREATURE_DAMAGE",
+					"subtype": "creatureDamageMax"
+				},
+				"values": [
+					0,
+					0,
+					1,
+					1,
+					1,
+					1,
+					2,
+					2,
+					2,
+					2
+				]
+			},
+			{
+				"bonus": {
+					"type": "STACKS_SPEED"
+				},
+				"values": [
+					0,
+					0,
+					0,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1
+				]
+			},
+			{
+				"bonus": {
+					"type": "DOUBLE_DAMAGE_CHANCE"
+				},
+				"values": [
+					2,
+					4,
+					6,
+					8,
+					10,
+					12,
+					14,
+					16,
+					18,
+					20
+				]
+			}
+		]
+	},
+	"aomNorBerserkBear": {
+		"name": {
+			"singular": "Bearskin Berserker",
+			"plural": "Bearskin Berserkers"
+		},
+		"description": "",
+		"faction": "aomNorse",
+		"level": 1,
+		"cost": {
+			"gold": 110
+		},
+		"speed": 6,
+		"hitPoints": 8,
+		"attack": 7,
+		"defense": 4,
+		"damage": {
+			"min": 3,
+			"max": 4
+		},
+		"doubleWide": false,
+		"growth": 12,
+		"advMapAmount": {
+			"min": 1,
+			"max": 4
+		},
+		"abilities": {
+			"b0_combat_event_trigger": {
+				"type": "COMBAT_EVENT_TRIGGER",
+				"subtype": "aomNorRage",
+				"val": 50,
+				"addInfo": {
+					"threshold": 50
+				},
+				"icon": "aom/nor/abicons/rage.png"
+			}
+		},
+		"graphics": {
+			"animation": "aom/nor/aomNorBerserkBear/battle.json",
+			"map": "aom/nor/aomNorBerserkBear/map.json",
+			"mapMask": [
+				"VV",
+				"VA"
+			],
+			"mapAttackFromRight": "aom/nor/aomNorBerserkBear/map/atkR.png",
+			"mapAttackFromLeft": "aom/nor/aomNorBerserkBear/map/atkL.png",
+			"iconLarge": "aom/nor/aomNorBerserkBear/iconLarge.png",
+			"iconSmall": "aom/nor/aomNorBerserkBear/iconSmall.png",
+			"animationTime": {
+				"walk": 1,
+				"attack": 1,
+				"idle": 10
+			},
+			"timeBetweenFidgets": 1
+		},
+		"aiValue": 122,
+		"fightValue": 122,
+		"sound": {
+			"attack": "aom/nor/aomNorBerserkBear_attack.wav",
+			"defend": "aom/nor/aomNorBerserkBear_defend.wav",
+			"wince": "aom/nor/aomNorBerserkBear_wince.wav",
+			"killed": "aom/nor/aomNorBerserkBear_killed.wav",
+			"move": "SWRDMOVE.wav"
+		},
+		"upgrades": [
+			"aomNorBerserkWolf"
+		],
+		"horde": 6,
+		"stackExperience": [
+			{
+				"bonus": {
+					"type": "STACK_HEALTH",
+					"valueType": "PERCENT_TO_BASE"
+				},
+				"values": [
+					5,
+					10,
+					15,
+					20,
+					25,
+					30,
+					35,
+					40,
+					45,
+					50
+				]
+			},
+			{
+				"bonus": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "attack"
+				},
+				"values": [
+					0,
+					1,
+					1,
+					1,
+					1,
+					2,
+					2,
+					2,
+					2,
+					3
+				]
+			},
+			{
+				"bonus": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "defence"
+				},
+				"values": [
+					1,
+					1,
+					1,
+					1,
+					2,
+					2,
+					2,
+					2,
+					3,
+					3
+				]
+			},
+			{
+				"bonus": {
+					"type": "CREATURE_DAMAGE",
+					"subtype": "creatureDamageMin"
+				},
+				"values": [
+					0,
+					0,
+					0,
+					1,
+					1,
+					1,
+					1,
+					2,
+					2,
+					2
+				]
+			},
+			{
+				"bonus": {
+					"type": "CREATURE_DAMAGE",
+					"subtype": "creatureDamageMax"
+				},
+				"values": [
+					0,
+					0,
+					1,
+					1,
+					1,
+					1,
+					2,
+					2,
+					2,
+					2
+				]
+			},
+			{
+				"bonus": {
+					"type": "STACKS_SPEED"
+				},
+				"values": [
+					0,
+					0,
+					0,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1
+				]
+			},
+			{
+				"bonus": {
+					"type": "DOUBLE_DAMAGE_CHANCE"
+				},
+				"values": [
+					2,
+					4,
+					6,
+					8,
+					10,
+					12,
+					14,
+					16,
+					18,
+					20
+				]
+			}
+		]
+	},
+	"aomNorBerserkWolf": {
+		"name": {
+			"singular": "Wolfskin Warrior",
+			"plural": "Wolfskin Warriors"
+		},
+		"description": "",
+		"faction": "aomNorse",
+		"level": 1,
+		"cost": {
+			"gold": 110
+		},
+		"speed": 7,
+		"hitPoints": 8,
+		"attack": 6,
+		"defense": 3,
+		"damage": {
+			"min": 3,
+			"max": 3
+		},
+		"doubleWide": false,
+		"growth": 12,
+		"advMapAmount": {
+			"min": 1,
+			"max": 4
+		},
+		"abilities": {
+			"b0_enemy_defence_reduction": {
+				"type": "ENEMY_DEFENCE_REDUCTION",
+				"val": 5,
+				"stacking": "aomNorBerserkWolfExpEnemyDefenceReduction"
+			}
+		},
+		"graphics": {
+			"animation": "aom/nor/aomNorBerserkWolf/battle.json",
+			"map": "aom/nor/aomNorBerserkWolf/map.json",
+			"mapMask": [
+				"VV",
+				"VA"
+			],
+			"mapAttackFromRight": "aom/nor/aomNorBerserkWolf/map/atkR.png",
+			"mapAttackFromLeft": "aom/nor/aomNorBerserkWolf/map/atkL.png",
+			"iconLarge": "aom/nor/aomNorBerserkWolf/iconLarge.png",
+			"iconSmall": "aom/nor/aomNorBerserkWolf/iconSmall.png",
+			"animationTime": {
+				"walk": 1,
+				"attack": 1,
+				"idle": 10
+			},
+			"timeBetweenFidgets": 1
+		},
+		"aiValue": 105,
+		"fightValue": 105,
+		"sound": {
+			"attack": "aom/nor/aomNorBerserkWolf_attack.wav",
+			"defend": "aom/nor/aomNorBerserkWolf_defend.wav",
+			"wince": "aom/nor/aomNorBerserkWolf_wince.wav",
+			"killed": "aom/nor/aomNorBerserkWolf_killed.wav",
+			"move": "SWRDMOVE.wav"
+		},
+		"upgrades": [
+			"aomNorBerserkBear"
+		],
+		"horde": 6,
+		"stackExperience": [
+			{
+				"bonus": {
+					"type": "STACK_HEALTH",
+					"valueType": "PERCENT_TO_BASE"
+				},
+				"values": [
+					5,
+					10,
+					15,
+					20,
+					25,
+					30,
+					35,
+					40,
+					45,
+					50
+				]
+			},
+			{
+				"bonus": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "attack"
+				},
+				"values": [
+					0,
+					1,
+					1,
+					1,
+					1,
+					2,
+					2,
+					2,
+					2,
+					3
+				]
+			},
+			{
+				"bonus": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "defence"
+				},
+				"values": [
+					1,
+					1,
+					1,
+					1,
+					2,
+					2,
+					2,
+					2,
+					3,
+					3
+				]
+			},
+			{
+				"bonus": {
+					"type": "CREATURE_DAMAGE",
+					"subtype": "creatureDamageMin"
+				},
+				"values": [
+					0,
+					0,
+					0,
+					1,
+					1,
+					1,
+					1,
+					2,
+					2,
+					2
+				]
+			},
+			{
+				"bonus": {
+					"type": "CREATURE_DAMAGE",
+					"subtype": "creatureDamageMax"
+				},
+				"values": [
+					0,
+					0,
+					1,
+					1,
+					1,
+					1,
+					2,
+					2,
+					2,
+					2
+				]
+			},
+			{
+				"bonus": {
+					"type": "STACKS_SPEED"
+				},
+				"values": [
+					0,
+					0,
+					0,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1
+				]
+			},
+			{
+				"bonus": {
+					"type": "ENEMY_DEFENCE_REDUCTION",
+					"stacking": "aomNorBerserkWolfExpEnemyDefenceReduction"
+				},
+				"values": [
+					7,
+					9,
+					11,
+					13,
+					15,
+					17,
+					19,
+					21,
+					23,
+					25
+				]
+			}
+		]
+	},
+	"aomNorAxeman": {
+		"name": {
+			"singular": "Throwing Axeman",
+			"plural": "Throwing Axemen"
+		},
+		"description": "",
+		"faction": "aomNorse",
+		"level": 2,
+		"cost": {
+			"gold": 155
+		},
+		"speed": 5,
+		"hitPoints": 8,
+		"attack": 6,
+		"defense": 3,
+		"damage": {
+			"min": 2,
+			"max": 4
+		},
+		"doubleWide": false,
+		"growth": 8,
+		"advMapAmount": {
+			"min": 1,
+			"max": 4
+		},
+		"abilities": {
+			"shooter": {
+				"type": "SHOOTER"
+			}
+		},
+		"graphics": {
+			"animation": "aom/nor/aomNorAxeman/battle.json",
+			"map": "aom/nor/aomNorAxeman/map.json",
+			"mapMask": [
+				"VV",
+				"VA"
+			],
+			"mapAttackFromRight": "aom/nor/aomNorAxeman/map/atkR.png",
+			"mapAttackFromLeft": "aom/nor/aomNorAxeman/map/atkL.png",
+			"iconLarge": "aom/nor/aomNorAxeman/iconLarge.png",
+			"iconSmall": "aom/nor/aomNorAxeman/iconSmall.png",
+			"animationTime": {
+				"walk": 1,
+				"attack": 1,
+				"idle": 10
+			},
+			"timeBetweenFidgets": 1,
+			"missile": {
+				"frameAngles": [
+					90,
+					67.5,
+					45,
+					22.5,
+					0,
+					-22.5,
+					-45,
+					-67.5,
+					-90
+				],
+				"attackClimaxFrame": 4,
+				"projectile": "aom/nor/missile/naxe_base.json",
+				"offset": {
+					"upperX": -13,
+					"upperY": -49,
+					"middleX": 28,
+					"middleY": -44,
+					"lowerX": 22,
+					"lowerY": -30
+				}
+			}
+		},
+		"shots": 10,
+		"aiValue": 134,
+		"fightValue": 122,
+		"upgrades": [
+			"aomNorAxemanBreaker",
+			"aomNorAxemanTwin"
+		],
+		"sound": {
+			"attack": "aom/nor/aomNorAxeman_attack.wav",
+			"shoot": "aom/nor/aomNorAxeman_shoot.wav",
+			"defend": "aom/nor/aomNorAxeman_defend.wav",
+			"wince": "aom/nor/aomNorAxeman_wince.wav",
+			"killed": "aom/nor/aomNorAxeman_killed.wav",
+			"move": "LCRSMOVE.wav"
+		},
+		"stackExperience": [
+			{
+				"bonus": {
+					"type": "STACK_HEALTH",
+					"valueType": "PERCENT_TO_BASE"
+				},
+				"values": [
+					5,
+					10,
+					15,
+					20,
+					25,
+					30,
+					35,
+					40,
+					45,
+					50
+				]
+			},
+			{
+				"bonus": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "attack"
+				},
+				"values": [
+					0,
+					1,
+					1,
+					2,
+					2,
+					2,
+					3,
+					3,
+					3,
+					4
+				]
+			},
+			{
+				"bonus": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "defence"
+				},
+				"values": [
+					1,
+					1,
+					1,
+					2,
+					2,
+					3,
+					3,
+					3,
+					4,
+					4
+				]
+			},
+			{
+				"bonus": {
+					"type": "CREATURE_DAMAGE",
+					"subtype": "creatureDamageMin"
+				},
+				"values": [
+					0,
+					0,
+					1,
+					1,
+					1,
+					2,
+					2,
+					3,
+					3,
+					3
+				]
+			},
+			{
+				"bonus": {
+					"type": "CREATURE_DAMAGE",
+					"subtype": "creatureDamageMax"
+				},
+				"values": [
+					0,
+					1,
+					1,
+					1,
+					2,
+					2,
+					2,
+					3,
+					3,
+					4
+				]
+			},
+			{
+				"bonus": {
+					"type": "STACKS_SPEED"
+				},
+				"values": [
+					0,
+					0,
+					0,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1
+				]
+			},
+			{
+				"bonus": {
+					"type": "ENEMY_DEFENCE_REDUCTION"
+				},
+				"values": [
+					2,
+					4,
+					6,
+					8,
+					10,
+					12,
+					14,
+					16,
+					18,
+					20
+				]
+			}
+		]
+	},
+	"aomNorAxemanBreaker": {
+		"name": {
+			"singular": "Shieldbreaker",
+			"plural": "Shieldbreakers"
+		},
+		"description": "",
+		"faction": "aomNorse",
+		"level": 2,
+		"cost": {
+			"gold": 245
+		},
+		"speed": 5,
+		"hitPoints": 12,
+		"attack": 8,
+		"defense": 3,
+		"damage": {
+			"min": 5,
+			"max": 7
+		},
+		"doubleWide": false,
+		"growth": 8,
+		"advMapAmount": {
+			"min": 1,
+			"max": 4
+		},
+		"abilities": {
+			"shooter": {
+				"type": "SHOOTER"
+			},
+			"b0_enemy_defence_reduction": {
+				"type": "ENEMY_DEFENCE_REDUCTION",
+				"val": 30
+			}
+		},
+		"graphics": {
+			"animation": "aom/nor/aomNorAxemanBreaker/battle.json",
+			"map": "aom/nor/aomNorAxemanBreaker/map.json",
+			"mapMask": [
+				"VV",
+				"VA"
+			],
+			"mapAttackFromRight": "aom/nor/aomNorAxemanBreaker/map/atkR.png",
+			"mapAttackFromLeft": "aom/nor/aomNorAxemanBreaker/map/atkL.png",
+			"iconLarge": "aom/nor/aomNorAxemanBreaker/iconLarge.png",
+			"iconSmall": "aom/nor/aomNorAxemanBreaker/iconSmall.png",
+			"animationTime": {
+				"walk": 1,
+				"attack": 1,
+				"idle": 10
+			},
+			"timeBetweenFidgets": 1,
+			"missile": {
+				"frameAngles": [
+					90,
+					67.5,
+					45,
+					22.5,
+					0,
+					-22.5,
+					-45,
+					-67.5,
+					-90
+				],
+				"attackClimaxFrame": 4,
+				"projectile": "aom/nor/missile/naxe_A.json",
+				"offset": {
+					"upperX": -13,
+					"upperY": -49,
+					"middleX": 28,
+					"middleY": -44,
+					"lowerX": 22,
+					"lowerY": -30
+				}
+			}
+		},
+		"shots": 10,
+		"aiValue": 288,
+		"fightValue": 262,
+		"sound": {
+			"attack": "aom/nor/aomNorAxemanBreaker_attack.wav",
+			"shoot": "aom/nor/aomNorAxemanBreaker_shoot.wav",
+			"defend": "aom/nor/aomNorAxemanBreaker_defend.wav",
+			"wince": "aom/nor/aomNorAxemanBreaker_wince.wav",
+			"killed": "aom/nor/aomNorAxemanBreaker_killed.wav",
+			"move": "LCRSMOVE.wav"
+		},
+		"upgrades": [
+			"aomNorAxemanTwin"
+		],
+		"stackExperience": [
+			{
+				"bonus": {
+					"type": "STACK_HEALTH",
+					"valueType": "PERCENT_TO_BASE"
+				},
+				"values": [
+					5,
+					10,
+					15,
+					20,
+					25,
+					30,
+					35,
+					40,
+					45,
+					50
+				]
+			},
+			{
+				"bonus": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "attack"
+				},
+				"values": [
+					0,
+					1,
+					1,
+					2,
+					2,
+					2,
+					3,
+					3,
+					3,
+					4
+				]
+			},
+			{
+				"bonus": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "defence"
+				},
+				"values": [
+					1,
+					1,
+					1,
+					2,
+					2,
+					3,
+					3,
+					3,
+					4,
+					4
+				]
+			},
+			{
+				"bonus": {
+					"type": "CREATURE_DAMAGE",
+					"subtype": "creatureDamageMin"
+				},
+				"values": [
+					0,
+					0,
+					1,
+					1,
+					1,
+					2,
+					2,
+					3,
+					3,
+					3
+				]
+			},
+			{
+				"bonus": {
+					"type": "CREATURE_DAMAGE",
+					"subtype": "creatureDamageMax"
+				},
+				"values": [
+					0,
+					1,
+					1,
+					1,
+					2,
+					2,
+					2,
+					3,
+					3,
+					4
+				]
+			},
+			{
+				"bonus": {
+					"type": "STACKS_SPEED"
+				},
+				"values": [
+					0,
+					0,
+					0,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1
+				]
+			},
+			{
+				"bonus": {
+					"type": "DOUBLE_DAMAGE_CHANCE"
+				},
+				"values": [
+					2,
+					4,
+					6,
+					8,
+					10,
+					12,
+					14,
+					16,
+					18,
+					20
+				]
+			}
+		]
+	},
+	"aomNorAxemanTwin": {
+		"name": {
+			"singular": "Twin-Axe Thrower",
+			"plural": "Twin-Axe Throwers"
+		},
+		"description": "",
+		"faction": "aomNorse",
+		"level": 2,
+		"cost": {
+			"gold": 245
+		},
+		"speed": 6,
+		"hitPoints": 10,
+		"attack": 8,
+		"defense": 4,
+		"damage": {
+			"min": 4,
+			"max": 6
+		},
+		"doubleWide": false,
+		"growth": 8,
+		"advMapAmount": {
+			"min": 1,
+			"max": 4
+		},
+		"abilities": {
+			"shooter": {
+				"type": "SHOOTER"
+			},
+			"b0_no_melee_penalty": {
+				"type": "NO_MELEE_PENALTY",
+				"val": 0
+			}
+		},
+		"graphics": {
+			"animation": "aom/nor/aomNorAxemanTwin/battle.json",
+			"map": "aom/nor/aomNorAxemanTwin/map.json",
+			"mapMask": [
+				"VV",
+				"VA"
+			],
+			"mapAttackFromRight": "aom/nor/aomNorAxemanTwin/map/atkR.png",
+			"mapAttackFromLeft": "aom/nor/aomNorAxemanTwin/map/atkL.png",
+			"iconLarge": "aom/nor/aomNorAxemanTwin/iconLarge.png",
+			"iconSmall": "aom/nor/aomNorAxemanTwin/iconSmall.png",
+			"animationTime": {
+				"walk": 1,
+				"attack": 1,
+				"idle": 10
+			},
+			"timeBetweenFidgets": 1,
+			"missile": {
+				"frameAngles": [
+					90,
+					67.5,
+					45,
+					22.5,
+					0,
+					-22.5,
+					-45,
+					-67.5,
+					-90
+				],
+				"attackClimaxFrame": 4,
+				"projectile": "aom/nor/missile/naxe_B.json",
+				"offset": {
+					"upperX": -13,
+					"upperY": -49,
+					"middleX": 28,
+					"middleY": -44,
+					"lowerX": 22,
+					"lowerY": -30
+				}
+			}
+		},
+		"shots": 14,
+		"aiValue": 293,
+		"fightValue": 267,
+		"sound": {
+			"attack": "aom/nor/aomNorAxemanTwin_attack.wav",
+			"shoot": "aom/nor/aomNorAxemanTwin_shoot.wav",
+			"defend": "aom/nor/aomNorAxemanTwin_defend.wav",
+			"wince": "aom/nor/aomNorAxemanTwin_wince.wav",
+			"killed": "aom/nor/aomNorAxemanTwin_killed.wav",
+			"move": "LCRSMOVE.wav"
+		},
+		"upgrades": [
+			"aomNorAxemanBreaker"
+		],
+		"stackExperience": [
+			{
+				"bonus": {
+					"type": "STACK_HEALTH",
+					"valueType": "PERCENT_TO_BASE"
+				},
+				"values": [
+					5,
+					10,
+					15,
+					20,
+					25,
+					30,
+					35,
+					40,
+					45,
+					50
+				]
+			},
+			{
+				"bonus": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "attack"
+				},
+				"values": [
+					0,
+					1,
+					1,
+					2,
+					2,
+					2,
+					3,
+					3,
+					3,
+					4
+				]
+			},
+			{
+				"bonus": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "defence"
+				},
+				"values": [
+					1,
+					1,
+					1,
+					2,
+					2,
+					3,
+					3,
+					3,
+					4,
+					4
+				]
+			},
+			{
+				"bonus": {
+					"type": "CREATURE_DAMAGE",
+					"subtype": "creatureDamageMin"
+				},
+				"values": [
+					0,
+					0,
+					1,
+					1,
+					1,
+					2,
+					2,
+					3,
+					3,
+					3
+				]
+			},
+			{
+				"bonus": {
+					"type": "CREATURE_DAMAGE",
+					"subtype": "creatureDamageMax"
+				},
+				"values": [
+					0,
+					1,
+					1,
+					1,
+					2,
+					2,
+					2,
+					3,
+					3,
+					4
+				]
+			},
+			{
+				"bonus": {
+					"type": "STACKS_SPEED"
+				},
+				"values": [
+					0,
+					0,
+					0,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1
+				]
+			},
+			{
+				"bonus": {
+					"type": "ENEMY_DEFENCE_REDUCTION"
+				},
+				"values": [
+					2,
+					4,
+					6,
+					8,
+					10,
+					12,
+					14,
+					16,
+					18,
+					20
+				]
+			}
+		]
+	},
+	"aomNorTroll": {
+		"name": {
+			"singular": "Northern Troll",
+			"plural": "Northern Trolls"
+		},
+		"description": "",
+		"faction": "aomNorse",
+		"level": 3,
+		"cost": {
+			"gold": 310
+		},
+		"speed": 4,
+		"hitPoints": 22,
+		"attack": 8,
+		"defense": 7,
+		"damage": {
+			"min": 4,
+			"max": 7
+		},
+		"doubleWide": false,
+		"growth": 6,
+		"advMapAmount": {
+			"min": 1,
+			"max": 4
+		},
+		"abilities": {
+			"shooter": {
+				"type": "SHOOTER"
+			}
+		},
+		"graphics": {
+			"animation": "aom/nor/aomNorTroll/battle.json",
+			"map": "aom/nor/aomNorTroll/map.json",
+			"mapMask": [
+				"VV",
+				"VA"
+			],
+			"mapAttackFromRight": "aom/nor/aomNorTroll/map/atkR.png",
+			"mapAttackFromLeft": "aom/nor/aomNorTroll/map/atkL.png",
+			"iconLarge": "aom/nor/aomNorTroll/iconLarge.png",
+			"iconSmall": "aom/nor/aomNorTroll/iconSmall.png",
+			"animationTime": {
+				"walk": 1,
+				"attack": 1,
+				"idle": 10
+			},
+			"timeBetweenFidgets": 1,
+			"missile": {
+				"frameAngles": [
+					90,
+					67.5,
+					45,
+					22.5,
+					0,
+					-22.5,
+					-45,
+					-67.5,
+					-90
+				],
+				"attackClimaxFrame": 6,
+				"projectile": "aom/nor/missile/trock.json",
+				"offset": {
+					"upperX": -37,
+					"upperY": -112,
+					"middleX": 23,
+					"middleY": -116,
+					"lowerX": 45,
+					"lowerY": -97
+				}
+			}
+		},
+		"shots": 8,
+		"aiValue": 300,
+		"fightValue": 248,
+		"upgrades": [
+			"aomNorTrollCave",
+			"aomNorTrollStone"
+		],
+		"sound": {
+			"attack": "aom/nor/aomNorTroll_attack.wav",
+			"shoot": "aom/nor/aomNorTroll_shoot.wav",
+			"defend": "aom/nor/aomNorTroll_defend.wav",
+			"wince": "aom/nor/aomNorTroll_wince.wav",
+			"killed": "aom/nor/aomNorTroll_killed.wav",
+			"move": "aom/nor/aomNorTroll_move.wav"
+		},
+		"stackExperience": [
+			{
+				"bonus": {
+					"type": "STACK_HEALTH",
+					"valueType": "PERCENT_TO_BASE"
+				},
+				"values": [
+					5,
+					10,
+					15,
+					20,
+					25,
+					30,
+					35,
+					40,
+					45,
+					50
+				]
+			},
+			{
+				"bonus": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "attack"
+				},
+				"values": [
+					1,
+					1,
+					2,
+					2,
+					3,
+					3,
+					4,
+					4,
+					5,
+					5
+				]
+			},
+			{
+				"bonus": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "defence"
+				},
+				"values": [
+					1,
+					1,
+					2,
+					2,
+					3,
+					3,
+					4,
+					4,
+					5,
+					5
+				]
+			},
+			{
+				"bonus": {
+					"type": "CREATURE_DAMAGE",
+					"subtype": "creatureDamageMin"
+				},
+				"values": [
+					0,
+					1,
+					1,
+					2,
+					2,
+					3,
+					3,
+					4,
+					4,
+					5
+				]
+			},
+			{
+				"bonus": {
+					"type": "CREATURE_DAMAGE",
+					"subtype": "creatureDamageMax"
+				},
+				"values": [
+					0,
+					1,
+					1,
+					2,
+					2,
+					3,
+					3,
+					4,
+					4,
+					5
+				]
+			},
+			{
+				"bonus": {
+					"type": "STACKS_SPEED"
+				},
+				"values": [
+					0,
+					0,
+					0,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1
+				]
+			},
+			{
+				"bonus": {
+					"type": "HP_REGENERATION"
+				},
+				"values": [
+					1,
+					2,
+					3,
+					4,
+					5,
+					6,
+					7,
+					8,
+					9,
+					10
+				]
+			}
+		]
+	},
+	"aomNorTrollCave": {
+		"name": {
+			"singular": "Cave Troll",
+			"plural": "Cave Trolls"
+		},
+		"description": "",
+		"faction": "aomNorse",
+		"level": 3,
+		"cost": {
+			"gold": 400
+		},
+		"speed": 4,
+		"hitPoints": 24,
+		"attack": 9,
+		"defense": 8,
+		"damage": {
+			"min": 4,
+			"max": 8
+		},
+		"doubleWide": false,
+		"growth": 6,
+		"advMapAmount": {
+			"min": 1,
+			"max": 4
+		},
+		"abilities": {
+			"shooter": {
+				"type": "SHOOTER"
+			},
+			"b0_hp_regeneration": {
+				"type": "HP_REGENERATION",
+				"val": 10,
+				"stacking": "aomNorTrollCaveExpHpRegeneration"
+			}
+		},
+		"graphics": {
+			"animation": "aom/nor/aomNorTrollCave/battle.json",
+			"map": "aom/nor/aomNorTrollCave/map.json",
+			"mapMask": [
+				"VV",
+				"VA"
+			],
+			"mapAttackFromRight": "aom/nor/aomNorTrollCave/map/atkR.png",
+			"mapAttackFromLeft": "aom/nor/aomNorTrollCave/map/atkL.png",
+			"iconLarge": "aom/nor/aomNorTrollCave/iconLarge.png",
+			"iconSmall": "aom/nor/aomNorTrollCave/iconSmall.png",
+			"animationTime": {
+				"walk": 1,
+				"attack": 1,
+				"idle": 10
+			},
+			"timeBetweenFidgets": 1,
+			"missile": {
+				"frameAngles": [
+					90,
+					67.5,
+					45,
+					22.5,
+					0,
+					-22.5,
+					-45,
+					-67.5,
+					-90
+				],
+				"attackClimaxFrame": 6,
+				"projectile": "aom/nor/missile/trock.json",
+				"offset": {
+					"upperX": -39,
+					"upperY": -113,
+					"middleX": 24,
+					"middleY": -117,
+					"lowerX": 47,
+					"lowerY": -97
+				}
+			}
+		},
+		"shots": 8,
+		"aiValue": 344,
+		"fightValue": 285,
+		"sound": {
+			"attack": "aom/nor/aomNorTrollCave_attack.wav",
+			"shoot": "aom/nor/aomNorTrollCave_shoot.wav",
+			"defend": "aom/nor/aomNorTrollCave_defend.wav",
+			"wince": "aom/nor/aomNorTrollCave_wince.wav",
+			"killed": "aom/nor/aomNorTrollCave_killed.wav",
+			"move": "aom/nor/aomNorTrollCave_move.wav"
+		},
+		"upgrades": [
+			"aomNorTrollStone"
+		],
+		"stackExperience": [
+			{
+				"bonus": {
+					"type": "STACK_HEALTH",
+					"valueType": "PERCENT_TO_BASE"
+				},
+				"values": [
+					5,
+					10,
+					15,
+					20,
+					25,
+					30,
+					35,
+					40,
+					45,
+					50
+				]
+			},
+			{
+				"bonus": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "attack"
+				},
+				"values": [
+					1,
+					1,
+					2,
+					2,
+					3,
+					3,
+					4,
+					4,
+					5,
+					5
+				]
+			},
+			{
+				"bonus": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "defence"
+				},
+				"values": [
+					1,
+					1,
+					2,
+					2,
+					3,
+					3,
+					4,
+					4,
+					5,
+					5
+				]
+			},
+			{
+				"bonus": {
+					"type": "CREATURE_DAMAGE",
+					"subtype": "creatureDamageMin"
+				},
+				"values": [
+					0,
+					1,
+					1,
+					2,
+					2,
+					3,
+					3,
+					4,
+					4,
+					5
+				]
+			},
+			{
+				"bonus": {
+					"type": "CREATURE_DAMAGE",
+					"subtype": "creatureDamageMax"
+				},
+				"values": [
+					0,
+					1,
+					1,
+					2,
+					2,
+					3,
+					3,
+					4,
+					4,
+					5
+				]
+			},
+			{
+				"bonus": {
+					"type": "STACKS_SPEED"
+				},
+				"values": [
+					0,
+					0,
+					0,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1
+				]
+			},
+			{
+				"bonus": {
+					"type": "HP_REGENERATION",
+					"stacking": "aomNorTrollCaveExpHpRegeneration"
+				},
+				"values": [
+					11,
+					12,
+					13,
+					14,
+					15,
+					16,
+					17,
+					18,
+					19,
+					20
+				]
+			}
+		]
+	},
+	"aomNorTrollStone": {
+		"name": {
+			"singular": "Stone Troll",
+			"plural": "Stone Trolls"
+		},
+		"description": "",
+		"faction": "aomNorse",
+		"level": 3,
+		"cost": {
+			"gold": 400
+		},
+		"speed": 4,
+		"hitPoints": 26,
+		"attack": 8,
+		"defense": 9,
+		"damage": {
+			"min": 4,
+			"max": 7
+		},
+		"doubleWide": false,
+		"growth": 6,
+		"advMapAmount": {
+			"min": 1,
+			"max": 4
+		},
+		"abilities": {
+			"shooter": {
+				"type": "SHOOTER"
+			},
+			"b0_general_damage_reduction": {
+				"type": "GENERAL_DAMAGE_REDUCTION",
+				"val": 10,
+				"subtype": "damageTypeMelee"
+			},
+			"b1_general_damage_reduction": {
+				"type": "GENERAL_DAMAGE_REDUCTION",
+				"val": 10,
+				"subtype": "damageTypeRanged",
+				"stacking": "aomNorTrollStoneExpGeneralDamageReduction"
+			}
+		},
+		"graphics": {
+			"animation": "aom/nor/aomNorTrollStone/battle.json",
+			"map": "aom/nor/aomNorTrollStone/map.json",
+			"mapMask": [
+				"VV",
+				"VA"
+			],
+			"mapAttackFromRight": "aom/nor/aomNorTrollStone/map/atkR.png",
+			"mapAttackFromLeft": "aom/nor/aomNorTrollStone/map/atkL.png",
+			"iconLarge": "aom/nor/aomNorTrollStone/iconLarge.png",
+			"iconSmall": "aom/nor/aomNorTrollStone/iconSmall.png",
+			"animationTime": {
+				"walk": 1,
+				"attack": 1,
+				"idle": 10
+			},
+			"timeBetweenFidgets": 1,
+			"missile": {
+				"frameAngles": [
+					90,
+					67.5,
+					45,
+					22.5,
+					0,
+					-22.5,
+					-45,
+					-67.5,
+					-90
+				],
+				"attackClimaxFrame": 6,
+				"projectile": "aom/nor/missile/trock.json",
+				"offset": {
+					"upperX": -39,
+					"upperY": -113,
+					"middleX": 24,
+					"middleY": -117,
+					"lowerX": 47,
+					"lowerY": -97
+				}
+			}
+		},
+		"shots": 8,
+		"aiValue": 372,
+		"fightValue": 308,
+		"sound": {
+			"attack": "aom/nor/aomNorTrollStone_attack.wav",
+			"shoot": "aom/nor/aomNorTrollStone_shoot.wav",
+			"defend": "aom/nor/aomNorTrollStone_defend.wav",
+			"wince": "aom/nor/aomNorTrollStone_wince.wav",
+			"killed": "aom/nor/aomNorTrollStone_killed.wav",
+			"move": "aom/nor/aomNorTrollStone_move.wav"
+		},
+		"upgrades": [
+			"aomNorTrollCave"
+		],
+		"stackExperience": [
+			{
+				"bonus": {
+					"type": "STACK_HEALTH",
+					"valueType": "PERCENT_TO_BASE"
+				},
+				"values": [
+					5,
+					10,
+					15,
+					20,
+					25,
+					30,
+					35,
+					40,
+					45,
+					50
+				]
+			},
+			{
+				"bonus": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "attack"
+				},
+				"values": [
+					1,
+					1,
+					2,
+					2,
+					3,
+					3,
+					4,
+					4,
+					5,
+					5
+				]
+			},
+			{
+				"bonus": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "defence"
+				},
+				"values": [
+					1,
+					1,
+					2,
+					2,
+					3,
+					3,
+					4,
+					4,
+					5,
+					5
+				]
+			},
+			{
+				"bonus": {
+					"type": "CREATURE_DAMAGE",
+					"subtype": "creatureDamageMin"
+				},
+				"values": [
+					0,
+					1,
+					1,
+					2,
+					2,
+					3,
+					3,
+					4,
+					4,
+					5
+				]
+			},
+			{
+				"bonus": {
+					"type": "CREATURE_DAMAGE",
+					"subtype": "creatureDamageMax"
+				},
+				"values": [
+					0,
+					1,
+					1,
+					2,
+					2,
+					3,
+					3,
+					4,
+					4,
+					5
+				]
+			},
+			{
+				"bonus": {
+					"type": "STACKS_SPEED"
+				},
+				"values": [
+					0,
+					0,
+					0,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1
+				]
+			},
+			{
+				"bonus": {
+					"type": "GENERAL_DAMAGE_REDUCTION",
+					"subtype": "damageTypeRanged",
+					"stacking": "aomNorTrollStoneExpGeneralDamageReduction"
+				},
+				"values": [
+					12,
+					14,
+					16,
+					18,
+					20,
+					22,
+					24,
+					26,
+					28,
+					30
+				]
+			}
+		]
+	},
+	"aomNorWolf": {
+		"name": {
+			"singular": "Fimbulwinter Wolf",
+			"plural": "Fimbulwinter Wolves"
+		},
+		"description": "",
+		"faction": "aomNorse",
+		"level": 4,
+		"cost": {
+			"gold": 425
+		},
+		"speed": 9,
+		"hitPoints": 22,
+		"attack": 10,
+		"defense": 7,
+		"damage": {
+			"min": 5,
+			"max": 8
+		},
+		"doubleWide": true,
+		"growth": 5,
+		"advMapAmount": {
+			"min": 1,
+			"max": 4
+		},
+		"abilities": {
+			"b0_spell_after_attack": {
+				"type": "SPELL_AFTER_ATTACK",
+				"val": 20,
+				"subtype": "slow",
+				"addInfo": 1
+			}
+		},
+		"graphics": {
+			"animation": "aom/nor/aomNorWolf/battle.json",
+			"map": "aom/nor/aomNorWolf/map.json",
+			"mapMask": [
+				"VV",
+				"VA"
+			],
+			"mapAttackFromRight": "aom/nor/aomNorWolf/map/atkR.png",
+			"mapAttackFromLeft": "aom/nor/aomNorWolf/map/atkL.png",
+			"iconLarge": "aom/nor/aomNorWolf/iconLarge.png",
+			"iconSmall": "aom/nor/aomNorWolf/iconSmall.png",
+			"animationTime": {
+				"walk": 1,
+				"attack": 1,
+				"idle": 10
+			},
+			"timeBetweenFidgets": 1
+		},
+		"aiValue": 399,
+		"fightValue": 333,
+		"upgrades": [
+			"aomNorWolfPack",
+			"aomNorWolfFenrir"
+		],
+		"sound": {
+			"attack": "aom/nor/aomNorWolf_attack.wav",
+			"defend": "aom/nor/aomNorWolf_defend.wav",
+			"wince": "aom/nor/aomNorWolf_wince.wav",
+			"killed": "aom/nor/aomNorWolf_killed.wav",
+			"move": "aom/nor/aomNorWolf_move.wav"
+		},
+		"stackExperience": [
+			{
+				"bonus": {
+					"type": "STACK_HEALTH",
+					"valueType": "PERCENT_TO_BASE"
+				},
+				"values": [
+					5,
+					10,
+					15,
+					20,
+					25,
+					30,
+					35,
+					40,
+					45,
+					50
+				]
+			},
+			{
+				"bonus": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "attack"
+				},
+				"values": [
+					1,
+					2,
+					2,
+					3,
+					4,
+					5,
+					6,
+					6,
+					7,
+					8
+				]
+			},
+			{
+				"bonus": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "defence"
+				},
+				"values": [
+					1,
+					2,
+					2,
+					3,
+					4,
+					4,
+					5,
+					6,
+					7,
+					8
+				]
+			},
+			{
+				"bonus": {
+					"type": "CREATURE_DAMAGE",
+					"subtype": "creatureDamageMin"
+				},
+				"values": [
+					0,
+					1,
+					1,
+					2,
+					2,
+					3,
+					3,
+					4,
+					4,
+					4
+				]
+			},
+			{
+				"bonus": {
+					"type": "CREATURE_DAMAGE",
+					"subtype": "creatureDamageMax"
+				},
+				"values": [
+					0,
+					1,
+					1,
+					2,
+					2,
+					3,
+					3,
+					4,
+					4,
+					5
+				]
+			},
+			{
+				"bonus": {
+					"type": "STACKS_SPEED"
+				},
+				"values": [
+					0,
+					0,
+					0,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1
+				]
+			},
+			{
+				"bonus": {
+					"type": "DOUBLE_DAMAGE_CHANCE"
+				},
+				"values": [
+					2,
+					4,
+					6,
+					8,
+					10,
+					12,
+					14,
+					16,
+					18,
+					20
+				]
+			}
+		]
+	},
+	"aomNorWolfPack": {
+		"name": {
+			"singular": "Fenris Pack",
+			"plural": "Fenris Packs"
+		},
+		"description": "",
+		"faction": "aomNorse",
+		"level": 4,
+		"cost": {
+			"gold": 545
+		},
+		"speed": 10,
+		"hitPoints": 24,
+		"attack": 11,
+		"defense": 8,
+		"damage": {
+			"min": 6,
+			"max": 9
+		},
+		"doubleWide": true,
+		"growth": 5,
+		"advMapAmount": {
+			"min": 1,
+			"max": 4
+		},
+		"abilities": {
+			"b0_spell_after_attack": {
+				"type": "SPELL_AFTER_ATTACK",
+				"val": 20,
+				"subtype": "slow",
+				"addInfo": 1
+			},
+			"b1_general_damage_premy": {
+				"type": "GENERAL_DAMAGE_PREMY",
+				"val": 15,
+				"stacking": "aomNorPack_aomNorWolf",
+				"limiters": [
+					{
+						"type": "UNIT_ADJACENT",
+						"creature": "aomNorWolf"
+					}
+				],
+				"description": "{Pack}\nDamage +15% for each kind\nof wolf adjacent",
+				"icon": "aom/nor/abicons/wolfpack.png"
+			},
+			"b2_general_damage_premy": {
+				"type": "GENERAL_DAMAGE_PREMY",
+				"val": 15,
+				"stacking": "aomNorPack_aomNorWolfPack",
+				"limiters": [
+					{
+						"type": "UNIT_ADJACENT",
+						"creature": "aomNorWolfPack"
+					}
+				],
+				"hidden": true
+			},
+			"b3_general_damage_premy": {
+				"type": "GENERAL_DAMAGE_PREMY",
+				"val": 15,
+				"stacking": "aomNorPack_aomNorWolfFenrir",
+				"limiters": [
+					{
+						"type": "UNIT_ADJACENT",
+						"creature": "aomNorWolfFenrir"
+					}
+				],
+				"hidden": true
+			},
+			"pack_aomNorWolfFire": {
+				"type": "GENERAL_DAMAGE_PREMY",
+				"val": 15,
+				"stacking": "aomNorPack_aomNorWolfFire",
+				"limiters": [
+					{
+						"type": "UNIT_ADJACENT",
+						"creature": "aomNorWolfFire"
+					}
+				],
+				"hidden": true
+			},
+			"pack_aomNorWolfPackFire": {
+				"type": "GENERAL_DAMAGE_PREMY",
+				"val": 15,
+				"stacking": "aomNorPack_aomNorWolfPackFire",
+				"limiters": [
+					{
+						"type": "UNIT_ADJACENT",
+						"creature": "aomNorWolfPackFire"
+					}
+				],
+				"hidden": true
+			},
+			"pack_aomNorWolfFenrirFire": {
+				"type": "GENERAL_DAMAGE_PREMY",
+				"val": 15,
+				"stacking": "aomNorPack_aomNorWolfFenrirFire",
+				"limiters": [
+					{
+						"type": "UNIT_ADJACENT",
+						"creature": "aomNorWolfFenrirFire"
+					}
+				],
+				"hidden": true
+			}
+		},
+		"graphics": {
+			"animation": "aom/nor/aomNorWolfPack/battle.json",
+			"map": "aom/nor/aomNorWolfPack/map.json",
+			"mapMask": [
+				"VV",
+				"VA"
+			],
+			"mapAttackFromRight": "aom/nor/aomNorWolfPack/map/atkR.png",
+			"mapAttackFromLeft": "aom/nor/aomNorWolfPack/map/atkL.png",
+			"iconLarge": "aom/nor/aomNorWolfPack/iconLarge.png",
+			"iconSmall": "aom/nor/aomNorWolfPack/iconSmall.png",
+			"animationTime": {
+				"walk": 1,
+				"attack": 1,
+				"idle": 10
+			},
+			"timeBetweenFidgets": 1
+		},
+		"aiValue": 416,
+		"fightValue": 346,
+		"sound": {
+			"attack": "aom/nor/aomNorWolfPack_attack.wav",
+			"defend": "aom/nor/aomNorWolfPack_defend.wav",
+			"wince": "aom/nor/aomNorWolfPack_wince.wav",
+			"killed": "aom/nor/aomNorWolfPack_killed.wav",
+			"move": "aom/nor/aomNorWolfPack_move.wav"
+		},
+		"upgrades": [
+			"aomNorWolfFenrir"
+		],
+		"stackExperience": [
+			{
+				"bonus": {
+					"type": "STACK_HEALTH",
+					"valueType": "PERCENT_TO_BASE"
+				},
+				"values": [
+					5,
+					10,
+					15,
+					20,
+					25,
+					30,
+					35,
+					40,
+					45,
+					50
+				]
+			},
+			{
+				"bonus": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "attack"
+				},
+				"values": [
+					1,
+					2,
+					2,
+					3,
+					4,
+					5,
+					6,
+					6,
+					7,
+					8
+				]
+			},
+			{
+				"bonus": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "defence"
+				},
+				"values": [
+					1,
+					2,
+					2,
+					3,
+					4,
+					4,
+					5,
+					6,
+					7,
+					8
+				]
+			},
+			{
+				"bonus": {
+					"type": "CREATURE_DAMAGE",
+					"subtype": "creatureDamageMin"
+				},
+				"values": [
+					0,
+					1,
+					1,
+					2,
+					2,
+					3,
+					3,
+					4,
+					4,
+					4
+				]
+			},
+			{
+				"bonus": {
+					"type": "CREATURE_DAMAGE",
+					"subtype": "creatureDamageMax"
+				},
+				"values": [
+					0,
+					1,
+					1,
+					2,
+					2,
+					3,
+					3,
+					4,
+					4,
+					5
+				]
+			},
+			{
+				"bonus": {
+					"type": "STACKS_SPEED"
+				},
+				"values": [
+					0,
+					0,
+					0,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1
+				]
+			},
+			{
+				"bonus": {
+					"type": "DOUBLE_DAMAGE_CHANCE"
+				},
+				"values": [
+					2,
+					4,
+					6,
+					8,
+					10,
+					12,
+					14,
+					16,
+					18,
+					20
+				]
+			}
+		]
+	},
+	"aomNorWolfFenrir": {
+		"name": {
+			"singular": "Fenrir Wolf",
+			"plural": "Fenrir Wolves"
+		},
+		"description": "",
+		"faction": "aomNorse",
+		"level": 4,
+		"cost": {
+			"gold": 545
+		},
+		"speed": 9,
+		"hitPoints": 24,
+		"attack": 12,
+		"defense": 8,
+		"damage": {
+			"min": 5,
+			"max": 8
+		},
+		"doubleWide": true,
+		"growth": 5,
+		"advMapAmount": {
+			"min": 1,
+			"max": 4
+		},
+		"abilities": {
+			"b0_enemy_defence_reduction": {
+				"type": "ENEMY_DEFENCE_REDUCTION",
+				"val": 10,
+				"stacking": "aomNorWolfFenrirExpEnemyDefenceReduction"
+			},
+			"b1_spell_after_attack": {
+				"type": "SPELL_AFTER_ATTACK",
+				"val": 20,
+				"subtype": "slow",
+				"addInfo": 1
+			}
+		},
+		"graphics": {
+			"animation": "aom/nor/aomNorWolfFenrir/battle.json",
+			"map": "aom/nor/aomNorWolfFenrir/map.json",
+			"mapMask": [
+				"VV",
+				"VA"
+			],
+			"mapAttackFromRight": "aom/nor/aomNorWolfFenrir/map/atkR.png",
+			"mapAttackFromLeft": "aom/nor/aomNorWolfFenrir/map/atkL.png",
+			"iconLarge": "aom/nor/aomNorWolfFenrir/iconLarge.png",
+			"iconSmall": "aom/nor/aomNorWolfFenrir/iconSmall.png",
+			"animationTime": {
+				"walk": 1,
+				"attack": 1,
+				"idle": 10
+			},
+			"timeBetweenFidgets": 1
+		},
+		"aiValue": 451,
+		"fightValue": 376,
+		"sound": {
+			"attack": "aom/nor/aomNorWolfFenrir_attack.wav",
+			"defend": "aom/nor/aomNorWolfFenrir_defend.wav",
+			"wince": "aom/nor/aomNorWolfFenrir_wince.wav",
+			"killed": "aom/nor/aomNorWolfFenrir_killed.wav",
+			"move": "aom/nor/aomNorWolfFenrir_move.wav"
+		},
+		"upgrades": [
+			"aomNorWolfPack"
+		],
+		"stackExperience": [
+			{
+				"bonus": {
+					"type": "STACK_HEALTH",
+					"valueType": "PERCENT_TO_BASE"
+				},
+				"values": [
+					5,
+					10,
+					15,
+					20,
+					25,
+					30,
+					35,
+					40,
+					45,
+					50
+				]
+			},
+			{
+				"bonus": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "attack"
+				},
+				"values": [
+					1,
+					2,
+					2,
+					3,
+					4,
+					5,
+					6,
+					6,
+					7,
+					8
+				]
+			},
+			{
+				"bonus": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "defence"
+				},
+				"values": [
+					1,
+					2,
+					2,
+					3,
+					4,
+					4,
+					5,
+					6,
+					7,
+					8
+				]
+			},
+			{
+				"bonus": {
+					"type": "CREATURE_DAMAGE",
+					"subtype": "creatureDamageMin"
+				},
+				"values": [
+					0,
+					1,
+					1,
+					2,
+					2,
+					3,
+					3,
+					4,
+					4,
+					4
+				]
+			},
+			{
+				"bonus": {
+					"type": "CREATURE_DAMAGE",
+					"subtype": "creatureDamageMax"
+				},
+				"values": [
+					0,
+					1,
+					1,
+					2,
+					2,
+					3,
+					3,
+					4,
+					4,
+					5
+				]
+			},
+			{
+				"bonus": {
+					"type": "STACKS_SPEED"
+				},
+				"values": [
+					0,
+					0,
+					0,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1
+				]
+			},
+			{
+				"bonus": {
+					"type": "ENEMY_DEFENCE_REDUCTION",
+					"stacking": "aomNorWolfFenrirExpEnemyDefenceReduction"
+				},
+				"values": [
+					12,
+					14,
+					16,
+					18,
+					20,
+					22,
+					24,
+					26,
+					28,
+					30
+				]
+			}
+		]
+	},
+	"aomNorValkyrie": {
+		"name": {
+			"singular": "Asgard Valkyrie",
+			"plural": "Asgard Valkyries"
+		},
+		"description": "",
+		"faction": "aomNorse",
+		"level": 5,
+		"cost": {
+			"gold": 780
+		},
+		"speed": 9,
+		"hitPoints": 57,
+		"attack": 13,
+		"defense": 10,
+		"damage": {
+			"min": 11,
+			"max": 15
+		},
+		"doubleWide": true,
+		"growth": 3,
+		"advMapAmount": {
+			"min": 1,
+			"max": 4
+		},
+		"abilities": {
+			"flying": {
+				"type": "FLYING"
+			},
+			"b0_combat_event_trigger": {
+				"type": "COMBAT_EVENT_TRIGGER",
+				"subtype": "aomMend",
+				"val": 5,
+				"icon": "aom/nor/abicons/heal.png"
+			},
+			"b1_aom_mender": {
+				"type": "AOM_MENDER",
+				"val": 5,
+				"valueType": "BASE_NUMBER"
+			},
+			"b2_aom_mend_kind": {
+				"type": "AOM_MEND_KIND",
+				"val": 4,
+				"valueType": "BASE_NUMBER"
+			},
+			"skeletonTarget": {
+				"type": "SKELETON_TRANSFORMER_TARGET",
+				"subtype": "blackKnight",
+				"hidden": true
+			}
+		},
+		"graphics": {
+			"animation": "aom/nor/aomNorValkyrie/battle.json",
+			"map": "aom/nor/aomNorValkyrie/map.json",
+			"mapMask": [
+				"VV",
+				"VA"
+			],
+			"mapAttackFromRight": "aom/nor/aomNorValkyrie/map/atkR.png",
+			"mapAttackFromLeft": "aom/nor/aomNorValkyrie/map/atkL.png",
+			"iconLarge": "aom/nor/aomNorValkyrie/iconLarge.png",
+			"iconSmall": "aom/nor/aomNorValkyrie/iconSmall.png",
+			"animationTime": {
+				"walk": 1,
+				"attack": 1,
+				"idle": 10
+			},
+			"timeBetweenFidgets": 1
+		},
+		"aiValue": 889,
+		"fightValue": 868,
+		"upgrades": [
+			"aomNorValkyrieShield",
+			"aomNorValkyrieChooser"
+		],
+		"sound": {
+			"attack": "aom/nor/aomNorValkyrie_attack.wav",
+			"defend": "aom/nor/aomNorValkyrie_defend.wav",
+			"wince": "aom/nor/aomNorValkyrie_wince.wav",
+			"killed": "aom/nor/aomNorValkyrie_killed.wav",
+			"move": "aom/nor/aomNorValkyrie_move.wav"
+		},
+		"stackExperience": [
+			{
+				"bonus": {
+					"type": "STACK_HEALTH",
+					"valueType": "PERCENT_TO_BASE"
+				},
+				"values": [
+					5,
+					10,
+					15,
+					20,
+					25,
+					30,
+					35,
+					40,
+					45,
+					50
+				]
+			},
+			{
+				"bonus": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "attack"
+				},
+				"values": [
+					1,
+					1,
+					2,
+					3,
+					4,
+					5,
+					5,
+					6,
+					7,
+					8
+				]
+			},
+			{
+				"bonus": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "defence"
+				},
+				"values": [
+					1,
+					2,
+					3,
+					3,
+					4,
+					4,
+					6,
+					6,
+					7,
+					8
+				]
+			},
+			{
+				"bonus": {
+					"type": "CREATURE_DAMAGE",
+					"subtype": "creatureDamageMin"
+				},
+				"values": [
+					0,
+					1,
+					2,
+					3,
+					3,
+					4,
+					5,
+					6,
+					6,
+					7
+				]
+			},
+			{
+				"bonus": {
+					"type": "CREATURE_DAMAGE",
+					"subtype": "creatureDamageMax"
+				},
+				"values": [
+					1,
+					2,
+					2,
+					3,
+					4,
+					4,
+					5,
+					6,
+					7,
+					7
+				]
+			},
+			{
+				"bonus": {
+					"type": "STACKS_SPEED"
+				},
+				"values": [
+					0,
+					0,
+					0,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1
+				]
+			},
+			{
+				"bonus": {
+					"type": "MAGIC_RESISTANCE"
+				},
+				"values": [
+					3,
+					6,
+					9,
+					12,
+					15,
+					18,
+					21,
+					24,
+					27,
+					30
+				]
+			}
+		]
+	},
+	"aomNorValkyrieShield": {
+		"name": {
+			"singular": "Shieldmaiden",
+			"plural": "Shieldmaidens"
+		},
+		"description": "",
+		"faction": "aomNorse",
+		"level": 5,
+		"cost": {
+			"gold": 985
+		},
+		"speed": 9,
+		"hitPoints": 65,
+		"attack": 17,
+		"defense": 13,
+		"damage": {
+			"min": 14,
+			"max": 18
+		},
+		"doubleWide": true,
+		"growth": 3,
+		"advMapAmount": {
+			"min": 1,
+			"max": 4
+		},
+		"abilities": {
+			"flying": {
+				"type": "FLYING"
+			},
+			"b0_general_damage_reduction": {
+				"type": "GENERAL_DAMAGE_REDUCTION",
+				"subtype": "damageTypeMelee",
+				"val": 10,
+				"propagator": "BATTLE_WIDE",
+				"propagationUpdater": "BONUS_OWNER_UPDATER",
+				"stacking": "aomNorAura_aomNorValkyrieShieldGENERAL_DAMAGE_REDUCTION",
+				"limiters": [
+					"allOf",
+					{
+						"type": "UNIT_ADJACENT",
+						"creature": "aomNorValkyrieShield"
+					},
+					[
+						"noneOf",
+						"OPPOSITE_SIDE"
+					]
+				]
+			},
+			"b1_general_damage_reduction": {
+				"type": "GENERAL_DAMAGE_REDUCTION",
+				"subtype": "damageTypeRanged",
+				"val": 10,
+				"propagator": "BATTLE_WIDE",
+				"propagationUpdater": "BONUS_OWNER_UPDATER",
+				"stacking": "aomNorAura_aomNorValkyrieShieldGENERAL_DAMAGE_REDUCTION",
+				"limiters": [
+					"allOf",
+					{
+						"type": "UNIT_ADJACENT",
+						"creature": "aomNorValkyrieShield"
+					},
+					[
+						"noneOf",
+						"OPPOSITE_SIDE"
+					]
+				]
+			},
+			"b2_combat_event_trigger": {
+				"type": "COMBAT_EVENT_TRIGGER",
+				"subtype": "aomMend",
+				"val": 8,
+				"icon": "aom/nor/abicons/heal.png"
+			},
+			"b3_aom_mender": {
+				"type": "AOM_MENDER",
+				"val": 8,
+				"valueType": "BASE_NUMBER"
+			},
+			"b4_aom_mend_kind": {
+				"type": "AOM_MEND_KIND",
+				"val": 4,
+				"valueType": "BASE_NUMBER"
+			},
+			"skeletonTarget": {
+				"type": "SKELETON_TRANSFORMER_TARGET",
+				"subtype": "blackKnight",
+				"hidden": true
+			}
+		},
+		"graphics": {
+			"animation": "aom/nor/aomNorValkyrieShield/battle.json",
+			"map": "aom/nor/aomNorValkyrieShield/map.json",
+			"mapMask": [
+				"VV",
+				"VA"
+			],
+			"mapAttackFromRight": "aom/nor/aomNorValkyrieShield/map/atkR.png",
+			"mapAttackFromLeft": "aom/nor/aomNorValkyrieShield/map/atkL.png",
+			"iconLarge": "aom/nor/aomNorValkyrieShield/iconLarge.png",
+			"iconSmall": "aom/nor/aomNorValkyrieShield/iconSmall.png",
+			"animationTime": {
+				"walk": 1,
+				"attack": 1,
+				"idle": 10
+			},
+			"timeBetweenFidgets": 1
+		},
+		"aiValue": 1385,
+		"fightValue": 1352,
+		"sound": {
+			"attack": "aom/nor/aomNorValkyrieShield_attack.wav",
+			"defend": "aom/nor/aomNorValkyrieShield_defend.wav",
+			"wince": "aom/nor/aomNorValkyrieShield_wince.wav",
+			"killed": "aom/nor/aomNorValkyrieShield_killed.wav",
+			"move": "aom/nor/aomNorValkyrieShield_move.wav"
+		},
+		"upgrades": [
+			"aomNorValkyrieChooser"
+		],
+		"stackExperience": [
+			{
+				"bonus": {
+					"type": "STACK_HEALTH",
+					"valueType": "PERCENT_TO_BASE"
+				},
+				"values": [
+					5,
+					10,
+					15,
+					20,
+					25,
+					30,
+					35,
+					40,
+					45,
+					50
+				]
+			},
+			{
+				"bonus": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "attack"
+				},
+				"values": [
+					1,
+					1,
+					2,
+					3,
+					4,
+					5,
+					5,
+					6,
+					7,
+					8
+				]
+			},
+			{
+				"bonus": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "defence"
+				},
+				"values": [
+					1,
+					2,
+					3,
+					3,
+					4,
+					4,
+					6,
+					6,
+					7,
+					8
+				]
+			},
+			{
+				"bonus": {
+					"type": "CREATURE_DAMAGE",
+					"subtype": "creatureDamageMin"
+				},
+				"values": [
+					0,
+					1,
+					2,
+					3,
+					3,
+					4,
+					5,
+					6,
+					6,
+					7
+				]
+			},
+			{
+				"bonus": {
+					"type": "CREATURE_DAMAGE",
+					"subtype": "creatureDamageMax"
+				},
+				"values": [
+					1,
+					2,
+					2,
+					3,
+					4,
+					4,
+					5,
+					6,
+					7,
+					7
+				]
+			},
+			{
+				"bonus": {
+					"type": "STACKS_SPEED"
+				},
+				"values": [
+					0,
+					0,
+					0,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1
+				]
+			},
+			{
+				"bonus": {
+					"type": "MAGIC_RESISTANCE"
+				},
+				"values": [
+					3,
+					6,
+					9,
+					12,
+					15,
+					18,
+					21,
+					24,
+					27,
+					30
+				]
+			}
+		]
+	},
+	"aomNorValkyrieChooser": {
+		"name": {
+			"singular": "Valkyrie Chooser",
+			"plural": "Valkyrie Choosers"
+		},
+		"description": "",
+		"faction": "aomNorse",
+		"level": 5,
+		"cost": {
+			"gold": 985
+		},
+		"speed": 11,
+		"hitPoints": 62,
+		"attack": 18,
+		"defense": 10,
+		"damage": {
+			"min": 14,
+			"max": 19
+		},
+		"doubleWide": true,
+		"growth": 3,
+		"advMapAmount": {
+			"min": 1,
+			"max": 4
+		},
+		"abilities": {
+			"flying": {
+				"type": "FLYING"
+			},
+			"b0_combat_event_trigger": {
+				"type": "COMBAT_EVENT_TRIGGER",
+				"subtype": "aomMend",
+				"val": 6,
+				"addInfo": {
+					"resurrect": true
+				},
+				"icon": "aom/nor/abicons/heal.png"
+			},
+			"b1_aom_mender": {
+				"type": "AOM_MENDER",
+				"val": 6,
+				"valueType": "BASE_NUMBER"
+			},
+			"b2_aom_mend_kind": {
+				"type": "AOM_MEND_KIND",
+				"val": 5,
+				"valueType": "BASE_NUMBER"
+			},
+			"skeletonTarget": {
+				"type": "SKELETON_TRANSFORMER_TARGET",
+				"subtype": "blackKnight",
+				"hidden": true
+			}
+		},
+		"graphics": {
+			"animation": "aom/nor/aomNorValkyrieChooser/battle.json",
+			"map": "aom/nor/aomNorValkyrieChooser/map.json",
+			"mapMask": [
+				"VV",
+				"VA"
+			],
+			"mapAttackFromRight": "aom/nor/aomNorValkyrieChooser/map/atkR.png",
+			"mapAttackFromLeft": "aom/nor/aomNorValkyrieChooser/map/atkL.png",
+			"iconLarge": "aom/nor/aomNorValkyrieChooser/iconLarge.png",
+			"iconSmall": "aom/nor/aomNorValkyrieChooser/iconSmall.png",
+			"animationTime": {
+				"walk": 1,
+				"attack": 1,
+				"idle": 10
+			},
+			"timeBetweenFidgets": 1
+		},
+		"aiValue": 1181,
+		"fightValue": 1153,
+		"sound": {
+			"attack": "aom/nor/aomNorValkyrieChooser_attack.wav",
+			"defend": "aom/nor/aomNorValkyrieChooser_defend.wav",
+			"wince": "aom/nor/aomNorValkyrieChooser_wince.wav",
+			"killed": "aom/nor/aomNorValkyrieChooser_killed.wav",
+			"move": "aom/nor/aomNorValkyrieChooser_move.wav"
+		},
+		"upgrades": [
+			"aomNorValkyrieShield"
+		],
+		"stackExperience": [
+			{
+				"bonus": {
+					"type": "STACK_HEALTH",
+					"valueType": "PERCENT_TO_BASE"
+				},
+				"values": [
+					5,
+					10,
+					15,
+					20,
+					25,
+					30,
+					35,
+					40,
+					45,
+					50
+				]
+			},
+			{
+				"bonus": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "attack"
+				},
+				"values": [
+					1,
+					1,
+					2,
+					3,
+					4,
+					5,
+					5,
+					6,
+					7,
+					8
+				]
+			},
+			{
+				"bonus": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "defence"
+				},
+				"values": [
+					1,
+					2,
+					3,
+					3,
+					4,
+					4,
+					6,
+					6,
+					7,
+					8
+				]
+			},
+			{
+				"bonus": {
+					"type": "CREATURE_DAMAGE",
+					"subtype": "creatureDamageMin"
+				},
+				"values": [
+					0,
+					1,
+					2,
+					3,
+					3,
+					4,
+					5,
+					6,
+					6,
+					7
+				]
+			},
+			{
+				"bonus": {
+					"type": "CREATURE_DAMAGE",
+					"subtype": "creatureDamageMax"
+				},
+				"values": [
+					1,
+					2,
+					2,
+					3,
+					4,
+					4,
+					5,
+					6,
+					7,
+					7
+				]
+			},
+			{
+				"bonus": {
+					"type": "STACKS_SPEED"
+				},
+				"values": [
+					0,
+					0,
+					0,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1
+				]
+			},
+			{
+				"bonus": {
+					"type": "MAGIC_RESISTANCE"
+				},
+				"values": [
+					3,
+					6,
+					9,
+					12,
+					15,
+					18,
+					21,
+					24,
+					27,
+					30
+				]
+			}
+		]
+	},
+	"aomNorKraken": {
+		"name": {
+			"singular": "Kraken",
+			"plural": "Krakens"
+		},
+		"description": "",
+		"faction": "aomNorse",
+		"level": 6,
+		"cost": {
+			"gold": 1295
+		},
+		"speed": 7,
+		"hitPoints": 97,
+		"attack": 16,
+		"defense": 14,
+		"damage": {
+			"min": 15,
+			"max": 19
+		},
+		"doubleWide": true,
+		"growth": 2,
+		"advMapAmount": {
+			"min": 1,
+			"max": 4
+		},
+		"abilities": {
+			"b0_spell_after_attack": {
+				"type": "SPELL_AFTER_ATTACK",
+				"val": 100,
+				"subtype": "bind",
+				"addInfo": 1
+			}
+		},
+		"graphics": {
+			"animation": "aom/nor/aomNorKraken/battle.json",
+			"map": "aom/nor/aomNorKraken/map.json",
+			"mapMask": [
+				"VV",
+				"VA"
+			],
+			"mapAttackFromRight": "aom/nor/aomNorKraken/map/atkR.png",
+			"mapAttackFromLeft": "aom/nor/aomNorKraken/map/atkL.png",
+			"iconLarge": "aom/nor/aomNorKraken/iconLarge.png",
+			"iconSmall": "aom/nor/aomNorKraken/iconSmall.png",
+			"animationTime": {
+				"walk": 1,
+				"attack": 1,
+				"idle": 10
+			},
+			"timeBetweenFidgets": 1
+		},
+		"aiValue": 1525,
+		"fightValue": 1302,
+		"upgrades": [
+			"aomNorKrakenAbyss",
+			"aomNorKrakenStorm"
+		],
+		"sound": {
+			"attack": "aom/nor/aomNorKraken_attack.wav",
+			"defend": "aom/nor/aomNorKraken_defend.wav",
+			"wince": "aom/nor/aomNorKraken_wince.wav",
+			"killed": "aom/nor/aomNorKraken_killed.wav",
+			"move": "aom/nor/aomNorKraken_move.wav"
+		},
+		"stackExperience": [
+			{
+				"bonus": {
+					"type": "STACK_HEALTH",
+					"valueType": "PERCENT_TO_BASE"
+				},
+				"values": [
+					5,
+					10,
+					15,
+					20,
+					25,
+					30,
+					35,
+					40,
+					45,
+					50
+				]
+			},
+			{
+				"bonus": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "attack"
+				},
+				"values": [
+					1,
+					2,
+					3,
+					4,
+					4,
+					5,
+					6,
+					7,
+					8,
+					9
+				]
+			},
+			{
+				"bonus": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "defence"
+				},
+				"values": [
+					1,
+					2,
+					2,
+					3,
+					4,
+					5,
+					6,
+					7,
+					8,
+					9
+				]
+			},
+			{
+				"bonus": {
+					"type": "CREATURE_DAMAGE",
+					"subtype": "creatureDamageMin"
+				},
+				"values": [
+					0,
+					1,
+					2,
+					3,
+					4,
+					5,
+					5,
+					6,
+					7,
+					8
+				]
+			},
+			{
+				"bonus": {
+					"type": "CREATURE_DAMAGE",
+					"subtype": "creatureDamageMax"
+				},
+				"values": [
+					1,
+					2,
+					3,
+					4,
+					5,
+					6,
+					7,
+					8,
+					8,
+					9
+				]
+			},
+			{
+				"bonus": {
+					"type": "STACKS_SPEED"
+				},
+				"values": [
+					0,
+					0,
+					0,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1,
+					2
+				]
+			},
+			{
+				"bonus": {
+					"type": "ENEMY_DEFENCE_REDUCTION"
+				},
+				"values": [
+					2,
+					4,
+					6,
+					8,
+					10,
+					12,
+					14,
+					16,
+					18,
+					20
+				]
+			}
+		]
+	},
+	"aomNorKrakenAbyss": {
+		"name": {
+			"singular": "Abyssal Kraken",
+			"plural": "Abyssal Krakens"
+		},
+		"description": "",
+		"faction": "aomNorse",
+		"level": 6,
+		"cost": {
+			"gold": 1620,
+			"mercury": 1
+		},
+		"speed": 7,
+		"hitPoints": 146,
+		"attack": 17,
+		"defense": 15,
+		"damage": {
+			"min": 19,
+			"max": 24
+		},
+		"doubleWide": true,
+		"growth": 2,
+		"advMapAmount": {
+			"min": 1,
+			"max": 4
+		},
+		"abilities": {
+			"b0_spell_after_attack": {
+				"type": "SPELL_AFTER_ATTACK",
+				"val": 100,
+				"subtype": "bind",
+				"addInfo": 1
+			},
+			"b1_attacks_all_adjacent": {
+				"type": "ATTACKS_ALL_ADJACENT",
+				"val": 0
+			}
+		},
+		"graphics": {
+			"animation": "aom/nor/aomNorKrakenAbyss/battle.json",
+			"map": "aom/nor/aomNorKrakenAbyss/map.json",
+			"mapMask": [
+				"VV",
+				"VA"
+			],
+			"mapAttackFromRight": "aom/nor/aomNorKrakenAbyss/map/atkR.png",
+			"mapAttackFromLeft": "aom/nor/aomNorKrakenAbyss/map/atkL.png",
+			"iconLarge": "aom/nor/aomNorKrakenAbyss/iconLarge.png",
+			"iconSmall": "aom/nor/aomNorKrakenAbyss/iconSmall.png",
+			"animationTime": {
+				"walk": 1,
+				"attack": 1,
+				"idle": 10
+			},
+			"timeBetweenFidgets": 1
+		},
+		"aiValue": 2568,
+		"fightValue": 2193,
+		"sound": {
+			"attack": "aom/nor/aomNorKrakenAbyss_attack.wav",
+			"defend": "aom/nor/aomNorKrakenAbyss_defend.wav",
+			"wince": "aom/nor/aomNorKrakenAbyss_wince.wav",
+			"killed": "aom/nor/aomNorKrakenAbyss_killed.wav",
+			"move": "aom/nor/aomNorKrakenAbyss_move.wav"
+		},
+		"upgrades": [
+			"aomNorKrakenStorm"
+		],
+		"stackExperience": [
+			{
+				"bonus": {
+					"type": "STACK_HEALTH",
+					"valueType": "PERCENT_TO_BASE"
+				},
+				"values": [
+					5,
+					10,
+					15,
+					20,
+					25,
+					30,
+					35,
+					40,
+					45,
+					50
+				]
+			},
+			{
+				"bonus": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "attack"
+				},
+				"values": [
+					1,
+					2,
+					3,
+					4,
+					4,
+					5,
+					6,
+					7,
+					8,
+					9
+				]
+			},
+			{
+				"bonus": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "defence"
+				},
+				"values": [
+					1,
+					2,
+					2,
+					3,
+					4,
+					5,
+					6,
+					7,
+					8,
+					9
+				]
+			},
+			{
+				"bonus": {
+					"type": "CREATURE_DAMAGE",
+					"subtype": "creatureDamageMin"
+				},
+				"values": [
+					0,
+					1,
+					2,
+					3,
+					4,
+					5,
+					5,
+					6,
+					7,
+					8
+				]
+			},
+			{
+				"bonus": {
+					"type": "CREATURE_DAMAGE",
+					"subtype": "creatureDamageMax"
+				},
+				"values": [
+					1,
+					2,
+					3,
+					4,
+					5,
+					6,
+					7,
+					8,
+					8,
+					9
+				]
+			},
+			{
+				"bonus": {
+					"type": "STACKS_SPEED"
+				},
+				"values": [
+					0,
+					0,
+					0,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1,
+					2
+				]
+			},
+			{
+				"bonus": {
+					"type": "ENEMY_DEFENCE_REDUCTION"
+				},
+				"values": [
+					2,
+					4,
+					6,
+					8,
+					10,
+					12,
+					14,
+					16,
+					18,
+					20
+				]
+			}
+		]
+	},
+	"aomNorKrakenStorm": {
+		"name": {
+			"singular": "Storm Kraken",
+			"plural": "Storm Krakens"
+		},
+		"description": "",
+		"faction": "aomNorse",
+		"level": 6,
+		"cost": {
+			"gold": 1620,
+			"mercury": 1
+		},
+		"speed": 8,
+		"hitPoints": 117,
+		"attack": 18,
+		"defense": 14,
+		"damage": {
+			"min": 18,
+			"max": 23
+		},
+		"doubleWide": true,
+		"growth": 2,
+		"advMapAmount": {
+			"min": 1,
+			"max": 4
+		},
+		"abilities": {
+			"b0_spell_after_attack": {
+				"type": "SPELL_AFTER_ATTACK",
+				"val": 100,
+				"subtype": "bind",
+				"addInfo": 1
+			},
+			"b1_combat_event_trigger": {
+				"type": "COMBAT_EVENT_TRIGGER",
+				"subtype": "aomNorCapsize",
+				"val": 25,
+				"icon": "aom/nor/abicons/capsize.png"
+			}
+		},
+		"graphics": {
+			"animation": "aom/nor/aomNorKrakenStorm/battle.json",
+			"map": "aom/nor/aomNorKrakenStorm/map.json",
+			"mapMask": [
+				"VV",
+				"VA"
+			],
+			"mapAttackFromRight": "aom/nor/aomNorKrakenStorm/map/atkR.png",
+			"mapAttackFromLeft": "aom/nor/aomNorKrakenStorm/map/atkL.png",
+			"iconLarge": "aom/nor/aomNorKrakenStorm/iconLarge.png",
+			"iconSmall": "aom/nor/aomNorKrakenStorm/iconSmall.png",
+			"animationTime": {
+				"walk": 1,
+				"attack": 1,
+				"idle": 10
+			},
+			"timeBetweenFidgets": 1
+		},
+		"aiValue": 2377,
+		"fightValue": 2030,
+		"sound": {
+			"attack": "aom/nor/aomNorKrakenStorm_attack.wav",
+			"defend": "aom/nor/aomNorKrakenStorm_defend.wav",
+			"wince": "aom/nor/aomNorKrakenStorm_wince.wav",
+			"killed": "aom/nor/aomNorKrakenStorm_killed.wav",
+			"move": "aom/nor/aomNorKrakenStorm_move.wav"
+		},
+		"upgrades": [
+			"aomNorKrakenAbyss"
+		],
+		"stackExperience": [
+			{
+				"bonus": {
+					"type": "STACK_HEALTH",
+					"valueType": "PERCENT_TO_BASE"
+				},
+				"values": [
+					5,
+					10,
+					15,
+					20,
+					25,
+					30,
+					35,
+					40,
+					45,
+					50
+				]
+			},
+			{
+				"bonus": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "attack"
+				},
+				"values": [
+					1,
+					2,
+					3,
+					4,
+					4,
+					5,
+					6,
+					7,
+					8,
+					9
+				]
+			},
+			{
+				"bonus": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "defence"
+				},
+				"values": [
+					1,
+					2,
+					2,
+					3,
+					4,
+					5,
+					6,
+					7,
+					8,
+					9
+				]
+			},
+			{
+				"bonus": {
+					"type": "CREATURE_DAMAGE",
+					"subtype": "creatureDamageMin"
+				},
+				"values": [
+					0,
+					1,
+					2,
+					3,
+					4,
+					5,
+					5,
+					6,
+					7,
+					8
+				]
+			},
+			{
+				"bonus": {
+					"type": "CREATURE_DAMAGE",
+					"subtype": "creatureDamageMax"
+				},
+				"values": [
+					1,
+					2,
+					3,
+					4,
+					5,
+					6,
+					7,
+					8,
+					8,
+					9
+				]
+			},
+			{
+				"bonus": {
+					"type": "STACKS_SPEED"
+				},
+				"values": [
+					0,
+					0,
+					0,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1,
+					2
+				]
+			},
+			{
+				"bonus": {
+					"type": "ENEMY_DEFENCE_REDUCTION"
+				},
+				"values": [
+					2,
+					4,
+					6,
+					8,
+					10,
+					12,
+					14,
+					16,
+					18,
+					20
+				]
+			}
+		]
+	},
+	"aomNorFafnir": {
+		"name": {
+			"singular": "Fafnir",
+			"plural": "Fafnirs"
+		},
+		"description": "",
+		"faction": "aomNorse",
+		"level": 6,
+		"cost": {
+			"gold": 2075,
+			"sulfur": 1
+		},
+		"speed": 7,
+		"hitPoints": 138,
+		"attack": 19,
+		"defense": 16,
+		"damage": {
+			"min": 19,
+			"max": 26
+		},
+		"doubleWide": true,
+		"growth": 1,
+		"advMapAmount": {
+			"min": 1,
+			"max": 4
+		},
+		"abilities": {
+			"b0_two_hex_attack_breath": {
+				"type": "TWO_HEX_ATTACK_BREATH",
+				"val": 0
+			},
+			"skeletonTarget": {
+				"type": "SKELETON_TRANSFORMER_TARGET",
+				"subtype": "boneDragon",
+				"hidden": true
+			},
+			"dragon": {
+				"type": "DRAGON_NATURE",
+				"val": 0
+			}
+		},
+		"graphics": {
+			"animation": "aom/nor/aomNorFafnir/battle.json",
+			"map": "aom/nor/aomNorFafnir/map.json",
+			"mapMask": [
+				"VV",
+				"VA"
+			],
+			"mapAttackFromRight": "aom/nor/aomNorFafnir/map/atkR.png",
+			"mapAttackFromLeft": "aom/nor/aomNorFafnir/map/atkL.png",
+			"iconLarge": "aom/nor/aomNorFafnir/iconLarge.png",
+			"iconSmall": "aom/nor/aomNorFafnir/iconSmall.png",
+			"animationTime": {
+				"walk": 1,
+				"attack": 1,
+				"idle": 10
+			},
+			"timeBetweenFidgets": 1
+		},
+		"aiValue": 2390,
+		"fightValue": 2040,
+		"upgrades": [
+			"aomNorFafnirVenom",
+			"aomNorFafnirFlame"
+		],
+		"sound": {
+			"attack": "aom/nor/aomNorFafnir_attack.wav",
+			"defend": "aom/nor/aomNorFafnir_defend.wav",
+			"wince": "aom/nor/aomNorFafnir_wince.wav",
+			"killed": "aom/nor/aomNorFafnir_killed.wav",
+			"move": "aom/nor/aomNorFafnir_move.wav"
+		},
+		"stackExperience": [
+			{
+				"bonus": {
+					"type": "STACK_HEALTH",
+					"valueType": "PERCENT_TO_BASE"
+				},
+				"values": [
+					5,
+					10,
+					15,
+					20,
+					25,
+					30,
+					35,
+					40,
+					45,
+					50
+				]
+			},
+			{
+				"bonus": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "attack"
+				},
+				"values": [
+					1,
+					2,
+					3,
+					4,
+					4,
+					5,
+					6,
+					7,
+					8,
+					9
+				]
+			},
+			{
+				"bonus": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "defence"
+				},
+				"values": [
+					1,
+					2,
+					2,
+					3,
+					4,
+					5,
+					6,
+					7,
+					8,
+					9
+				]
+			},
+			{
+				"bonus": {
+					"type": "CREATURE_DAMAGE",
+					"subtype": "creatureDamageMin"
+				},
+				"values": [
+					0,
+					1,
+					2,
+					3,
+					4,
+					5,
+					5,
+					6,
+					7,
+					8
+				]
+			},
+			{
+				"bonus": {
+					"type": "CREATURE_DAMAGE",
+					"subtype": "creatureDamageMax"
+				},
+				"values": [
+					1,
+					2,
+					3,
+					4,
+					5,
+					6,
+					7,
+					8,
+					8,
+					9
+				]
+			},
+			{
+				"bonus": {
+					"type": "STACKS_SPEED"
+				},
+				"values": [
+					0,
+					0,
+					0,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1,
+					2
+				]
+			},
+			{
+				"bonus": {
+					"type": "SPELL_DAMAGE_REDUCTION",
+					"subtype": "any"
+				},
+				"values": [
+					4,
+					8,
+					12,
+					16,
+					20,
+					24,
+					28,
+					32,
+					36,
+					40
+				]
+			}
+		]
+	},
+	"aomNorFafnirVenom": {
+		"name": {
+			"singular": "Venombreath Fafnir",
+			"plural": "Venombreath Fafnirs"
+		},
+		"description": "",
+		"faction": "aomNorse",
+		"level": 6,
+		"cost": {
+			"gold": 2590,
+			"sulfur": 2
+		},
+		"speed": 7,
+		"hitPoints": 227,
+		"attack": 20,
+		"defense": 17,
+		"damage": {
+			"min": 28,
+			"max": 34
+		},
+		"doubleWide": true,
+		"growth": 1,
+		"advMapAmount": {
+			"min": 1,
+			"max": 4
+		},
+		"abilities": {
+			"b0_two_hex_attack_breath": {
+				"type": "TWO_HEX_ATTACK_BREATH",
+				"val": 0
+			},
+			"b1_spell_after_attack": {
+				"type": "SPELL_AFTER_ATTACK",
+				"val": 50,
+				"subtype": "poison",
+				"addInfo": 2
+			},
+			"skeletonTarget": {
+				"type": "SKELETON_TRANSFORMER_TARGET",
+				"subtype": "boneDragon",
+				"hidden": true
+			},
+			"dragon": {
+				"type": "DRAGON_NATURE",
+				"val": 0
+			}
+		},
+		"graphics": {
+			"animation": "aom/nor/aomNorFafnirVenom/battle.json",
+			"map": "aom/nor/aomNorFafnirVenom/map.json",
+			"mapMask": [
+				"VV",
+				"VA"
+			],
+			"mapAttackFromRight": "aom/nor/aomNorFafnirVenom/map/atkR.png",
+			"mapAttackFromLeft": "aom/nor/aomNorFafnirVenom/map/atkL.png",
+			"iconLarge": "aom/nor/aomNorFafnirVenom/iconLarge.png",
+			"iconSmall": "aom/nor/aomNorFafnirVenom/iconSmall.png",
+			"animationTime": {
+				"walk": 1,
+				"attack": 1,
+				"idle": 10
+			},
+			"timeBetweenFidgets": 1
+		},
+		"aiValue": 3640,
+		"fightValue": 3109,
+		"sound": {
+			"attack": "aom/nor/aomNorFafnirVenom_attack.wav",
+			"defend": "aom/nor/aomNorFafnirVenom_defend.wav",
+			"wince": "aom/nor/aomNorFafnirVenom_wince.wav",
+			"killed": "aom/nor/aomNorFafnirVenom_killed.wav",
+			"move": "aom/nor/aomNorFafnirVenom_move.wav"
+		},
+		"upgrades": [
+			"aomNorFafnirFlame"
+		],
+		"stackExperience": [
+			{
+				"bonus": {
+					"type": "STACK_HEALTH",
+					"valueType": "PERCENT_TO_BASE"
+				},
+				"values": [
+					5,
+					10,
+					15,
+					20,
+					25,
+					30,
+					35,
+					40,
+					45,
+					50
+				]
+			},
+			{
+				"bonus": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "attack"
+				},
+				"values": [
+					1,
+					2,
+					3,
+					4,
+					4,
+					5,
+					6,
+					7,
+					8,
+					9
+				]
+			},
+			{
+				"bonus": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "defence"
+				},
+				"values": [
+					1,
+					2,
+					2,
+					3,
+					4,
+					5,
+					6,
+					7,
+					8,
+					9
+				]
+			},
+			{
+				"bonus": {
+					"type": "CREATURE_DAMAGE",
+					"subtype": "creatureDamageMin"
+				},
+				"values": [
+					0,
+					1,
+					2,
+					3,
+					4,
+					5,
+					5,
+					6,
+					7,
+					8
+				]
+			},
+			{
+				"bonus": {
+					"type": "CREATURE_DAMAGE",
+					"subtype": "creatureDamageMax"
+				},
+				"values": [
+					1,
+					2,
+					3,
+					4,
+					5,
+					6,
+					7,
+					8,
+					8,
+					9
+				]
+			},
+			{
+				"bonus": {
+					"type": "STACKS_SPEED"
+				},
+				"values": [
+					0,
+					0,
+					0,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1,
+					2
+				]
+			},
+			{
+				"bonus": {
+					"type": "SPELL_DAMAGE_REDUCTION",
+					"subtype": "any"
+				},
+				"values": [
+					4,
+					8,
+					12,
+					16,
+					20,
+					24,
+					28,
+					32,
+					36,
+					40
+				]
+			}
+		]
+	},
+	"aomNorFafnirFlame": {
+		"name": {
+			"singular": "Flamebreath Fafnir",
+			"plural": "Flamebreath Fafnirs"
+		},
+		"description": "",
+		"faction": "aomNorse",
+		"level": 6,
+		"cost": {
+			"gold": 2590,
+			"sulfur": 2
+		},
+		"speed": 8,
+		"hitPoints": 202,
+		"attack": 21,
+		"defense": 17,
+		"damage": {
+			"min": 26,
+			"max": 32
+		},
+		"doubleWide": true,
+		"growth": 1,
+		"advMapAmount": {
+			"min": 1,
+			"max": 4
+		},
+		"abilities": {
+			"b0_two_hex_attack_breath": {
+				"type": "TWO_HEX_ATTACK_BREATH",
+				"val": 0
+			},
+			"b1_spell_school_immunity": {
+				"type": "SPELL_SCHOOL_IMMUNITY",
+				"val": 0,
+				"subtype": "fire"
+			},
+			"b2_combat_event_trigger": {
+				"type": "COMBAT_EVENT_TRIGGER",
+				"subtype": "aomNorBurn",
+				"val": 8,
+				"addInfo": {
+					"schools": [
+						"fire"
+					]
+				},
+				"icon": "aom/nor/abicons/burn.png"
+			},
+			"skeletonTarget": {
+				"type": "SKELETON_TRANSFORMER_TARGET",
+				"subtype": "boneDragon",
+				"hidden": true
+			},
+			"dragon": {
+				"type": "DRAGON_NATURE",
+				"val": 0
+			}
+		},
+		"graphics": {
+			"animation": "aom/nor/aomNorFafnirFlame/battle.json",
+			"map": "aom/nor/aomNorFafnirFlame/map.json",
+			"mapMask": [
+				"VV",
+				"VA"
+			],
+			"mapAttackFromRight": "aom/nor/aomNorFafnirFlame/map/atkR.png",
+			"mapAttackFromLeft": "aom/nor/aomNorFafnirFlame/map/atkL.png",
+			"iconLarge": "aom/nor/aomNorFafnirFlame/iconLarge.png",
+			"iconSmall": "aom/nor/aomNorFafnirFlame/iconSmall.png",
+			"animationTime": {
+				"walk": 1,
+				"attack": 1,
+				"idle": 10
+			},
+			"timeBetweenFidgets": 1
+		},
+		"aiValue": 3839,
+		"fightValue": 3279,
+		"sound": {
+			"attack": "aom/nor/aomNorFafnirFlame_attack.wav",
+			"defend": "aom/nor/aomNorFafnirFlame_defend.wav",
+			"wince": "aom/nor/aomNorFafnirFlame_wince.wav",
+			"killed": "aom/nor/aomNorFafnirFlame_killed.wav",
+			"move": "aom/nor/aomNorFafnirFlame_move.wav"
+		},
+		"upgrades": [
+			"aomNorFafnirVenom"
+		],
+		"stackExperience": [
+			{
+				"bonus": {
+					"type": "STACK_HEALTH",
+					"valueType": "PERCENT_TO_BASE"
+				},
+				"values": [
+					5,
+					10,
+					15,
+					20,
+					25,
+					30,
+					35,
+					40,
+					45,
+					50
+				]
+			},
+			{
+				"bonus": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "attack"
+				},
+				"values": [
+					1,
+					2,
+					3,
+					4,
+					4,
+					5,
+					6,
+					7,
+					8,
+					9
+				]
+			},
+			{
+				"bonus": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "defence"
+				},
+				"values": [
+					1,
+					2,
+					2,
+					3,
+					4,
+					5,
+					6,
+					7,
+					8,
+					9
+				]
+			},
+			{
+				"bonus": {
+					"type": "CREATURE_DAMAGE",
+					"subtype": "creatureDamageMin"
+				},
+				"values": [
+					0,
+					1,
+					2,
+					3,
+					4,
+					5,
+					5,
+					6,
+					7,
+					8
+				]
+			},
+			{
+				"bonus": {
+					"type": "CREATURE_DAMAGE",
+					"subtype": "creatureDamageMax"
+				},
+				"values": [
+					1,
+					2,
+					3,
+					4,
+					5,
+					6,
+					7,
+					8,
+					8,
+					9
+				]
+			},
+			{
+				"bonus": {
+					"type": "STACKS_SPEED"
+				},
+				"values": [
+					0,
+					0,
+					0,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1,
+					2
+				]
+			},
+			{
+				"bonus": {
+					"type": "SPELL_DAMAGE_REDUCTION",
+					"subtype": "any"
+				},
+				"values": [
+					4,
+					8,
+					12,
+					16,
+					20,
+					24,
+					28,
+					32,
+					36,
+					40
+				]
+			}
+		]
+	},
+	"aomNorTitan": {
+		"name": {
+			"singular": "Tundra Titan",
+			"plural": "Tundra Titans"
+		},
+		"description": "",
+		"faction": "aomNorse",
+		"level": 7,
+		"cost": {
+			"gold": 4670,
+			"crystal": 1
+		},
+		"speed": 8,
+		"hitPoints": 194,
+		"attack": 26,
+		"defense": 22,
+		"damage": {
+			"min": 34,
+			"max": 45
+		},
+		"doubleWide": true,
+		"growth": 1,
+		"advMapAmount": {
+			"min": 1,
+			"max": 4
+		},
+		"abilities": {
+			"b0_mind_immunity": {
+				"type": "MIND_IMMUNITY",
+				"val": 0
+			},
+			"b1_stacks_speed": {
+				"type": "STACKS_SPEED",
+				"val": -1,
+				"propagator": "BATTLE_WIDE",
+				"propagationUpdater": "BONUS_OWNER_UPDATER",
+				"stacking": "aomNorTitanFrostAura",
+				"limiters": [
+					"allOf",
+					{
+						"type": "UNIT_ADJACENT",
+						"creature": "aomNorTitan"
+					},
+					"OPPOSITE_SIDE"
+				],
+				"description": "{Frost Breath}\nAdjacent enemies speed -1\nTitans do not stack"
+			}
+		},
+		"graphics": {
+			"animation": "aom/nor/aomNorTitan/battle.json",
+			"map": "aom/nor/aomNorTitan/map.json",
+			"mapMask": [
+				"VV",
+				"VA"
+			],
+			"mapAttackFromRight": "aom/nor/aomNorTitan/map/atkR.png",
+			"mapAttackFromLeft": "aom/nor/aomNorTitan/map/atkL.png",
+			"iconLarge": "aom/nor/aomNorTitan/iconLarge.png",
+			"iconSmall": "aom/nor/aomNorTitan/iconSmall.png",
+			"animationTime": {
+				"walk": 1,
+				"attack": 1,
+				"idle": 10
+			},
+			"timeBetweenFidgets": 1
+		},
+		"aiValue": 5234,
+		"fightValue": 3857,
+		"upgrades": [
+			"aomNorTitanYmir",
+			"aomNorTitanGap"
+		],
+		"sound": {
+			"attack": "aom/nor/aomNorTitan_attack.wav",
+			"defend": "aom/nor/aomNorTitan_defend.wav",
+			"wince": "aom/nor/aomNorTitan_wince.wav",
+			"killed": "aom/nor/aomNorTitan_killed.wav",
+			"move": "aom/nor/aomNorTitan_move.wav"
+		},
+		"stackExperience": [
+			{
+				"bonus": {
+					"type": "STACK_HEALTH",
+					"valueType": "PERCENT_TO_BASE"
+				},
+				"values": [
+					5,
+					10,
+					15,
+					20,
+					25,
+					30,
+					35,
+					40,
+					45,
+					50
+				]
+			},
+			{
+				"bonus": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "attack"
+				},
+				"values": [
+					1,
+					2,
+					3,
+					4,
+					5,
+					6,
+					7,
+					8,
+					9,
+					10
+				]
+			},
+			{
+				"bonus": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "defence"
+				},
+				"values": [
+					1,
+					2,
+					3,
+					4,
+					5,
+					6,
+					7,
+					8,
+					9,
+					10
+				]
+			},
+			{
+				"bonus": {
+					"type": "CREATURE_DAMAGE",
+					"subtype": "creatureDamageMin"
+				},
+				"values": [
+					1,
+					2,
+					3,
+					4,
+					5,
+					6,
+					7,
+					8,
+					9,
+					10
+				]
+			},
+			{
+				"bonus": {
+					"type": "CREATURE_DAMAGE",
+					"subtype": "creatureDamageMax"
+				},
+				"values": [
+					1,
+					2,
+					3,
+					4,
+					5,
+					6,
+					7,
+					8,
+					9,
+					10
+				]
+			},
+			{
+				"bonus": {
+					"type": "STACKS_SPEED"
+				},
+				"values": [
+					0,
+					0,
+					0,
+					1,
+					1,
+					2,
+					2,
+					2,
+					2,
+					3
+				]
+			},
+			{
+				"bonus": {
+					"type": "DOUBLE_DAMAGE_CHANCE"
+				},
+				"values": [
+					2,
+					4,
+					6,
+					8,
+					10,
+					12,
+					14,
+					16,
+					18,
+					20
+				]
+			}
+		]
+	},
+	"aomNorTitanYmir": {
+		"name": {
+			"singular": "Ymir Frost Giant",
+			"plural": "Ymir Frost Giants"
+		},
+		"description": "",
+		"faction": "aomNorse",
+		"level": 7,
+		"cost": {
+			"gold": 6480,
+			"crystal": 3
+		},
+		"speed": 9,
+		"hitPoints": 300,
+		"attack": 30,
+		"defense": 25,
+		"damage": {
+			"min": 44,
+			"max": 55
+		},
+		"doubleWide": true,
+		"growth": 1,
+		"advMapAmount": {
+			"min": 1,
+			"max": 4
+		},
+		"abilities": {
+			"b0_mind_immunity": {
+				"type": "MIND_IMMUNITY",
+				"val": 0
+			},
+			"b1_stacks_speed": {
+				"type": "STACKS_SPEED",
+				"val": -1,
+				"propagator": "BATTLE_WIDE",
+				"propagationUpdater": "BONUS_OWNER_UPDATER",
+				"stacking": "aomNorTitanFrostAura",
+				"limiters": [
+					"allOf",
+					{
+						"type": "UNIT_ADJACENT",
+						"creature": "aomNorTitanYmir"
+					},
+					"OPPOSITE_SIDE"
+				],
+				"description": "{Frost Breath}\nAdjacent enemies speed -1\nTitans do not stack"
+			},
+			"b2_combat_event_trigger": {
+				"type": "COMBAT_EVENT_TRIGGER",
+				"subtype": "aomNorFreeze",
+				"val": 1,
+				"addInfo": {
+					"turns": 1
+				},
+				"icon": "aom/nor/abicons/frozen.png"
+			}
+		},
+		"graphics": {
+			"animation": "aom/nor/aomNorTitanYmir/battle.json",
+			"map": "aom/nor/aomNorTitanYmir/map.json",
+			"mapMask": [
+				"VV",
+				"VA"
+			],
+			"mapAttackFromRight": "aom/nor/aomNorTitanYmir/map/atkR.png",
+			"mapAttackFromLeft": "aom/nor/aomNorTitanYmir/map/atkL.png",
+			"iconLarge": "aom/nor/aomNorTitanYmir/iconLarge.png",
+			"iconSmall": "aom/nor/aomNorTitanYmir/iconSmall.png",
+			"animationTime": {
+				"walk": 1,
+				"attack": 1,
+				"idle": 10
+			},
+			"timeBetweenFidgets": 1
+		},
+		"aiValue": 8637,
+		"fightValue": 6366,
+		"sound": {
+			"attack": "aom/nor/aomNorTitanYmir_attack.wav",
+			"defend": "aom/nor/aomNorTitanYmir_defend.wav",
+			"wince": "aom/nor/aomNorTitanYmir_wince.wav",
+			"killed": "aom/nor/aomNorTitanYmir_killed.wav",
+			"move": "aom/nor/aomNorTitanYmir_move.wav"
+		},
+		"upgrades": [
+			"aomNorTitanGap"
+		],
+		"stackExperience": [
+			{
+				"bonus": {
+					"type": "STACK_HEALTH",
+					"valueType": "PERCENT_TO_BASE"
+				},
+				"values": [
+					5,
+					10,
+					15,
+					20,
+					25,
+					30,
+					35,
+					40,
+					45,
+					50
+				]
+			},
+			{
+				"bonus": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "attack"
+				},
+				"values": [
+					1,
+					2,
+					3,
+					4,
+					5,
+					6,
+					7,
+					8,
+					9,
+					10
+				]
+			},
+			{
+				"bonus": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "defence"
+				},
+				"values": [
+					1,
+					2,
+					3,
+					4,
+					5,
+					6,
+					7,
+					8,
+					9,
+					10
+				]
+			},
+			{
+				"bonus": {
+					"type": "CREATURE_DAMAGE",
+					"subtype": "creatureDamageMin"
+				},
+				"values": [
+					1,
+					2,
+					3,
+					4,
+					5,
+					6,
+					7,
+					8,
+					9,
+					10
+				]
+			},
+			{
+				"bonus": {
+					"type": "CREATURE_DAMAGE",
+					"subtype": "creatureDamageMax"
+				},
+				"values": [
+					1,
+					2,
+					3,
+					4,
+					5,
+					6,
+					7,
+					8,
+					9,
+					10
+				]
+			},
+			{
+				"bonus": {
+					"type": "STACKS_SPEED"
+				},
+				"values": [
+					0,
+					0,
+					0,
+					1,
+					1,
+					2,
+					2,
+					2,
+					2,
+					3
+				]
+			},
+			{
+				"bonus": {
+					"type": "SPELL_DAMAGE_REDUCTION",
+					"subtype": "any"
+				},
+				"values": [
+					4,
+					8,
+					12,
+					16,
+					20,
+					24,
+					28,
+					32,
+					36,
+					40
+				]
+			}
+		]
+	},
+	"aomNorTitanGap": {
+		"name": {
+			"singular": "Ginnungagap Titan",
+			"plural": "Ginnungagap Titans"
+		},
+		"description": "",
+		"faction": "aomNorse",
+		"level": 7,
+		"cost": {
+			"gold": 6480,
+			"crystal": 3
+		},
+		"speed": 8,
+		"hitPoints": 332,
+		"attack": 28,
+		"defense": 29,
+		"damage": {
+			"min": 37,
+			"max": 47
+		},
+		"doubleWide": true,
+		"growth": 1,
+		"advMapAmount": {
+			"min": 1,
+			"max": 4
+		},
+		"abilities": {
+			"b0_mind_immunity": {
+				"type": "MIND_IMMUNITY",
+				"val": 0
+			},
+			"b1_stacks_speed": {
+				"type": "STACKS_SPEED",
+				"val": -1,
+				"propagator": "BATTLE_WIDE",
+				"propagationUpdater": "BONUS_OWNER_UPDATER",
+				"stacking": "aomNorTitanFrostAura",
+				"limiters": [
+					"allOf",
+					{
+						"type": "UNIT_ADJACENT",
+						"creature": "aomNorTitanGap"
+					},
+					"OPPOSITE_SIDE"
+				],
+				"description": "{Frost Breath}\nAdjacent enemies speed -1\nTitans do not stack"
+			},
+			"b2_combat_event_trigger": {
+				"type": "COMBAT_EVENT_TRIGGER",
+				"subtype": "aomNorBurn",
+				"val": 4,
+				"addInfo": {
+					"schools": [
+						"fire",
+						"water"
+					]
+				},
+				"icon": "aom/nor/abicons/burn.png"
+			}
+		},
+		"graphics": {
+			"animation": "aom/nor/aomNorTitanGap/battle.json",
+			"map": "aom/nor/aomNorTitanGap/map.json",
+			"mapMask": [
+				"VV",
+				"VA"
+			],
+			"mapAttackFromRight": "aom/nor/aomNorTitanGap/map/atkR.png",
+			"mapAttackFromLeft": "aom/nor/aomNorTitanGap/map/atkL.png",
+			"iconLarge": "aom/nor/aomNorTitanGap/iconLarge.png",
+			"iconSmall": "aom/nor/aomNorTitanGap/iconSmall.png",
+			"animationTime": {
+				"walk": 1,
+				"attack": 1,
+				"idle": 10
+			},
+			"timeBetweenFidgets": 1
+		},
+		"aiValue": 8177,
+		"fightValue": 6026,
+		"sound": {
+			"attack": "aom/nor/aomNorTitanGap_attack.wav",
+			"defend": "aom/nor/aomNorTitanGap_defend.wav",
+			"wince": "aom/nor/aomNorTitanGap_wince.wav",
+			"killed": "aom/nor/aomNorTitanGap_killed.wav",
+			"move": "aom/nor/aomNorTitanGap_move.wav"
+		},
+		"upgrades": [
+			"aomNorTitanYmir"
+		],
+		"stackExperience": [
+			{
+				"bonus": {
+					"type": "STACK_HEALTH",
+					"valueType": "PERCENT_TO_BASE"
+				},
+				"values": [
+					5,
+					10,
+					15,
+					20,
+					25,
+					30,
+					35,
+					40,
+					45,
+					50
+				]
+			},
+			{
+				"bonus": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "attack"
+				},
+				"values": [
+					1,
+					2,
+					3,
+					4,
+					5,
+					6,
+					7,
+					8,
+					9,
+					10
+				]
+			},
+			{
+				"bonus": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "defence"
+				},
+				"values": [
+					1,
+					2,
+					3,
+					4,
+					5,
+					6,
+					7,
+					8,
+					9,
+					10
+				]
+			},
+			{
+				"bonus": {
+					"type": "CREATURE_DAMAGE",
+					"subtype": "creatureDamageMin"
+				},
+				"values": [
+					1,
+					2,
+					3,
+					4,
+					5,
+					6,
+					7,
+					8,
+					9,
+					10
+				]
+			},
+			{
+				"bonus": {
+					"type": "CREATURE_DAMAGE",
+					"subtype": "creatureDamageMax"
+				},
+				"values": [
+					1,
+					2,
+					3,
+					4,
+					5,
+					6,
+					7,
+					8,
+					9,
+					10
+				]
+			},
+			{
+				"bonus": {
+					"type": "STACKS_SPEED"
+				},
+				"values": [
+					0,
+					0,
+					0,
+					1,
+					1,
+					2,
+					2,
+					2,
+					2,
+					3
+				]
+			},
+			{
+				"bonus": {
+					"type": "ENEMY_DEFENCE_REDUCTION"
+				},
+				"values": [
+					2,
+					4,
+					6,
+					8,
+					10,
+					12,
+					14,
+					16,
+					18,
+					20
+				]
+			}
+		]
+	},
+	"aomNorGullinbursti": {
+		"name": {
+			"singular": "Gullinbursti",
+			"plural": "Gullinbursti"
+		},
+		"description": "Freyr's golden-bristled boar, forged by dwarves from golden wire; it shines even at night. It only answers a call in battle (Freyr's specialty Gullinbursti), leaves when it ends and cannot be recruited.",
+		"faction": "aomNorse",
+		"level": 6,
+		"special": true,
+		"cost": {
+			"gold": 1800
+		},
+		"speed": 8,
+		"hitPoints": 200,
+		"attack": 20,
+		"defense": 18,
+		"damage": {
+			"min": 25,
+			"max": 35
+		},
+		"doubleWide": true,
+		"growth": 0,
+		"advMapAmount": {
+			"min": 1,
+			"max": 1
+		},
+		"abilities": {},
+		"graphics": {
+			"animation": "aom/nor/aomNorGullinbursti/battle.json",
+			"map": "aom/nor/aomNorGullinbursti/map.json",
+			"mapMask": [
+				"VV",
+				"VA"
+			],
+			"mapAttackFromRight": "aom/nor/aomNorGullinbursti/map/atkR.png",
+			"mapAttackFromLeft": "aom/nor/aomNorGullinbursti/map/atkL.png",
+			"iconLarge": "aom/nor/aomNorGullinbursti/iconLarge.png",
+			"iconSmall": "aom/nor/aomNorGullinbursti/iconSmall.png",
+			"animationTime": {
+				"walk": 1,
+				"attack": 1,
+				"idle": 10
+			},
+			"timeBetweenFidgets": 1
+		},
+		"aiValue": 3865,
+		"fightValue": 3301,
+		"sound": {
+			"attack": "aom/nor/aomNorGullinbursti_attack.wav",
+			"defend": "aom/nor/aomNorGullinbursti_defend.wav",
+			"wince": "aom/nor/aomNorGullinbursti_wince.wav",
+			"killed": "aom/nor/aomNorGullinbursti_killed.wav",
+			"move": "aom/nor/aomNorGullinbursti_move.wav"
+		}
+	},
+	"aomNorEinheri": {
+		"name": {
+			"singular": "Einheri",
+			"plural": "Einherjar"
+		},
+		"description": "Warriors chosen by the valkyries after death to dwell in Valhalla, fighting each day and rising each night until the last battle of Ragnarok. They only answer a call in battle (Valhalla, Ragnarok, Rise of the Einherjar), leave when it ends and cannot be recruited.",
+		"faction": "aomNorse",
+		"level": 5,
+		"special": true,
+		"cost": {
+			"gold": 700
+		},
+		"speed": 6,
+		"hitPoints": 65,
+		"attack": 15,
+		"defense": 12,
+		"damage": {
+			"min": 12,
+			"max": 18
+		},
+		"doubleWide": false,
+		"growth": 0,
+		"advMapAmount": {
+			"min": 1,
+			"max": 1
+		},
+		"abilities": {
+			"whirl": {
+				"type": "ATTACKS_ALL_ADJACENT",
+				"val": 0
+			}
+		},
+		"aiValue": 951,
+		"fightValue": 928,
+		"graphics": {
+			"animation": "aom/nor/aomNorEinheri/battle.json",
+			"map": "aom/nor/aomNorEinheri/map.json",
+			"mapMask": [
+				"VV",
+				"VA"
+			],
+			"mapAttackFromRight": "aom/nor/aomNorEinheri/map/atkR.png",
+			"mapAttackFromLeft": "aom/nor/aomNorEinheri/map/atkL.png",
+			"iconLarge": "aom/nor/aomNorEinheri/iconLarge.png",
+			"iconSmall": "aom/nor/aomNorEinheri/iconSmall.png",
+			"animationTime": {
+				"walk": 1,
+				"attack": 1,
+				"idle": 10
+			},
+			"timeBetweenFidgets": 1
+		},
+		"sound": {
+			"attack": "aom/nor/aomNorEinheri_attack.wav",
+			"defend": "aom/nor/aomNorEinheri_defend.wav",
+			"wince": "aom/nor/aomNorEinheri_wince.wav",
+			"killed": "aom/nor/aomNorEinheri_killed.wav"
+		}
+	},
+	"aomNorWalkingWoods": {
+		"name": {
+			"singular": "Walking Woods",
+			"plural": "Walking Woods"
+		},
+		"description": "Cedars awakened by Njord tear up their roots and crush their way toward the enemy. Summoned only by the spell Walking Woods; when the battle ends they take root and leave, and cannot be recruited.",
+		"faction": "aomNorse",
+		"level": 4,
+		"special": true,
+		"cost": {
+			"gold": 450
+		},
+		"speed": 4,
+		"hitPoints": 70,
+		"attack": 9,
+		"defense": 14,
+		"damage": {
+			"min": 8,
+			"max": 12
+		},
+		"doubleWide": true,
+		"growth": 0,
+		"advMapAmount": {
+			"min": 1,
+			"max": 1
+		},
+		"abilities": {
+			"mind": {
+				"type": "MIND_IMMUNITY",
+				"val": 0
+			},
+			"fireWeak": {
+				"type": "SPELL_DAMAGE_REDUCTION",
+				"val": -25,
+				"subtype": "fire",
+				"description": "{Fears Fire}\nFire spell damage taken +50%\n(plant nature included)"
+			}
+		},
+		"aiValue": 723,
+		"fightValue": 602,
+		"graphics": {
+			"animation": "aom/nor/aomNorWalkingWoods/battle.json",
+			"map": "aom/nor/aomNorWalkingWoods/map.json",
+			"mapMask": [
+				"VV",
+				"VA"
+			],
+			"mapAttackFromRight": "aom/nor/aomNorWalkingWoods/map/atkR.png",
+			"mapAttackFromLeft": "aom/nor/aomNorWalkingWoods/map/atkL.png",
+			"iconLarge": "aom/nor/aomNorWalkingWoods/iconLarge.png",
+			"iconSmall": "aom/nor/aomNorWalkingWoods/iconSmall.png",
+			"animationTime": {
+				"walk": 1,
+				"attack": 1,
+				"idle": 10
+			},
+			"timeBetweenFidgets": 1
+		},
+		"sound": {
+			"attack": "aom/nor/aomNorWalkingWoods_attack.wav",
+			"defend": "aom/nor/aomNorWalkingWoods_defend.wav",
+			"wince": "aom/nor/aomNorWalkingWoods_wince.wav",
+			"killed": "aom/nor/aomNorWalkingWoods_killed.wav",
+			"move": "aom/nor/aomNorWalkingWoods_move.wav"
+		}
+	},
+	"aomNorNidhogg": {
+		"name": {
+			"singular": "Nidhogg",
+			"plural": "Nidhogg"
+		},
+		"description": "The black dragon that gnaws at the roots of the World Tree, flying up from Hel's realm. Its fire burns a whole line of enemies to ash. Summoned only by the spell Nidhogg, one per battle; it leaves when the battle ends and cannot be recruited.",
+		"faction": "aomNorse",
+		"level": 7,
+		"special": true,
+		"cost": {
+			"gold": 4500,
+			"sulfur": 2
+		},
+		"speed": 14,
+		"hitPoints": 300,
+		"attack": 27,
+		"defense": 25,
+		"damage": {
+			"min": 40,
+			"max": 55
+		},
+		"doubleWide": true,
+		"growth": 0,
+		"advMapAmount": {
+			"min": 1,
+			"max": 1
+		},
+		"abilities": {
+			"fly": {
+				"type": "FLYING",
+				"val": 0
+			},
+			"breath": {
+				"type": "TWO_HEX_ATTACK_BREATH",
+				"val": 0
+			},
+			"dragon": {
+				"type": "DRAGON_NATURE",
+				"val": 0
+			},
+			"fireImm": {
+				"type": "SPELL_SCHOOL_IMMUNITY",
+				"val": 0,
+				"subtype": "fire"
+			},
+			"skeletonTarget": {
+				"type": "SKELETON_TRANSFORMER_TARGET",
+				"subtype": "boneDragon",
+				"hidden": true
+			}
+		},
+		"aiValue": 7953,
+		"fightValue": 5861,
+		"graphics": {
+			"animation": "aom/nor/aomNorNidhogg/battle.json",
+			"map": "aom/nor/aomNorNidhogg/map.json",
+			"mapMask": [
+				"VV",
+				"VA"
+			],
+			"mapAttackFromRight": "aom/nor/aomNorNidhogg/map/atkR.png",
+			"mapAttackFromLeft": "aom/nor/aomNorNidhogg/map/atkL.png",
+			"iconLarge": "aom/nor/aomNorNidhogg/iconLarge.png",
+			"iconSmall": "aom/nor/aomNorNidhogg/iconSmall.png",
+			"animationTime": {
+				"walk": 1,
+				"attack": 1,
+				"idle": 10
+			},
+			"timeBetweenFidgets": 1
+		},
+		"sound": {
+			"attack": "aom/nor/aomNorNidhogg_attack.wav",
+			"shoot": "aom/nor/aomNorNidhogg_shoot.wav",
+			"defend": "aom/nor/aomNorNidhogg_defend.wav",
+			"wince": "aom/nor/aomNorNidhogg_wince.wav",
+			"killed": "aom/nor/aomNorNidhogg_killed.wav"
+		}
+	},
+	"aomNorWolfFire": {
+		"name": {
+			"singular": "Fire Winter Wolf",
+			"plural": "Fire Winter Wolves"
+		},
+		"description": "Fenrir's flame has seized a Fimbulwinter Wolf and turned it into a burning beast. It exists only while the spell Fenrir's Inferno lasts, then turns back into a Fimbulwinter Wolf.",
+		"faction": "aomNorse",
+		"level": 4,
+		"cost": {
+			"gold": 330
+		},
+		"speed": 9,
+		"hitPoints": 27,
+		"attack": 10,
+		"defense": 7,
+		"damage": {
+			"min": 6,
+			"max": 10
+		},
+		"doubleWide": true,
+		"growth": 0,
+		"advMapAmount": {
+			"min": 1,
+			"max": 4
+		},
+		"abilities": {
+			"b0_spell_after_attack": {
+				"type": "SPELL_AFTER_ATTACK",
+				"val": 20,
+				"subtype": "slow",
+				"addInfo": 1
+			},
+			"fireImm": {
+				"type": "SPELL_SCHOOL_IMMUNITY",
+				"val": 0,
+				"subtype": "fire"
+			},
+			"fireBite": {
+				"type": "COMBAT_EVENT_TRIGGER",
+				"val": 20,
+				"subtype": "aomNorBurn",
+				"addInfo": {
+					"schools": [
+						"fire"
+					]
+				},
+				"icon": "aom/nor/abicons/burn.png"
+			}
+		},
+		"aiValue": 538,
+		"fightValue": 448,
+		"special": true,
+		"graphics": {
+			"animation": "aom/nor/aomNorWolfFire/battle.json",
+			"map": "aom/nor/aomNorWolfFire/map.json",
+			"mapMask": [
+				"VV",
+				"VA"
+			],
+			"mapAttackFromRight": "aom/nor/aomNorWolfFire/map/atkR.png",
+			"mapAttackFromLeft": "aom/nor/aomNorWolfFire/map/atkL.png",
+			"iconLarge": "aom/nor/aomNorWolfFire/iconLarge.png",
+			"iconSmall": "aom/nor/aomNorWolfFire/iconSmall.png",
+			"animationTime": {
+				"walk": 1,
+				"attack": 1,
+				"idle": 10
+			},
+			"timeBetweenFidgets": 1
+		},
+		"sound": {
+			"attack": "aom/nor/aomNorWolfFire_attack.wav",
+			"defend": "aom/nor/aomNorWolfFire_defend.wav",
+			"wince": "aom/nor/aomNorWolfFire_wince.wav",
+			"killed": "aom/nor/aomNorWolfFire_killed.wav",
+			"move": "aom/nor/aomNorWolfFire_move.wav"
+		}
+	},
+	"aomNorWolfPackFire": {
+		"name": {
+			"singular": "Fire Fenris Pack",
+			"plural": "Fire Fenris Packs"
+		},
+		"description": "Fenrir's flame has seized a Fenris Pack and turned it into a burning beast. It exists only while the spell Fenrir's Inferno lasts, then turns back into a Fenris Pack.",
+		"faction": "aomNorse",
+		"level": 4,
+		"cost": {
+			"gold": 420
+		},
+		"speed": 10,
+		"hitPoints": 30,
+		"attack": 11,
+		"defense": 8,
+		"damage": {
+			"min": 7,
+			"max": 11
+		},
+		"doubleWide": true,
+		"growth": 0,
+		"advMapAmount": {
+			"min": 1,
+			"max": 4
+		},
+		"abilities": {
+			"b0_spell_after_attack": {
+				"type": "SPELL_AFTER_ATTACK",
+				"val": 20,
+				"subtype": "slow",
+				"addInfo": 1
+			},
+			"b1_general_damage_premy": {
+				"type": "GENERAL_DAMAGE_PREMY",
+				"val": 15,
+				"stacking": "aomNorPack_aomNorWolf",
+				"limiters": [
+					{
+						"type": "UNIT_ADJACENT",
+						"creature": "aomNorWolf"
+					}
+				],
+				"description": "{Pack}\nDamage +15% for each kind\nof wolf adjacent",
+				"icon": "aom/nor/abicons/wolfpack.png"
+			},
+			"b2_general_damage_premy": {
+				"type": "GENERAL_DAMAGE_PREMY",
+				"val": 15,
+				"stacking": "aomNorPack_aomNorWolfPack",
+				"limiters": [
+					{
+						"type": "UNIT_ADJACENT",
+						"creature": "aomNorWolfPack"
+					}
+				],
+				"hidden": true
+			},
+			"b3_general_damage_premy": {
+				"type": "GENERAL_DAMAGE_PREMY",
+				"val": 15,
+				"stacking": "aomNorPack_aomNorWolfFenrir",
+				"limiters": [
+					{
+						"type": "UNIT_ADJACENT",
+						"creature": "aomNorWolfFenrir"
+					}
+				],
+				"hidden": true
+			},
+			"fireImm": {
+				"type": "SPELL_SCHOOL_IMMUNITY",
+				"val": 0,
+				"subtype": "fire"
+			},
+			"fireBite": {
+				"type": "COMBAT_EVENT_TRIGGER",
+				"val": 20,
+				"subtype": "aomNorBurn",
+				"addInfo": {
+					"schools": [
+						"fire"
+					]
+				},
+				"icon": "aom/nor/abicons/burn.png"
+			},
+			"pack_aomNorWolfFire": {
+				"type": "GENERAL_DAMAGE_PREMY",
+				"val": 15,
+				"stacking": "aomNorPack_aomNorWolfFire",
+				"limiters": [
+					{
+						"type": "UNIT_ADJACENT",
+						"creature": "aomNorWolfFire"
+					}
+				],
+				"hidden": true
+			},
+			"pack_aomNorWolfPackFire": {
+				"type": "GENERAL_DAMAGE_PREMY",
+				"val": 15,
+				"stacking": "aomNorPack_aomNorWolfPackFire",
+				"limiters": [
+					{
+						"type": "UNIT_ADJACENT",
+						"creature": "aomNorWolfPackFire"
+					}
+				],
+				"hidden": true
+			},
+			"pack_aomNorWolfFenrirFire": {
+				"type": "GENERAL_DAMAGE_PREMY",
+				"val": 15,
+				"stacking": "aomNorPack_aomNorWolfFenrirFire",
+				"limiters": [
+					{
+						"type": "UNIT_ADJACENT",
+						"creature": "aomNorWolfFenrirFire"
+					}
+				],
+				"hidden": true
+			}
+		},
+		"aiValue": 659,
+		"fightValue": 549,
+		"special": true,
+		"graphics": {
+			"animation": "aom/nor/aomNorWolfPackFire/battle.json",
+			"map": "aom/nor/aomNorWolfFire/map.json",
+			"mapMask": [
+				"VV",
+				"VA"
+			],
+			"mapAttackFromRight": "aom/nor/aomNorWolfFire/map/atkR.png",
+			"mapAttackFromLeft": "aom/nor/aomNorWolfFire/map/atkL.png",
+			"iconLarge": "aom/nor/aomNorWolfFire/iconLarge.png",
+			"iconSmall": "aom/nor/aomNorWolfFire/iconSmall.png",
+			"animationTime": {
+				"walk": 1,
+				"attack": 1,
+				"idle": 10
+			},
+			"timeBetweenFidgets": 1
+		},
+		"sound": {
+			"attack": "aom/nor/aomNorWolfFire_attack.wav",
+			"defend": "aom/nor/aomNorWolfFire_defend.wav",
+			"wince": "aom/nor/aomNorWolfFire_wince.wav",
+			"killed": "aom/nor/aomNorWolfFire_killed.wav",
+			"move": "aom/nor/aomNorWolfFire_move.wav"
+		}
+	},
+	"aomNorWolfFenrirFire": {
+		"name": {
+			"singular": "Fire Fenrir Wolf",
+			"plural": "Fire Fenrir Wolves"
+		},
+		"description": "Fenrir's flame has seized a Fenrir Wolf and turned it into a burning beast. It exists only while the spell Fenrir's Inferno lasts, then turns back into a Fenrir Wolf.",
+		"faction": "aomNorse",
+		"level": 4,
+		"cost": {
+			"gold": 420
+		},
+		"speed": 9,
+		"hitPoints": 30,
+		"attack": 12,
+		"defense": 8,
+		"damage": {
+			"min": 6,
+			"max": 10
+		},
+		"doubleWide": true,
+		"growth": 0,
+		"advMapAmount": {
+			"min": 1,
+			"max": 4
+		},
+		"abilities": {
+			"b0_enemy_defence_reduction": {
+				"type": "ENEMY_DEFENCE_REDUCTION",
+				"val": 10
+			},
+			"b1_spell_after_attack": {
+				"type": "SPELL_AFTER_ATTACK",
+				"val": 20,
+				"subtype": "slow",
+				"addInfo": 1
+			},
+			"fireImm": {
+				"type": "SPELL_SCHOOL_IMMUNITY",
+				"val": 0,
+				"subtype": "fire"
+			},
+			"fireBite": {
+				"type": "COMBAT_EVENT_TRIGGER",
+				"val": 20,
+				"subtype": "aomNorBurn",
+				"addInfo": {
+					"schools": [
+						"fire"
+					]
+				},
+				"icon": "aom/nor/abicons/burn.png"
+			}
+		},
+		"aiValue": 610,
+		"fightValue": 508,
+		"special": true,
+		"graphics": {
+			"animation": "aom/nor/aomNorWolfFenrirFire/battle.json",
+			"map": "aom/nor/aomNorWolfFire/map.json",
+			"mapMask": [
+				"VV",
+				"VA"
+			],
+			"mapAttackFromRight": "aom/nor/aomNorWolfFire/map/atkR.png",
+			"mapAttackFromLeft": "aom/nor/aomNorWolfFire/map/atkL.png",
+			"iconLarge": "aom/nor/aomNorWolfFire/iconLarge.png",
+			"iconSmall": "aom/nor/aomNorWolfFire/iconSmall.png",
+			"animationTime": {
+				"walk": 1,
+				"attack": 1,
+				"idle": 10
+			},
+			"timeBetweenFidgets": 1
+		},
+		"sound": {
+			"attack": "aom/nor/aomNorWolfFire_attack.wav",
+			"defend": "aom/nor/aomNorWolfFire_defend.wav",
+			"wince": "aom/nor/aomNorWolfFire_wince.wav",
+			"killed": "aom/nor/aomNorWolfFire_killed.wav",
+			"move": "aom/nor/aomNorWolfFire_move.wav"
+		}
+	},
+	"aomNorBallista": {
+		"name": {
+			"singular": "Norse Ballista",
+			"plural": "Norse Ballistae"
+		},
+		"description": "The Norse war machine: a great crossbow on a two-wheeled frame whose bolt can pierce several shields. Its damage grows with the hero's Attack.",
+		"faction": "aomNorse",
+		"level": 5,
+		"special": true,
+		"cost": {
+			"gold": 2500
+		},
+		"speed": 0,
+		"hitPoints": 250,
+		"attack": 10,
+		"defense": 10,
+		"damage": {
+			"min": 2,
+			"max": 3
+		},
+		"shots": 24,
+		"doubleWide": true,
+		"growth": 0,
+		"aiValue": 600,
+		"fightValue": 650,
+		"abilities": {
+			"warMachine": {
+				"type": "SIEGE_WEAPON",
+				"val": 0
+			},
+			"shooter": {
+				"type": "SHOOTER",
+				"val": 0
+			},
+			"noRetaliation": {
+				"type": "NO_RETALIATION",
+				"val": 0
+			},
+			"blocksRangedRetaliation": {
+				"type": "BLOCKS_RANGED_RETALIATION",
+				"val": 0,
+				"hidden": true
+			},
+			"cpuControlled": {
+				"type": "CPU_CONTROLLED",
+				"val": 0,
+				"hidden": true
+			},
+			"heroAttackDamage": {
+				"type": "COMBAT_EVENT_TRIGGER",
+				"subtype": "ballistaDamage",
+				"val": 5
+			}
+		},
+		"graphics": {
+			"animation": "aom/nor/aomNorBallista/battle.json",
+			"map": "aom/nor/aomNorBallista/map.json",
+			"mapMask": [
+				"VV",
+				"VA"
+			],
+			"mapAttackFromRight": "aom/nor/aomNorBallista/map/atkR.png",
+			"mapAttackFromLeft": "aom/nor/aomNorBallista/map/atkL.png",
+			"iconLarge": "aom/nor/aomNorBallista/iconLarge.png",
+			"iconSmall": "aom/nor/aomNorBallista/iconSmall.png",
+			"animationTime": {
+				"walk": 1,
+				"attack": 1,
+				"idle": 10
+			},
+			"timeBetweenFidgets": 1,
+			"missile": {
+				"frameAngles": [
+					90,
+					67.5,
+					45,
+					22.5,
+					0,
+					-22.5,
+					-45,
+					-67.5,
+					-90
+				],
+				"attackClimaxFrame": 16,
+				"projectile": "aom/nor/missile/bolt.json",
+				"offset": {
+					"upperX": 24,
+					"upperY": -49,
+					"middleX": 43,
+					"middleY": -41,
+					"lowerX": 24,
+					"lowerY": -33
+				}
+			}
+		},
+		"sound": {
+			"shoot": "aom/nor/aomNorBallista_shoot.wav",
+			"attack": "aom/nor/aomNorBallista_attack.wav",
+			"defend": "aom/nor/aomNorBallista_defend.wav",
+			"wince": "aom/nor/aomNorBallista_wince.wav",
+			"killed": "aom/nor/aomNorBallista_killed.wav",
+			"move": "aom/nor/aomNorBallista_move.wav"
+		}
+	},
+	"aomNorRam": {
+		"name": {
+			"singular": "Battering Ram",
+			"plural": "Battering Rams"
+		},
+		"description": "Two warriors carry an iron-shod ram against the gate. In sieges it can batter walls, gates, towers and the keep, and it deals double damage to war machines; in open battle it is weak.",
+		"faction": "aomNorse",
+		"level": 4,
+		"special": true,
+		"cost": {
+			"gold": 600
+		},
+		"speed": 4,
+		"hitPoints": 70,
+		"attack": 7,
+		"defense": 12,
+		"damage": {
+			"min": 6,
+			"max": 9
+		},
+		"doubleWide": true,
+		"growth": 0,
+		"advMapAmount": {
+			"min": 1,
+			"max": 3
+		},
+		"aiValue": 450,
+		"fightValue": 420,
+		"abilities": {
+			"ram": {
+				"type": "AOM_NOR_RAM",
+				"val": 150
+			},
+			"ramAI": {
+				"type": "COMBAT_EVENT_TRIGGER",
+				"subtype": "aomNorRamAI",
+				"val": 1,
+				"hidden": true
+			},
+			"ramSpell": {
+				"type": "SPELLCASTER",
+				"val": 3,
+				"subtype": "aomNorRamStrike",
+				"hidden": true
+			},
+			"casts": {
+				"type": "CASTS",
+				"val": 99
+			},
+			"hate_ballista": {
+				"type": "HATE",
+				"val": 100,
+				"subtype": "core:ballista"
+			},
+			"hate_catapult": {
+				"type": "HATE",
+				"val": 100,
+				"subtype": "core:catapult"
+			},
+			"hate_firstAidTent": {
+				"type": "HATE",
+				"val": 100,
+				"subtype": "core:firstAidTent"
+			},
+			"hate_ammoCart": {
+				"type": "HATE",
+				"val": 100,
+				"subtype": "core:ammoCart"
+			},
+			"hate_aomNorBallista": {
+				"type": "HATE",
+				"val": 100,
+				"subtype": "aomNorBallista"
+			}
+		},
+		"graphics": {
+			"animation": "aom/nor/aomNorRam/battle.json",
+			"map": "aom/nor/aomNorRam/map.json",
+			"mapMask": [
+				"VV",
+				"VA"
+			],
+			"mapAttackFromRight": "aom/nor/aomNorRam/map/atkR.png",
+			"mapAttackFromLeft": "aom/nor/aomNorRam/map/atkL.png",
+			"iconLarge": "aom/nor/aomNorRam/iconLarge.png",
+			"iconSmall": "aom/nor/aomNorRam/iconSmall.png",
+			"animationTime": {
+				"walk": 1,
+				"attack": 1,
+				"idle": 10
+			},
+			"timeBetweenFidgets": 1
+		},
+		"sound": {
+			"attack": "aom/nor/aomNorRam_attack.wav",
+			"defend": "aom/nor/aomNorRam_defend.wav",
+			"wince": "aom/nor/aomNorRam_wince.wav",
+			"killed": "aom/nor/aomNorRam_killed.wav"
+		}
+	},
+	"aomNorRockGiant": {
+		"name": {
+			"singular": "Rock Giant",
+			"plural": "Rock Giants"
+		},
+		"description": "The rocks at the foot of the mountain come to life; one bite takes half a wooden wall. Arrows simply bounce off it. Found only in the Rock Giant Lair, guarding a Giant's Heart.",
+		"faction": "aomNorse",
+		"level": 6,
+		"special": true,
+		"cost": {
+			"gold": 1500
+		},
+		"speed": 5,
+		"hitPoints": 200,
+		"attack": 16,
+		"defense": 20,
+		"damage": {
+			"min": 25,
+			"max": 35
+		},
+		"doubleWide": true,
+		"growth": 0,
+		"advMapAmount": {
+			"min": 1,
+			"max": 3
+		},
+		"abilities": {
+			"stone": {
+				"type": "GENERAL_DAMAGE_REDUCTION",
+				"val": 50,
+				"subtype": "damageTypeRanged"
+			}
+		},
+		"aiValue": 3009,
+		"fightValue": 2570,
+		"graphics": {
+			"animation": "aom/nor/aomNorRockGiant/battle.json",
+			"map": "aom/nor/aomNorRockGiant/map.json",
+			"mapMask": [
+				"VV",
+				"VA"
+			],
+			"mapAttackFromRight": "aom/nor/aomNorRockGiant/map/atkR.png",
+			"mapAttackFromLeft": "aom/nor/aomNorRockGiant/map/atkL.png",
+			"iconLarge": "aom/nor/aomNorRockGiant/iconLarge.png",
+			"iconSmall": "aom/nor/aomNorRockGiant/iconSmall.png",
+			"animationTime": {
+				"walk": 1,
+				"attack": 1,
+				"idle": 10
+			},
+			"timeBetweenFidgets": 1
+		},
+		"sound": {
+			"attack": "aom/nor/aomNorRockGiant_attack.wav",
+			"defend": "aom/nor/aomNorRockGiant_defend.wav",
+			"wince": "aom/nor/aomNorRockGiant_wince.wav",
+			"killed": "aom/nor/aomNorRockGiant_killed.wav",
+			"move": "aom/nor/aomNorRockGiant_move.wav"
+		}
+	},
+	"aomNorFrostGiant": {
+		"name": {
+			"singular": "Frost Giant",
+			"plural": "Frost Giants"
+		},
+		"description": "An ice giant come down from Niflheim; one touch of its hand turns a man into a pillar of ice. Found only in the Frost Giant Ice Cave, guarding a Giant's Heart.",
+		"faction": "aomNorse",
+		"level": 6,
+		"special": true,
+		"cost": {
+			"gold": 1600
+		},
+		"speed": 6,
+		"hitPoints": 180,
+		"attack": 18,
+		"defense": 17,
+		"damage": {
+			"min": 26,
+			"max": 36
+		},
+		"doubleWide": true,
+		"growth": 0,
+		"advMapAmount": {
+			"min": 1,
+			"max": 3
+		},
+		"abilities": {
+			"freeze": {
+				"type": "SPELL_AFTER_ATTACK",
+				"val": 20,
+				"subtype": "paralyze"
+			},
+			"waterImm": {
+				"type": "SPELL_SCHOOL_IMMUNITY",
+				"val": 0,
+				"subtype": "water"
+			},
+			"fireWeak": {
+				"type": "SPELL_DAMAGE_REDUCTION",
+				"val": -50,
+				"subtype": "fire",
+				"description": "{Fears Fire}\nFire spell damage taken +50%"
+			}
+		},
+		"aiValue": 2991,
+		"fightValue": 2554,
+		"graphics": {
+			"animation": "aom/nor/aomNorFrostGiant/battle.json",
+			"map": "aom/nor/aomNorFrostGiant/map.json",
+			"mapMask": [
+				"VV",
+				"VA"
+			],
+			"mapAttackFromRight": "aom/nor/aomNorFrostGiant/map/atkR.png",
+			"mapAttackFromLeft": "aom/nor/aomNorFrostGiant/map/atkL.png",
+			"iconLarge": "aom/nor/aomNorFrostGiant/iconLarge.png",
+			"iconSmall": "aom/nor/aomNorFrostGiant/iconSmall.png",
+			"animationTime": {
+				"walk": 1,
+				"attack": 1,
+				"idle": 10
+			},
+			"timeBetweenFidgets": 1
+		},
+		"sound": {
+			"attack": "aom/nor/aomNorFrostGiant_attack.wav",
+			"defend": "aom/nor/aomNorFrostGiant_defend.wav",
+			"wince": "aom/nor/aomNorFrostGiant_wince.wav",
+			"killed": "aom/nor/aomNorFrostGiant_killed.wav",
+			"move": "aom/nor/aomNorFrostGiant_move.wav"
+		}
+	},
+	"aomNorMountainGiant": {
+		"name": {
+			"singular": "Mountain Giant",
+			"plural": "Mountain Giants"
+		},
+		"description": "The oldest giant of the mountains. Its stone club smashes even city gates, and armor is like paper before it. Found only in the Mountain Giant Grotto, guarding a Giant's Heart.",
+		"faction": "aomNorse",
+		"level": 7,
+		"special": true,
+		"cost": {
+			"gold": 3500
+		},
+		"speed": 6,
+		"hitPoints": 280,
+		"attack": 25,
+		"defense": 22,
+		"damage": {
+			"min": 40,
+			"max": 55
+		},
+		"doubleWide": true,
+		"growth": 0,
+		"advMapAmount": {
+			"min": 1,
+			"max": 3
+		},
+		"abilities": {
+			"crush": {
+				"type": "ENEMY_DEFENCE_REDUCTION",
+				"val": 40
+			}
+		},
+		"aiValue": 7500,
+		"fightValue": 5528,
+		"graphics": {
+			"animation": "aom/nor/aomNorMountainGiant/battle.json",
+			"map": "aom/nor/aomNorMountainGiant/map.json",
+			"mapMask": [
+				"VV",
+				"VA"
+			],
+			"mapAttackFromRight": "aom/nor/aomNorMountainGiant/map/atkR.png",
+			"mapAttackFromLeft": "aom/nor/aomNorMountainGiant/map/atkL.png",
+			"iconLarge": "aom/nor/aomNorMountainGiant/iconLarge.png",
+			"iconSmall": "aom/nor/aomNorMountainGiant/iconSmall.png",
+			"animationTime": {
+				"walk": 1,
+				"attack": 1,
+				"idle": 10
+			},
+			"timeBetweenFidgets": 1
+		},
+		"sound": {
+			"attack": "aom/nor/aomNorMountainGiant_attack.wav",
+			"defend": "aom/nor/aomNorMountainGiant_defend.wav",
+			"wince": "aom/nor/aomNorMountainGiant_wince.wav",
+			"killed": "aom/nor/aomNorMountainGiant_killed.wav",
+			"move": "aom/nor/aomNorMountainGiant_move.wav"
+		}
+	},
+	"aomNorFireGiant": {
+		"name": {
+			"singular": "Fire Giant",
+			"plural": "Fire Giants"
+		},
+		"description": "A fire giant of Muspelheim, kin of Surtr. It does not fight up close but hurls ball after ball of fire into the enemy ranks. Found only in the Fire Giant Lava Rift, guarding a Giant's Heart.",
+		"faction": "aomNorse",
+		"level": 7,
+		"special": true,
+		"cost": {
+			"gold": 3800
+		},
+		"speed": 7,
+		"hitPoints": 300,
+		"attack": 24,
+		"defense": 22,
+		"damage": {
+			"min": 40,
+			"max": 55
+		},
+		"doubleWide": true,
+		"growth": 0,
+		"advMapAmount": {
+			"min": 1,
+			"max": 3
+		},
+		"abilities": {
+			"shooter": {
+				"type": "SHOOTER",
+				"val": 0
+			},
+			"noMelee": {
+				"type": "NO_MELEE_PENALTY",
+				"val": 0
+			},
+			"fireball": {
+				"type": "SPELL_LIKE_ATTACK",
+				"val": 0,
+				"subtype": "aomNorGiantFireball"
+			},
+			"fireImm": {
+				"type": "SPELL_SCHOOL_IMMUNITY",
+				"val": 0,
+				"subtype": "fire"
+			},
+			"waterWeak": {
+				"type": "SPELL_DAMAGE_REDUCTION",
+				"val": -50,
+				"subtype": "water",
+				"description": "{Fears Water}\nTakes +50% water spell dmg"
+			}
+		},
+		"aiValue": 7237,
+		"fightValue": 5334,
+		"shots": 12,
+		"graphics": {
+			"animation": "aom/nor/aomNorFireGiant/battle.json",
+			"map": "aom/nor/aomNorFireGiant/map.json",
+			"mapMask": [
+				"VV",
+				"VA"
+			],
+			"mapAttackFromRight": "aom/nor/aomNorFireGiant/map/atkR.png",
+			"mapAttackFromLeft": "aom/nor/aomNorFireGiant/map/atkL.png",
+			"iconLarge": "aom/nor/aomNorFireGiant/iconLarge.png",
+			"iconSmall": "aom/nor/aomNorFireGiant/iconSmall.png",
+			"animationTime": {
+				"walk": 1,
+				"attack": 1,
+				"idle": 10
+			},
+			"timeBetweenFidgets": 1,
+			"missile": {
+				"frameAngles": [
+					90,
+					67.5,
+					45,
+					22.5,
+					0,
+					-22.5,
+					-45,
+					-67.5,
+					-90
+				],
+				"attackClimaxFrame": 12,
+				"projectile": "CPRGOGX.DEF",
+				"offset": {
+					"upperX": -17,
+					"upperY": -92,
+					"middleX": -17,
+					"middleY": -92,
+					"lowerX": -17,
+					"lowerY": -92
+				}
+			}
+		},
+		"sound": {
+			"attack": "aom/nor/aomNorFireGiant_attack.wav",
+			"shoot": "aom/nor/aomNorFireGiant_shoot.wav",
+			"defend": "aom/nor/aomNorFireGiant_defend.wav",
+			"wince": "aom/nor/aomNorFireGiant_wince.wav",
+			"killed": "aom/nor/aomNorFireGiant_killed.wav",
+			"move": "aom/nor/aomNorFireGiant_move.wav"
+		}
+	},
+	"aomNorHirdman": {
+		"name": {
+			"singular": "Hirdman",
+			"plural": "Hirdmen"
+		},
+		"description": "A shield-bearing retainer who stays at his lord's side. Strike him and he always strikes back, often twice.",
+		"faction": "aomNorse",
+		"level": 2,
+		"cost": {
+			"gold": 120
+		},
+		"speed": 5,
+		"hitPoints": 18,
+		"attack": 6,
+		"defense": 8,
+		"damage": {
+			"min": 3,
+			"max": 5
+		},
+		"growth": 9,
+		"horde": 0,
+		"advMapAmount": {
+			"min": 8,
+			"max": 20
+		},
+		"abilities": {
+			"ret": {
+				"type": "ADDITIONAL_RETALIATION",
+				"val": 1
+			}
+		},
+		"aiValue": 219,
+		"fightValue": 200,
+		"graphics": {
+			"animation": "aom/nor/aomNorHirdman/battle.json",
+			"map": "aom/nor/aomNorHirdman/map.json",
+			"mapMask": [
+				"VV",
+				"VA"
+			],
+			"mapAttackFromRight": "aom/nor/aomNorHirdman/map/atkR.png",
+			"mapAttackFromLeft": "aom/nor/aomNorHirdman/map/atkL.png",
+			"iconLarge": "aom/nor/aomNorHirdman/iconLarge.png",
+			"iconSmall": "aom/nor/aomNorHirdman/iconSmall.png",
+			"animationTime": {
+				"walk": 1,
+				"attack": 1,
+				"idle": 10
+			},
+			"timeBetweenFidgets": 1
+		},
+		"doubleWide": false,
+		"sound": {
+			"attack": "aom/nor/aomNorHirdman_attack.wav",
+			"defend": "aom/nor/aomNorHirdman_defend.wav",
+			"wince": "aom/nor/aomNorHirdman_wince.wav",
+			"killed": "aom/nor/aomNorHirdman_killed.wav"
+		},
+		"stackExperience": [
+			{
+				"bonus": {
+					"type": "STACK_HEALTH",
+					"valueType": "PERCENT_TO_BASE"
+				},
+				"values": [
+					5,
+					10,
+					15,
+					20,
+					25,
+					30,
+					35,
+					40,
+					45,
+					50
+				]
+			},
+			{
+				"bonus": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "attack"
+				},
+				"values": [
+					0,
+					1,
+					1,
+					2,
+					2,
+					2,
+					3,
+					3,
+					3,
+					4
+				]
+			},
+			{
+				"bonus": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "defence"
+				},
+				"values": [
+					1,
+					1,
+					1,
+					2,
+					2,
+					3,
+					3,
+					3,
+					4,
+					4
+				]
+			},
+			{
+				"bonus": {
+					"type": "CREATURE_DAMAGE",
+					"subtype": "creatureDamageMin"
+				},
+				"values": [
+					0,
+					0,
+					1,
+					1,
+					1,
+					2,
+					2,
+					3,
+					3,
+					3
+				]
+			},
+			{
+				"bonus": {
+					"type": "CREATURE_DAMAGE",
+					"subtype": "creatureDamageMax"
+				},
+				"values": [
+					0,
+					1,
+					1,
+					1,
+					2,
+					2,
+					2,
+					3,
+					3,
+					4
+				]
+			},
+			{
+				"bonus": {
+					"type": "STACKS_SPEED"
+				},
+				"values": [
+					0,
+					0,
+					0,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1
+				]
+			},
+			{
+				"bonus": {
+					"type": "GENERAL_DAMAGE_REDUCTION",
+					"subtype": "damageTypeMelee"
+				},
+				"values": [
+					2,
+					4,
+					6,
+					8,
+					10,
+					12,
+					14,
+					16,
+					18,
+					20
+				]
+			}
+		]
+	},
+	"aomNorHuskarl": {
+		"name": {
+			"singular": "Huskarl",
+			"plural": "Huskarls"
+		},
+		"description": "A household warrior in heavy armor with a great shield, set in front of the archers; arrows lose half their bite against him.",
+		"faction": "aomNorse",
+		"level": 3,
+		"cost": {
+			"gold": 230
+		},
+		"speed": 5,
+		"hitPoints": 30,
+		"attack": 9,
+		"defense": 9,
+		"damage": {
+			"min": 5,
+			"max": 8
+		},
+		"growth": 6,
+		"horde": 0,
+		"advMapAmount": {
+			"min": 5,
+			"max": 12
+		},
+		"abilities": {
+			"shield": {
+				"type": "GENERAL_DAMAGE_REDUCTION",
+				"val": 50,
+				"subtype": "damageTypeRanged"
+			}
+		},
+		"aiValue": 422,
+		"fightValue": 349,
+		"graphics": {
+			"animation": "aom/nor/aomNorHuskarl/battle.json",
+			"map": "aom/nor/aomNorHuskarl/map.json",
+			"mapMask": [
+				"VV",
+				"VA"
+			],
+			"mapAttackFromRight": "aom/nor/aomNorHuskarl/map/atkR.png",
+			"mapAttackFromLeft": "aom/nor/aomNorHuskarl/map/atkL.png",
+			"iconLarge": "aom/nor/aomNorHuskarl/iconLarge.png",
+			"iconSmall": "aom/nor/aomNorHuskarl/iconSmall.png",
+			"animationTime": {
+				"walk": 1,
+				"attack": 1,
+				"idle": 10
+			},
+			"timeBetweenFidgets": 1
+		},
+		"doubleWide": false,
+		"sound": {
+			"attack": "aom/nor/aomNorHuskarl_attack.wav",
+			"defend": "aom/nor/aomNorHuskarl_defend.wav",
+			"wince": "aom/nor/aomNorHuskarl_wince.wav",
+			"killed": "aom/nor/aomNorHuskarl_killed.wav"
+		},
+		"stackExperience": [
+			{
+				"bonus": {
+					"type": "STACK_HEALTH",
+					"valueType": "PERCENT_TO_BASE"
+				},
+				"values": [
+					5,
+					10,
+					15,
+					20,
+					25,
+					30,
+					35,
+					40,
+					45,
+					50
+				]
+			},
+			{
+				"bonus": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "attack"
+				},
+				"values": [
+					1,
+					1,
+					2,
+					2,
+					3,
+					3,
+					4,
+					4,
+					5,
+					5
+				]
+			},
+			{
+				"bonus": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "defence"
+				},
+				"values": [
+					1,
+					1,
+					2,
+					2,
+					3,
+					3,
+					4,
+					4,
+					5,
+					5
+				]
+			},
+			{
+				"bonus": {
+					"type": "CREATURE_DAMAGE",
+					"subtype": "creatureDamageMin"
+				},
+				"values": [
+					0,
+					1,
+					1,
+					2,
+					2,
+					3,
+					3,
+					4,
+					4,
+					5
+				]
+			},
+			{
+				"bonus": {
+					"type": "CREATURE_DAMAGE",
+					"subtype": "creatureDamageMax"
+				},
+				"values": [
+					0,
+					1,
+					1,
+					2,
+					2,
+					3,
+					3,
+					4,
+					4,
+					5
+				]
+			},
+			{
+				"bonus": {
+					"type": "STACKS_SPEED"
+				},
+				"values": [
+					0,
+					0,
+					0,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1
+				]
+			},
+			{
+				"bonus": {
+					"type": "GENERAL_DAMAGE_REDUCTION",
+					"subtype": "damageTypeMelee"
+				},
+				"values": [
+					2,
+					4,
+					6,
+					8,
+					10,
+					12,
+					14,
+					16,
+					18,
+					20
+				]
+			}
+		]
+	},
+	"aomNorRaider": {
+		"name": {
+			"singular": "Raider",
+			"plural": "Raiders"
+		},
+		"description": "A raider who comes and goes like the wind; the further he charges, the harder he strikes.",
+		"faction": "aomNorse",
+		"level": 3,
+		"cost": {
+			"gold": 240
+		},
+		"speed": 9,
+		"hitPoints": 28,
+		"attack": 10,
+		"defense": 6,
+		"damage": {
+			"min": 5,
+			"max": 9
+		},
+		"growth": 6,
+		"horde": 0,
+		"advMapAmount": {
+			"min": 5,
+			"max": 12
+		},
+		"abilities": {
+			"charge": {
+				"type": "JOUSTING",
+				"val": 5
+			},
+			"skeletonTarget": {
+				"type": "SKELETON_TRANSFORMER_TARGET",
+				"subtype": "blackKnight",
+				"hidden": true
+			}
+		},
+		"aiValue": 515,
+		"fightValue": 426,
+		"graphics": {
+			"animation": "aom/nor/aomNorRaider/battle.json",
+			"map": "aom/nor/aomNorRaider/map.json",
+			"mapMask": [
+				"VV",
+				"VA"
+			],
+			"mapAttackFromRight": "aom/nor/aomNorRaider/map/atkR.png",
+			"mapAttackFromLeft": "aom/nor/aomNorRaider/map/atkL.png",
+			"iconLarge": "aom/nor/aomNorRaider/iconLarge.png",
+			"iconSmall": "aom/nor/aomNorRaider/iconSmall.png",
+			"animationTime": {
+				"walk": 1,
+				"attack": 1,
+				"idle": 10
+			},
+			"timeBetweenFidgets": 1
+		},
+		"doubleWide": true,
+		"sound": {
+			"attack": "aom/nor/aomNorRaider_attack.wav",
+			"defend": "aom/nor/aomNorRaider_defend.wav",
+			"wince": "aom/nor/aomNorRaider_wince.wav",
+			"killed": "aom/nor/aomNorRaider_killed.wav",
+			"move": "aom/nor/aomNorRaider_move.wav"
+		},
+		"stackExperience": [
+			{
+				"bonus": {
+					"type": "STACK_HEALTH",
+					"valueType": "PERCENT_TO_BASE"
+				},
+				"values": [
+					5,
+					10,
+					15,
+					20,
+					25,
+					30,
+					35,
+					40,
+					45,
+					50
+				]
+			},
+			{
+				"bonus": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "attack"
+				},
+				"values": [
+					1,
+					1,
+					2,
+					2,
+					3,
+					3,
+					4,
+					4,
+					5,
+					5
+				]
+			},
+			{
+				"bonus": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "defence"
+				},
+				"values": [
+					1,
+					1,
+					2,
+					2,
+					3,
+					3,
+					4,
+					4,
+					5,
+					5
+				]
+			},
+			{
+				"bonus": {
+					"type": "CREATURE_DAMAGE",
+					"subtype": "creatureDamageMin"
+				},
+				"values": [
+					0,
+					1,
+					1,
+					2,
+					2,
+					3,
+					3,
+					4,
+					4,
+					5
+				]
+			},
+			{
+				"bonus": {
+					"type": "CREATURE_DAMAGE",
+					"subtype": "creatureDamageMax"
+				},
+				"values": [
+					0,
+					1,
+					1,
+					2,
+					2,
+					3,
+					3,
+					4,
+					4,
+					5
+				]
+			},
+			{
+				"bonus": {
+					"type": "STACKS_SPEED"
+				},
+				"values": [
+					0,
+					0,
+					0,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1
+				]
+			},
+			{
+				"bonus": {
+					"type": "ENEMY_DEFENCE_REDUCTION"
+				},
+				"values": [
+					2,
+					4,
+					6,
+					8,
+					10,
+					12,
+					14,
+					16,
+					18,
+					20
+				]
+			}
+		]
+	},
+	"aomNorJarl": {
+		"name": {
+			"singular": "Jarl",
+			"plural": "Jarls"
+		},
+		"description": "A mounted Norse chieftain. With him on the field the whole army stands taller.",
+		"faction": "aomNorse",
+		"level": 4,
+		"cost": {
+			"gold": 480
+		},
+		"speed": 8,
+		"hitPoints": 55,
+		"attack": 12,
+		"defense": 11,
+		"damage": {
+			"min": 9,
+			"max": 14
+		},
+		"growth": 3,
+		"horde": 0,
+		"advMapAmount": {
+			"min": 5,
+			"max": 12
+		},
+		"abilities": {
+			"morale": {
+				"type": "MORALE",
+				"val": 1,
+				"propagator": "ARMY",
+				"stacking": "aomNorJarl",
+				"description": "{Chieftain}\nWhole army morale +1."
+			},
+			"skeletonTarget": {
+				"type": "SKELETON_TRANSFORMER_TARGET",
+				"subtype": "blackKnight",
+				"hidden": true
+			}
+		},
+		"aiValue": 912,
+		"fightValue": 760,
+		"graphics": {
+			"animation": "aom/nor/aomNorJarl/battle.json",
+			"map": "aom/nor/aomNorJarl/map.json",
+			"mapMask": [
+				"VV",
+				"VA"
+			],
+			"mapAttackFromRight": "aom/nor/aomNorJarl/map/atkR.png",
+			"mapAttackFromLeft": "aom/nor/aomNorJarl/map/atkL.png",
+			"iconLarge": "aom/nor/aomNorJarl/iconLarge.png",
+			"iconSmall": "aom/nor/aomNorJarl/iconSmall.png",
+			"animationTime": {
+				"walk": 1,
+				"attack": 1,
+				"idle": 10
+			},
+			"timeBetweenFidgets": 1
+		},
+		"doubleWide": true,
+		"sound": {
+			"attack": "aom/nor/aomNorJarl_attack.wav",
+			"defend": "aom/nor/aomNorJarl_defend.wav",
+			"wince": "aom/nor/aomNorJarl_wince.wav",
+			"killed": "aom/nor/aomNorJarl_killed.wav",
+			"move": "aom/nor/aomNorJarl_move.wav"
+		},
+		"stackExperience": [
+			{
+				"bonus": {
+					"type": "STACK_HEALTH",
+					"valueType": "PERCENT_TO_BASE"
+				},
+				"values": [
+					5,
+					10,
+					15,
+					20,
+					25,
+					30,
+					35,
+					40,
+					45,
+					50
+				]
+			},
+			{
+				"bonus": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "attack"
+				},
+				"values": [
+					1,
+					2,
+					2,
+					3,
+					4,
+					5,
+					6,
+					6,
+					7,
+					8
+				]
+			},
+			{
+				"bonus": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "defence"
+				},
+				"values": [
+					1,
+					2,
+					2,
+					3,
+					4,
+					4,
+					5,
+					6,
+					7,
+					8
+				]
+			},
+			{
+				"bonus": {
+					"type": "CREATURE_DAMAGE",
+					"subtype": "creatureDamageMin"
+				},
+				"values": [
+					0,
+					1,
+					1,
+					2,
+					2,
+					3,
+					3,
+					4,
+					4,
+					4
+				]
+			},
+			{
+				"bonus": {
+					"type": "CREATURE_DAMAGE",
+					"subtype": "creatureDamageMax"
+				},
+				"values": [
+					0,
+					1,
+					1,
+					2,
+					2,
+					3,
+					3,
+					4,
+					4,
+					5
+				]
+			},
+			{
+				"bonus": {
+					"type": "STACKS_SPEED"
+				},
+				"values": [
+					0,
+					0,
+					0,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1
+				]
+			},
+			{
+				"bonus": {
+					"type": "DOUBLE_DAMAGE_CHANCE"
+				},
+				"values": [
+					2,
+					4,
+					6,
+					8,
+					10,
+					12,
+					14,
+					16,
+					18,
+					20
+				]
+			}
+		]
+	},
+	"aomNorDraugr": {
+		"name": {
+			"singular": "Draugr",
+			"plural": "Draugar"
+		},
+		"description": "Undead archers crawling out of the barrows. They feel no pain and never tire.",
+		"faction": "aomNorse",
+		"level": 3,
+		"cost": {
+			"gold": 240
+		},
+		"speed": 5,
+		"hitPoints": 24,
+		"attack": 9,
+		"defense": 6,
+		"damage": {
+			"min": 4,
+			"max": 8
+		},
+		"growth": 6,
+		"horde": 0,
+		"advMapAmount": {
+			"min": 5,
+			"max": 12
+		},
+		"abilities": {
+			"shooter": {
+				"type": "SHOOTER",
+				"val": 0
+			},
+			"undead": {
+				"type": "UNDEAD",
+				"val": 0
+			}
+		},
+		"aiValue": 373,
+		"fightValue": 309,
+		"shots": 12,
+		"graphics": {
+			"animation": "aom/nor/aomNorDraugr/battle.json",
+			"map": "aom/nor/aomNorDraugr/map.json",
+			"mapMask": [
+				"VV",
+				"VA"
+			],
+			"mapAttackFromRight": "aom/nor/aomNorDraugr/map/atkR.png",
+			"mapAttackFromLeft": "aom/nor/aomNorDraugr/map/atkL.png",
+			"iconLarge": "aom/nor/aomNorDraugr/iconLarge.png",
+			"iconSmall": "aom/nor/aomNorDraugr/iconSmall.png",
+			"animationTime": {
+				"walk": 1,
+				"attack": 1,
+				"idle": 10
+			},
+			"timeBetweenFidgets": 1,
+			"missile": {
+				"frameAngles": [
+					90,
+					67.5,
+					45,
+					22.5,
+					0,
+					-22.5,
+					-45,
+					-67.5,
+					-90
+				],
+				"attackClimaxFrame": 4,
+				"projectile": "PLCBOWX.DEF",
+				"offset": {
+					"upperX": 28,
+					"upperY": -70,
+					"middleX": 28,
+					"middleY": -70,
+					"lowerX": 28,
+					"lowerY": -70
+				}
+			}
+		},
+		"doubleWide": false,
+		"sound": {
+			"attack": "aom/nor/aomNorDraugr_attack.wav",
+			"shoot": "aom/nor/aomNorDraugr_shoot.wav",
+			"defend": "aom/nor/aomNorDraugr_defend.wav",
+			"wince": "aom/nor/aomNorDraugr_wince.wav",
+			"killed": "aom/nor/aomNorDraugr_killed.wav"
+		},
+		"stackExperience": [
+			{
+				"bonus": {
+					"type": "STACK_HEALTH",
+					"valueType": "PERCENT_TO_BASE"
+				},
+				"values": [
+					5,
+					10,
+					15,
+					20,
+					25,
+					30,
+					35,
+					40,
+					45,
+					50
+				]
+			},
+			{
+				"bonus": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "attack"
+				},
+				"values": [
+					1,
+					1,
+					2,
+					2,
+					3,
+					3,
+					4,
+					4,
+					5,
+					5
+				]
+			},
+			{
+				"bonus": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "defence"
+				},
+				"values": [
+					1,
+					1,
+					2,
+					2,
+					3,
+					3,
+					4,
+					4,
+					5,
+					5
+				]
+			},
+			{
+				"bonus": {
+					"type": "CREATURE_DAMAGE",
+					"subtype": "creatureDamageMin"
+				},
+				"values": [
+					0,
+					1,
+					1,
+					2,
+					2,
+					3,
+					3,
+					4,
+					4,
+					5
+				]
+			},
+			{
+				"bonus": {
+					"type": "CREATURE_DAMAGE",
+					"subtype": "creatureDamageMax"
+				},
+				"values": [
+					0,
+					1,
+					1,
+					2,
+					2,
+					3,
+					3,
+					4,
+					4,
+					5
+				]
+			},
+			{
+				"bonus": {
+					"type": "STACKS_SPEED"
+				},
+				"values": [
+					0,
+					0,
+					0,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1
+				]
+			},
+			{
+				"bonus": {
+					"type": "ENEMY_DEFENCE_REDUCTION"
+				},
+				"values": [
+					2,
+					4,
+					6,
+					8,
+					10,
+					12,
+					14,
+					16,
+					18,
+					20
+				]
+			}
+		]
+	},
+	"aomNorBattleBoar": {
+		"name": {
+			"singular": "War Boar",
+			"plural": "War Boars"
+		},
+		"description": "A giant boar in leather armor; its tusks tear through the thickest shields.",
+		"faction": "aomNorse",
+		"level": 4,
+		"cost": {
+			"gold": 420
+		},
+		"speed": 7,
+		"hitPoints": 48,
+		"attack": 12,
+		"defense": 9,
+		"damage": {
+			"min": 8,
+			"max": 12
+		},
+		"growth": 4,
+		"horde": 0,
+		"advMapAmount": {
+			"min": 5,
+			"max": 12
+		},
+		"abilities": {
+			"tusk": {
+				"type": "ENEMY_DEFENCE_REDUCTION",
+				"val": 20
+			}
+		},
+		"aiValue": 784,
+		"fightValue": 653,
+		"graphics": {
+			"animation": "aom/nor/aomNorBattleBoar/battle.json",
+			"map": "aom/nor/aomNorBattleBoar/map.json",
+			"mapMask": [
+				"VV",
+				"VA"
+			],
+			"mapAttackFromRight": "aom/nor/aomNorBattleBoar/map/atkR.png",
+			"mapAttackFromLeft": "aom/nor/aomNorBattleBoar/map/atkL.png",
+			"iconLarge": "aom/nor/aomNorBattleBoar/iconLarge.png",
+			"iconSmall": "aom/nor/aomNorBattleBoar/iconSmall.png",
+			"animationTime": {
+				"walk": 1,
+				"attack": 1,
+				"idle": 10
+			},
+			"timeBetweenFidgets": 1
+		},
+		"doubleWide": true,
+		"sound": {
+			"attack": "aom/nor/aomNorBattleBoar_attack.wav",
+			"defend": "aom/nor/aomNorBattleBoar_defend.wav",
+			"wince": "aom/nor/aomNorBattleBoar_wince.wav",
+			"killed": "aom/nor/aomNorBattleBoar_killed.wav",
+			"move": "aom/nor/aomNorBattleBoar_move.wav"
+		},
+		"stackExperience": [
+			{
+				"bonus": {
+					"type": "STACK_HEALTH",
+					"valueType": "PERCENT_TO_BASE"
+				},
+				"values": [
+					5,
+					10,
+					15,
+					20,
+					25,
+					30,
+					35,
+					40,
+					45,
+					50
+				]
+			},
+			{
+				"bonus": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "attack"
+				},
+				"values": [
+					1,
+					2,
+					2,
+					3,
+					4,
+					5,
+					6,
+					6,
+					7,
+					8
+				]
+			},
+			{
+				"bonus": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "defence"
+				},
+				"values": [
+					1,
+					2,
+					2,
+					3,
+					4,
+					4,
+					5,
+					6,
+					7,
+					8
+				]
+			},
+			{
+				"bonus": {
+					"type": "CREATURE_DAMAGE",
+					"subtype": "creatureDamageMin"
+				},
+				"values": [
+					0,
+					1,
+					1,
+					2,
+					2,
+					3,
+					3,
+					4,
+					4,
+					4
+				]
+			},
+			{
+				"bonus": {
+					"type": "CREATURE_DAMAGE",
+					"subtype": "creatureDamageMax"
+				},
+				"values": [
+					0,
+					1,
+					1,
+					2,
+					2,
+					3,
+					3,
+					4,
+					4,
+					5
+				]
+			},
+			{
+				"bonus": {
+					"type": "STACKS_SPEED"
+				},
+				"values": [
+					0,
+					0,
+					0,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1
+				]
+			},
+			{
+				"bonus": {
+					"type": "DOUBLE_DAMAGE_CHANCE"
+				},
+				"values": [
+					2,
+					4,
+					6,
+					8,
+					10,
+					12,
+					14,
+					16,
+					18,
+					20
+				]
+			}
+		]
+	},
+	"aomNorJormunElver": {
+		"name": {
+			"singular": "Jormun Elver",
+			"plural": "Jormun Elvers"
+		},
+		"description": "A hatchling of the World Serpent that swims through the air. Its venom keeps wounds from healing. Found only in the wild.",
+		"faction": "aomNorse",
+		"level": 5,
+		"cost": {
+			"gold": 700
+		},
+		"speed": 7,
+		"hitPoints": 75,
+		"attack": 14,
+		"defense": 11,
+		"damage": {
+			"min": 14,
+			"max": 20
+		},
+		"growth": 2,
+		"horde": 0,
+		"advMapAmount": {
+			"min": 3,
+			"max": 7
+		},
+		"abilities": {
+			"shooter": {
+				"type": "SHOOTER",
+				"val": 0
+			},
+			"venom": {
+				"type": "SPELL_AFTER_ATTACK",
+				"val": 30,
+				"subtype": "poison"
+			},
+			"skeletonTarget": {
+				"type": "SKELETON_TRANSFORMER_TARGET",
+				"subtype": "boneDragon",
+				"hidden": true
+			}
+		},
+		"aiValue": 1654,
+		"fightValue": 1614,
+		"shots": 10,
+		"graphics": {
+			"animation": "aom/nor/aomNorJormunElver/battle.json",
+			"map": "aom/nor/aomNorJormunElver/map.json",
+			"mapMask": [
+				"VV",
+				"VA"
+			],
+			"mapAttackFromRight": "aom/nor/aomNorJormunElver/map/atkR.png",
+			"mapAttackFromLeft": "aom/nor/aomNorJormunElver/map/atkL.png",
+			"iconLarge": "aom/nor/aomNorJormunElver/iconLarge.png",
+			"iconSmall": "aom/nor/aomNorJormunElver/iconSmall.png",
+			"animationTime": {
+				"walk": 1,
+				"attack": 1,
+				"idle": 10
+			},
+			"timeBetweenFidgets": 1,
+			"missile": {
+				"frameAngles": [
+					90,
+					67.5,
+					45,
+					22.5,
+					0,
+					-22.5,
+					-45,
+					-67.5,
+					-90
+				],
+				"attackClimaxFrame": 6,
+				"projectile": "PLICH.DEF",
+				"offset": {
+					"upperX": 170,
+					"upperY": -22,
+					"middleX": 170,
+					"middleY": -22,
+					"lowerX": 170,
+					"lowerY": -22
+				}
+			}
+		},
+		"doubleWide": true,
+		"sound": {
+			"attack": "aom/nor/aomNorJormunElver_attack.wav",
+			"shoot": "aom/nor/aomNorJormunElver_shoot.wav",
+			"defend": "aom/nor/aomNorJormunElver_defend.wav",
+			"wince": "aom/nor/aomNorJormunElver_wince.wav",
+			"killed": "aom/nor/aomNorJormunElver_killed.wav"
+		},
+		"stackExperience": [
+			{
+				"bonus": {
+					"type": "STACK_HEALTH",
+					"valueType": "PERCENT_TO_BASE"
+				},
+				"values": [
+					5,
+					10,
+					15,
+					20,
+					25,
+					30,
+					35,
+					40,
+					45,
+					50
+				]
+			},
+			{
+				"bonus": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "attack"
+				},
+				"values": [
+					1,
+					1,
+					2,
+					3,
+					4,
+					5,
+					5,
+					6,
+					7,
+					8
+				]
+			},
+			{
+				"bonus": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "defence"
+				},
+				"values": [
+					1,
+					2,
+					3,
+					3,
+					4,
+					4,
+					6,
+					6,
+					7,
+					8
+				]
+			},
+			{
+				"bonus": {
+					"type": "CREATURE_DAMAGE",
+					"subtype": "creatureDamageMin"
+				},
+				"values": [
+					0,
+					1,
+					2,
+					3,
+					3,
+					4,
+					5,
+					6,
+					6,
+					7
+				]
+			},
+			{
+				"bonus": {
+					"type": "CREATURE_DAMAGE",
+					"subtype": "creatureDamageMax"
+				},
+				"values": [
+					1,
+					2,
+					2,
+					3,
+					4,
+					4,
+					5,
+					6,
+					7,
+					7
+				]
+			},
+			{
+				"bonus": {
+					"type": "STACKS_SPEED"
+				},
+				"values": [
+					0,
+					0,
+					0,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1
+				]
+			},
+			{
+				"bonus": {
+					"type": "ENEMY_DEFENCE_REDUCTION"
+				},
+				"values": [
+					2,
+					4,
+					6,
+					8,
+					10,
+					12,
+					14,
+					16,
+					18,
+					20
+				]
+			}
+		]
+	},
+	"aomNorCommander": {
+		"name": {
+			"singular": "Rune Smith",
+			"plural": "Rune Smiths"
+		},
+		"description": "A dwarven hero of Ragnarok who marches with your hero as commander. Before battle he carves runes into the warriors' weapons; when a comrade falls, his war cry makes the rest fear death even less. Odin's ravens fly with him.",
+		"faction": "aomNorse",
+		"level": 0,
+		"special": true,
+		"cost": {
+			"gold": 550
+		},
+		"speed": 5,
+		"hitPoints": 40,
+		"attack": 5,
+		"defense": 5,
+		"damage": {
+			"min": 12,
+			"max": 12
+		},
+		"doubleWide": false,
+		"fightValue": 810,
+		"aiValue": 866,
+		"growth": 1,
+		"graphics": {
+			"animation": "aom/nor/aomNorCommander/battle.json",
+			"iconLarge": "aom/nor/aomNorCommander/iconLarge.png",
+			"iconSmall": "aom/nor/aomNorCommander/iconSmall.png",
+			"animationTime": {
+				"walk": 1,
+				"attack": 1,
+				"idle": 10
+			},
+			"timeBetweenFidgets": 1,
+			"missile": {
+				"frameAngles": [
+					90,
+					67.5,
+					45,
+					22.5,
+					0,
+					-22.5,
+					-45,
+					-67.5,
+					-90
+				],
+				"attackClimaxFrame": 5,
+				"projectile": "aom/nor/missile/naxe_base.json",
+				"offset": {
+					"upperX": 6,
+					"upperY": -92,
+					"middleX": 27,
+					"middleY": -81,
+					"lowerX": 3,
+					"lowerY": -77
+				}
+			}
+		},
+		"sound": {
+			"attack": "aom/nor/aomNorCommander_attack.wav",
+			"defend": "aom/nor/aomNorCommander_defend.wav",
+			"wince": "aom/nor/aomNorCommander_wince.wav",
+			"killed": "aom/nor/aomNorCommander_killed.wav",
+			"shoot": "aom/nor/aomNorCommander_attack.wav"
+		},
+		"abilities": {
+			"castsAmount": {
+				"type": "CASTS",
+				"val": 1
+			},
+			"spellpower": {
+				"type": "CREATURE_SPELL_POWER",
+				"val": 100
+			}
+		}
+	}
+}

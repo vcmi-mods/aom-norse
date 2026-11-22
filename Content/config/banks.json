@@ -1,0 +1,806 @@
+{
+	"core:creatureBank": {
+		"types": {
+			"aomNorMountainGiantBank": {
+				"name": "Mountain Giant Grotto",
+				"aiValue": 14000,
+				"sounds": {
+					"ambient": [
+						"LOOPCAVE"
+					]
+				},
+				"templates": {
+					"base": {
+						"animation": "aom/nor/map/bank/aomNorMountainLair.json",
+						"visitableFrom": [
+							"---",
+							"+++",
+							"+++"
+						],
+						"mask": [
+							"VVV",
+							"BAB"
+						]
+					}
+				},
+				"rmg": {
+					"value": 12000,
+					"zoneLimit": 1,
+					"rarity": 40,
+					"mapLimit": 4
+				},
+				"onGuardedMessage": "Above the snow line a great cave opens in the cliff, a stone club thicker than a pine propped at its mouth. A Mountain Giant sleeps inside; its heart is a warm mountain rock. Will you go in?",
+				"onVisitedMessage": "Only an empty giant's den is left here. Someone has been here before.",
+				"visitMode": "once",
+				"selectMode": "selectFirst",
+				"guardsLayout": "creatureBankNarrow",
+				"rewards": [
+					{
+						"message": "The giant in the cave woke too late. Under its stone bed you find the still-hot Mountain Giant Heart. One more Mountain Giant, won over by your strength, is willing to follow you.",
+						"appearChance": {
+							"min": 0,
+							"max": 30
+						},
+						"guards": [
+							{
+								"amount": 1,
+								"type": "aomNorMountainGiant"
+							},
+							{
+								"amount": 1,
+								"type": "aomNorMountainGiant"
+							},
+							{
+								"amount": 4,
+								"type": "aomNorTroll"
+							},
+							{
+								"amount": 4,
+								"type": "aomNorTroll"
+							},
+							{
+								"amount": 4,
+								"type": "aomNorTroll"
+							}
+						],
+						"artifacts": [
+							"aomNorHeartMountain"
+						],
+						"creatures": [
+							{
+								"type": "aomNorMountainGiant",
+								"amount": 1
+							}
+						]
+					},
+					{
+						"message": "The giants and the trolls guarding the cave fall one by one. Deep inside, the Mountain Giant Heart sits atop a pile of plunder. Two more Mountain Giants, won over by your strength, are willing to follow you.",
+						"appearChance": {
+							"min": 30,
+							"max": 60
+						},
+						"guards": [
+							{
+								"amount": 2,
+								"type": "aomNorMountainGiant"
+							},
+							{
+								"amount": 2,
+								"type": "aomNorMountainGiant"
+							},
+							{
+								"amount": 8,
+								"type": "aomNorTroll"
+							},
+							{
+								"amount": 8,
+								"type": "aomNorTroll"
+							},
+							{
+								"amount": 8,
+								"type": "aomNorTroll"
+							}
+						],
+						"artifacts": [
+							"aomNorHeartMountain"
+						],
+						"creatures": [
+							{
+								"type": "aomNorMountainGiant",
+								"amount": 2
+							}
+						]
+					},
+					{
+						"message": "After a fierce fight the cave falls silent. Besides the Mountain Giant Heart, you dig a fine item out of the bone pile. Three more Mountain Giants, won over by your strength, are willing to follow you.",
+						"appearChance": {
+							"min": 60,
+							"max": 90
+						},
+						"guards": [
+							{
+								"amount": 3,
+								"type": "aomNorMountainGiant"
+							},
+							{
+								"amount": 3,
+								"type": "aomNorMountainGiant"
+							},
+							{
+								"amount": 12,
+								"type": "aomNorTroll"
+							},
+							{
+								"amount": 12,
+								"type": "aomNorTroll"
+							},
+							{
+								"amount": 12,
+								"type": "aomNorTroll"
+							}
+						],
+						"artifacts": [
+							"aomNorHeartMountain",
+							{
+								"class": "TREASURE"
+							}
+						],
+						"creatures": [
+							{
+								"type": "aomNorMountainGiant",
+								"amount": 3
+							}
+						]
+					},
+					{
+						"message": "Even the oldest Mountain Giant falls, and the whole mountain seems to sigh. You take the heart it guarded for centuries, and its treasure. Four more Mountain Giants, won over by your strength, are willing to follow you.",
+						"appearChance": {
+							"min": 90,
+							"max": 100
+						},
+						"guards": [
+							{
+								"amount": 4,
+								"type": "aomNorMountainGiant"
+							},
+							{
+								"amount": 4,
+								"type": "aomNorMountainGiant"
+							},
+							{
+								"amount": 16,
+								"type": "aomNorTroll"
+							},
+							{
+								"amount": 16,
+								"type": "aomNorTroll"
+							},
+							{
+								"amount": 16,
+								"type": "aomNorTroll"
+							}
+						],
+						"artifacts": [
+							"aomNorHeartMountain",
+							{
+								"class": "MINOR"
+							}
+						],
+						"creatures": [
+							{
+								"type": "aomNorMountainGiant",
+								"amount": 4
+							}
+						]
+					}
+				]
+			},
+			"aomNorRockGiantBank": {
+				"name": "Rock Giant Lair",
+				"aiValue": 10000,
+				"sounds": {
+					"ambient": [
+						"LOOPCAVE"
+					]
+				},
+				"templates": {
+					"base": {
+						"animation": "aom/nor/map/bank/aomNorRockLair.json",
+						"visitableFrom": [
+							"---",
+							"+++",
+							"+++"
+						],
+						"mask": [
+							"VVV",
+							"BAB"
+						]
+					}
+				},
+				"rmg": {
+					"value": 8000,
+					"zoneLimit": 1,
+					"rarity": 40,
+					"mapLimit": 4
+				},
+				"onGuardedMessage": "From a heap of boulders comes the sound of chewing wood: a Rock Giant is gnawing on an old town wall. Its heart is a stone covered in runes. Will you approach?",
+				"onVisitedMessage": "Only an empty giant's den is left here. Someone has been here before.",
+				"visitMode": "once",
+				"selectMode": "selectFirst",
+				"guardsLayout": "creatureBankNarrow",
+				"rewards": [
+					{
+						"message": "The boulder heap stops moving. Among the splinters you find a warm, rune-covered Rock Giant Heart. One more Rock Giant, won over by your strength, is willing to follow you.",
+						"appearChance": {
+							"min": 0,
+							"max": 30
+						},
+						"guards": [
+							{
+								"amount": 1,
+								"type": "aomNorRockGiant"
+							},
+							{
+								"amount": 1,
+								"type": "aomNorRockGiant"
+							},
+							{
+								"amount": 1,
+								"type": "aomNorRockGiant"
+							},
+							{
+								"amount": 4,
+								"type": "aomNorTroll"
+							},
+							{
+								"amount": 4,
+								"type": "aomNorTroll"
+							}
+						],
+						"artifacts": [
+							"aomNorHeartRock"
+						],
+						"creatures": [
+							{
+								"type": "aomNorRockGiant",
+								"amount": 1
+							}
+						]
+					},
+					{
+						"message": "The falling Rock Giants bring down half the stone heap, and the Rock Giant Heart shows through a crack. Some scattered gold lies in a corner. Two more Rock Giants, won over by your strength, are willing to follow you.",
+						"appearChance": {
+							"min": 30,
+							"max": 60
+						},
+						"guards": [
+							{
+								"amount": 2,
+								"type": "aomNorRockGiant"
+							},
+							{
+								"amount": 2,
+								"type": "aomNorRockGiant"
+							},
+							{
+								"amount": 2,
+								"type": "aomNorRockGiant"
+							},
+							{
+								"amount": 8,
+								"type": "aomNorTroll"
+							},
+							{
+								"amount": 8,
+								"type": "aomNorTroll"
+							}
+						],
+						"artifacts": [
+							"aomNorHeartRock"
+						],
+						"creatures": [
+							{
+								"type": "aomNorRockGiant",
+								"amount": 2
+							}
+						],
+						"resources": {
+							"gold": 1500
+						}
+					},
+					{
+						"message": "The Rock Giants' great stone shields split in two; behind them are an artifact and the Rock Giant Heart. Some scattered gold lies in a corner. Three more Rock Giants, won over by your strength, are willing to follow you.",
+						"appearChance": {
+							"min": 60,
+							"max": 90
+						},
+						"guards": [
+							{
+								"amount": 3,
+								"type": "aomNorRockGiant"
+							},
+							{
+								"amount": 3,
+								"type": "aomNorRockGiant"
+							},
+							{
+								"amount": 3,
+								"type": "aomNorRockGiant"
+							},
+							{
+								"amount": 12,
+								"type": "aomNorTroll"
+							},
+							{
+								"amount": 12,
+								"type": "aomNorTroll"
+							}
+						],
+						"artifacts": [
+							"aomNorHeartRock",
+							{
+								"class": "TREASURE"
+							}
+						],
+						"creatures": [
+							{
+								"type": "aomNorRockGiant",
+								"amount": 3
+							}
+						],
+						"resources": {
+							"gold": 2000
+						}
+					},
+					{
+						"message": "The last Rock Giant turns into a heap of ordinary stones. You dig its heart and hoarded treasure out of the pile. Some scattered gold lies in a corner. Four more Rock Giants, won over by your strength, are willing to follow you.",
+						"appearChance": {
+							"min": 90,
+							"max": 100
+						},
+						"guards": [
+							{
+								"amount": 4,
+								"type": "aomNorRockGiant"
+							},
+							{
+								"amount": 4,
+								"type": "aomNorRockGiant"
+							},
+							{
+								"amount": 4,
+								"type": "aomNorRockGiant"
+							},
+							{
+								"amount": 16,
+								"type": "aomNorTroll"
+							},
+							{
+								"amount": 16,
+								"type": "aomNorTroll"
+							}
+						],
+						"artifacts": [
+							"aomNorHeartRock",
+							{
+								"class": "MINOR"
+							}
+						],
+						"creatures": [
+							{
+								"type": "aomNorRockGiant",
+								"amount": 4
+							}
+						],
+						"resources": {
+							"gold": 1000
+						}
+					}
+				]
+			},
+			"aomNorFrostGiantBank": {
+				"name": "Frost Giant Ice Cave",
+				"aiValue": 10000,
+				"sounds": {
+					"ambient": [
+						"LOOPCAVE"
+					]
+				},
+				"templates": {
+					"base": {
+						"animation": "aom/nor/map/bank/aomNorFrostLair.json",
+						"visitableFrom": [
+							"---",
+							"+++",
+							"+++"
+						],
+						"mask": [
+							"VVV",
+							"BAB"
+						]
+					}
+				},
+				"rmg": {
+					"value": 8000,
+					"zoneLimit": 1,
+					"rarity": 40,
+					"mapLimit": 4
+				},
+				"onGuardedMessage": "At the foot of a glacier lies an ice cave so cold that even torches frost over. Frost Giants guard a heart of ice that never melts. Will you go in?",
+				"onVisitedMessage": "Only an empty giant's den is left here. Someone has been here before.",
+				"visitMode": "once",
+				"selectMode": "selectFirst",
+				"guardsLayout": "creatureBankNarrow",
+				"rewards": [
+					{
+						"message": "The Frost Giants shatter into blocks of ice; beneath the surface lies a clear Frost Giant Heart. One more Frost Giant, won over by your strength, is willing to follow you.",
+						"appearChance": {
+							"min": 0,
+							"max": 30
+						},
+						"guards": [
+							{
+								"amount": 1,
+								"type": "aomNorFrostGiant"
+							},
+							{
+								"amount": 1,
+								"type": "aomNorFrostGiant"
+							},
+							{
+								"amount": 1,
+								"type": "aomNorFrostGiant"
+							},
+							{
+								"amount": 4,
+								"type": "aomNorWolf"
+							},
+							{
+								"amount": 4,
+								"type": "aomNorWolf"
+							}
+						],
+						"artifacts": [
+							"aomNorHeartFrost"
+						],
+						"creatures": [
+							{
+								"type": "aomNorFrostGiant",
+								"amount": 1
+							}
+						]
+					},
+					{
+						"message": "The icy wind in the cave dies away. You chip the steaming Frost Giant Heart out of the ice wall. Some scattered gold lies in a corner. Two more Frost Giants, won over by your strength, are willing to follow you.",
+						"appearChance": {
+							"min": 30,
+							"max": 60
+						},
+						"guards": [
+							{
+								"amount": 2,
+								"type": "aomNorFrostGiant"
+							},
+							{
+								"amount": 2,
+								"type": "aomNorFrostGiant"
+							},
+							{
+								"amount": 2,
+								"type": "aomNorFrostGiant"
+							},
+							{
+								"amount": 8,
+								"type": "aomNorWolf"
+							},
+							{
+								"amount": 8,
+								"type": "aomNorWolf"
+							}
+						],
+						"artifacts": [
+							"aomNorHeartFrost"
+						],
+						"creatures": [
+							{
+								"type": "aomNorFrostGiant",
+								"amount": 2
+							}
+						],
+						"resources": {
+							"gold": 2500
+						}
+					},
+					{
+						"message": "The Frost Giants and their winter wolves are down. Behind the icicles lie an artifact and the Frost Giant Heart. Some scattered gold lies in a corner. Three more Frost Giants, won over by your strength, are willing to follow you.",
+						"appearChance": {
+							"min": 60,
+							"max": 90
+						},
+						"guards": [
+							{
+								"amount": 3,
+								"type": "aomNorFrostGiant"
+							},
+							{
+								"amount": 3,
+								"type": "aomNorFrostGiant"
+							},
+							{
+								"amount": 3,
+								"type": "aomNorFrostGiant"
+							},
+							{
+								"amount": 12,
+								"type": "aomNorWolf"
+							},
+							{
+								"amount": 12,
+								"type": "aomNorWolf"
+							}
+						],
+						"artifacts": [
+							"aomNorHeartFrost",
+							{
+								"class": "TREASURE"
+							}
+						],
+						"creatures": [
+							{
+								"type": "aomNorFrostGiant",
+								"amount": 3
+							}
+						],
+						"resources": {
+							"gold": 3500
+						}
+					},
+					{
+						"message": "As the last Frost Giant falls, the whole cave begins to drip. You take its heart and treasure before the ice melts. Some scattered gold lies in a corner. Four more Frost Giants, won over by your strength, are willing to follow you.",
+						"appearChance": {
+							"min": 90,
+							"max": 100
+						},
+						"guards": [
+							{
+								"amount": 4,
+								"type": "aomNorFrostGiant"
+							},
+							{
+								"amount": 4,
+								"type": "aomNorFrostGiant"
+							},
+							{
+								"amount": 4,
+								"type": "aomNorFrostGiant"
+							},
+							{
+								"amount": 16,
+								"type": "aomNorWolf"
+							},
+							{
+								"amount": 16,
+								"type": "aomNorWolf"
+							}
+						],
+						"artifacts": [
+							"aomNorHeartFrost",
+							{
+								"class": "MINOR"
+							}
+						],
+						"creatures": [
+							{
+								"type": "aomNorFrostGiant",
+								"amount": 4
+							}
+						],
+						"resources": {
+							"gold": 3500
+						}
+					}
+				]
+			},
+			"aomNorFireGiantBank": {
+				"name": "Fire Giant Lava Rift",
+				"aiValue": 14000,
+				"sounds": {
+					"ambient": [
+						"LOOPFIRE"
+					]
+				},
+				"templates": {
+					"base": {
+						"animation": "aom/nor/map/bank/aomNorFireLair.json",
+						"visitableFrom": [
+							"---",
+							"+++",
+							"+++"
+						],
+						"mask": [
+							"VVV",
+							"BAB"
+						]
+					}
+				},
+				"rmg": {
+					"value": 12000,
+					"zoneLimit": 1,
+					"rarity": 40,
+					"mapLimit": 4
+				},
+				"onGuardedMessage": "A glowing red crack splits the ground, with lava churning below. Fire Giants guard a burning obsidian heart. Will you go down?",
+				"onVisitedMessage": "Only an empty giant's den is left here. Someone has been here before.",
+				"visitMode": "once",
+				"selectMode": "selectFirst",
+				"guardsLayout": "creatureBankNarrow",
+				"rewards": [
+					{
+						"message": "The Fire Giants' flames go out. Among the scorched stones a Fire Giant Heart still burns. One more Fire Giant, won over by your strength, is willing to follow you.",
+						"appearChance": {
+							"min": 0,
+							"max": 30
+						},
+						"guards": [
+							{
+								"amount": 1,
+								"type": "aomNorFireGiant"
+							},
+							{
+								"amount": 1,
+								"type": "aomNorFireGiant"
+							},
+							{
+								"amount": 4,
+								"type": "aomNorWolf"
+							},
+							{
+								"amount": 4,
+								"type": "aomNorWolf"
+							},
+							{
+								"amount": 4,
+								"type": "aomNorWolf"
+							}
+						],
+						"artifacts": [
+							"aomNorHeartFire"
+						],
+						"creatures": [
+							{
+								"type": "aomNorFireGiant",
+								"amount": 1
+							}
+						]
+					},
+					{
+						"message": "The heat in the rift dies down. You find the Fire Giant Heart in the cooling lava. Some scattered gold lies in a corner. Two more Fire Giants, won over by your strength, are willing to follow you.",
+						"appearChance": {
+							"min": 30,
+							"max": 60
+						},
+						"guards": [
+							{
+								"amount": 2,
+								"type": "aomNorFireGiant"
+							},
+							{
+								"amount": 2,
+								"type": "aomNorFireGiant"
+							},
+							{
+								"amount": 8,
+								"type": "aomNorWolf"
+							},
+							{
+								"amount": 8,
+								"type": "aomNorWolf"
+							},
+							{
+								"amount": 8,
+								"type": "aomNorWolf"
+							}
+						],
+						"artifacts": [
+							"aomNorHeartFire"
+						],
+						"creatures": [
+							{
+								"type": "aomNorFireGiant",
+								"amount": 2
+							}
+						],
+						"resources": {
+							"gold": 1000
+						}
+					},
+					{
+						"message": "The Fire Giants lie by the lava, one still clutching an artifact. You take it along with the Fire Giant Heart. Some scattered gold lies in a corner. Three more Fire Giants, won over by your strength, are willing to follow you.",
+						"appearChance": {
+							"min": 60,
+							"max": 90
+						},
+						"guards": [
+							{
+								"amount": 3,
+								"type": "aomNorFireGiant"
+							},
+							{
+								"amount": 3,
+								"type": "aomNorFireGiant"
+							},
+							{
+								"amount": 12,
+								"type": "aomNorWolf"
+							},
+							{
+								"amount": 12,
+								"type": "aomNorWolf"
+							},
+							{
+								"amount": 12,
+								"type": "aomNorWolf"
+							}
+						],
+						"artifacts": [
+							"aomNorHeartFire",
+							{
+								"class": "TREASURE"
+							}
+						],
+						"creatures": [
+							{
+								"type": "aomNorFireGiant",
+								"amount": 3
+							}
+						],
+						"resources": {
+							"gold": 1000
+						}
+					},
+					{
+						"message": "The last Fire Giant sinks into the lava, and the rift slowly closes. You carry out its heart and the treasure it guarded. Four more Fire Giants, won over by your strength, are willing to follow you.",
+						"appearChance": {
+							"min": 90,
+							"max": 100
+						},
+						"guards": [
+							{
+								"amount": 4,
+								"type": "aomNorFireGiant"
+							},
+							{
+								"amount": 4,
+								"type": "aomNorFireGiant"
+							},
+							{
+								"amount": 16,
+								"type": "aomNorWolf"
+							},
+							{
+								"amount": 16,
+								"type": "aomNorWolf"
+							},
+							{
+								"amount": 16,
+								"type": "aomNorWolf"
+							}
+						],
+						"artifacts": [
+							"aomNorHeartFire",
+							{
+								"class": "MINOR"
+							}
+						],
+						"creatures": [
+							{
+								"type": "aomNorFireGiant",
+								"amount": 4
+							}
+						]
+					}
+				]
+			}
+		}
+	}
+}

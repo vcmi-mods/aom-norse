@@ -1,0 +1,37 @@
+{
+	"basepath": "aom/nor/artifacts/map/",
+	"images": [
+		{
+			"frame": 0,
+			"file": "aomNorNibelungRing_0.png"
+		},
+		{
+			"frame": 1,
+			"file": "aomNorNibelungRing_1.png"
+		},
+		{
+			"frame": 2,
+			"file": "aomNorNibelungRing_2.png"
+		},
+		{
+			"frame": 3,
+			"file": "aomNorNibelungRing_3.png"
+		},
+		{
+			"frame": 4,
+			"file": "aomNorNibelungRing_4.png"
+		},
+		{
+			"frame": 5,
+			"file": "aomNorNibelungRing_5.png"
+		},
+		{
+			"frame": 6,
+			"file": "aomNorNibelungRing_6.png"
+		},
+		{
+			"frame": 7,
+			"file": "aomNorNibelungRing_7.png"
+		}
+	]
+}

@@ -1,0 +1,69 @@
+{
+	"basepath": "aom/nor/town/frames/",
+	"images": [
+		{
+			"frame": 0,
+			"file": "dwellingUp2Lvl2_00.png"
+		},
+		{
+			"frame": 1,
+			"file": "dwellingUp2Lvl2_01.png"
+		},
+		{
+			"frame": 2,
+			"file": "dwellingUp2Lvl2_02.png"
+		},
+		{
+			"frame": 3,
+			"file": "dwellingUp2Lvl2_03.png"
+		},
+		{
+			"frame": 4,
+			"file": "dwellingUp2Lvl2_04.png"
+		},
+		{
+			"frame": 5,
+			"file": "dwellingUp2Lvl2_05.png"
+		},
+		{
+			"frame": 6,
+			"file": "dwellingUp2Lvl2_06.png"
+		},
+		{
+			"frame": 7,
+			"file": "dwellingUp2Lvl2_07.png"
+		},
+		{
+			"frame": 8,
+			"file": "dwellingUp2Lvl2_08.png"
+		},
+		{
+			"frame": 9,
+			"file": "dwellingUp2Lvl2_09.png"
+		},
+		{
+			"frame": 10,
+			"file": "dwellingUp2Lvl2_10.png"
+		},
+		{
+			"frame": 11,
+			"file": "dwellingUp2Lvl2_11.png"
+		},
+		{
+			"frame": 12,
+			"file": "dwellingUp2Lvl2_12.png"
+		},
+		{
+			"frame": 13,
+			"file": "dwellingUp2Lvl2_13.png"
+		},
+		{
+			"frame": 14,
+			"file": "dwellingUp2Lvl2_14.png"
+		},
+		{
+			"frame": 15,
+			"file": "dwellingUp2Lvl2_15.png"
+		}
+	]
+}
