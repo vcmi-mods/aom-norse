@@ -22,7 +22,7 @@ local function mark(server, battle, unit, bonusType, value, hidden)
 end
 
 function Script:onBattleStart(server, battle, unit, other)
-	if not unit:isAlive() or unit:isSummoned() then return end
+	if not unit:isAlive() or unit:copy():isSummoned() then return end
 	local side = unit:getSide()
 	local own = battle:getUnitsIf(function(u) return u:getSide() == side end)
 	for _, u in ipairs(own) do
@@ -48,7 +48,7 @@ function Script:onBattleStart(server, battle, unit, other)
 	server:addUnit(battle, { count = count, type = creature, side = side, position = hex, summoned = true })
 	local key = creature:getJsonKey()
 	local copy = battle:getUnitsIf(function(u)
-		return u:isAlive() and u:getSide() == side and u:isSummoned() and u:getCreature():getJsonKey() == key and not u:hasBonuses({ type = ILLUSION })
+		return u:isAlive() and u:getSide() == side and u:copy():isSummoned() and u:getCreature():getJsonKey() == key and not u:hasBonuses({ type = ILLUSION })
 	end)[1]
 	if copy == nil then return end
 	mark(server, battle, copy, ILLUSION, copy:getAvailableHealth(), false)
@@ -69,9 +69,16 @@ function Script:check(server, battle, unit)
 	server:refreshBattleUnits(battle)
 end
 
-function Script:onAfterAttacked(server, battle, unit, other) self:check(server, battle, unit) end
-function Script:onSpellHit(server, battle, unit, other) self:check(server, battle, unit) end
-function Script:onActionFinished(server, battle, unit, other) self:check(server, battle, unit) end
+-- No onAfterAttacked or onSpellHit: an illusion that is hit is not removed in the middle of attack resolution (the same pattern as the other mobile crash fixes);
+-- the illusion that was hit takes part in this action, so onActionFinished removes it when the action ends
+-- Script damage such as falling rocks, damage over time and splash (server:damageUnit) is not a battle action, so an illusion hit by it gets no onActionFinished.
+-- The whole army carries this script, so some stack always gets here when an action ends; it checks every damaged illusion on the field while at it
+function Script:onActionFinished(server, battle, unit, other)
+	self:check(server, battle, unit)
+	for _, u in ipairs(battle:getUnitsIf(function(u) return u:isAlive() and u:hasBonuses({ type = ILLUSION }) end)) do
+		self:check(server, battle, u)
+	end
+end
 function Script:onRoundStart(server, battle, unit, other) self:check(server, battle, unit) end
 
 return Script

@@ -46,4 +46,27 @@ function Script:apply(mechanics, server, target)
 	end
 end
 
+--- Cursor and status bar text while choosing a target: return nil to use the engine default ("Cast X on Y" / "Cast X", with damage and healing estimates added automatically).
+--- Every spell effect script must define this function.
+function Script:describeTargetStep(mechanics, partialTarget, hoveredHex)
+	return nil
+end
+
+--- Hover estimate: the first giant that drops when cast (L.ORDER[1]), count computed the same way as apply / L.drop:
+--- max(1, health budget / health of one), health budget = summonedEffectValue. Giants arriving in later rounds are not counted
+function Script:getHealthChange(mechanics, spellTarget)
+	local zero = { hpDelta = 0, unitsDelta = 0 }
+	local ok, result = pcall(function()
+		local budget = math.floor(self:summonedEffectValue(mechanics))
+		if budget <= 0 then return zero end
+		local creature = LIBRARY:getCreatureByName(L.ORDER[1])
+		if creature == nil then return zero end
+		if not mechanics:getBattle():getAvailableHex(creature, mechanics:getCasterSide()):isValid() then return zero end
+		local count = math.max(1, math.floor(budget / creature:getMaxHealth()))
+		return { hpDelta = count * creature:getMaxHealth(), unitsDelta = count, unitType = creature }
+	end)
+	if ok and result then return result end
+	return zero
+end
+
 return Script

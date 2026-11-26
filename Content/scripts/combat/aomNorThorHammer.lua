@@ -39,7 +39,7 @@ function Script:onRoundStart(server, battle, unit, other)
 end
 
 function Script:strike(server, battle, unit, seen)
-	if not unit:isAlive() or unit:isSummoned() then return end
+	if not unit:isAlive() or unit:copy():isSummoned() then return end
 	local side = unit:getSide()
 	local own = battle:getUnitsIf(function(u) return u:isAlive() and u:getSide() == side and u:getBonusesValue({ type = SEEN }) > 0 end)
 	local done = 0

@@ -119,7 +119,7 @@
 	"AOM_NOR_ILLUSION": {
 		"hidden": false,
 		"creatureNature": false,
-		"description": "{Illusion}\nLoki's illusion; vanishes\nwhen it takes any damage",
+		"description": "{Illusion}\nLoki's illusion; vanishes at the end\nof any action that damages it",
 		"valueDescriptions": {
 			"1": "Loki's trick: an illusion of %s (%d) joins the battle.",
 			"2": "The illusion of %s is damaged and vanishes."
@@ -339,6 +339,10 @@
 		}
 	},
 	"AOM_NOR_SOULS_LOG": {
+		"hidden": true,
+		"creatureNature": false
+	},
+	"AOM_NOR_SOULS_PENDING": {
 		"hidden": true,
 		"creatureNature": false
 	},
