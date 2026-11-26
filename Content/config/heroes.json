@@ -306,8 +306,8 @@
 			"name": "Tyr",
 			"biography": "The one-handed god of war, who gave his right hand to bind the wolf Fenrir. Wolves know his scent.",
 			"specialty": {
-				"name": "Favor: Winter Wolf",
-				"tooltip": "Favor: Winter Wolf",
+				"name": "Favor: Wolves",
+				"tooltip": "Favor: Wolves",
 				"description": "Favor +1 each round (+1 more after acting); at each threshold a boon:\n{2 pts}: Fimbulwinter Wolves gain Divinity for 2 rounds.\n{4 pts}: War God's Valor: Fimbulwinter Wolves Attack +6 for 2 rounds.\n{7 pts}: Thunder Dread: all enemies Defense -4 for 2 rounds.\n\n{Affinity}: god powers under Thor are stronger; see each spell."
 			}
 		},
@@ -676,8 +676,8 @@
 			"name": "Odin",
 			"biography": "The All-Father, who traded an eye for wisdom. Two ravens bring him the world's news each day, and the warriors of Valhalla await only his call.",
 			"specialty": {
-				"name": "Call of the Einherjar",
-				"tooltip": "Call of the Einherjar",
+				"name": "Einherjar Call",
+				"tooltip": "Einherjar Call",
 				"description": "Valhalla gathers Einherjar faster: + hero level × 2% (up to +50%); the first recall of Einherjar each battle brings one more stack.\n\n{Affinity}: god powers under Odin are stronger; see each spell."
 			}
 		},
@@ -1411,9 +1411,9 @@
 			"name": "Loki",
 			"biography": "God of trickery, who can take any shape. His enemies cannot tell which foe is real.",
 			"specialty": {
-				"name": "Trickster's Illusion",
-				"tooltip": "Trickster's Illusion",
-				"description": "At the start of battle, the enemy stack with the most health (except level 7) is copied as an illusion that fights for you: 10% of its size + 1% per level (up to 35%).\n\n{Affinity}: god powers under Loki are stronger; see each spell."
+				"name": "Loki's Illusion",
+				"tooltip": "Loki's Illusion",
+				"description": "At the start of battle, the enemy stack with the most health (except level 7) is copied as an illusion that fights for you: 10% of its size + 1% per level (up to 35%). The illusion vanishes at the end of the action in which it takes damage.\n\n{Affinity}: god powers under Loki are stronger; see each spell."
 			}
 		},
 		"images": {

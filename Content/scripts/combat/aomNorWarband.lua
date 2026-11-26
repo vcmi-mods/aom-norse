@@ -29,6 +29,7 @@ Script.__index = Script
 local SEEN, TICK = "AOM_NOR_WB_SEEN", "AOM_NOR_WB_TICK"
 local SOULS, CALLS, STARS, RAGNAROK = "AOM_NOR_SOULS", "AOM_NOR_SOUL_CALLS", "AOM_NOR_STARS", "AOM_NOR_RAGNAROK"
 local SOULS_LOG = "AOM_NOR_SOULS_LOG"      -- Einherjar progress last written to the log (points x 4 + count + 1)
+local PENDING = "AOM_NOR_SOULS_PENDING"      -- Number of Einherjar stacks earned and waiting to be recalled when the current action ends
 local WALL, BOAR = "AOM_NOR_SHIELDWALL", "AOM_NOR_SVINFYLKING"
 local OATH, LEVEL = "AOM_NOR_OATH", "AOM_NOR_HERO_LEVEL"
 local EINHERI = "aom-norse:aomNorEinheri"
@@ -224,16 +225,37 @@ function Script:addSouls(server, battle, unit, hp)
 		souls = souls - need
 		calls = calls + 1
 		sideSet(server, battle, units, CALLS, calls, true)
-		need = base
-		callEinheri(server, battle, side, need, 1)
-		if calls == 1 and odin > 0 then callEinheri(server, battle, side, need, 1) end      -- Einherjar Call: one more stack on the first recall
-		units = sideSync(server, battle, side)
+		-- Do not add units in the middle of attack resolution: remember how many stacks to recall and recall them when the whole action ends (onActionFinished).
+		-- Adding units in the middle of an enemy attack crashes the mobile version (seen when Odin recalled units killed in round two)
+		local n = sideMax(units, PENDING) + 1
+		if calls == 1 and odin > 0 then n = n + 1 end      -- Einherjar Call: one more stack on the first recall
+		sideSet(server, battle, units, PENDING, n, true)
 	end
 	sideSet(server, battle, units, SOULS, souls, false)
 end
 
+--- After the action ends, recall the saved Einherjar (each stack counts as one tier)
+function Script:onActionFinished(server, battle, unit, other)
+	local side = unit:getSide()
+	local units = sideUnits(battle, side)
+	local n = sideMax(units, PENDING)
+	if n <= 0 then return end
+	sideSet(server, battle, units, PENDING, 0, true)
+	local base = math.max(1, sideMax(units, LEVEL)) * (self.perLevel or 60)
+	for _ = 1, n do callEinheri(server, battle, side, base, 1) end
+	sideSync(server, battle, side)
+end
+
+-- Loki's illusions (AOM_NOR_ILLUSION) do not count as casualties
+local function isPhantom(u)
+	if u == nil then return true end
+	local ok, has = pcall(function() return u:hasBonuses({ type = "AOM_NOR_ILLUSION" }) end)
+	return ok and has
+end
+
 -- our troop died: add its health
 function Script:onAfterAttacked(server, battle, unit, other, payload)
+	if isPhantom(unit) then return end   -- Losses of Loki's illusions do not count toward the Einherjar
 	local e = self:ownEntry(unit, payload)
 	if e == nil or (e.killed or 0) <= 0 then return end
 	self:addSouls(server, battle, unit, e.killed * unit:getMaxHealth())
@@ -244,7 +266,7 @@ function Script:onAfterAttack(server, battle, unit, other, payload)
 	local side = unit:getSide()
 	local hp = 0
 	for _, t in ipairs(payload.targets or {}) do
-		if t.unit ~= nil and t.unit:getSide() ~= side and (t.killed or 0) > 0 then hp = hp + t.killed * t.unit:getMaxHealth() end
+		if t.unit ~= nil and t.unit:getSide() ~= side and not isPhantom(t.unit) and (t.killed or 0) > 0 then hp = hp + t.killed * t.unit:getMaxHealth() end
 	end
 	self:addSouls(server, battle, unit, math.floor(hp / 2))
 end
@@ -261,7 +283,7 @@ function Script:startOfRound(server, battle, unit)
 		-- Odin's Wain: light one star per distinct level of Norse creatures at battle start
 		local levels, n = {}, 0
 		for _, u in ipairs(units) do
-			if not u:isSummoned() and isNorse(u) then
+			if not u:copy():isSummoned() and isNorse(u) then
 				local lv = u:creatureLevel()
 				if lv >= 1 and lv <= 7 and not levels[lv] then levels[lv] = true n = n + 1 end
 			end

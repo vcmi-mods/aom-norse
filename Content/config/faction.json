@@ -605,7 +605,8 @@
 					"name": "Upgraded Valkyrie Hall",
 					"description": "The Upgraded Valkyrie Hall allows you to recruit Shieldmaidens and Valkyrie Choosers, and to convert between them in town.",
 					"cost": {
-						"gold": 2000,
+						"gold": 4000,
+						"ore": 5,
 						"crystal": 5
 					},
 					"upgrades": "dwellingUpLvl5",
@@ -643,9 +644,9 @@
 					"name": "Upgraded Kraken Fjord",
 					"description": "The Upgraded Kraken Fjord allows you to recruit Abyssal Krakens and Storm Krakens, and to convert between them in town.",
 					"cost": {
-						"gold": 3000,
+						"gold": 6000,
 						"ore": 10,
-						"crystal": 5
+						"crystal": 10
 					},
 					"upgrades": "dwellingUpLvl6",
 					"mode": "auto"
@@ -682,9 +683,9 @@
 					"name": "Upgraded Fafnir Hoard",
 					"description": "The Upgraded Fafnir Hoard allows you to recruit Venombreath Fafnirs and Flamebreath Fafnirs, and to convert between them in town.",
 					"cost": {
-						"gold": 3000,
+						"gold": 6000,
 						"ore": 10,
-						"crystal": 5
+						"crystal": 10
 					},
 					"upgrades": "dwellingUpLvl7",
 					"mode": "auto"

@@ -8,7 +8,7 @@ Script.__index = Script
 local DONE, LEVEL, BOAR = "AOM_NOR_BOAR_DONE", "AOM_NOR_HERO_LEVEL", "aom-norse:aomNorGullinbursti"
 
 function Script:onBattleStart(server, battle, unit, other)
-	if not unit:isAlive() or unit:isSummoned() then return end
+	if not unit:isAlive() or unit:copy():isSummoned() then return end
 	local side = unit:getSide()
 	local own = battle:getUnitsIf(function(u) return u:getSide() == side end)
 	for _, u in ipairs(own) do
@@ -25,7 +25,7 @@ function Script:onBattleStart(server, battle, unit, other)
 	local hex = battle:getAvailableHex(creature, side)
 	if not hex:isValid() then return end
 	server:addUnit(battle, { count = count, type = creature, side = side, position = hex, summoned = true })
-	local boar = battle:getUnitsIf(function(u) return u:isAlive() and u:getSide() == side and u:isSummoned() and u:getCreature():getJsonKey() == creature:getJsonKey() end)[1]
+	local boar = battle:getUnitsIf(function(u) return u:isAlive() and u:getSide() == side and u:copy():isSummoned() and u:getCreature():getJsonKey() == creature:getJsonKey() end)[1]
 	if boar ~= nil and server:describeChanges() then server:showBattleAnimation(battle, { { unit = boar } }, "aom/nor/fx/apBoar.json", "BLESS", 1.0, true) end
 	server:refreshBattleUnits(battle)
 	server:appendLog(battle, { append = { "core.bonus.AOM_NOR_BOAR_DONE.description.1" }, replaceStrings = { creature:getNameTextID(count) }, replaceNumbers = { count } })

@@ -36,7 +36,7 @@ end
 --- does this side still have a unit that keeps the battle going (same rule as the engine's battleIsFinished: alive, not an arrow tower or war machine, not a summon or clone)
 local function standing(battle, side)
 	return #battle:getUnitsIf(function(u)
-		return u:isAlive() and u:getSide() == side and not u:isTurret() and not u:hasBonuses({ type = "SIEGE_WEAPON" }) and not u:isSummoned() and not u:isClone()
+		return u:isAlive() and u:getSide() == side and not u:isTurret() and not u:hasBonuses({ type = "SIEGE_WEAPON" }) and not u:copy():isSummoned() and not u:isClone()
 	end) > 0
 end
 

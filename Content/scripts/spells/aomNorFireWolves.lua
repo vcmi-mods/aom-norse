@@ -1,4 +1,4 @@
--- Fenrir's Inferno: our wolves (the Fimbulwinter Wolf line) become fire wolves until the spell ends; after the cast neither side can retreat or surrender.
+-- Fenrir's Inferno: friendly wolves (the Fimbulwinter Wolf line) become fire wolves until the spell ends; after casting, neither side can retreat or surrender.
 -- A stack cannot change its look in battle, so the wolves are removed (removeUnit) and the same number of fire wolves not marked as summoned is added in place (addUnit, summoned = false:
 -- after battle the engine adds the survivors back to the army by creature; the original wolf slot is cleared as dead). The fire wolves carry combat/aomNorFireWolf (role = wolf, rounds left),
 -- and when it expires or the enemy side is wiped out (enemies carry role = watch, checked on any death) they turn back into the same number of wolves, so wolves are what returns to the army.
@@ -40,7 +40,7 @@ function Script:apply(mechanics, server, target)
 	local fx = {}
 	for _, u in ipairs(battle:getUnitsIf(function(u) return u:isAlive() and u:getSide() == side end)) do
 		local key = Sac.shortKey(u)
-		if FIRE[key] and not u:isSummoned() and not u:isClone() then
+		if FIRE[key] and not u:copy():isSummoned() and not u:isClone() then
 			local count, pos = u:getCount(), u:getPosition()
 			server:removeUnit(battle, u)
 			local nu = server:addUnit(battle, { count = count, type = LIBRARY:getCreatureByName(MOD .. FIRE[key]), side = side, position = pos, summoned = false })
@@ -63,6 +63,12 @@ function Script:apply(mechanics, server, target)
 		server:refreshBattleUnits(battle)
 		server:appendLog(battle, { append = { "core.bonus.AOM_NOR_FIREWOLF_LOCK.description.2" }, replaceNumbers = { #fx, turns } })
 	end
+end
+
+--- Cursor and status bar text while choosing a target: return nil to use the engine default ("Cast X on Y" / "Cast X", with damage and healing estimates added automatically).
+--- Every spell effect script must define this function.
+function Script:describeTargetStep(mechanics, partialTarget, hoveredHex)
+	return nil
 end
 
 return Script
